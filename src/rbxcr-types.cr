@@ -1,4 +1,5 @@
 require "./timer"
+require "./api.d"
 require "crest"
 
 SECURITY_LEVELS = ["None", "PluginSecurity"]
@@ -14,9 +15,10 @@ module TypeGenerator
   api_dump_timer = Timer.new
   puts "\t- Requesting API Dump JSON..."
 
-  api_dump_res = JSON.parse(Crest.get API_DUMP_URL)
+  crest_res = Crest.get(API_DUMP_URL)
+  api = API::Dump.from_json crest_res.body
   puts "\t- Done! Took #{api_dump_timer.get_elapsed}ms"
-  raise "API dump response non-200 status" if api_dump_res.status
+  raise "API dump response non-200 status" unless crest_res.status_code == 200
 
 
 end

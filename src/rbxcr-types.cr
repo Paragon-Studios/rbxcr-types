@@ -12,7 +12,11 @@ module TypeGenerator
   puts "Generating..."
 
   api_dump_timer = Timer.new
-  puts "\t- Requesting API Dump JSON.."
+  puts "\t- Requesting API Dump JSON..."
 
-  api_dump_res = Crest.get API_DUMP_URL
+  api_dump_res = JSON.parse(Crest.get API_DUMP_URL)
+  puts "\t- Done! Took #{api_dump_timer.get_elapsed}ms"
+  raise "API dump response non-200 status" if api_dump_res.status
+
+
 end

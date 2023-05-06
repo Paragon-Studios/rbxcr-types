@@ -1,7 +1,8 @@
 class Timer
-  @start = Time.now.to_unix
+  @start : Int64 = Time.utc.to_unix
 
+  # in ms
   def get_elapsed
-    Time.now.to_unix - @@start
+    Time.utc.to_unix - @start
   end
 end

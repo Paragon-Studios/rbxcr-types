@@ -1,24 +1,30 @@
 require "./reflection_metadata"
-require "fs"
+require "file_utils"
+require "io"
 
 class Generator
-  @stream : FS::WriteStream
+  @stream = IO::Memory.new
   @indent = ""
 
-  def initialize(file_path : String, @metadata : ReflectionMetadata? = nil)
-    FS.ensure_file(file_path)
-    @stream = FS.create_write_stream(file_path)
+  def initialize(
+    @file_path : String,
+    @metadata : ReflectionMetadata? = nil
+  ) end
+
+  protected def write_file
+    FileUtils.mkdir_p File.dirname(@file_path)
+    File.write @file_path, @stream.to_s
   end
 
-  def push_indent
+  protected def write(line : String)
+    @stream << "#{@indent}#{line unless line.empty?}\n"
+  end
+
+  protected def push_indent
     @indent += "\t"
   end
 
-  def pop_indent
+  protected def pop_indent
     @indent = @indent[1..-1]
-  end
-
-  def write(line : String)
-    @stream.write("#{@indent}#{line unless line.empty?}\n")
   end
 end

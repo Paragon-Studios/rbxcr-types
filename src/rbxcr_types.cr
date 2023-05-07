@@ -1,3 +1,4 @@
+require "./class/enum_generator"
 require "./class/reflection_metadata"
 require "./class/timer"
 require "./api.d"
@@ -10,13 +11,19 @@ REFLECTION_METADATA_URL = BASE_URL + "ReflectionMetadata.xml"
 TAB = "\t- "
 
 private def check_status(res : Crest::Response) : Exception | Nil
-  raise "#{TAB}API dump response non-200 status" unless res.status_code == 200
+  raise "#{TAB}Request response non-200 status" unless res.status_code == 200
 end
 
-out_path = File.join File.dirname(__FILE__), "..", "out"
-total_timer = Timer.new
-puts "Generating..."
+private def task_finished(timer : Timer)
+  puts "#{TAB}Done! Took #{timer.get_elapsed}ms"
+end
 
+relative_out_dir = File.join File.dirname(__FILE__), "..", "out"
+out_dir = File.expand_path relative_out_dir
+total_timer = Timer.new
+
+# Deserialize API reference dump
+puts "Fetching data..."
 api_dump_timer = Timer.new
 puts "#{TAB}Requesting API dump JSON..."
 
@@ -25,11 +32,21 @@ api = API::Dump.from_json dump_res.body
 puts "#{TAB}Done! Took #{api_dump_timer.get_elapsed}ms"
 check_status dump_res
 
+# Deserialize reflection metadata
 relection_timer = Timer.new
 puts "#{TAB}Requesting reflection metadata..."
+
 relection_res = Crest.get REFLECTION_METADATA_URL
-puts "#{TAB}Done! Took #{relection_timer.get_elapsed}ms"
+task_finished relection_timer
 check_status relection_res
 
 reflection_metadata = ReflectionMetadata.new relection_res.body
+
+# Enum generation
+enum_gen_timer = Timer.new
+puts "Generating enums..."
+
+enum_gen = EnumGenerator.new File.join(out_dir, "generated", "enums.cr"), reflection_metadata
+enum_gen.generate api.enums
+task_finished enum_gen_timer
 

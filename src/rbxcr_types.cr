@@ -10,7 +10,7 @@ API_DUMP_URL = BASE_URL + "Mini-API-Dump.json"
 REFLECTION_METADATA_URL = BASE_URL + "ReflectionMetadata.xml"
 TAB = "\t- "
 
-private def check_status(res : Crest::Response) : Exception | Nil
+private def check_status(res : Crest::Response) : Exception?
   raise "#{TAB}Request response non-200 status" unless res.status_code == 200
 end
 

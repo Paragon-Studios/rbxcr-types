@@ -8,6 +8,9 @@ class String
   def trim
     gsub(/\A\s+|\s+\z/, "")
   end
+  def format_comment
+    trim.split('\n').map { |d| "# #{d}" }.join("\n")
+  end
 end
 
 def contains_bad_char?(name : String) : Bool
@@ -24,6 +27,11 @@ end
 def safe_prop_type(value_type : String?) : String?
   return nil if value_type.nil?
   PROP_TYPE_MAP[value_type] || value_type
+end
+
+def safe_renamed_instance(name : String?) : String?
+  return nil if name.nil?
+  RENAMEABLE_AUTO_TYPES.has_key?(name) ? RENAMEABLE_AUTO_TYPES[name] : name
 end
 
 def safe_value_type(value_type : API::ValueType) : String
@@ -198,21 +206,83 @@ class ClassGenerator < Generator
     members = rbx_class.members.select { |member| should_generate_member?(rbx_class, member) }
     no_security = @security == "None" || is_plugin_only_class?(rbx_class)
     if no_security
-      descriptions = [] of String
       desc = rbx_class.description
-      unless desc.nil?
-        descriptions << desc.trim.split('\n').map { |d| "# #{d}" }.join("\n")
-      end
+      write desc.format_comment unless desc.nil?
     end
 
     return unless no_security || !members.empty?
     write "module #{class_name}"
     push_indent
 
-
+    members.each do |member|
+      case member.member_type
+      when "Callback"
+        generate_callback member.as API::Callback, class_name
+      when "Event"
+        generate_event member.as API::Event, class_name
+      when "Function"
+        generate_function member.as API::Function, class_name
+      when "Property"
+        generate_property member.as API::Property, class_name
+      end
+    end
 
     pop_indent
     write "end"
+  end
+
+  private def generate_args(params : Array(API::Parameter), args : Array(String) = [] of String) : String
+    param_names = params.map { |param| param.name }
+    param_names.each_with_index do |name, i|
+      if param_names.index(name) == i + 1
+        n = 0
+        i.upto(params.size - 1) do |j|
+          param_names[j] = "#{name}#{n}"
+          n += 1
+        end
+      end
+    end
+
+    optional = false
+    params.each_with_index do |param, i|
+      param_type = safe_value_type param.type
+      arg_name = safe_arg_name param_names[i]
+      optional ||= !param.default.nil? || param_type == "any"
+      if !arg_name.nil? && param_type == "Instance"
+        findings = [*@class_refs.keys, "Character", "Input"].select do |k|
+          k != "Instance" && arg_name.downcase.includes?(k.downcase)
+        end
+        unless findings.empty?
+          part_pos = findings.index "Part"
+          do_splice = !findings.includes?("Part") && !findings.empty? && !arg_name.downcase.includes?("or")
+          findings.delete_at(part_pos.not_nil!) if do_splice
+          param_type =
+            safe_renamed_instance(findings.find { |found| found.downcase == arg_name.downcase }) ||
+            findings.map { |found| found.downcase == arg_name.downcase }
+        end
+      end
+      args << "#{arg_name || "arg#{i}"} #{!param_type.nil? ? ": #{param_type}#{optional ? "?" : ""}" : ""}"
+    end
+    args.join ", "
+  end
+
+  private def generate_callback(callback : API::Callback, class_name : String)
+    args : String = generate_args callback.parameters
+    description = (callback.description || "").trim != "" ?
+      callback.description
+      : @metadata.not_nil!.get_callback_desc(class_name, callback.name)
+  end
+
+  private def generate_event(event : API::Event, class_name : String)
+
+  end
+
+  private def generate_function(function : API::Function, class_name : String)
+
+  end
+
+  private def generate_property(property : API::Property, class_name : String)
+
   end
 
   # Generates each class in `rbx_classes`
@@ -238,7 +308,7 @@ class ClassGenerator < Generator
       rbx_class.subclasses = [] of String
 
       @class_refs[class_name] = rbx_class
-      superclass = rbx_class.superclass != ROOT_CLASS_NAME ? @class_refs[rbx_class.superclass] : nil
+      superclass : API::Class? = rbx_class.superclass != ROOT_CLASS_NAME ? @class_refs[rbx_class.superclass] : nil
       superclass.subclasses.not_nil! << class_name unless superclass.nil? || superclass.subclasses.nil?
     end
 

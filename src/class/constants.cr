@@ -246,21 +246,21 @@ VALUE_TYPE_MAP = {
 	"Connection" => "RBXScriptConnection",
 	"Content" => "String",
 	"CoordinateFrame" => "CFrame",
-	"Dictionary" => "HashMap",
+	"Dictionary" => "Hash",
 	"EventInstance" => "RBXScriptSignal",
 	"double" => "Float64",
 	"float" => "Float32",
 	"Function" => "Callback",
 	"int" => "Int32",
 	"int64" => "Int64",
-	"Map" => "HashMap",
+	"Map" => "Hash",
 	"Object" => "Instance",
 	"Objects" => "Array(Instance)",
 	"Property" => "String",
 	"ProtectedString" => "String",
 	"Rect2D" => "Rect",
 	"Tuple" => "Array",
-	"Variant" => "HashMap"
+	"Variant" => "Hash"
 }
 
 RETURN_TYPE_MAP = {

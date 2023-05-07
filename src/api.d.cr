@@ -160,6 +160,13 @@ module API
 
     @[JSON::Field(key: "Write")]
 		property write : String
+
+    def as_hash : Hash(String, String)
+      {
+        "read" => @read,
+        "write" => @write
+      }
+    end
   end
 
   class Parameter

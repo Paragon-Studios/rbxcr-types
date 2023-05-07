@@ -1,6 +1,7 @@
 # rbxcr-types
 
-TODO: Write a description here
+This repository contains a code generation tool to generate Crystal type definitions for the Roblox API.
+Includes the partially handwritten and partially auto-generated type definitions.
 
 ## Installation
 
@@ -8,8 +9,8 @@ TODO: Write a description here
 
    ```yaml
    dependencies:
-     rbxcr-types:
-       github: your-github-user/rbxcr-types
+     rbxcr_types:
+       github: Paragon-Studios/rbxcr-types
    ```
 
 2. Run `shards install`
@@ -17,7 +18,7 @@ TODO: Write a description here
 ## Usage
 
 ```crystal
-require "rbxcr-types"
+require "rbxcr_types"
 ```
 
 TODO: Write usage instructions here
@@ -28,7 +29,7 @@ TODO: Write development instructions here
 
 ## Contributing
 
-1. Fork it (<https://github.com/your-github-user/rbxcr-types/fork>)
+1. Fork it (<https://github.com/Paragon-Studios/rbxcr-types/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -36,4 +37,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [R-unic](https://github.com/your-github-user) - creator and maintainer
+- [R-unic](https://github.com/R-unic) - creator and maintainer

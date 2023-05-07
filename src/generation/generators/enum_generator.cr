@@ -1,4 +1,3 @@
-require "../api.d"
 require "./generator"
 require "io"
 

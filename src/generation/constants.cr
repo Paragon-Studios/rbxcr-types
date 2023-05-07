@@ -1,7 +1,7 @@
 ROOT_CLASS_NAME = "<<<ROOT>>>"
 BAD_NAME_CHARS = [" ", "/", '"']
 
-CREATABLE_BLACKLIST = Set.new [
+CREATABLE_BLACKLIST = Set(String).new [
 	"UserSettings",
 	"DebugSettings",
 	"Studio",
@@ -15,7 +15,7 @@ CREATABLE_BLACKLIST = Set.new [
 	"UserGameSettings",
 ]
 
-PLUGIN_ONLY_CLASSES = Set.new [
+PLUGIN_ONLY_CLASSES = Set(String).new [
 	"ABTestService",
 	"ChangeHistoryService",
 	"CoreGui",
@@ -60,7 +60,7 @@ PLUGIN_ONLY_CLASSES = Set.new [
 	"VersionControlService",
 ]
 
-CLASS_BLACKLIST = Set.new [
+CLASS_BLACKLIST = Set(String).new [
 	# Classes which Roblox leverages internally/in the CoreScripts but serve no purpose to developers
 	"AnalysticsSettings",
 	"BinaryStringValue",
@@ -154,20 +154,20 @@ CLASS_BLACKLIST = Set.new [
 ]
 
 MEMBER_BLACKLIST = {
-  "Workspace" => Set.new(["FilteringEnabled"]),
-  "CollectionService" => Set.new(["GetCollection"]),
-  "Instance" => Set.new(["children", "Remove"]),
-  "BodyGyro" => Set.new(["cframe"]),
-  "BodyAngularVelocity" => Set.new(["FilteringEnabled"]),
-  "BodyPosition" => Set.new(["FilteringEnabled"]),
-  "DataStoreService" => Set.new(["FilteringEnabled"]),
-  "Debris" => Set.new(["FilteringEnabled"]),
-  "LayerCollector" => Set.new(["FilteringEnabled"]),
-  "GuiBase3d" => Set.new(["FilteringEnabled"]),
-  "Model" => Set.new(["FilteringEnabled"]),
-  "Players" => Set.new(["FilteringEnabled"]),
-  "ServiceProvider" => Set.new(["FilteringEnabled"]),
-  "DataModel" => Set.new(["FilteringEnabled"])
+  "Workspace" => Set(String).new(["FilteringEnabled"]),
+  "CollectionService" => Set(String).new(["GetCollection"]),
+  "Instance" => Set(String).new(["children", "Remove"]),
+  "BodyGyro" => Set(String).new(["cframe"]),
+  "BodyAngularVelocity" => Set(String).new(["FilteringEnabled"]),
+  "BodyPosition" => Set(String).new(["FilteringEnabled"]),
+  "DataStoreService" => Set(String).new(["FilteringEnabled"]),
+  "Debris" => Set(String).new(["FilteringEnabled"]),
+  "LayerCollector" => Set(String).new(["FilteringEnabled"]),
+  "GuiBase3d" => Set(String).new(["FilteringEnabled"]),
+  "Model" => Set(String).new(["FilteringEnabled"]),
+  "Players" => Set(String).new(["FilteringEnabled"]),
+  "ServiceProvider" => Set(String).new(["FilteringEnabled"]),
+  "DataModel" => Set(String).new(["FilteringEnabled"])
 }
 
 EXPECTED_EXTRA_MEMBERS = {
@@ -177,7 +177,7 @@ EXPECTED_EXTRA_MEMBERS = {
 	"OrderedDataStore" => ["GetAsync", "IncrementAsync", "SetAsync", "UpdateAsync", "RemoveAsync"],
 }
 
-ABSTRACT_CLASSES = Set.new [
+ABSTRACT_CLASSES = Set(String).new [
 	"BackpackItem",
 	"BasePart",
 	"BasePlayerGui",

@@ -1,7 +1,6 @@
-require "../api.d"
-require "./constants"
+require "../constants"
+require "../reflection_metadata"
 require "./generator"
-require "./reflection_metadata"
 
 PROP_TYPE_MAP = {} of String => String
 
@@ -56,18 +55,22 @@ def get_security(class_name : String, member : API::MemberBase) : String | Hash(
 end
 
 def has_tag?(container : API::MemberBase | API::Class, tag : String) : Bool
-  return container.tags.includes?(tag) unless container.tags.nil?
+  return container.tags.not_nil!.includes?(tag) unless container.tags.nil?
   false
 end
 
 def is_creatable?(rbx_class : API::Class) : Bool
-  !CREATABLE_BLACKLIST.has_key?(rbx_class.name) && !has_tag?(rbx_class, "NotCreatable") && !has_tag?(rbx_class, "Service")
+  !CREATABLE_BLACKLIST.includes?(rbx_class.name) && !has_tag?(rbx_class, "NotCreatable") && !has_tag?(rbx_class, "Service")
 end
 
-def multifilter(list : Array(T), result_arr_amount : Int64, &condition : T -> Float64) forall T
-  results = [] of Array(T)
-  result_arr_amount.times { |i| results[i] = [] of T }
-  list.each { |element| results[condition element] << element }
+def multifilter(list : Array(T), result_arr_amount : Int32, &condition : T -> Int32) : Array(Array(T)) forall T
+  results = Array(Array(T)).new
+  result_arr_amount.times do |i|
+    results << [] of T
+  end
+  list.each do |element|
+    results[condition.call element] << element
+  end
   results
 end
 
@@ -106,15 +109,15 @@ class ClassGenerator < Generator
   end
 
   private def should_generate_class?(rbx_class : API::Class) : Bool
-    superclass = @class_refs[rbx_class.superclass]
+    superclass = rbx_class.superclass != ROOT_CLASS_NAME ? @class_refs[rbx_class.superclass] : nil
     return false if !superclass.nil? && !should_generate_class?(superclass)
-    return false if CLASS_BLACKLIST.has_key?(rbx_class.name)
-    return false if @security != "PluginSecurity" && PLUGIN_ONLY_CLASSES.has_key?(rbx_class.name)
+    return false if CLASS_BLACKLIST.includes?(rbx_class.name)
+    return false if @security != "PluginSecurity" && PLUGIN_ONLY_CLASSES.includes?(rbx_class.name)
     true
   end
 
   private def should_generate_member?(rbx_class : API::Class, member : API::MemberBase) : Bool
-    return false if MEMBER_BLACKLIST[rbx_class.name] && MEMBER_BLACKLIST[rbx_class.name].as(Hash(String, String)).has_key?(member.name)
+    return false if MEMBER_BLACKLIST[rbx_class.name] && MEMBER_BLACKLIST[rbx_class.name].as(Hash(String, String)).includes?(member.name)
     return false unless can_read?(rbx_class.name, member)
     if has_tag?(member, "Deprecated")
       first_char = member.name[0]
@@ -142,7 +145,7 @@ class ClassGenerator < Generator
 		table_name : String,
 		rbx_classes : Array(API::Class),
 		extended : String?,
-		&callback : (API::Class -> Nil)?
+		&callback : API::Class -> Nil
 	)
 		write "class #{table_name} #{rbx_classes.empty? ? "; end" : ""}"
 		unless rbx_classes.empty?
@@ -150,12 +153,12 @@ class ClassGenerator < Generator
       push_indent
 
 			if callback.nil?
-        callback = proc do |api_class|
-          write "#{api_class.name} : #{api_class.name}"
-        end
+        callback = ->(api_class : API::Class) { write "#{api_class.name} : #{api_class.name}" }
 			end
 
-			rbx_classes.each(callback);
+			rbx_classes.each do |rbx_class|
+        callback.call rbx_class
+      end
 			pop_indent
 			write "end"
 		end
@@ -169,22 +172,20 @@ class ClassGenerator < Generator
   private def generate_instances_tables(rbx_classes : Array(API::Class))
     services, creatable_instances, abstract_instances, instances = multifilter(rbx_classes, 4) do |rbx_class|
       ((has_tag?(rbx_class, "Service") ? 0 : is_creatable?(rbx_class)) ?
-        1 : ABSTRACT_CLASSES.has_key?(rbx_class.name)) ? 2 : 3
+        1 : ABSTRACT_CLASSES.includes?(rbx_class.name)) ? 2 : 3
     end
-
-    generate_instance_class("Services", services.sort by_name) unless services.empty?
-    generate_instance_class("CreatableInstances", creatable_instances.sort by_name) unless creatable_instances.empty?
-    generate_instance_class("AbstractInstances", abstract_instances.sort by_name) unless creatable_instances.empty?
-    generate_instance_class("Instances", instances.sort by_name, "Services, CreatableInstances, AbstractInstances") unless instances.empty?
+    (generate_instance_class("Services", services.sort { |a, b| by_name a, b }, nil) { |rbx_class| rbx_class }) unless services.empty?
+    (generate_instance_class("CreatableInstances", creatable_instances.sort { |a, b| by_name a, b }, nil) { |rbx_class| rbx_class }) unless creatable_instances.empty?
+    (generate_instance_class("AbstractInstances", abstract_instances.sort { |a, b| by_name a, b }, nil) { |rbx_class| rbx_class }) unless creatable_instances.empty?
+    (generate_instance_class("Instances", instances.sort { |a, b| by_name a, b }, "Services, CreatableInstances, AbstractInstances") { |rbx_class| rbx_class }) unless instances.empty?
   end
 
   private def generate_header
     write "# THIS FILE IS AUTOMATICALLY GENERATED AND SHOULD NOT BE EDITED MANUALLY!"
     write ""
-
     write "require \"./#{@lower_security}.d\"" unless @lower_security.nil?
-    write "require \"../roblox.d\""
-    write "require \"./enums.d\""
+    # write "require \"./roblox.d\""
+    write "require \"./Enums.d\""
     write ""
   end
 
@@ -194,12 +195,13 @@ class ClassGenerator < Generator
       rbx_class.subclasses = [] of String
 
       @class_refs[class_name] = rbx_class
-      superclass = @class_refs[rbx_class.superclass]
-      superclass.subclasses << class_name
+      superclass = rbx_class.superclass != ROOT_CLASS_NAME ? @class_refs[rbx_class.superclass] : nil
+      superclass.subclasses.not_nil! << class_name unless superclass.nil? || superclass.subclasses.nil?
     end
 
     classes_to_generate = rbx_classes.select { |rbx_class| should_generate_class?(rbx_class) }
     generate_header
     generate_instances_tables(classes_to_generate.select { |rbx_class| @defined_class_names.includes?(rbx_class.name) })
+    write_file
   end
 end

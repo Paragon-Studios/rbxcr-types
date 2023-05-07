@@ -1,4 +1,4 @@
-require "./reflection_metadata"
+require "../reflection_metadata"
 require "file_utils"
 require "io"
 

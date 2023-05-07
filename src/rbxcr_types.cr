@@ -1,7 +1,9 @@
-require "./class/enum_generator"
-require "./class/timer"
 require "./api.d"
+require "./generation/generators/enum_generator"
+require "./generation/generators/class_generator"
+require "./timer"
 require "crest"
+require "file_utils"
 
 SECURITY_LEVELS = ["None", "PluginSecurity"]
 BASE_URL = "https://raw.githubusercontent.com/MaximumADHD/Roblox-Client-Tracker/roblox/"
@@ -19,6 +21,7 @@ end
 
 relative_out_dir = File.join File.dirname(__FILE__), "..", "out"
 out_dir = File.expand_path relative_out_dir
+FileUtils.mkdir_p out_dir
 total_timer = Timer.new
 
 # Deserialize API reference dump
@@ -45,11 +48,38 @@ reflection_metadata = ReflectionMetadata.new relection_res.body
 enum_gen_timer = Timer.new
 puts "Generating enums..."
 
-enums_file = File.join(out_dir, "generated", "enums.cr")
+enums_file = File.join out_dir, "generated", "Enums.d.cr"
 enum_gen = EnumGenerator.new enums_file, reflection_metadata
 enum_gen.generate api.enums
 
 task_finished enum_gen_timer
 
-# Test compile generated enums
-raise "#{TAB}Failed to compile generated Enums." unless system "crystal run #{enums_file}"
+# Class generation
+class_gen_timer = Timer.new
+puts "Generating classes..."
+
+defined_class_names = Set(String).new
+class_files = [] of String
+SECURITY_LEVELS.size.times do |i|
+  classes_file = File.join out_dir, "generated", "#{SECURITY_LEVELS[i]}.d.cr"
+  class_files << classes_file
+
+  ClassGenerator.new(
+    classes_file,
+    reflection_metadata,
+    defined_class_names,
+    SECURITY_LEVELS[i],
+    SECURITY_LEVELS[i - 1]
+  ).generate api.classes
+end
+
+task_finished class_gen_timer
+
+# Test compile generated files
+compile_timer = Timer.new
+puts "Compiling generated files..."
+raise "#{TAB}Failed to compile generated Enums." unless system "crystal run #{enums_file}" # returns true if successful
+class_files.each do |file|
+  raise "#{TAB}Failed to compile generated classes." unless system "crystal run #{file}"
+end
+task_finished compile_timer

@@ -245,6 +245,12 @@ class ClassGenerator < Generator
     param_names
   end
 
+  private def get_param_types
+    callback.parameters
+      .map { |param| safe_value_type param.type }
+      .join ", "
+  end
+
   private def generate_args(params : Array(API::Parameter), args : Array(String) = [] of String) : String
     param_names = get_param_names
     optional = false
@@ -276,11 +282,16 @@ class ClassGenerator < Generator
       callback.description
       : @metadata.not_nil!.get_callback_desc(class_name, callback.name)
 
-    write "#{callback.name} : #{callback.parameters.map { |param| safe_value_type param.type }.join ", "} -> Nil"
+    write "#{callback.name} : (#{get_param_types}) -> Nil"
   end
 
   private def generate_event(event : API::Event, class_name : String)
+    args = generate_args event.parameters
+    description = (event.description || "").trim != "" ?
+      event.description
+      : @metadata.not_nil!.get_event_desc(class_name, event.name)
 
+    write "#{callback.name} : RBXScriptSignal((#{get_param_types}) -> Nil)"
   end
 
   private def generate_function(function : API::Function, class_name : String)

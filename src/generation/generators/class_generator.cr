@@ -245,14 +245,14 @@ class ClassGenerator < Generator
     param_names
   end
 
-  private def get_param_types
-    callback.parameters
+  private def get_param_types(params : Array(API::Parameter)) : String
+    params
       .map { |param| safe_value_type param.type }
       .join ", "
   end
 
   private def generate_args(params : Array(API::Parameter), args : Array(String) = [] of String) : String
-    param_names = get_param_names
+    param_names = get_param_names params
     optional = false
 
     params.each_with_index do |param, i|
@@ -277,12 +277,14 @@ class ClassGenerator < Generator
     args.join ", "
   end
 
-  private def generate_callback(callback : API::Callback, class_name : String, e)
+  private def generate_callback(callback : API::Callback, class_name : String)
     description = (callback.description || "").trim != "" ?
       callback.description
       : @metadata.not_nil!.get_callback_desc(class_name, callback.name)
 
-    write "#{callback.name} : (#{get_param_types}) -> Nil"
+    write "#{callback.name} = Callback(#{get_param_types callback.parameters} -> Nil).new do |#{get_param_names(callback.parameters).join ", "}|"
+    write ""
+    write "end"
   end
 
   private def generate_event(event : API::Event, class_name : String)
@@ -291,11 +293,21 @@ class ClassGenerator < Generator
       event.description
       : @metadata.not_nil!.get_event_desc(class_name, event.name)
 
-    write "#{callback.name} : RBXScriptSignal((#{get_param_types}) -> Nil)"
+    write "#{event.name} = RBXScriptSignal((#{get_param_types event.parameters}) -> Nil).new do |#{get_param_names(event.parameters).join ", "}|"
+    write ""
+    write "end"
   end
 
   private def generate_function(function : API::Function, class_name : String)
+    args = generate_args function.parameters
+    return_type = safe_return_type safe_value_type function.return_type
+    description = (function.description || "").trim != "" ?
+      function.description
+      : @metadata.not_nil!.get_method_desc(class_name, function.name)
 
+    write "#{function.name} = Method((#{get_param_types function.parameters}) -> Nil).new do |#{get_param_names(function.parameters).join ", "}|"
+    write ""
+    write "end"
   end
 
   private def generate_property(property : API::Property, class_name : String)

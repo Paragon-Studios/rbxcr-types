@@ -9,7 +9,7 @@ class EnumGenerator < Generator
     write ""
     write "module EnumItem; end"
     write ""
-    write "module Enum"
+    write "struct Enum"
     push_indent
 
     rbx_enums.each do |rbx_enum|

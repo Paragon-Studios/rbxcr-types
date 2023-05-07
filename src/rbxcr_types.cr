@@ -46,7 +46,11 @@ reflection_metadata = ReflectionMetadata.new relection_res.body
 enum_gen_timer = Timer.new
 puts "Generating enums..."
 
-enum_gen = EnumGenerator.new File.join(out_dir, "generated", "enums.cr"), reflection_metadata
+enums_file = File.join(out_dir, "generated", "enums.cr")
+enum_gen = EnumGenerator.new enums_file, reflection_metadata
 enum_gen.generate api.enums
+
 task_finished enum_gen_timer
 
+# Test compile generated enums
+raise "#{TAB}Failed to compile generated Enums." unless system "crystal run #{enums_file}"

@@ -11,133 +11,133 @@ struct Enum
 			Value = 0
 			EnumType = AccessoryType
 		end
-
+		
 		module Hat
 			include EnumItem
 			Name = "Hat"
 			Value = 1
 			EnumType = AccessoryType
 		end
-
+		
 		module Hair
 			include EnumItem
 			Name = "Hair"
 			Value = 2
 			EnumType = AccessoryType
 		end
-
+		
 		module Face
 			include EnumItem
 			Name = "Face"
 			Value = 3
 			EnumType = AccessoryType
 		end
-
+		
 		module Neck
 			include EnumItem
 			Name = "Neck"
 			Value = 4
 			EnumType = AccessoryType
 		end
-
+		
 		module Shoulder
 			include EnumItem
 			Name = "Shoulder"
 			Value = 5
 			EnumType = AccessoryType
 		end
-
+		
 		module Front
 			include EnumItem
 			Name = "Front"
 			Value = 6
 			EnumType = AccessoryType
 		end
-
+		
 		module Back
 			include EnumItem
 			Name = "Back"
 			Value = 7
 			EnumType = AccessoryType
 		end
-
+		
 		module Waist
 			include EnumItem
 			Name = "Waist"
 			Value = 8
 			EnumType = AccessoryType
 		end
-
+		
 		module TShirt
 			include EnumItem
 			Name = "TShirt"
 			Value = 9
 			EnumType = AccessoryType
 		end
-
+		
 		module Shirt
 			include EnumItem
 			Name = "Shirt"
 			Value = 10
 			EnumType = AccessoryType
 		end
-
+		
 		module Pants
 			include EnumItem
 			Name = "Pants"
 			Value = 11
 			EnumType = AccessoryType
 		end
-
+		
 		module Jacket
 			include EnumItem
 			Name = "Jacket"
 			Value = 12
 			EnumType = AccessoryType
 		end
-
+		
 		module Sweater
 			include EnumItem
 			Name = "Sweater"
 			Value = 13
 			EnumType = AccessoryType
 		end
-
+		
 		module Shorts
 			include EnumItem
 			Name = "Shorts"
 			Value = 14
 			EnumType = AccessoryType
 		end
-
+		
 		module LeftShoe
 			include EnumItem
 			Name = "LeftShoe"
 			Value = 15
 			EnumType = AccessoryType
 		end
-
+		
 		module RightShoe
 			include EnumItem
 			Name = "RightShoe"
 			Value = 16
 			EnumType = AccessoryType
 		end
-
+		
 		module DressSkirt
 			include EnumItem
 			Name = "DressSkirt"
 			Value = 17
 			EnumType = AccessoryType
 		end
-
+		
 		module Eyebrow
 			include EnumItem
 			Name = "Eyebrow"
 			Value = 18
 			EnumType = AccessoryType
 		end
-
+		
 		module Eyelash
 			include EnumItem
 			Name = "Eyelash"
@@ -145,7 +145,7 @@ struct Enum
 			EnumType = AccessoryType
 		end
 	end
-
+	
 	module ActionType
 		module Nothing
 			include EnumItem
@@ -153,28 +153,28 @@ struct Enum
 			Value = 0
 			EnumType = ActionType
 		end
-
+		
 		module Pause
 			include EnumItem
 			Name = "Pause"
 			Value = 1
 			EnumType = ActionType
 		end
-
+		
 		module Lose
 			include EnumItem
 			Name = "Lose"
 			Value = 2
 			EnumType = ActionType
 		end
-
+		
 		module Draw
 			include EnumItem
 			Name = "Draw"
 			Value = 3
 			EnumType = ActionType
 		end
-
+		
 		module Win
 			include EnumItem
 			Name = "Win"
@@ -182,7 +182,7 @@ struct Enum
 			EnumType = ActionType
 		end
 	end
-
+	
 	module ActuatorRelativeTo
 		module Attachment0
 			include EnumItem
@@ -190,14 +190,14 @@ struct Enum
 			Value = 0
 			EnumType = ActuatorRelativeTo
 		end
-
+		
 		module Attachment1
 			include EnumItem
 			Name = "Attachment1"
 			Value = 1
 			EnumType = ActuatorRelativeTo
 		end
-
+		
 		module World
 			include EnumItem
 			Name = "World"
@@ -205,7 +205,7 @@ struct Enum
 			EnumType = ActuatorRelativeTo
 		end
 	end
-
+	
 	module ActuatorType
 		module None
 			include EnumItem
@@ -213,14 +213,14 @@ struct Enum
 			Value = 0
 			EnumType = ActuatorType
 		end
-
+		
 		module Motor
 			include EnumItem
 			Name = "Motor"
 			Value = 1
 			EnumType = ActuatorType
 		end
-
+		
 		module Servo
 			include EnumItem
 			Name = "Servo"
@@ -228,7 +228,7 @@ struct Enum
 			EnumType = ActuatorType
 		end
 	end
-
+	
 	module AdPortalStatus
 		module Invalid
 			include EnumItem
@@ -236,14 +236,14 @@ struct Enum
 			Value = 0
 			EnumType = AdPortalStatus
 		end
-
+		
 		module Inactive
 			include EnumItem
 			Name = "Inactive"
 			Value = 1
 			EnumType = AdPortalStatus
 		end
-
+		
 		module Active
 			include EnumItem
 			Name = "Active"
@@ -251,7 +251,7 @@ struct Enum
 			EnumType = AdPortalStatus
 		end
 	end
-
+	
 	module AdPortalType
 		module Forward
 			include EnumItem
@@ -259,7 +259,7 @@ struct Enum
 			Value = 0
 			EnumType = AdPortalType
 		end
-
+		
 		module Return
 			include EnumItem
 			Name = "Return"
@@ -267,7 +267,7 @@ struct Enum
 			EnumType = AdPortalType
 		end
 	end
-
+	
 	module AdShape
 		module HorizontalRectangle
 			include EnumItem
@@ -276,7 +276,7 @@ struct Enum
 			EnumType = AdShape
 		end
 	end
-
+	
 	module AdTeleportMethod
 		module Undefined
 			include EnumItem
@@ -284,28 +284,28 @@ struct Enum
 			Value = 0
 			EnumType = AdTeleportMethod
 		end
-
+		
 		module PortalForward
 			include EnumItem
 			Name = "PortalForward"
 			Value = 1
 			EnumType = AdTeleportMethod
 		end
-
+		
 		module PortalReturn
 			include EnumItem
 			Name = "PortalReturn"
 			Value = 2
 			EnumType = AdTeleportMethod
 		end
-
+		
 		module InGameMenuBackButton
 			include EnumItem
 			Name = "InGameMenuBackButton"
 			Value = 3
 			EnumType = AdTeleportMethod
 		end
-
+		
 		module UIBackButton
 			include EnumItem
 			Name = "UIBackButton"
@@ -313,7 +313,7 @@ struct Enum
 			EnumType = AdTeleportMethod
 		end
 	end
-
+	
 	module AdUnitStatus
 		module Inactive
 			include EnumItem
@@ -321,7 +321,7 @@ struct Enum
 			Value = 0
 			EnumType = AdUnitStatus
 		end
-
+		
 		module Active
 			include EnumItem
 			Name = "Active"
@@ -329,7 +329,7 @@ struct Enum
 			EnumType = AdUnitStatus
 		end
 	end
-
+	
 	module AdornCullingMode
 		module Automatic
 			include EnumItem
@@ -337,7 +337,7 @@ struct Enum
 			Value = 0
 			EnumType = AdornCullingMode
 		end
-
+		
 		module Never
 			include EnumItem
 			Name = "Never"
@@ -345,7 +345,7 @@ struct Enum
 			EnumType = AdornCullingMode
 		end
 	end
-
+	
 	module AlignType
 		module Parallel
 			include EnumItem
@@ -353,7 +353,7 @@ struct Enum
 			Value = 0
 			EnumType = AlignType
 		end
-
+		
 		module Perpendicular
 			include EnumItem
 			Name = "Perpendicular"
@@ -361,7 +361,7 @@ struct Enum
 			EnumType = AlignType
 		end
 	end
-
+	
 	module AlphaMode
 		module Overlay
 			include EnumItem
@@ -369,7 +369,7 @@ struct Enum
 			Value = 0
 			EnumType = AlphaMode
 		end
-
+		
 		module Transparency
 			include EnumItem
 			Name = "Transparency"
@@ -377,7 +377,7 @@ struct Enum
 			EnumType = AlphaMode
 		end
 	end
-
+	
 	module AnalyticsEconomyAction
 		module Default
 			include EnumItem
@@ -385,14 +385,14 @@ struct Enum
 			Value = 0
 			EnumType = AnalyticsEconomyAction
 		end
-
+		
 		module Acquire
 			include EnumItem
 			Name = "Acquire"
 			Value = 1
 			EnumType = AnalyticsEconomyAction
 		end
-
+		
 		module Spend
 			include EnumItem
 			Name = "Spend"
@@ -400,7 +400,7 @@ struct Enum
 			EnumType = AnalyticsEconomyAction
 		end
 	end
-
+	
 	module AnalyticsLogLevel
 		module Trace
 			include EnumItem
@@ -408,35 +408,35 @@ struct Enum
 			Value = 0
 			EnumType = AnalyticsLogLevel
 		end
-
+		
 		module Debug
 			include EnumItem
 			Name = "Debug"
 			Value = 1
 			EnumType = AnalyticsLogLevel
 		end
-
+		
 		module Information
 			include EnumItem
 			Name = "Information"
 			Value = 2
 			EnumType = AnalyticsLogLevel
 		end
-
+		
 		module Warning
 			include EnumItem
 			Name = "Warning"
 			Value = 3
 			EnumType = AnalyticsLogLevel
 		end
-
+		
 		module Error
 			include EnumItem
 			Name = "Error"
 			Value = 4
 			EnumType = AnalyticsLogLevel
 		end
-
+		
 		module Fatal
 			include EnumItem
 			Name = "Fatal"
@@ -444,7 +444,7 @@ struct Enum
 			EnumType = AnalyticsLogLevel
 		end
 	end
-
+	
 	module AnalyticsProgressionStatus
 		module Default
 			include EnumItem
@@ -452,28 +452,28 @@ struct Enum
 			Value = 0
 			EnumType = AnalyticsProgressionStatus
 		end
-
+		
 		module Begin
 			include EnumItem
 			Name = "Begin"
 			Value = 1
 			EnumType = AnalyticsProgressionStatus
 		end
-
+		
 		module Complete
 			include EnumItem
 			Name = "Complete"
 			Value = 2
 			EnumType = AnalyticsProgressionStatus
 		end
-
+		
 		module Abandon
 			include EnumItem
 			Name = "Abandon"
 			Value = 3
 			EnumType = AnalyticsProgressionStatus
 		end
-
+		
 		module Fail
 			include EnumItem
 			Name = "Fail"
@@ -481,7 +481,7 @@ struct Enum
 			EnumType = AnalyticsProgressionStatus
 		end
 	end
-
+	
 	module AnimationPriority
 		module Idle
 			include EnumItem
@@ -489,42 +489,42 @@ struct Enum
 			Value = 0
 			EnumType = AnimationPriority
 		end
-
+		
 		module Movement
 			include EnumItem
 			Name = "Movement"
 			Value = 1
 			EnumType = AnimationPriority
 		end
-
+		
 		module Action
 			include EnumItem
 			Name = "Action"
 			Value = 2
 			EnumType = AnimationPriority
 		end
-
+		
 		module Action2
 			include EnumItem
 			Name = "Action2"
 			Value = 3
 			EnumType = AnimationPriority
 		end
-
+		
 		module Action3
 			include EnumItem
 			Name = "Action3"
 			Value = 4
 			EnumType = AnimationPriority
 		end
-
+		
 		module Action4
 			include EnumItem
 			Name = "Action4"
 			Value = 5
 			EnumType = AnimationPriority
 		end
-
+		
 		module Core
 			include EnumItem
 			Name = "Core"
@@ -532,7 +532,7 @@ struct Enum
 			EnumType = AnimationPriority
 		end
 	end
-
+	
 	module AnimatorRetargetingMode
 		module Default
 			include EnumItem
@@ -540,14 +540,14 @@ struct Enum
 			Value = 0
 			EnumType = AnimatorRetargetingMode
 		end
-
+		
 		module Disabled
 			include EnumItem
 			Name = "Disabled"
 			Value = 1
 			EnumType = AnimatorRetargetingMode
 		end
-
+		
 		module Enabled
 			include EnumItem
 			Name = "Enabled"
@@ -555,7 +555,7 @@ struct Enum
 			EnumType = AnimatorRetargetingMode
 		end
 	end
-
+	
 	module AppShellActionType
 		module None
 			include EnumItem
@@ -563,70 +563,70 @@ struct Enum
 			Value = 0
 			EnumType = AppShellActionType
 		end
-
+		
 		module OpenApp
 			include EnumItem
 			Name = "OpenApp"
 			Value = 1
 			EnumType = AppShellActionType
 		end
-
+		
 		module TapChatTab
 			include EnumItem
 			Name = "TapChatTab"
 			Value = 2
 			EnumType = AppShellActionType
 		end
-
+		
 		module TapConversationEntry
 			include EnumItem
 			Name = "TapConversationEntry"
 			Value = 3
 			EnumType = AppShellActionType
 		end
-
+		
 		module TapAvatarTab
 			include EnumItem
 			Name = "TapAvatarTab"
 			Value = 4
 			EnumType = AppShellActionType
 		end
-
+		
 		module ReadConversation
 			include EnumItem
 			Name = "ReadConversation"
 			Value = 5
 			EnumType = AppShellActionType
 		end
-
+		
 		module TapGamePageTab
 			include EnumItem
 			Name = "TapGamePageTab"
 			Value = 6
 			EnumType = AppShellActionType
 		end
-
+		
 		module TapHomePageTab
 			include EnumItem
 			Name = "TapHomePageTab"
 			Value = 7
 			EnumType = AppShellActionType
 		end
-
+		
 		module GamePageLoaded
 			include EnumItem
 			Name = "GamePageLoaded"
 			Value = 8
 			EnumType = AppShellActionType
 		end
-
+		
 		module HomePageLoaded
 			include EnumItem
 			Name = "HomePageLoaded"
 			Value = 9
 			EnumType = AppShellActionType
 		end
-
+		
 		module AvatarEditorPageLoaded
 			include EnumItem
 			Name = "AvatarEditorPageLoaded"
@@ -634,7 +634,7 @@ struct Enum
 			EnumType = AppShellActionType
 		end
 	end
-
+	
 	module AppShellFeature
 		module None
 			include EnumItem
@@ -642,42 +642,42 @@ struct Enum
 			Value = 0
 			EnumType = AppShellFeature
 		end
-
+		
 		module Chat
 			include EnumItem
 			Name = "Chat"
 			Value = 1
 			EnumType = AppShellFeature
 		end
-
+		
 		module AvatarEditor
 			include EnumItem
 			Name = "AvatarEditor"
 			Value = 2
 			EnumType = AppShellFeature
 		end
-
+		
 		module GamePage
 			include EnumItem
 			Name = "GamePage"
 			Value = 3
 			EnumType = AppShellFeature
 		end
-
+		
 		module HomePage
 			include EnumItem
 			Name = "HomePage"
 			Value = 4
 			EnumType = AppShellFeature
 		end
-
+		
 		module More
 			include EnumItem
 			Name = "More"
 			Value = 5
 			EnumType = AppShellFeature
 		end
-
+		
 		module Landing
 			include EnumItem
 			Name = "Landing"
@@ -685,7 +685,7 @@ struct Enum
 			EnumType = AppShellFeature
 		end
 	end
-
+	
 	module AppUpdateStatus
 		module Unknown
 			include EnumItem
@@ -693,28 +693,28 @@ struct Enum
 			Value = 0
 			EnumType = AppUpdateStatus
 		end
-
+		
 		module NotSupported
 			include EnumItem
 			Name = "NotSupported"
 			Value = 1
 			EnumType = AppUpdateStatus
 		end
-
+		
 		module Failed
 			include EnumItem
 			Name = "Failed"
 			Value = 2
 			EnumType = AppUpdateStatus
 		end
-
+		
 		module NotAvailable
 			include EnumItem
 			Name = "NotAvailable"
 			Value = 3
 			EnumType = AppUpdateStatus
 		end
-
+		
 		module Available
 			include EnumItem
 			Name = "Available"
@@ -722,7 +722,7 @@ struct Enum
 			EnumType = AppUpdateStatus
 		end
 	end
-
+	
 	module ApplyStrokeMode
 		module Contextual
 			include EnumItem
@@ -730,7 +730,7 @@ struct Enum
 			Value = 0
 			EnumType = ApplyStrokeMode
 		end
-
+		
 		module Border
 			include EnumItem
 			Name = "Border"
@@ -738,7 +738,7 @@ struct Enum
 			EnumType = ApplyStrokeMode
 		end
 	end
-
+	
 	module AspectType
 		module FitWithinMaxSize
 			include EnumItem
@@ -746,7 +746,7 @@ struct Enum
 			Value = 0
 			EnumType = AspectType
 		end
-
+		
 		module ScaleWithParentSize
 			include EnumItem
 			Name = "ScaleWithParentSize"
@@ -754,7 +754,7 @@ struct Enum
 			EnumType = AspectType
 		end
 	end
-
+	
 	module AssetFetchStatus
 		module Success
 			include EnumItem
@@ -762,28 +762,28 @@ struct Enum
 			Value = 0
 			EnumType = AssetFetchStatus
 		end
-
+		
 		module Failure
 			include EnumItem
 			Name = "Failure"
 			Value = 1
 			EnumType = AssetFetchStatus
 		end
-
+		
 		module None
 			include EnumItem
 			Name = "None"
 			Value = 2
 			EnumType = AssetFetchStatus
 		end
-
+		
 		module Loading
 			include EnumItem
 			Name = "Loading"
 			Value = 3
 			EnumType = AssetFetchStatus
 		end
-
+		
 		module TimedOut
 			include EnumItem
 			Name = "TimedOut"
@@ -791,7 +791,7 @@ struct Enum
 			EnumType = AssetFetchStatus
 		end
 	end
-
+	
 	module AssetType
 		module Image
 			include EnumItem
@@ -799,406 +799,406 @@ struct Enum
 			Value = 1
 			EnumType = AssetType
 		end
-
+		
 		module TShirt
 			include EnumItem
 			Name = "TShirt"
 			Value = 2
 			EnumType = AssetType
 		end
-
+		
 		module Audio
 			include EnumItem
 			Name = "Audio"
 			Value = 3
 			EnumType = AssetType
 		end
-
+		
 		module Mesh
 			include EnumItem
 			Name = "Mesh"
 			Value = 4
 			EnumType = AssetType
 		end
-
+		
 		module Lua
 			include EnumItem
 			Name = "Lua"
 			Value = 5
 			EnumType = AssetType
 		end
-
+		
 		module Hat
 			include EnumItem
 			Name = "Hat"
 			Value = 8
 			EnumType = AssetType
 		end
-
+		
 		module Place
 			include EnumItem
 			Name = "Place"
 			Value = 9
 			EnumType = AssetType
 		end
-
+		
 		module Model
 			include EnumItem
 			Name = "Model"
 			Value = 10
 			EnumType = AssetType
 		end
-
+		
 		module Shirt
 			include EnumItem
 			Name = "Shirt"
 			Value = 11
 			EnumType = AssetType
 		end
-
+		
 		module Pants
 			include EnumItem
 			Name = "Pants"
 			Value = 12
 			EnumType = AssetType
 		end
-
+		
 		module Decal
 			include EnumItem
 			Name = "Decal"
 			Value = 13
 			EnumType = AssetType
 		end
-
+		
 		module Head
 			include EnumItem
 			Name = "Head"
 			Value = 17
 			EnumType = AssetType
 		end
-
+		
 		module Face
 			include EnumItem
 			Name = "Face"
 			Value = 18
 			EnumType = AssetType
 		end
-
+		
 		module Gear
 			include EnumItem
 			Name = "Gear"
 			Value = 19
 			EnumType = AssetType
 		end
-
+		
 		module Badge
 			include EnumItem
 			Name = "Badge"
 			Value = 21
 			EnumType = AssetType
 		end
-
+		
 		module Animation
 			include EnumItem
 			Name = "Animation"
 			Value = 24
 			EnumType = AssetType
 		end
-
+		
 		module Torso
 			include EnumItem
 			Name = "Torso"
 			Value = 27
 			EnumType = AssetType
 		end
-
+		
 		module RightArm
 			include EnumItem
 			Name = "RightArm"
 			Value = 28
 			EnumType = AssetType
 		end
-
+		
 		module LeftArm
 			include EnumItem
 			Name = "LeftArm"
 			Value = 29
 			EnumType = AssetType
 		end
-
+		
 		module LeftLeg
 			include EnumItem
 			Name = "LeftLeg"
 			Value = 30
 			EnumType = AssetType
 		end
-
+		
 		module RightLeg
 			include EnumItem
 			Name = "RightLeg"
 			Value = 31
 			EnumType = AssetType
 		end
-
+		
 		module Package
 			include EnumItem
 			Name = "Package"
 			Value = 32
 			EnumType = AssetType
 		end
-
+		
 		module GamePass
 			include EnumItem
 			Name = "GamePass"
 			Value = 34
 			EnumType = AssetType
 		end
-
+		
 		module Plugin
 			include EnumItem
 			Name = "Plugin"
 			Value = 38
 			EnumType = AssetType
 		end
-
+		
 		module MeshPart
 			include EnumItem
 			Name = "MeshPart"
 			Value = 40
 			EnumType = AssetType
 		end
-
+		
 		module HairAccessory
 			include EnumItem
 			Name = "HairAccessory"
 			Value = 41
 			EnumType = AssetType
 		end
-
+		
 		module FaceAccessory
 			include EnumItem
 			Name = "FaceAccessory"
 			Value = 42
 			EnumType = AssetType
 		end
-
+		
 		module NeckAccessory
 			include EnumItem
 			Name = "NeckAccessory"
 			Value = 43
 			EnumType = AssetType
 		end
-
+		
 		module ShoulderAccessory
 			include EnumItem
 			Name = "ShoulderAccessory"
 			Value = 44
 			EnumType = AssetType
 		end
-
+		
 		module FrontAccessory
 			include EnumItem
 			Name = "FrontAccessory"
 			Value = 45
 			EnumType = AssetType
 		end
-
+		
 		module BackAccessory
 			include EnumItem
 			Name = "BackAccessory"
 			Value = 46
 			EnumType = AssetType
 		end
-
+		
 		module WaistAccessory
 			include EnumItem
 			Name = "WaistAccessory"
 			Value = 47
 			EnumType = AssetType
 		end
-
+		
 		module ClimbAnimation
 			include EnumItem
 			Name = "ClimbAnimation"
 			Value = 48
 			EnumType = AssetType
 		end
-
+		
 		module DeathAnimation
 			include EnumItem
 			Name = "DeathAnimation"
 			Value = 49
 			EnumType = AssetType
 		end
-
+		
 		module FallAnimation
 			include EnumItem
 			Name = "FallAnimation"
 			Value = 50
 			EnumType = AssetType
 		end
-
+		
 		module IdleAnimation
 			include EnumItem
 			Name = "IdleAnimation"
 			Value = 51
 			EnumType = AssetType
 		end
-
+		
 		module JumpAnimation
 			include EnumItem
 			Name = "JumpAnimation"
 			Value = 52
 			EnumType = AssetType
 		end
-
+		
 		module RunAnimation
 			include EnumItem
 			Name = "RunAnimation"
 			Value = 53
 			EnumType = AssetType
 		end
-
+		
 		module SwimAnimation
 			include EnumItem
 			Name = "SwimAnimation"
 			Value = 54
 			EnumType = AssetType
 		end
-
+		
 		module WalkAnimation
 			include EnumItem
 			Name = "WalkAnimation"
 			Value = 55
 			EnumType = AssetType
 		end
-
+		
 		module PoseAnimation
 			include EnumItem
 			Name = "PoseAnimation"
 			Value = 56
 			EnumType = AssetType
 		end
-
+		
 		module MoodAnimation
 			include EnumItem
 			Name = "MoodAnimation"
 			Value = 78
 			EnumType = AssetType
 		end
-
+		
 		module EarAccessory
 			include EnumItem
 			Name = "EarAccessory"
 			Value = 57
 			EnumType = AssetType
 		end
-
+		
 		module EyeAccessory
 			include EnumItem
 			Name = "EyeAccessory"
 			Value = 58
 			EnumType = AssetType
 		end
-
+		
 		module EmoteAnimation
 			include EnumItem
 			Name = "EmoteAnimation"
 			Value = 61
 			EnumType = AssetType
 		end
-
+		
 		module Video
 			include EnumItem
 			Name = "Video"
 			Value = 62
 			EnumType = AssetType
 		end
-
+		
 		module TShirtAccessory
 			include EnumItem
 			Name = "TShirtAccessory"
 			Value = 64
 			EnumType = AssetType
 		end
-
+		
 		module ShirtAccessory
 			include EnumItem
 			Name = "ShirtAccessory"
 			Value = 65
 			EnumType = AssetType
 		end
-
+		
 		module PantsAccessory
 			include EnumItem
 			Name = "PantsAccessory"
 			Value = 66
 			EnumType = AssetType
 		end
-
+		
 		module JacketAccessory
 			include EnumItem
 			Name = "JacketAccessory"
 			Value = 67
 			EnumType = AssetType
 		end
-
+		
 		module SweaterAccessory
 			include EnumItem
 			Name = "SweaterAccessory"
 			Value = 68
 			EnumType = AssetType
 		end
-
+		
 		module ShortsAccessory
 			include EnumItem
 			Name = "ShortsAccessory"
 			Value = 69
 			EnumType = AssetType
 		end
-
+		
 		module LeftShoeAccessory
 			include EnumItem
 			Name = "LeftShoeAccessory"
 			Value = 70
 			EnumType = AssetType
 		end
-
+		
 		module RightShoeAccessory
 			include EnumItem
 			Name = "RightShoeAccessory"
 			Value = 71
 			EnumType = AssetType
 		end
-
+		
 		module DressSkirtAccessory
 			include EnumItem
 			Name = "DressSkirtAccessory"
 			Value = 72
 			EnumType = AssetType
 		end
-
+		
 		module EyebrowAccessory
 			include EnumItem
 			Name = "EyebrowAccessory"
 			Value = 76
 			EnumType = AssetType
 		end
-
+		
 		module EyelashAccessory
 			include EnumItem
 			Name = "EyelashAccessory"
 			Value = 77
 			EnumType = AssetType
 		end
-
+		
 		module DynamicHead
 			include EnumItem
 			Name = "DynamicHead"
 			Value = 79
 			EnumType = AssetType
 		end
-
+		
 		module FontFamily
 			include EnumItem
 			Name = "FontFamily"
@@ -1206,7 +1206,7 @@ struct Enum
 			EnumType = AssetType
 		end
 	end
-
+	
 	module AssetTypeVerification
 		module Default
 			include EnumItem
@@ -1214,14 +1214,14 @@ struct Enum
 			Value = 1
 			EnumType = AssetTypeVerification
 		end
-
+		
 		module ClientOnly
 			include EnumItem
 			Name = "ClientOnly"
 			Value = 2
 			EnumType = AssetTypeVerification
 		end
-
+		
 		module Always
 			include EnumItem
 			Name = "Always"
@@ -1229,7 +1229,7 @@ struct Enum
 			EnumType = AssetTypeVerification
 		end
 	end
-
+	
 	module AudioSubType
 		module Music
 			include EnumItem
@@ -1237,7 +1237,7 @@ struct Enum
 			Value = 1
 			EnumType = AudioSubType
 		end
-
+		
 		module SoundEffect
 			include EnumItem
 			Name = "SoundEffect"
@@ -1245,7 +1245,7 @@ struct Enum
 			EnumType = AudioSubType
 		end
 	end
-
+	
 	module AutoIndentRule
 		module Off
 			include EnumItem
@@ -1253,14 +1253,14 @@ struct Enum
 			Value = 0
 			EnumType = AutoIndentRule
 		end
-
+		
 		module Absolute
 			include EnumItem
 			Name = "Absolute"
 			Value = 1
 			EnumType = AutoIndentRule
 		end
-
+		
 		module Relative
 			include EnumItem
 			Name = "Relative"
@@ -1268,7 +1268,7 @@ struct Enum
 			EnumType = AutoIndentRule
 		end
 	end
-
+	
 	module AutomaticSize
 		module None
 			include EnumItem
@@ -1276,21 +1276,21 @@ struct Enum
 			Value = 0
 			EnumType = AutomaticSize
 		end
-
+		
 		module X
 			include EnumItem
 			Name = "X"
 			Value = 1
 			EnumType = AutomaticSize
 		end
-
+		
 		module Y
 			include EnumItem
 			Name = "Y"
 			Value = 2
 			EnumType = AutomaticSize
 		end
-
+		
 		module XY
 			include EnumItem
 			Name = "XY"
@@ -1298,7 +1298,7 @@ struct Enum
 			EnumType = AutomaticSize
 		end
 	end
-
+	
 	module AvatarAssetType
 		module TShirt
 			include EnumItem
@@ -1306,273 +1306,273 @@ struct Enum
 			Value = 2
 			EnumType = AvatarAssetType
 		end
-
+		
 		module Hat
 			include EnumItem
 			Name = "Hat"
 			Value = 8
 			EnumType = AvatarAssetType
 		end
-
+		
 		module HairAccessory
 			include EnumItem
 			Name = "HairAccessory"
 			Value = 41
 			EnumType = AvatarAssetType
 		end
-
+		
 		module FaceAccessory
 			include EnumItem
 			Name = "FaceAccessory"
 			Value = 42
 			EnumType = AvatarAssetType
 		end
-
+		
 		module NeckAccessory
 			include EnumItem
 			Name = "NeckAccessory"
 			Value = 43
 			EnumType = AvatarAssetType
 		end
-
+		
 		module ShoulderAccessory
 			include EnumItem
 			Name = "ShoulderAccessory"
 			Value = 44
 			EnumType = AvatarAssetType
 		end
-
+		
 		module FrontAccessory
 			include EnumItem
 			Name = "FrontAccessory"
 			Value = 45
 			EnumType = AvatarAssetType
 		end
-
+		
 		module BackAccessory
 			include EnumItem
 			Name = "BackAccessory"
 			Value = 46
 			EnumType = AvatarAssetType
 		end
-
+		
 		module WaistAccessory
 			include EnumItem
 			Name = "WaistAccessory"
 			Value = 47
 			EnumType = AvatarAssetType
 		end
-
+		
 		module Shirt
 			include EnumItem
 			Name = "Shirt"
 			Value = 11
 			EnumType = AvatarAssetType
 		end
-
+		
 		module Pants
 			include EnumItem
 			Name = "Pants"
 			Value = 12
 			EnumType = AvatarAssetType
 		end
-
+		
 		module Gear
 			include EnumItem
 			Name = "Gear"
 			Value = 19
 			EnumType = AvatarAssetType
 		end
-
+		
 		module Head
 			include EnumItem
 			Name = "Head"
 			Value = 17
 			EnumType = AvatarAssetType
 		end
-
+		
 		module Face
 			include EnumItem
 			Name = "Face"
 			Value = 18
 			EnumType = AvatarAssetType
 		end
-
+		
 		module Torso
 			include EnumItem
 			Name = "Torso"
 			Value = 27
 			EnumType = AvatarAssetType
 		end
-
+		
 		module RightArm
 			include EnumItem
 			Name = "RightArm"
 			Value = 28
 			EnumType = AvatarAssetType
 		end
-
+		
 		module LeftArm
 			include EnumItem
 			Name = "LeftArm"
 			Value = 29
 			EnumType = AvatarAssetType
 		end
-
+		
 		module LeftLeg
 			include EnumItem
 			Name = "LeftLeg"
 			Value = 30
 			EnumType = AvatarAssetType
 		end
-
+		
 		module RightLeg
 			include EnumItem
 			Name = "RightLeg"
 			Value = 31
 			EnumType = AvatarAssetType
 		end
-
+		
 		module ClimbAnimation
 			include EnumItem
 			Name = "ClimbAnimation"
 			Value = 48
 			EnumType = AvatarAssetType
 		end
-
+		
 		module FallAnimation
 			include EnumItem
 			Name = "FallAnimation"
 			Value = 50
 			EnumType = AvatarAssetType
 		end
-
+		
 		module IdleAnimation
 			include EnumItem
 			Name = "IdleAnimation"
 			Value = 51
 			EnumType = AvatarAssetType
 		end
-
+		
 		module JumpAnimation
 			include EnumItem
 			Name = "JumpAnimation"
 			Value = 52
 			EnumType = AvatarAssetType
 		end
-
+		
 		module RunAnimation
 			include EnumItem
 			Name = "RunAnimation"
 			Value = 53
 			EnumType = AvatarAssetType
 		end
-
+		
 		module SwimAnimation
 			include EnumItem
 			Name = "SwimAnimation"
 			Value = 54
 			EnumType = AvatarAssetType
 		end
-
+		
 		module WalkAnimation
 			include EnumItem
 			Name = "WalkAnimation"
 			Value = 55
 			EnumType = AvatarAssetType
 		end
-
+		
 		module MoodAnimation
 			include EnumItem
 			Name = "MoodAnimation"
 			Value = 78
 			EnumType = AvatarAssetType
 		end
-
+		
 		module EmoteAnimation
 			include EnumItem
 			Name = "EmoteAnimation"
 			Value = 61
 			EnumType = AvatarAssetType
 		end
-
+		
 		module TShirtAccessory
 			include EnumItem
 			Name = "TShirtAccessory"
 			Value = 64
 			EnumType = AvatarAssetType
 		end
-
+		
 		module ShirtAccessory
 			include EnumItem
 			Name = "ShirtAccessory"
 			Value = 65
 			EnumType = AvatarAssetType
 		end
-
+		
 		module PantsAccessory
 			include EnumItem
 			Name = "PantsAccessory"
 			Value = 66
 			EnumType = AvatarAssetType
 		end
-
+		
 		module JacketAccessory
 			include EnumItem
 			Name = "JacketAccessory"
 			Value = 67
 			EnumType = AvatarAssetType
 		end
-
+		
 		module SweaterAccessory
 			include EnumItem
 			Name = "SweaterAccessory"
 			Value = 68
 			EnumType = AvatarAssetType
 		end
-
+		
 		module ShortsAccessory
 			include EnumItem
 			Name = "ShortsAccessory"
 			Value = 69
 			EnumType = AvatarAssetType
 		end
-
+		
 		module LeftShoeAccessory
 			include EnumItem
 			Name = "LeftShoeAccessory"
 			Value = 70
 			EnumType = AvatarAssetType
 		end
-
+		
 		module RightShoeAccessory
 			include EnumItem
 			Name = "RightShoeAccessory"
 			Value = 71
 			EnumType = AvatarAssetType
 		end
-
+		
 		module DressSkirtAccessory
 			include EnumItem
 			Name = "DressSkirtAccessory"
 			Value = 72
 			EnumType = AvatarAssetType
 		end
-
+		
 		module EyebrowAccessory
 			include EnumItem
 			Name = "EyebrowAccessory"
 			Value = 76
 			EnumType = AvatarAssetType
 		end
-
+		
 		module EyelashAccessory
 			include EnumItem
 			Name = "EyelashAccessory"
 			Value = 77
 			EnumType = AvatarAssetType
 		end
-
+		
 		module DynamicHead
 			include EnumItem
 			Name = "DynamicHead"
@@ -1580,7 +1580,7 @@ struct Enum
 			EnumType = AvatarAssetType
 		end
 	end
-
+	
 	module AvatarContextMenuOption
 		module Friend
 			include EnumItem
@@ -1588,21 +1588,21 @@ struct Enum
 			Value = 0
 			EnumType = AvatarContextMenuOption
 		end
-
+		
 		module Chat
 			include EnumItem
 			Name = "Chat"
 			Value = 1
 			EnumType = AvatarContextMenuOption
 		end
-
+		
 		module Emote
 			include EnumItem
 			Name = "Emote"
 			Value = 2
 			EnumType = AvatarContextMenuOption
 		end
-
+		
 		module InspectMenu
 			include EnumItem
 			Name = "InspectMenu"
@@ -1610,7 +1610,7 @@ struct Enum
 			EnumType = AvatarContextMenuOption
 		end
 	end
-
+	
 	module AvatarItemType
 		module Asset
 			include EnumItem
@@ -1618,7 +1618,7 @@ struct Enum
 			Value = 1
 			EnumType = AvatarItemType
 		end
-
+		
 		module Bundle
 			include EnumItem
 			Name = "Bundle"
@@ -1626,7 +1626,7 @@ struct Enum
 			EnumType = AvatarItemType
 		end
 	end
-
+	
 	module AvatarPromptResult
 		module Success
 			include EnumItem
@@ -1634,14 +1634,14 @@ struct Enum
 			Value = 1
 			EnumType = AvatarPromptResult
 		end
-
+		
 		module PermissionDenied
 			include EnumItem
 			Name = "PermissionDenied"
 			Value = 2
 			EnumType = AvatarPromptResult
 		end
-
+		
 		module Failed
 			include EnumItem
 			Name = "Failed"
@@ -1649,7 +1649,7 @@ struct Enum
 			EnumType = AvatarPromptResult
 		end
 	end
-
+	
 	module AvatarThumbnailCustomizationType
 		module Closeup
 			include EnumItem
@@ -1657,7 +1657,7 @@ struct Enum
 			Value = 1
 			EnumType = AvatarThumbnailCustomizationType
 		end
-
+		
 		module FullBody
 			include EnumItem
 			Name = "FullBody"
@@ -1665,7 +1665,7 @@ struct Enum
 			EnumType = AvatarThumbnailCustomizationType
 		end
 	end
-
+	
 	module AvatarUnificationMode
 		module Default
 			include EnumItem
@@ -1673,14 +1673,14 @@ struct Enum
 			Value = 0
 			EnumType = AvatarUnificationMode
 		end
-
+		
 		module Disabled
 			include EnumItem
 			Name = "Disabled"
 			Value = 1
 			EnumType = AvatarUnificationMode
 		end
-
+		
 		module Enabled
 			include EnumItem
 			Name = "Enabled"
@@ -1688,7 +1688,7 @@ struct Enum
 			EnumType = AvatarUnificationMode
 		end
 	end
-
+	
 	module Axis
 		module X
 			include EnumItem
@@ -1696,14 +1696,14 @@ struct Enum
 			Value = 0
 			EnumType = Axis
 		end
-
+		
 		module Y
 			include EnumItem
 			Name = "Y"
 			Value = 1
 			EnumType = Axis
 		end
-
+		
 		module Z
 			include EnumItem
 			Name = "Z"
@@ -1711,7 +1711,7 @@ struct Enum
 			EnumType = Axis
 		end
 	end
-
+	
 	module BinType
 		module Script
 			include EnumItem
@@ -1719,28 +1719,28 @@ struct Enum
 			Value = 0
 			EnumType = BinType
 		end
-
+		
 		module GameTool
 			include EnumItem
 			Name = "GameTool"
 			Value = 1
 			EnumType = BinType
 		end
-
+		
 		module Grab
 			include EnumItem
 			Name = "Grab"
 			Value = 2
 			EnumType = BinType
 		end
-
+		
 		module Clone
 			include EnumItem
 			Name = "Clone"
 			Value = 3
 			EnumType = BinType
 		end
-
+		
 		module Hammer
 			include EnumItem
 			Name = "Hammer"
@@ -1748,7 +1748,7 @@ struct Enum
 			EnumType = BinType
 		end
 	end
-
+	
 	module BodyPart
 		module Head
 			include EnumItem
@@ -1756,35 +1756,35 @@ struct Enum
 			Value = 0
 			EnumType = BodyPart
 		end
-
+		
 		module Torso
 			include EnumItem
 			Name = "Torso"
 			Value = 1
 			EnumType = BodyPart
 		end
-
+		
 		module LeftArm
 			include EnumItem
 			Name = "LeftArm"
 			Value = 2
 			EnumType = BodyPart
 		end
-
+		
 		module RightArm
 			include EnumItem
 			Name = "RightArm"
 			Value = 3
 			EnumType = BodyPart
 		end
-
+		
 		module LeftLeg
 			include EnumItem
 			Name = "LeftLeg"
 			Value = 4
 			EnumType = BodyPart
 		end
-
+		
 		module RightLeg
 			include EnumItem
 			Name = "RightLeg"
@@ -1792,7 +1792,7 @@ struct Enum
 			EnumType = BodyPart
 		end
 	end
-
+	
 	module BodyPartR15
 		module Head
 			include EnumItem
@@ -1800,112 +1800,112 @@ struct Enum
 			Value = 0
 			EnumType = BodyPartR15
 		end
-
+		
 		module UpperTorso
 			include EnumItem
 			Name = "UpperTorso"
 			Value = 1
 			EnumType = BodyPartR15
 		end
-
+		
 		module LowerTorso
 			include EnumItem
 			Name = "LowerTorso"
 			Value = 2
 			EnumType = BodyPartR15
 		end
-
+		
 		module LeftFoot
 			include EnumItem
 			Name = "LeftFoot"
 			Value = 3
 			EnumType = BodyPartR15
 		end
-
+		
 		module LeftLowerLeg
 			include EnumItem
 			Name = "LeftLowerLeg"
 			Value = 4
 			EnumType = BodyPartR15
 		end
-
+		
 		module LeftUpperLeg
 			include EnumItem
 			Name = "LeftUpperLeg"
 			Value = 5
 			EnumType = BodyPartR15
 		end
-
+		
 		module RightFoot
 			include EnumItem
 			Name = "RightFoot"
 			Value = 6
 			EnumType = BodyPartR15
 		end
-
+		
 		module RightLowerLeg
 			include EnumItem
 			Name = "RightLowerLeg"
 			Value = 7
 			EnumType = BodyPartR15
 		end
-
+		
 		module RightUpperLeg
 			include EnumItem
 			Name = "RightUpperLeg"
 			Value = 8
 			EnumType = BodyPartR15
 		end
-
+		
 		module LeftHand
 			include EnumItem
 			Name = "LeftHand"
 			Value = 9
 			EnumType = BodyPartR15
 		end
-
+		
 		module LeftLowerArm
 			include EnumItem
 			Name = "LeftLowerArm"
 			Value = 10
 			EnumType = BodyPartR15
 		end
-
+		
 		module LeftUpperArm
 			include EnumItem
 			Name = "LeftUpperArm"
 			Value = 11
 			EnumType = BodyPartR15
 		end
-
+		
 		module RightHand
 			include EnumItem
 			Name = "RightHand"
 			Value = 12
 			EnumType = BodyPartR15
 		end
-
+		
 		module RightLowerArm
 			include EnumItem
 			Name = "RightLowerArm"
 			Value = 13
 			EnumType = BodyPartR15
 		end
-
+		
 		module RightUpperArm
 			include EnumItem
 			Name = "RightUpperArm"
 			Value = 14
 			EnumType = BodyPartR15
 		end
-
+		
 		module RootPart
 			include EnumItem
 			Name = "RootPart"
 			Value = 15
 			EnumType = BodyPartR15
 		end
-
+		
 		module Unknown
 			include EnumItem
 			Name = "Unknown"
@@ -1913,7 +1913,7 @@ struct Enum
 			EnumType = BodyPartR15
 		end
 	end
-
+	
 	module BorderMode
 		module Outline
 			include EnumItem
@@ -1921,14 +1921,14 @@ struct Enum
 			Value = 0
 			EnumType = BorderMode
 		end
-
+		
 		module Middle
 			include EnumItem
 			Name = "Middle"
 			Value = 1
 			EnumType = BorderMode
 		end
-
+		
 		module Inset
 			include EnumItem
 			Name = "Inset"
@@ -1936,7 +1936,7 @@ struct Enum
 			EnumType = BorderMode
 		end
 	end
-
+	
 	module BreakReason
 		module Other
 			include EnumItem
@@ -1944,21 +1944,21 @@ struct Enum
 			Value = 0
 			EnumType = BreakReason
 		end
-
+		
 		module Error
 			include EnumItem
 			Name = "Error"
 			Value = 1
 			EnumType = BreakReason
 		end
-
+		
 		module UserBreakpoint
 			include EnumItem
 			Name = "UserBreakpoint"
 			Value = 3
 			EnumType = BreakReason
 		end
-
+		
 		module SpecialBreakpoint
 			include EnumItem
 			Name = "SpecialBreakpoint"
@@ -1966,7 +1966,7 @@ struct Enum
 			EnumType = BreakReason
 		end
 	end
-
+	
 	module BreakpointRemoveReason
 		module Requested
 			include EnumItem
@@ -1974,14 +1974,14 @@ struct Enum
 			Value = 0
 			EnumType = BreakpointRemoveReason
 		end
-
+		
 		module ScriptChanged
 			include EnumItem
 			Name = "ScriptChanged"
 			Value = 1
 			EnumType = BreakpointRemoveReason
 		end
-
+		
 		module ScriptRemoved
 			include EnumItem
 			Name = "ScriptRemoved"
@@ -1989,7 +1989,7 @@ struct Enum
 			EnumType = BreakpointRemoveReason
 		end
 	end
-
+	
 	module BulkMoveMode
 		module FireAllEvents
 			include EnumItem
@@ -1997,7 +1997,7 @@ struct Enum
 			Value = 0
 			EnumType = BulkMoveMode
 		end
-
+		
 		module FireCFrameChanged
 			include EnumItem
 			Name = "FireCFrameChanged"
@@ -2005,7 +2005,7 @@ struct Enum
 			EnumType = BulkMoveMode
 		end
 	end
-
+	
 	module BundleType
 		module BodyParts
 			include EnumItem
@@ -2013,28 +2013,28 @@ struct Enum
 			Value = 1
 			EnumType = BundleType
 		end
-
+		
 		module Animations
 			include EnumItem
 			Name = "Animations"
 			Value = 2
 			EnumType = BundleType
 		end
-
+		
 		module Shoes
 			include EnumItem
 			Name = "Shoes"
 			Value = 3
 			EnumType = BundleType
 		end
-
+		
 		module DynamicHead
 			include EnumItem
 			Name = "DynamicHead"
 			Value = 4
 			EnumType = BundleType
 		end
-
+		
 		module DynamicHeadAvatar
 			include EnumItem
 			Name = "DynamicHeadAvatar"
@@ -2042,7 +2042,7 @@ struct Enum
 			EnumType = BundleType
 		end
 	end
-
+	
 	module Button
 		module Jump
 			include EnumItem
@@ -2050,7 +2050,7 @@ struct Enum
 			Value = 32
 			EnumType = Button
 		end
-
+		
 		module Dismount
 			include EnumItem
 			Name = "Dismount"
@@ -2058,7 +2058,7 @@ struct Enum
 			EnumType = Button
 		end
 	end
-
+	
 	module ButtonStyle
 		module Custom
 			include EnumItem
@@ -2066,35 +2066,35 @@ struct Enum
 			Value = 0
 			EnumType = ButtonStyle
 		end
-
+		
 		module RobloxButtonDefault
 			include EnumItem
 			Name = "RobloxButtonDefault"
 			Value = 1
 			EnumType = ButtonStyle
 		end
-
+		
 		module RobloxButton
 			include EnumItem
 			Name = "RobloxButton"
 			Value = 2
 			EnumType = ButtonStyle
 		end
-
+		
 		module RobloxRoundButton
 			include EnumItem
 			Name = "RobloxRoundButton"
 			Value = 3
 			EnumType = ButtonStyle
 		end
-
+		
 		module RobloxRoundDefaultButton
 			include EnumItem
 			Name = "RobloxRoundDefaultButton"
 			Value = 4
 			EnumType = ButtonStyle
 		end
-
+		
 		module RobloxRoundDropdownButton
 			include EnumItem
 			Name = "RobloxRoundDropdownButton"
@@ -2102,7 +2102,7 @@ struct Enum
 			EnumType = ButtonStyle
 		end
 	end
-
+	
 	module CageType
 		module Inner
 			include EnumItem
@@ -2110,7 +2110,7 @@ struct Enum
 			Value = 0
 			EnumType = CageType
 		end
-
+		
 		module Outer
 			include EnumItem
 			Name = "Outer"
@@ -2118,7 +2118,7 @@ struct Enum
 			EnumType = CageType
 		end
 	end
-
+	
 	module CameraMode
 		module Classic
 			include EnumItem
@@ -2126,7 +2126,7 @@ struct Enum
 			Value = 0
 			EnumType = CameraMode
 		end
-
+		
 		module LockFirstPerson
 			include EnumItem
 			Name = "LockFirstPerson"
@@ -2134,7 +2134,7 @@ struct Enum
 			EnumType = CameraMode
 		end
 	end
-
+	
 	module CameraPanMode
 		module Classic
 			include EnumItem
@@ -2142,7 +2142,7 @@ struct Enum
 			Value = 0
 			EnumType = CameraPanMode
 		end
-
+		
 		module EdgeBump
 			include EnumItem
 			Name = "EdgeBump"
@@ -2150,7 +2150,7 @@ struct Enum
 			EnumType = CameraPanMode
 		end
 	end
-
+	
 	module CameraType
 		module Fixed
 			include EnumItem
@@ -2158,49 +2158,49 @@ struct Enum
 			Value = 0
 			EnumType = CameraType
 		end
-
+		
 		module Watch
 			include EnumItem
 			Name = "Watch"
 			Value = 2
 			EnumType = CameraType
 		end
-
+		
 		module Attach
 			include EnumItem
 			Name = "Attach"
 			Value = 1
 			EnumType = CameraType
 		end
-
+		
 		module Track
 			include EnumItem
 			Name = "Track"
 			Value = 3
 			EnumType = CameraType
 		end
-
+		
 		module Follow
 			include EnumItem
 			Name = "Follow"
 			Value = 4
 			EnumType = CameraType
 		end
-
+		
 		module Custom
 			include EnumItem
 			Name = "Custom"
 			Value = 5
 			EnumType = CameraType
 		end
-
+		
 		module Scriptable
 			include EnumItem
 			Name = "Scriptable"
 			Value = 6
 			EnumType = CameraType
 		end
-
+		
 		module Orbital
 			include EnumItem
 			Name = "Orbital"
@@ -2208,7 +2208,7 @@ struct Enum
 			EnumType = CameraType
 		end
 	end
-
+	
 	module CatalogCategoryFilter
 		module None
 			include EnumItem
@@ -2216,35 +2216,35 @@ struct Enum
 			Value = 1
 			EnumType = CatalogCategoryFilter
 		end
-
+		
 		module Featured
 			include EnumItem
 			Name = "Featured"
 			Value = 2
 			EnumType = CatalogCategoryFilter
 		end
-
+		
 		module Collectibles
 			include EnumItem
 			Name = "Collectibles"
 			Value = 3
 			EnumType = CatalogCategoryFilter
 		end
-
+		
 		module CommunityCreations
 			include EnumItem
 			Name = "CommunityCreations"
 			Value = 4
 			EnumType = CatalogCategoryFilter
 		end
-
+		
 		module Premium
 			include EnumItem
 			Name = "Premium"
 			Value = 5
 			EnumType = CatalogCategoryFilter
 		end
-
+		
 		module Recommended
 			include EnumItem
 			Name = "Recommended"
@@ -2252,7 +2252,7 @@ struct Enum
 			EnumType = CatalogCategoryFilter
 		end
 	end
-
+	
 	module CatalogSortAggregation
 		module Past12Hours
 			include EnumItem
@@ -2260,35 +2260,35 @@ struct Enum
 			Value = 1
 			EnumType = CatalogSortAggregation
 		end
-
+		
 		module PastDay
 			include EnumItem
 			Name = "PastDay"
 			Value = 2
 			EnumType = CatalogSortAggregation
 		end
-
+		
 		module Past3Days
 			include EnumItem
 			Name = "Past3Days"
 			Value = 3
 			EnumType = CatalogSortAggregation
 		end
-
+		
 		module PastWeek
 			include EnumItem
 			Name = "PastWeek"
 			Value = 4
 			EnumType = CatalogSortAggregation
 		end
-
+		
 		module PastMonth
 			include EnumItem
 			Name = "PastMonth"
 			Value = 5
 			EnumType = CatalogSortAggregation
 		end
-
+		
 		module AllTime
 			include EnumItem
 			Name = "AllTime"
@@ -2296,7 +2296,7 @@ struct Enum
 			EnumType = CatalogSortAggregation
 		end
 	end
-
+	
 	module CatalogSortType
 		module Relevance
 			include EnumItem
@@ -2304,35 +2304,35 @@ struct Enum
 			Value = 1
 			EnumType = CatalogSortType
 		end
-
+		
 		module PriceHighToLow
 			include EnumItem
 			Name = "PriceHighToLow"
 			Value = 2
 			EnumType = CatalogSortType
 		end
-
+		
 		module PriceLowToHigh
 			include EnumItem
 			Name = "PriceLowToHigh"
 			Value = 3
 			EnumType = CatalogSortType
 		end
-
+		
 		module MostFavorited
 			include EnumItem
 			Name = "MostFavorited"
 			Value = 5
 			EnumType = CatalogSortType
 		end
-
+		
 		module RecentlyCreated
 			include EnumItem
 			Name = "RecentlyCreated"
 			Value = 6
 			EnumType = CatalogSortType
 		end
-
+		
 		module Bestselling
 			include EnumItem
 			Name = "Bestselling"
@@ -2340,7 +2340,7 @@ struct Enum
 			EnumType = CatalogSortType
 		end
 	end
-
+	
 	module CellBlock
 		module Solid
 			include EnumItem
@@ -2348,28 +2348,28 @@ struct Enum
 			Value = 0
 			EnumType = CellBlock
 		end
-
+		
 		module VerticalWedge
 			include EnumItem
 			Name = "VerticalWedge"
 			Value = 1
 			EnumType = CellBlock
 		end
-
+		
 		module CornerWedge
 			include EnumItem
 			Name = "CornerWedge"
 			Value = 2
 			EnumType = CellBlock
 		end
-
+		
 		module InverseCornerWedge
 			include EnumItem
 			Name = "InverseCornerWedge"
 			Value = 3
 			EnumType = CellBlock
 		end
-
+		
 		module HorizontalWedge
 			include EnumItem
 			Name = "HorizontalWedge"
@@ -2377,7 +2377,7 @@ struct Enum
 			EnumType = CellBlock
 		end
 	end
-
+	
 	module CellMaterial
 		module Empty
 			include EnumItem
@@ -2385,119 +2385,119 @@ struct Enum
 			Value = 0
 			EnumType = CellMaterial
 		end
-
+		
 		module Grass
 			include EnumItem
 			Name = "Grass"
 			Value = 1
 			EnumType = CellMaterial
 		end
-
+		
 		module Sand
 			include EnumItem
 			Name = "Sand"
 			Value = 2
 			EnumType = CellMaterial
 		end
-
+		
 		module Brick
 			include EnumItem
 			Name = "Brick"
 			Value = 3
 			EnumType = CellMaterial
 		end
-
+		
 		module Granite
 			include EnumItem
 			Name = "Granite"
 			Value = 4
 			EnumType = CellMaterial
 		end
-
+		
 		module Asphalt
 			include EnumItem
 			Name = "Asphalt"
 			Value = 5
 			EnumType = CellMaterial
 		end
-
+		
 		module Iron
 			include EnumItem
 			Name = "Iron"
 			Value = 6
 			EnumType = CellMaterial
 		end
-
+		
 		module Aluminum
 			include EnumItem
 			Name = "Aluminum"
 			Value = 7
 			EnumType = CellMaterial
 		end
-
+		
 		module Gold
 			include EnumItem
 			Name = "Gold"
 			Value = 8
 			EnumType = CellMaterial
 		end
-
+		
 		module WoodPlank
 			include EnumItem
 			Name = "WoodPlank"
 			Value = 9
 			EnumType = CellMaterial
 		end
-
+		
 		module WoodLog
 			include EnumItem
 			Name = "WoodLog"
 			Value = 10
 			EnumType = CellMaterial
 		end
-
+		
 		module Gravel
 			include EnumItem
 			Name = "Gravel"
 			Value = 11
 			EnumType = CellMaterial
 		end
-
+		
 		module CinderBlock
 			include EnumItem
 			Name = "CinderBlock"
 			Value = 12
 			EnumType = CellMaterial
 		end
-
+		
 		module MossyStone
 			include EnumItem
 			Name = "MossyStone"
 			Value = 13
 			EnumType = CellMaterial
 		end
-
+		
 		module Cement
 			include EnumItem
 			Name = "Cement"
 			Value = 14
 			EnumType = CellMaterial
 		end
-
+		
 		module RedPlastic
 			include EnumItem
 			Name = "RedPlastic"
 			Value = 15
 			EnumType = CellMaterial
 		end
-
+		
 		module BluePlastic
 			include EnumItem
 			Name = "BluePlastic"
 			Value = 16
 			EnumType = CellMaterial
 		end
-
+		
 		module Water
 			include EnumItem
 			Name = "Water"
@@ -2505,7 +2505,7 @@ struct Enum
 			EnumType = CellMaterial
 		end
 	end
-
+	
 	module CellOrientation
 		module NegZ
 			include EnumItem
@@ -2513,21 +2513,21 @@ struct Enum
 			Value = 0
 			EnumType = CellOrientation
 		end
-
+		
 		module X
 			include EnumItem
 			Name = "X"
 			Value = 1
 			EnumType = CellOrientation
 		end
-
+		
 		module Z
 			include EnumItem
 			Name = "Z"
 			Value = 2
 			EnumType = CellOrientation
 		end
-
+		
 		module NegX
 			include EnumItem
 			Name = "NegX"
@@ -2535,7 +2535,7 @@ struct Enum
 			EnumType = CellOrientation
 		end
 	end
-
+	
 	module CenterDialogType
 		module UnsolicitedDialog
 			include EnumItem
@@ -2543,21 +2543,21 @@ struct Enum
 			Value = 1
 			EnumType = CenterDialogType
 		end
-
+		
 		module PlayerInitiatedDialog
 			include EnumItem
 			Name = "PlayerInitiatedDialog"
 			Value = 2
 			EnumType = CenterDialogType
 		end
-
+		
 		module ModalDialog
 			include EnumItem
 			Name = "ModalDialog"
 			Value = 3
 			EnumType = CenterDialogType
 		end
-
+		
 		module QuitDialog
 			include EnumItem
 			Name = "QuitDialog"
@@ -2565,7 +2565,7 @@ struct Enum
 			EnumType = CenterDialogType
 		end
 	end
-
+	
 	module ChatCallbackType
 		module OnCreatingChatWindow
 			include EnumItem
@@ -2573,21 +2573,21 @@ struct Enum
 			Value = 1
 			EnumType = ChatCallbackType
 		end
-
+		
 		module OnClientSendingMessage
 			include EnumItem
 			Name = "OnClientSendingMessage"
 			Value = 2
 			EnumType = ChatCallbackType
 		end
-
+		
 		module OnClientFormattingMessage
 			include EnumItem
 			Name = "OnClientFormattingMessage"
 			Value = 3
 			EnumType = ChatCallbackType
 		end
-
+		
 		module OnServerReceivingMessage
 			include EnumItem
 			Name = "OnServerReceivingMessage"
@@ -2595,7 +2595,7 @@ struct Enum
 			EnumType = ChatCallbackType
 		end
 	end
-
+	
 	module ChatColor
 		module Blue
 			include EnumItem
@@ -2603,21 +2603,21 @@ struct Enum
 			Value = 0
 			EnumType = ChatColor
 		end
-
+		
 		module Green
 			include EnumItem
 			Name = "Green"
 			Value = 1
 			EnumType = ChatColor
 		end
-
+		
 		module Red
 			include EnumItem
 			Name = "Red"
 			Value = 2
 			EnumType = ChatColor
 		end
-
+		
 		module White
 			include EnumItem
 			Name = "White"
@@ -2625,7 +2625,7 @@ struct Enum
 			EnumType = ChatColor
 		end
 	end
-
+	
 	module ChatMode
 		module Menu
 			include EnumItem
@@ -2633,7 +2633,7 @@ struct Enum
 			Value = 0
 			EnumType = ChatMode
 		end
-
+		
 		module TextAndMenu
 			include EnumItem
 			Name = "TextAndMenu"
@@ -2641,7 +2641,7 @@ struct Enum
 			EnumType = ChatMode
 		end
 	end
-
+	
 	module ChatPrivacyMode
 		module AllUsers
 			include EnumItem
@@ -2649,14 +2649,14 @@ struct Enum
 			Value = 0
 			EnumType = ChatPrivacyMode
 		end
-
+		
 		module NoOne
 			include EnumItem
 			Name = "NoOne"
 			Value = 1
 			EnumType = ChatPrivacyMode
 		end
-
+		
 		module Friends
 			include EnumItem
 			Name = "Friends"
@@ -2664,7 +2664,7 @@ struct Enum
 			EnumType = ChatPrivacyMode
 		end
 	end
-
+	
 	module ChatStyle
 		module Classic
 			include EnumItem
@@ -2672,14 +2672,14 @@ struct Enum
 			Value = 0
 			EnumType = ChatStyle
 		end
-
+		
 		module Bubble
 			include EnumItem
 			Name = "Bubble"
 			Value = 1
 			EnumType = ChatStyle
 		end
-
+		
 		module ClassicAndBubble
 			include EnumItem
 			Name = "ClassicAndBubble"
@@ -2687,7 +2687,7 @@ struct Enum
 			EnumType = ChatStyle
 		end
 	end
-
+	
 	module ChatVersion
 		module LegacyChatService
 			include EnumItem
@@ -2695,7 +2695,7 @@ struct Enum
 			Value = 0
 			EnumType = ChatVersion
 		end
-
+		
 		module TextChatService
 			include EnumItem
 			Name = "TextChatService"
@@ -2703,7 +2703,7 @@ struct Enum
 			EnumType = ChatVersion
 		end
 	end
-
+	
 	module ClientAnimatorThrottlingMode
 		module Default
 			include EnumItem
@@ -2711,14 +2711,14 @@ struct Enum
 			Value = 0
 			EnumType = ClientAnimatorThrottlingMode
 		end
-
+		
 		module Disabled
 			include EnumItem
 			Name = "Disabled"
 			Value = 1
 			EnumType = ClientAnimatorThrottlingMode
 		end
-
+		
 		module Enabled
 			include EnumItem
 			Name = "Enabled"
@@ -2726,7 +2726,7 @@ struct Enum
 			EnumType = ClientAnimatorThrottlingMode
 		end
 	end
-
+	
 	module CollisionFidelity
 		module Default
 			include EnumItem
@@ -2734,28 +2734,28 @@ struct Enum
 			Value = 0
 			EnumType = CollisionFidelity
 		end
-
+		
 		module Hull
 			include EnumItem
 			Name = "Hull"
 			Value = 1
 			EnumType = CollisionFidelity
 		end
-
+		
 		module Box
 			include EnumItem
 			Name = "Box"
 			Value = 2
 			EnumType = CollisionFidelity
 		end
-
+		
 		module PreciseConvexDecomposition
 			include EnumItem
 			Name = "PreciseConvexDecomposition"
 			Value = 3
 			EnumType = CollisionFidelity
 		end
-
+		
 		module DynamicPreciseConvexDecomposition
 			include EnumItem
 			Name = "DynamicPreciseConvexDecomposition"
@@ -2763,7 +2763,7 @@ struct Enum
 			EnumType = CollisionFidelity
 		end
 	end
-
+	
 	module CommandPermission
 		module Plugin
 			include EnumItem
@@ -2771,7 +2771,7 @@ struct Enum
 			Value = 0
 			EnumType = CommandPermission
 		end
-
+		
 		module LocalUser
 			include EnumItem
 			Name = "LocalUser"
@@ -2779,7 +2779,7 @@ struct Enum
 			EnumType = CommandPermission
 		end
 	end
-
+	
 	module CompletionItemKind
 		module Text
 			include EnumItem
@@ -2787,168 +2787,168 @@ struct Enum
 			Value = 1
 			EnumType = CompletionItemKind
 		end
-
+		
 		module Method
 			include EnumItem
 			Name = "Method"
 			Value = 2
 			EnumType = CompletionItemKind
 		end
-
+		
 		module Function
 			include EnumItem
 			Name = "Function"
 			Value = 3
 			EnumType = CompletionItemKind
 		end
-
+		
 		module Constructor
 			include EnumItem
 			Name = "Constructor"
 			Value = 4
 			EnumType = CompletionItemKind
 		end
-
+		
 		module Field
 			include EnumItem
 			Name = "Field"
 			Value = 5
 			EnumType = CompletionItemKind
 		end
-
+		
 		module Variable
 			include EnumItem
 			Name = "Variable"
 			Value = 6
 			EnumType = CompletionItemKind
 		end
-
+		
 		module Class
 			include EnumItem
 			Name = "Class"
 			Value = 7
 			EnumType = CompletionItemKind
 		end
-
+		
 		module Interface
 			include EnumItem
 			Name = "Interface"
 			Value = 8
 			EnumType = CompletionItemKind
 		end
-
+		
 		module Module
 			include EnumItem
 			Name = "Module"
 			Value = 9
 			EnumType = CompletionItemKind
 		end
-
+		
 		module Property
 			include EnumItem
 			Name = "Property"
 			Value = 10
 			EnumType = CompletionItemKind
 		end
-
+		
 		module Unit
 			include EnumItem
 			Name = "Unit"
 			Value = 11
 			EnumType = CompletionItemKind
 		end
-
+		
 		module Value
 			include EnumItem
 			Name = "Value"
 			Value = 12
 			EnumType = CompletionItemKind
 		end
-
+		
 		module Enum
 			include EnumItem
 			Name = "Enum"
 			Value = 13
 			EnumType = CompletionItemKind
 		end
-
+		
 		module Keyword
 			include EnumItem
 			Name = "Keyword"
 			Value = 14
 			EnumType = CompletionItemKind
 		end
-
+		
 		module Snippet
 			include EnumItem
 			Name = "Snippet"
 			Value = 15
 			EnumType = CompletionItemKind
 		end
-
+		
 		module Color
 			include EnumItem
 			Name = "Color"
 			Value = 16
 			EnumType = CompletionItemKind
 		end
-
+		
 		module File
 			include EnumItem
 			Name = "File"
 			Value = 17
 			EnumType = CompletionItemKind
 		end
-
+		
 		module Reference
 			include EnumItem
 			Name = "Reference"
 			Value = 18
 			EnumType = CompletionItemKind
 		end
-
+		
 		module Folder
 			include EnumItem
 			Name = "Folder"
 			Value = 19
 			EnumType = CompletionItemKind
 		end
-
+		
 		module EnumMember
 			include EnumItem
 			Name = "EnumMember"
 			Value = 20
 			EnumType = CompletionItemKind
 		end
-
+		
 		module Constant
 			include EnumItem
 			Name = "Constant"
 			Value = 21
 			EnumType = CompletionItemKind
 		end
-
+		
 		module Struct
 			include EnumItem
 			Name = "Struct"
 			Value = 22
 			EnumType = CompletionItemKind
 		end
-
+		
 		module Event
 			include EnumItem
 			Name = "Event"
 			Value = 23
 			EnumType = CompletionItemKind
 		end
-
+		
 		module Operator
 			include EnumItem
 			Name = "Operator"
 			Value = 24
 			EnumType = CompletionItemKind
 		end
-
+		
 		module TypeParameter
 			include EnumItem
 			Name = "TypeParameter"
@@ -2956,7 +2956,7 @@ struct Enum
 			EnumType = CompletionItemKind
 		end
 	end
-
+	
 	module CompletionItemTag
 		module Deprecated
 			include EnumItem
@@ -2964,56 +2964,56 @@ struct Enum
 			Value = 1
 			EnumType = CompletionItemTag
 		end
-
+		
 		module IncorrectIndexType
 			include EnumItem
 			Name = "IncorrectIndexType"
 			Value = 2
 			EnumType = CompletionItemTag
 		end
-
+		
 		module PluginPermissions
 			include EnumItem
 			Name = "PluginPermissions"
 			Value = 3
 			EnumType = CompletionItemTag
 		end
-
+		
 		module CommandLinePermissions
 			include EnumItem
 			Name = "CommandLinePermissions"
 			Value = 4
 			EnumType = CompletionItemTag
 		end
-
+		
 		module RobloxPermissions
 			include EnumItem
 			Name = "RobloxPermissions"
 			Value = 5
 			EnumType = CompletionItemTag
 		end
-
+		
 		module AddParens
 			include EnumItem
 			Name = "AddParens"
 			Value = 6
 			EnumType = CompletionItemTag
 		end
-
+		
 		module PutCursorInParens
 			include EnumItem
 			Name = "PutCursorInParens"
 			Value = 7
 			EnumType = CompletionItemTag
 		end
-
+		
 		module TypeCorrect
 			include EnumItem
 			Name = "TypeCorrect"
 			Value = 8
 			EnumType = CompletionItemTag
 		end
-
+		
 		module ClientServerBoundaryViolation
 			include EnumItem
 			Name = "ClientServerBoundaryViolation"
@@ -3021,7 +3021,7 @@ struct Enum
 			EnumType = CompletionItemTag
 		end
 	end
-
+	
 	module CompletionTriggerKind
 		module Invoked
 			include EnumItem
@@ -3029,14 +3029,14 @@ struct Enum
 			Value = 1
 			EnumType = CompletionTriggerKind
 		end
-
+		
 		module TriggerCharacter
 			include EnumItem
 			Name = "TriggerCharacter"
 			Value = 2
 			EnumType = CompletionTriggerKind
 		end
-
+		
 		module TriggerForIncompleteCompletions
 			include EnumItem
 			Name = "TriggerForIncompleteCompletions"
@@ -3044,7 +3044,7 @@ struct Enum
 			EnumType = CompletionTriggerKind
 		end
 	end
-
+	
 	module ComputerCameraMovementMode
 		module Default
 			include EnumItem
@@ -3052,28 +3052,28 @@ struct Enum
 			Value = 0
 			EnumType = ComputerCameraMovementMode
 		end
-
+		
 		module Follow
 			include EnumItem
 			Name = "Follow"
 			Value = 2
 			EnumType = ComputerCameraMovementMode
 		end
-
+		
 		module Classic
 			include EnumItem
 			Name = "Classic"
 			Value = 1
 			EnumType = ComputerCameraMovementMode
 		end
-
+		
 		module Orbital
 			include EnumItem
 			Name = "Orbital"
 			Value = 3
 			EnumType = ComputerCameraMovementMode
 		end
-
+		
 		module CameraToggle
 			include EnumItem
 			Name = "CameraToggle"
@@ -3081,7 +3081,7 @@ struct Enum
 			EnumType = ComputerCameraMovementMode
 		end
 	end
-
+	
 	module ComputerMovementMode
 		module Default
 			include EnumItem
@@ -3089,14 +3089,14 @@ struct Enum
 			Value = 0
 			EnumType = ComputerMovementMode
 		end
-
+		
 		module KeyboardMouse
 			include EnumItem
 			Name = "KeyboardMouse"
 			Value = 1
 			EnumType = ComputerMovementMode
 		end
-
+		
 		module ClickToMove
 			include EnumItem
 			Name = "ClickToMove"
@@ -3104,7 +3104,7 @@ struct Enum
 			EnumType = ComputerMovementMode
 		end
 	end
-
+	
 	module ConnectionError
 		module OK
 			include EnumItem
@@ -3112,427 +3112,427 @@ struct Enum
 			Value = 0
 			EnumType = ConnectionError
 		end
-
+		
 		module Unknown
 			include EnumItem
 			Name = "Unknown"
 			Value = 1
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectErrors
 			include EnumItem
 			Name = "DisconnectErrors"
 			Value = 256
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectBadhash
 			include EnumItem
 			Name = "DisconnectBadhash"
 			Value = 257
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectSecurityKeyMismatch
 			include EnumItem
 			Name = "DisconnectSecurityKeyMismatch"
 			Value = 258
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectNewSecurityKeyMismatch
 			include EnumItem
 			Name = "DisconnectNewSecurityKeyMismatch"
 			Value = 272
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectProtocolMismatch
 			include EnumItem
 			Name = "DisconnectProtocolMismatch"
 			Value = 259
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectReceivePacketError
 			include EnumItem
 			Name = "DisconnectReceivePacketError"
 			Value = 260
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectReceivePacketStreamError
 			include EnumItem
 			Name = "DisconnectReceivePacketStreamError"
 			Value = 261
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectSendPacketError
 			include EnumItem
 			Name = "DisconnectSendPacketError"
 			Value = 262
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectIllegalTeleport
 			include EnumItem
 			Name = "DisconnectIllegalTeleport"
 			Value = 263
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectDuplicatePlayer
 			include EnumItem
 			Name = "DisconnectDuplicatePlayer"
 			Value = 264
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectDuplicateTicket
 			include EnumItem
 			Name = "DisconnectDuplicateTicket"
 			Value = 265
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectTimeout
 			include EnumItem
 			Name = "DisconnectTimeout"
 			Value = 266
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectLuaKick
 			include EnumItem
 			Name = "DisconnectLuaKick"
 			Value = 267
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectOnRemoteSysStats
 			include EnumItem
 			Name = "DisconnectOnRemoteSysStats"
 			Value = 268
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectHashTimeout
 			include EnumItem
 			Name = "DisconnectHashTimeout"
 			Value = 269
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectCloudEditKick
 			include EnumItem
 			Name = "DisconnectCloudEditKick"
 			Value = 270
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectPlayerless
 			include EnumItem
 			Name = "DisconnectPlayerless"
 			Value = 271
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectEvicted
 			include EnumItem
 			Name = "DisconnectEvicted"
 			Value = 273
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectDevMaintenance
 			include EnumItem
 			Name = "DisconnectDevMaintenance"
 			Value = 274
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectRobloxMaintenance
 			include EnumItem
 			Name = "DisconnectRobloxMaintenance"
 			Value = 275
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectRejoin
 			include EnumItem
 			Name = "DisconnectRejoin"
 			Value = 276
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectConnectionLost
 			include EnumItem
 			Name = "DisconnectConnectionLost"
 			Value = 277
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectIdle
 			include EnumItem
 			Name = "DisconnectIdle"
 			Value = 278
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectRaknetErrors
 			include EnumItem
 			Name = "DisconnectRaknetErrors"
 			Value = 279
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectWrongVersion
 			include EnumItem
 			Name = "DisconnectWrongVersion"
 			Value = 280
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectBySecurityPolicy
 			include EnumItem
 			Name = "DisconnectBySecurityPolicy"
 			Value = 281
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectBlockedIP
 			include EnumItem
 			Name = "DisconnectBlockedIP"
 			Value = 282
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectClientFailure
 			include EnumItem
 			Name = "DisconnectClientFailure"
 			Value = 284
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectClientRequest
 			include EnumItem
 			Name = "DisconnectClientRequest"
 			Value = 285
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectModeratedGame
 			include EnumItem
 			Name = "DisconnectModeratedGame"
 			Value = 287
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectRomarkEndOfTest
 			include EnumItem
 			Name = "DisconnectRomarkEndOfTest"
 			Value = 293
 			EnumType = ConnectionError
 		end
-
+		
 		module ReplicatorTimeout
 			include EnumItem
 			Name = "ReplicatorTimeout"
 			Value = 290
 			EnumType = ConnectionError
 		end
-
+		
 		module PlayerRemoved
 			include EnumItem
 			Name = "PlayerRemoved"
 			Value = 291
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectOutOfMemoryKeepPlayingLeave
 			include EnumItem
 			Name = "DisconnectOutOfMemoryKeepPlayingLeave"
 			Value = 292
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectCollaboratorPermissionRevoked
 			include EnumItem
 			Name = "DisconnectCollaboratorPermissionRevoked"
 			Value = 294
 			EnumType = ConnectionError
 		end
-
+		
 		module DisconnectCollaboratorUnderage
 			include EnumItem
 			Name = "DisconnectCollaboratorUnderage"
 			Value = 295
 			EnumType = ConnectionError
 		end
-
+		
 		module PlacelaunchErrors
 			include EnumItem
 			Name = "PlacelaunchErrors"
 			Value = 512
 			EnumType = ConnectionError
 		end
-
+		
 		module PlacelaunchDisabled
 			include EnumItem
 			Name = "PlacelaunchDisabled"
 			Value = 515
 			EnumType = ConnectionError
 		end
-
+		
 		module PlacelaunchError
 			include EnumItem
 			Name = "PlacelaunchError"
 			Value = 516
 			EnumType = ConnectionError
 		end
-
+		
 		module PlacelaunchGameEnded
 			include EnumItem
 			Name = "PlacelaunchGameEnded"
 			Value = 517
 			EnumType = ConnectionError
 		end
-
+		
 		module PlacelaunchGameFull
 			include EnumItem
 			Name = "PlacelaunchGameFull"
 			Value = 518
 			EnumType = ConnectionError
 		end
-
+		
 		module PlacelaunchUserLeft
 			include EnumItem
 			Name = "PlacelaunchUserLeft"
 			Value = 522
 			EnumType = ConnectionError
 		end
-
+		
 		module PlacelaunchRestricted
 			include EnumItem
 			Name = "PlacelaunchRestricted"
 			Value = 523
 			EnumType = ConnectionError
 		end
-
+		
 		module PlacelaunchUnauthorized
 			include EnumItem
 			Name = "PlacelaunchUnauthorized"
 			Value = 524
 			EnumType = ConnectionError
 		end
-
+		
 		module PlacelaunchFlooded
 			include EnumItem
 			Name = "PlacelaunchFlooded"
 			Value = 525
 			EnumType = ConnectionError
 		end
-
+		
 		module PlacelaunchHashExpired
 			include EnumItem
 			Name = "PlacelaunchHashExpired"
 			Value = 526
 			EnumType = ConnectionError
 		end
-
+		
 		module PlacelaunchHashException
 			include EnumItem
 			Name = "PlacelaunchHashException"
 			Value = 527
 			EnumType = ConnectionError
 		end
-
+		
 		module PlacelaunchPartyCannotFit
 			include EnumItem
 			Name = "PlacelaunchPartyCannotFit"
 			Value = 528
 			EnumType = ConnectionError
 		end
-
+		
 		module PlacelaunchHttpError
 			include EnumItem
 			Name = "PlacelaunchHttpError"
 			Value = 529
 			EnumType = ConnectionError
 		end
-
+		
 		module PlacelaunchUserPrivacyUnauthorized
 			include EnumItem
 			Name = "PlacelaunchUserPrivacyUnauthorized"
 			Value = 533
 			EnumType = ConnectionError
 		end
-
+		
 		module PlacelaunchCustomMessage
 			include EnumItem
 			Name = "PlacelaunchCustomMessage"
 			Value = 610
 			EnumType = ConnectionError
 		end
-
+		
 		module PlacelaunchOtherError
 			include EnumItem
 			Name = "PlacelaunchOtherError"
 			Value = 611
 			EnumType = ConnectionError
 		end
-
+		
 		module TeleportErrors
 			include EnumItem
 			Name = "TeleportErrors"
 			Value = 768
 			EnumType = ConnectionError
 		end
-
+		
 		module TeleportFailure
 			include EnumItem
 			Name = "TeleportFailure"
 			Value = 769
 			EnumType = ConnectionError
 		end
-
+		
 		module TeleportGameNotFound
 			include EnumItem
 			Name = "TeleportGameNotFound"
 			Value = 770
 			EnumType = ConnectionError
 		end
-
+		
 		module TeleportGameEnded
 			include EnumItem
 			Name = "TeleportGameEnded"
 			Value = 771
 			EnumType = ConnectionError
 		end
-
+		
 		module TeleportGameFull
 			include EnumItem
 			Name = "TeleportGameFull"
 			Value = 772
 			EnumType = ConnectionError
 		end
-
+		
 		module TeleportUnauthorized
 			include EnumItem
 			Name = "TeleportUnauthorized"
 			Value = 773
 			EnumType = ConnectionError
 		end
-
+		
 		module TeleportFlooded
 			include EnumItem
 			Name = "TeleportFlooded"
 			Value = 774
 			EnumType = ConnectionError
 		end
-
+		
 		module TeleportIsTeleporting
 			include EnumItem
 			Name = "TeleportIsTeleporting"
@@ -3540,7 +3540,7 @@ struct Enum
 			EnumType = ConnectionError
 		end
 	end
-
+	
 	module ConnectionState
 		module Connected
 			include EnumItem
@@ -3548,7 +3548,7 @@ struct Enum
 			Value = 0
 			EnumType = ConnectionState
 		end
-
+		
 		module Disconnected
 			include EnumItem
 			Name = "Disconnected"
@@ -3556,7 +3556,7 @@ struct Enum
 			EnumType = ConnectionState
 		end
 	end
-
+	
 	module ContextActionPriority
 		module Low
 			include EnumItem
@@ -3564,14 +3564,14 @@ struct Enum
 			Value = 1000
 			EnumType = ContextActionPriority
 		end
-
+		
 		module Medium
 			include EnumItem
 			Name = "Medium"
 			Value = 2000
 			EnumType = ContextActionPriority
 		end
-
+		
 		module High
 			include EnumItem
 			Name = "High"
@@ -3579,7 +3579,7 @@ struct Enum
 			EnumType = ContextActionPriority
 		end
 	end
-
+	
 	module ContextActionResult
 		module Pass
 			include EnumItem
@@ -3587,7 +3587,7 @@ struct Enum
 			Value = 1
 			EnumType = ContextActionResult
 		end
-
+		
 		module Sink
 			include EnumItem
 			Name = "Sink"
@@ -3595,7 +3595,7 @@ struct Enum
 			EnumType = ContextActionResult
 		end
 	end
-
+	
 	module ControlMode
 		module MouseLockSwitch
 			include EnumItem
@@ -3603,7 +3603,7 @@ struct Enum
 			Value = 1
 			EnumType = ControlMode
 		end
-
+		
 		module Classic
 			include EnumItem
 			Name = "Classic"
@@ -3611,7 +3611,7 @@ struct Enum
 			EnumType = ControlMode
 		end
 	end
-
+	
 	module CoreGuiType
 		module PlayerList
 			include EnumItem
@@ -3619,42 +3619,42 @@ struct Enum
 			Value = 0
 			EnumType = CoreGuiType
 		end
-
+		
 		module Health
 			include EnumItem
 			Name = "Health"
 			Value = 1
 			EnumType = CoreGuiType
 		end
-
+		
 		module Backpack
 			include EnumItem
 			Name = "Backpack"
 			Value = 2
 			EnumType = CoreGuiType
 		end
-
+		
 		module Chat
 			include EnumItem
 			Name = "Chat"
 			Value = 3
 			EnumType = CoreGuiType
 		end
-
+		
 		module All
 			include EnumItem
 			Name = "All"
 			Value = 4
 			EnumType = CoreGuiType
 		end
-
+		
 		module EmotesMenu
 			include EnumItem
 			Name = "EmotesMenu"
 			Value = 5
 			EnumType = CoreGuiType
 		end
-
+		
 		module SelfView
 			include EnumItem
 			Name = "SelfView"
@@ -3662,7 +3662,7 @@ struct Enum
 			EnumType = CoreGuiType
 		end
 	end
-
+	
 	module CreateOutfitFailure
 		module InvalidName
 			include EnumItem
@@ -3670,14 +3670,14 @@ struct Enum
 			Value = 1
 			EnumType = CreateOutfitFailure
 		end
-
+		
 		module OutfitLimitReached
 			include EnumItem
 			Name = "OutfitLimitReached"
 			Value = 2
 			EnumType = CreateOutfitFailure
 		end
-
+		
 		module Other
 			include EnumItem
 			Name = "Other"
@@ -3685,7 +3685,7 @@ struct Enum
 			EnumType = CreateOutfitFailure
 		end
 	end
-
+	
 	module CreatorType
 		module User
 			include EnumItem
@@ -3693,7 +3693,7 @@ struct Enum
 			Value = 0
 			EnumType = CreatorType
 		end
-
+		
 		module Group
 			include EnumItem
 			Name = "Group"
@@ -3701,7 +3701,7 @@ struct Enum
 			EnumType = CreatorType
 		end
 	end
-
+	
 	module CreatorTypeFilter
 		module User
 			include EnumItem
@@ -3709,14 +3709,14 @@ struct Enum
 			Value = 0
 			EnumType = CreatorTypeFilter
 		end
-
+		
 		module Group
 			include EnumItem
 			Name = "Group"
 			Value = 1
 			EnumType = CreatorTypeFilter
 		end
-
+		
 		module All
 			include EnumItem
 			Name = "All"
@@ -3724,7 +3724,7 @@ struct Enum
 			EnumType = CreatorTypeFilter
 		end
 	end
-
+	
 	module CurrencyType
 		module Default
 			include EnumItem
@@ -3732,14 +3732,14 @@ struct Enum
 			Value = 0
 			EnumType = CurrencyType
 		end
-
+		
 		module Robux
 			include EnumItem
 			Name = "Robux"
 			Value = 1
 			EnumType = CurrencyType
 		end
-
+		
 		module Tix
 			include EnumItem
 			Name = "Tix"
@@ -3747,7 +3747,7 @@ struct Enum
 			EnumType = CurrencyType
 		end
 	end
-
+	
 	module CustomCameraMode
 		module Default
 			include EnumItem
@@ -3755,14 +3755,14 @@ struct Enum
 			Value = 0
 			EnumType = CustomCameraMode
 		end
-
+		
 		module Follow
 			include EnumItem
 			Name = "Follow"
 			Value = 2
 			EnumType = CustomCameraMode
 		end
-
+		
 		module Classic
 			include EnumItem
 			Name = "Classic"
@@ -3770,7 +3770,7 @@ struct Enum
 			EnumType = CustomCameraMode
 		end
 	end
-
+	
 	module DataStoreRequestType
 		module GetAsync
 			include EnumItem
@@ -3778,35 +3778,35 @@ struct Enum
 			Value = 0
 			EnumType = DataStoreRequestType
 		end
-
+		
 		module SetIncrementAsync
 			include EnumItem
 			Name = "SetIncrementAsync"
 			Value = 1
 			EnumType = DataStoreRequestType
 		end
-
+		
 		module UpdateAsync
 			include EnumItem
 			Name = "UpdateAsync"
 			Value = 2
 			EnumType = DataStoreRequestType
 		end
-
+		
 		module GetSortedAsync
 			include EnumItem
 			Name = "GetSortedAsync"
 			Value = 3
 			EnumType = DataStoreRequestType
 		end
-
+		
 		module SetIncrementSortedAsync
 			include EnumItem
 			Name = "SetIncrementSortedAsync"
 			Value = 4
 			EnumType = DataStoreRequestType
 		end
-
+		
 		module OnUpdate
 			include EnumItem
 			Name = "OnUpdate"
@@ -3814,7 +3814,7 @@ struct Enum
 			EnumType = DataStoreRequestType
 		end
 	end
-
+	
 	module DebuggerEndReason
 		module ClientRequest
 			include EnumItem
@@ -3822,49 +3822,49 @@ struct Enum
 			Value = 0
 			EnumType = DebuggerEndReason
 		end
-
+		
 		module Timeout
 			include EnumItem
 			Name = "Timeout"
 			Value = 1
 			EnumType = DebuggerEndReason
 		end
-
+		
 		module InvalidHost
 			include EnumItem
 			Name = "InvalidHost"
 			Value = 2
 			EnumType = DebuggerEndReason
 		end
-
+		
 		module Disconnected
 			include EnumItem
 			Name = "Disconnected"
 			Value = 3
 			EnumType = DebuggerEndReason
 		end
-
+		
 		module ServerShutdown
 			include EnumItem
 			Name = "ServerShutdown"
 			Value = 4
 			EnumType = DebuggerEndReason
 		end
-
+		
 		module ServerProtocolMismatch
 			include EnumItem
 			Name = "ServerProtocolMismatch"
 			Value = 5
 			EnumType = DebuggerEndReason
 		end
-
+		
 		module ConfigurationFailed
 			include EnumItem
 			Name = "ConfigurationFailed"
 			Value = 6
 			EnumType = DebuggerEndReason
 		end
-
+		
 		module RpcError
 			include EnumItem
 			Name = "RpcError"
@@ -3872,7 +3872,7 @@ struct Enum
 			EnumType = DebuggerEndReason
 		end
 	end
-
+	
 	module DebuggerExceptionBreakMode
 		module Never
 			include EnumItem
@@ -3880,14 +3880,14 @@ struct Enum
 			Value = 0
 			EnumType = DebuggerExceptionBreakMode
 		end
-
+		
 		module Unhandled
 			include EnumItem
 			Name = "Unhandled"
 			Value = 2
 			EnumType = DebuggerExceptionBreakMode
 		end
-
+		
 		module Always
 			include EnumItem
 			Name = "Always"
@@ -3895,7 +3895,7 @@ struct Enum
 			EnumType = DebuggerExceptionBreakMode
 		end
 	end
-
+	
 	module DebuggerFrameType
 		module C
 			include EnumItem
@@ -3903,7 +3903,7 @@ struct Enum
 			Value = 0
 			EnumType = DebuggerFrameType
 		end
-
+		
 		module Lua
 			include EnumItem
 			Name = "Lua"
@@ -3911,7 +3911,7 @@ struct Enum
 			EnumType = DebuggerFrameType
 		end
 	end
-
+	
 	module DebuggerPauseReason
 		module Unknown
 			include EnumItem
@@ -3919,35 +3919,35 @@ struct Enum
 			Value = 0
 			EnumType = DebuggerPauseReason
 		end
-
+		
 		module Requested
 			include EnumItem
 			Name = "Requested"
 			Value = 1
 			EnumType = DebuggerPauseReason
 		end
-
+		
 		module Breakpoint
 			include EnumItem
 			Name = "Breakpoint"
 			Value = 2
 			EnumType = DebuggerPauseReason
 		end
-
+		
 		module Exception
 			include EnumItem
 			Name = "Exception"
 			Value = 3
 			EnumType = DebuggerPauseReason
 		end
-
+		
 		module SingleStep
 			include EnumItem
 			Name = "SingleStep"
 			Value = 4
 			EnumType = DebuggerPauseReason
 		end
-
+		
 		module Entrypoint
 			include EnumItem
 			Name = "Entrypoint"
@@ -3955,7 +3955,7 @@ struct Enum
 			EnumType = DebuggerPauseReason
 		end
 	end
-
+	
 	module DebuggerStatus
 		module Success
 			include EnumItem
@@ -3963,56 +3963,56 @@ struct Enum
 			Value = 0
 			EnumType = DebuggerStatus
 		end
-
+		
 		module Timeout
 			include EnumItem
 			Name = "Timeout"
 			Value = 1
 			EnumType = DebuggerStatus
 		end
-
+		
 		module ConnectionLost
 			include EnumItem
 			Name = "ConnectionLost"
 			Value = 2
 			EnumType = DebuggerStatus
 		end
-
+		
 		module InvalidResponse
 			include EnumItem
 			Name = "InvalidResponse"
 			Value = 3
 			EnumType = DebuggerStatus
 		end
-
+		
 		module InternalError
 			include EnumItem
 			Name = "InternalError"
 			Value = 4
 			EnumType = DebuggerStatus
 		end
-
+		
 		module InvalidState
 			include EnumItem
 			Name = "InvalidState"
 			Value = 5
 			EnumType = DebuggerStatus
 		end
-
+		
 		module RpcError
 			include EnumItem
 			Name = "RpcError"
 			Value = 6
 			EnumType = DebuggerStatus
 		end
-
+		
 		module InvalidArgument
 			include EnumItem
 			Name = "InvalidArgument"
 			Value = 7
 			EnumType = DebuggerStatus
 		end
-
+		
 		module ConnectionClosed
 			include EnumItem
 			Name = "ConnectionClosed"
@@ -4020,7 +4020,7 @@ struct Enum
 			EnumType = DebuggerStatus
 		end
 	end
-
+	
 	module DevCameraOcclusionMode
 		module Zoom
 			include EnumItem
@@ -4028,7 +4028,7 @@ struct Enum
 			Value = 0
 			EnumType = DevCameraOcclusionMode
 		end
-
+		
 		module Invisicam
 			include EnumItem
 			Name = "Invisicam"
@@ -4036,7 +4036,7 @@ struct Enum
 			EnumType = DevCameraOcclusionMode
 		end
 	end
-
+	
 	module DevComputerCameraMovementMode
 		module UserChoice
 			include EnumItem
@@ -4044,28 +4044,28 @@ struct Enum
 			Value = 0
 			EnumType = DevComputerCameraMovementMode
 		end
-
+		
 		module Classic
 			include EnumItem
 			Name = "Classic"
 			Value = 1
 			EnumType = DevComputerCameraMovementMode
 		end
-
+		
 		module Follow
 			include EnumItem
 			Name = "Follow"
 			Value = 2
 			EnumType = DevComputerCameraMovementMode
 		end
-
+		
 		module Orbital
 			include EnumItem
 			Name = "Orbital"
 			Value = 3
 			EnumType = DevComputerCameraMovementMode
 		end
-
+		
 		module CameraToggle
 			include EnumItem
 			Name = "CameraToggle"
@@ -4073,7 +4073,7 @@ struct Enum
 			EnumType = DevComputerCameraMovementMode
 		end
 	end
-
+	
 	module DevComputerMovementMode
 		module UserChoice
 			include EnumItem
@@ -4081,21 +4081,21 @@ struct Enum
 			Value = 0
 			EnumType = DevComputerMovementMode
 		end
-
+		
 		module KeyboardMouse
 			include EnumItem
 			Name = "KeyboardMouse"
 			Value = 1
 			EnumType = DevComputerMovementMode
 		end
-
+		
 		module ClickToMove
 			include EnumItem
 			Name = "ClickToMove"
 			Value = 2
 			EnumType = DevComputerMovementMode
 		end
-
+		
 		module Scriptable
 			include EnumItem
 			Name = "Scriptable"
@@ -4103,7 +4103,7 @@ struct Enum
 			EnumType = DevComputerMovementMode
 		end
 	end
-
+	
 	module DevTouchCameraMovementMode
 		module UserChoice
 			include EnumItem
@@ -4111,21 +4111,21 @@ struct Enum
 			Value = 0
 			EnumType = DevTouchCameraMovementMode
 		end
-
+		
 		module Classic
 			include EnumItem
 			Name = "Classic"
 			Value = 1
 			EnumType = DevTouchCameraMovementMode
 		end
-
+		
 		module Follow
 			include EnumItem
 			Name = "Follow"
 			Value = 2
 			EnumType = DevTouchCameraMovementMode
 		end
-
+		
 		module Orbital
 			include EnumItem
 			Name = "Orbital"
@@ -4133,7 +4133,7 @@ struct Enum
 			EnumType = DevTouchCameraMovementMode
 		end
 	end
-
+	
 	module DevTouchMovementMode
 		module UserChoice
 			include EnumItem
@@ -4141,42 +4141,42 @@ struct Enum
 			Value = 0
 			EnumType = DevTouchMovementMode
 		end
-
+		
 		module Thumbstick
 			include EnumItem
 			Name = "Thumbstick"
 			Value = 1
 			EnumType = DevTouchMovementMode
 		end
-
+		
 		module DPad
 			include EnumItem
 			Name = "DPad"
 			Value = 2
 			EnumType = DevTouchMovementMode
 		end
-
+		
 		module Thumbpad
 			include EnumItem
 			Name = "Thumbpad"
 			Value = 3
 			EnumType = DevTouchMovementMode
 		end
-
+		
 		module ClickToMove
 			include EnumItem
 			Name = "ClickToMove"
 			Value = 4
 			EnumType = DevTouchMovementMode
 		end
-
+		
 		module Scriptable
 			include EnumItem
 			Name = "Scriptable"
 			Value = 5
 			EnumType = DevTouchMovementMode
 		end
-
+		
 		module DynamicThumbstick
 			include EnumItem
 			Name = "DynamicThumbstick"
@@ -4184,7 +4184,7 @@ struct Enum
 			EnumType = DevTouchMovementMode
 		end
 	end
-
+	
 	module DeveloperMemoryTag
 		module Internal
 			include EnumItem
@@ -4192,154 +4192,154 @@ struct Enum
 			Value = 0
 			EnumType = DeveloperMemoryTag
 		end
-
+		
 		module HttpCache
 			include EnumItem
 			Name = "HttpCache"
 			Value = 1
 			EnumType = DeveloperMemoryTag
 		end
-
+		
 		module Instances
 			include EnumItem
 			Name = "Instances"
 			Value = 2
 			EnumType = DeveloperMemoryTag
 		end
-
+		
 		module Signals
 			include EnumItem
 			Name = "Signals"
 			Value = 3
 			EnumType = DeveloperMemoryTag
 		end
-
+		
 		module LuaHeap
 			include EnumItem
 			Name = "LuaHeap"
 			Value = 4
 			EnumType = DeveloperMemoryTag
 		end
-
+		
 		module Script
 			include EnumItem
 			Name = "Script"
 			Value = 5
 			EnumType = DeveloperMemoryTag
 		end
-
+		
 		module PhysicsCollision
 			include EnumItem
 			Name = "PhysicsCollision"
 			Value = 6
 			EnumType = DeveloperMemoryTag
 		end
-
+		
 		module PhysicsParts
 			include EnumItem
 			Name = "PhysicsParts"
 			Value = 7
 			EnumType = DeveloperMemoryTag
 		end
-
+		
 		module GraphicsSolidModels
 			include EnumItem
 			Name = "GraphicsSolidModels"
 			Value = 8
 			EnumType = DeveloperMemoryTag
 		end
-
+		
 		module GraphicsMeshParts
 			include EnumItem
 			Name = "GraphicsMeshParts"
 			Value = 10
 			EnumType = DeveloperMemoryTag
 		end
-
+		
 		module GraphicsParticles
 			include EnumItem
 			Name = "GraphicsParticles"
 			Value = 11
 			EnumType = DeveloperMemoryTag
 		end
-
+		
 		module GraphicsParts
 			include EnumItem
 			Name = "GraphicsParts"
 			Value = 12
 			EnumType = DeveloperMemoryTag
 		end
-
+		
 		module GraphicsSpatialHash
 			include EnumItem
 			Name = "GraphicsSpatialHash"
 			Value = 13
 			EnumType = DeveloperMemoryTag
 		end
-
+		
 		module GraphicsTerrain
 			include EnumItem
 			Name = "GraphicsTerrain"
 			Value = 14
 			EnumType = DeveloperMemoryTag
 		end
-
+		
 		module GraphicsTexture
 			include EnumItem
 			Name = "GraphicsTexture"
 			Value = 15
 			EnumType = DeveloperMemoryTag
 		end
-
+		
 		module GraphicsTextureCharacter
 			include EnumItem
 			Name = "GraphicsTextureCharacter"
 			Value = 16
 			EnumType = DeveloperMemoryTag
 		end
-
+		
 		module Sounds
 			include EnumItem
 			Name = "Sounds"
 			Value = 17
 			EnumType = DeveloperMemoryTag
 		end
-
+		
 		module StreamingSounds
 			include EnumItem
 			Name = "StreamingSounds"
 			Value = 18
 			EnumType = DeveloperMemoryTag
 		end
-
+		
 		module TerrainVoxels
 			include EnumItem
 			Name = "TerrainVoxels"
 			Value = 19
 			EnumType = DeveloperMemoryTag
 		end
-
+		
 		module Gui
 			include EnumItem
 			Name = "Gui"
 			Value = 21
 			EnumType = DeveloperMemoryTag
 		end
-
+		
 		module Animation
 			include EnumItem
 			Name = "Animation"
 			Value = 22
 			EnumType = DeveloperMemoryTag
 		end
-
+		
 		module Navigation
 			include EnumItem
 			Name = "Navigation"
 			Value = 23
 			EnumType = DeveloperMemoryTag
 		end
-
+		
 		module GeometryCSG
 			include EnumItem
 			Name = "GeometryCSG"
@@ -4347,7 +4347,7 @@ struct Enum
 			EnumType = DeveloperMemoryTag
 		end
 	end
-
+	
 	module DeviceType
 		module Unknown
 			include EnumItem
@@ -4355,21 +4355,21 @@ struct Enum
 			Value = 0
 			EnumType = DeviceType
 		end
-
+		
 		module Desktop
 			include EnumItem
 			Name = "Desktop"
 			Value = 1
 			EnumType = DeviceType
 		end
-
+		
 		module Tablet
 			include EnumItem
 			Name = "Tablet"
 			Value = 2
 			EnumType = DeviceType
 		end
-
+		
 		module Phone
 			include EnumItem
 			Name = "Phone"
@@ -4377,7 +4377,7 @@ struct Enum
 			EnumType = DeviceType
 		end
 	end
-
+	
 	module DialogBehaviorType
 		module SinglePlayer
 			include EnumItem
@@ -4385,7 +4385,7 @@ struct Enum
 			Value = 0
 			EnumType = DialogBehaviorType
 		end
-
+		
 		module MultiplePlayers
 			include EnumItem
 			Name = "MultiplePlayers"
@@ -4393,7 +4393,7 @@ struct Enum
 			EnumType = DialogBehaviorType
 		end
 	end
-
+	
 	module DialogPurpose
 		module Quest
 			include EnumItem
@@ -4401,14 +4401,14 @@ struct Enum
 			Value = 0
 			EnumType = DialogPurpose
 		end
-
+		
 		module Help
 			include EnumItem
 			Name = "Help"
 			Value = 1
 			EnumType = DialogPurpose
 		end
-
+		
 		module Shop
 			include EnumItem
 			Name = "Shop"
@@ -4416,7 +4416,7 @@ struct Enum
 			EnumType = DialogPurpose
 		end
 	end
-
+	
 	module DialogTone
 		module Neutral
 			include EnumItem
@@ -4424,14 +4424,14 @@ struct Enum
 			Value = 0
 			EnumType = DialogTone
 		end
-
+		
 		module Friendly
 			include EnumItem
 			Name = "Friendly"
 			Value = 1
 			EnumType = DialogTone
 		end
-
+		
 		module Enemy
 			include EnumItem
 			Name = "Enemy"
@@ -4439,7 +4439,7 @@ struct Enum
 			EnumType = DialogTone
 		end
 	end
-
+	
 	module DominantAxis
 		module Width
 			include EnumItem
@@ -4447,7 +4447,7 @@ struct Enum
 			Value = 0
 			EnumType = DominantAxis
 		end
-
+		
 		module Height
 			include EnumItem
 			Name = "Height"
@@ -4455,7 +4455,7 @@ struct Enum
 			EnumType = DominantAxis
 		end
 	end
-
+	
 	module DraftStatusCode
 		module OK
 			include EnumItem
@@ -4463,21 +4463,21 @@ struct Enum
 			Value = 0
 			EnumType = DraftStatusCode
 		end
-
+		
 		module DraftOutdated
 			include EnumItem
 			Name = "DraftOutdated"
 			Value = 1
 			EnumType = DraftStatusCode
 		end
-
+		
 		module ScriptRemoved
 			include EnumItem
 			Name = "ScriptRemoved"
 			Value = 2
 			EnumType = DraftStatusCode
 		end
-
+		
 		module DraftCommitted
 			include EnumItem
 			Name = "DraftCommitted"
@@ -4485,7 +4485,7 @@ struct Enum
 			EnumType = DraftStatusCode
 		end
 	end
-
+	
 	module DraggerCoordinateSpace
 		module Object
 			include EnumItem
@@ -4493,7 +4493,7 @@ struct Enum
 			Value = 0
 			EnumType = DraggerCoordinateSpace
 		end
-
+		
 		module World
 			include EnumItem
 			Name = "World"
@@ -4501,7 +4501,7 @@ struct Enum
 			EnumType = DraggerCoordinateSpace
 		end
 	end
-
+	
 	module DraggerMovementMode
 		module Geometric
 			include EnumItem
@@ -4509,7 +4509,7 @@ struct Enum
 			Value = 0
 			EnumType = DraggerMovementMode
 		end
-
+		
 		module Physical
 			include EnumItem
 			Name = "Physical"
@@ -4517,7 +4517,7 @@ struct Enum
 			EnumType = DraggerMovementMode
 		end
 	end
-
+	
 	module EasingDirection
 		module In
 			include EnumItem
@@ -4525,14 +4525,14 @@ struct Enum
 			Value = 0
 			EnumType = EasingDirection
 		end
-
+		
 		module Out
 			include EnumItem
 			Name = "Out"
 			Value = 1
 			EnumType = EasingDirection
 		end
-
+		
 		module InOut
 			include EnumItem
 			Name = "InOut"
@@ -4540,7 +4540,7 @@ struct Enum
 			EnumType = EasingDirection
 		end
 	end
-
+	
 	module EasingStyle
 		module Linear
 			include EnumItem
@@ -4548,70 +4548,70 @@ struct Enum
 			Value = 0
 			EnumType = EasingStyle
 		end
-
+		
 		module Sine
 			include EnumItem
 			Name = "Sine"
 			Value = 1
 			EnumType = EasingStyle
 		end
-
+		
 		module Back
 			include EnumItem
 			Name = "Back"
 			Value = 2
 			EnumType = EasingStyle
 		end
-
+		
 		module Quad
 			include EnumItem
 			Name = "Quad"
 			Value = 3
 			EnumType = EasingStyle
 		end
-
+		
 		module Quart
 			include EnumItem
 			Name = "Quart"
 			Value = 4
 			EnumType = EasingStyle
 		end
-
+		
 		module Quint
 			include EnumItem
 			Name = "Quint"
 			Value = 5
 			EnumType = EasingStyle
 		end
-
+		
 		module Bounce
 			include EnumItem
 			Name = "Bounce"
 			Value = 6
 			EnumType = EasingStyle
 		end
-
+		
 		module Elastic
 			include EnumItem
 			Name = "Elastic"
 			Value = 7
 			EnumType = EasingStyle
 		end
-
+		
 		module Exponential
 			include EnumItem
 			Name = "Exponential"
 			Value = 8
 			EnumType = EasingStyle
 		end
-
+		
 		module Circular
 			include EnumItem
 			Name = "Circular"
 			Value = 9
 			EnumType = EasingStyle
 		end
-
+		
 		module Cubic
 			include EnumItem
 			Name = "Cubic"
@@ -4619,7 +4619,7 @@ struct Enum
 			EnumType = EasingStyle
 		end
 	end
-
+	
 	module ElasticBehavior
 		module WhenScrollable
 			include EnumItem
@@ -4627,14 +4627,14 @@ struct Enum
 			Value = 0
 			EnumType = ElasticBehavior
 		end
-
+		
 		module Always
 			include EnumItem
 			Name = "Always"
 			Value = 1
 			EnumType = ElasticBehavior
 		end
-
+		
 		module Never
 			include EnumItem
 			Name = "Never"
@@ -4642,7 +4642,7 @@ struct Enum
 			EnumType = ElasticBehavior
 		end
 	end
-
+	
 	module EnviromentalPhysicsThrottle
 		module DefaultAuto
 			include EnumItem
@@ -4650,42 +4650,42 @@ struct Enum
 			Value = 0
 			EnumType = EnviromentalPhysicsThrottle
 		end
-
+		
 		module Disabled
 			include EnumItem
 			Name = "Disabled"
 			Value = 1
 			EnumType = EnviromentalPhysicsThrottle
 		end
-
+		
 		module Always
 			include EnumItem
 			Name = "Always"
 			Value = 2
 			EnumType = EnviromentalPhysicsThrottle
 		end
-
+		
 		module Skip2
 			include EnumItem
 			Name = "Skip2"
 			Value = 3
 			EnumType = EnviromentalPhysicsThrottle
 		end
-
+		
 		module Skip4
 			include EnumItem
 			Name = "Skip4"
 			Value = 4
 			EnumType = EnviromentalPhysicsThrottle
 		end
-
+		
 		module Skip8
 			include EnumItem
 			Name = "Skip8"
 			Value = 5
 			EnumType = EnviromentalPhysicsThrottle
 		end
-
+		
 		module Skip16
 			include EnumItem
 			Name = "Skip16"
@@ -4693,7 +4693,7 @@ struct Enum
 			EnumType = EnviromentalPhysicsThrottle
 		end
 	end
-
+	
 	module ExperienceAuthScope
 		module DefaultScope
 			include EnumItem
@@ -4701,7 +4701,7 @@ struct Enum
 			Value = 0
 			EnumType = ExperienceAuthScope
 		end
-
+		
 		module CreatorAssetsCreate
 			include EnumItem
 			Name = "CreatorAssetsCreate"
@@ -4709,7 +4709,7 @@ struct Enum
 			EnumType = ExperienceAuthScope
 		end
 	end
-
+	
 	module ExplosionType
 		module NoCraters
 			include EnumItem
@@ -4717,7 +4717,7 @@ struct Enum
 			Value = 0
 			EnumType = ExplosionType
 		end
-
+		
 		module Craters
 			include EnumItem
 			Name = "Craters"
@@ -4725,7 +4725,7 @@ struct Enum
 			EnumType = ExplosionType
 		end
 	end
-
+	
 	module FacialAnimationFlags
 		module None
 			include EnumItem
@@ -4733,21 +4733,21 @@ struct Enum
 			Value = 0
 			EnumType = FacialAnimationFlags
 		end
-
+		
 		module Place
 			include EnumItem
 			Name = "Place"
 			Value = 1
 			EnumType = FacialAnimationFlags
 		end
-
+		
 		module Server
 			include EnumItem
 			Name = "Server"
 			Value = 2
 			EnumType = FacialAnimationFlags
 		end
-
+		
 		module PlaceServer
 			include EnumItem
 			Name = "PlaceServer"
@@ -4755,7 +4755,7 @@ struct Enum
 			EnumType = FacialAnimationFlags
 		end
 	end
-
+	
 	module FacialAnimationStreamingState
 		module None
 			include EnumItem
@@ -4763,28 +4763,28 @@ struct Enum
 			Value = 0
 			EnumType = FacialAnimationStreamingState
 		end
-
+		
 		module Audio
 			include EnumItem
 			Name = "Audio"
 			Value = 1
 			EnumType = FacialAnimationStreamingState
 		end
-
+		
 		module Video
 			include EnumItem
 			Name = "Video"
 			Value = 2
 			EnumType = FacialAnimationStreamingState
 		end
-
+		
 		module Place
 			include EnumItem
 			Name = "Place"
 			Value = 4
 			EnumType = FacialAnimationStreamingState
 		end
-
+		
 		module Server
 			include EnumItem
 			Name = "Server"
@@ -4792,7 +4792,7 @@ struct Enum
 			EnumType = FacialAnimationStreamingState
 		end
 	end
-
+	
 	module FieldOfViewMode
 		module Vertical
 			include EnumItem
@@ -4800,14 +4800,14 @@ struct Enum
 			Value = 0
 			EnumType = FieldOfViewMode
 		end
-
+		
 		module Diagonal
 			include EnumItem
 			Name = "Diagonal"
 			Value = 1
 			EnumType = FieldOfViewMode
 		end
-
+		
 		module MaxAxis
 			include EnumItem
 			Name = "MaxAxis"
@@ -4815,7 +4815,7 @@ struct Enum
 			EnumType = FieldOfViewMode
 		end
 	end
-
+	
 	module FillDirection
 		module Horizontal
 			include EnumItem
@@ -4823,7 +4823,7 @@ struct Enum
 			Value = 0
 			EnumType = FillDirection
 		end
-
+		
 		module Vertical
 			include EnumItem
 			Name = "Vertical"
@@ -4831,7 +4831,7 @@ struct Enum
 			EnumType = FillDirection
 		end
 	end
-
+	
 	module FilterResult
 		module Rejected
 			include EnumItem
@@ -4839,7 +4839,7 @@ struct Enum
 			Value = 1
 			EnumType = FilterResult
 		end
-
+		
 		module Accepted
 			include EnumItem
 			Name = "Accepted"
@@ -4847,7 +4847,7 @@ struct Enum
 			EnumType = FilterResult
 		end
 	end
-
+	
 	module Font
 		module Legacy
 			include EnumItem
@@ -4855,322 +4855,322 @@ struct Enum
 			Value = 0
 			EnumType = Font
 		end
-
+		
 		module Arial
 			include EnumItem
 			Name = "Arial"
 			Value = 1
 			EnumType = Font
 		end
-
+		
 		module ArialBold
 			include EnumItem
 			Name = "ArialBold"
 			Value = 2
 			EnumType = Font
 		end
-
+		
 		module SourceSans
 			include EnumItem
 			Name = "SourceSans"
 			Value = 3
 			EnumType = Font
 		end
-
+		
 		module SourceSansBold
 			include EnumItem
 			Name = "SourceSansBold"
 			Value = 4
 			EnumType = Font
 		end
-
+		
 		module SourceSansSemibold
 			include EnumItem
 			Name = "SourceSansSemibold"
 			Value = 16
 			EnumType = Font
 		end
-
+		
 		module SourceSansLight
 			include EnumItem
 			Name = "SourceSansLight"
 			Value = 5
 			EnumType = Font
 		end
-
+		
 		module SourceSansItalic
 			include EnumItem
 			Name = "SourceSansItalic"
 			Value = 6
 			EnumType = Font
 		end
-
+		
 		module Bodoni
 			include EnumItem
 			Name = "Bodoni"
 			Value = 7
 			EnumType = Font
 		end
-
+		
 		module Garamond
 			include EnumItem
 			Name = "Garamond"
 			Value = 8
 			EnumType = Font
 		end
-
+		
 		module Cartoon
 			include EnumItem
 			Name = "Cartoon"
 			Value = 9
 			EnumType = Font
 		end
-
+		
 		module Code
 			include EnumItem
 			Name = "Code"
 			Value = 10
 			EnumType = Font
 		end
-
+		
 		module Highway
 			include EnumItem
 			Name = "Highway"
 			Value = 11
 			EnumType = Font
 		end
-
+		
 		module SciFi
 			include EnumItem
 			Name = "SciFi"
 			Value = 12
 			EnumType = Font
 		end
-
+		
 		module Arcade
 			include EnumItem
 			Name = "Arcade"
 			Value = 13
 			EnumType = Font
 		end
-
+		
 		module Fantasy
 			include EnumItem
 			Name = "Fantasy"
 			Value = 14
 			EnumType = Font
 		end
-
+		
 		module Antique
 			include EnumItem
 			Name = "Antique"
 			Value = 15
 			EnumType = Font
 		end
-
+		
 		module Gotham
 			include EnumItem
 			Name = "Gotham"
 			Value = 17
 			EnumType = Font
 		end
-
+		
 		module GothamMedium
 			include EnumItem
 			Name = "GothamMedium"
 			Value = 18
 			EnumType = Font
 		end
-
+		
 		module GothamBold
 			include EnumItem
 			Name = "GothamBold"
 			Value = 19
 			EnumType = Font
 		end
-
+		
 		module GothamBlack
 			include EnumItem
 			Name = "GothamBlack"
 			Value = 20
 			EnumType = Font
 		end
-
+		
 		module AmaticSC
 			include EnumItem
 			Name = "AmaticSC"
 			Value = 21
 			EnumType = Font
 		end
-
+		
 		module Bangers
 			include EnumItem
 			Name = "Bangers"
 			Value = 22
 			EnumType = Font
 		end
-
+		
 		module Creepster
 			include EnumItem
 			Name = "Creepster"
 			Value = 23
 			EnumType = Font
 		end
-
+		
 		module DenkOne
 			include EnumItem
 			Name = "DenkOne"
 			Value = 24
 			EnumType = Font
 		end
-
+		
 		module Fondamento
 			include EnumItem
 			Name = "Fondamento"
 			Value = 25
 			EnumType = Font
 		end
-
+		
 		module FredokaOne
 			include EnumItem
 			Name = "FredokaOne"
 			Value = 26
 			EnumType = Font
 		end
-
+		
 		module GrenzeGotisch
 			include EnumItem
 			Name = "GrenzeGotisch"
 			Value = 27
 			EnumType = Font
 		end
-
+		
 		module IndieFlower
 			include EnumItem
 			Name = "IndieFlower"
 			Value = 28
 			EnumType = Font
 		end
-
+		
 		module JosefinSans
 			include EnumItem
 			Name = "JosefinSans"
 			Value = 29
 			EnumType = Font
 		end
-
+		
 		module Jura
 			include EnumItem
 			Name = "Jura"
 			Value = 30
 			EnumType = Font
 		end
-
+		
 		module Kalam
 			include EnumItem
 			Name = "Kalam"
 			Value = 31
 			EnumType = Font
 		end
-
+		
 		module LuckiestGuy
 			include EnumItem
 			Name = "LuckiestGuy"
 			Value = 32
 			EnumType = Font
 		end
-
+		
 		module Merriweather
 			include EnumItem
 			Name = "Merriweather"
 			Value = 33
 			EnumType = Font
 		end
-
+		
 		module Michroma
 			include EnumItem
 			Name = "Michroma"
 			Value = 34
 			EnumType = Font
 		end
-
+		
 		module Nunito
 			include EnumItem
 			Name = "Nunito"
 			Value = 35
 			EnumType = Font
 		end
-
+		
 		module Oswald
 			include EnumItem
 			Name = "Oswald"
 			Value = 36
 			EnumType = Font
 		end
-
+		
 		module PatrickHand
 			include EnumItem
 			Name = "PatrickHand"
 			Value = 37
 			EnumType = Font
 		end
-
+		
 		module PermanentMarker
 			include EnumItem
 			Name = "PermanentMarker"
 			Value = 38
 			EnumType = Font
 		end
-
+		
 		module Roboto
 			include EnumItem
 			Name = "Roboto"
 			Value = 39
 			EnumType = Font
 		end
-
+		
 		module RobotoCondensed
 			include EnumItem
 			Name = "RobotoCondensed"
 			Value = 40
 			EnumType = Font
 		end
-
+		
 		module RobotoMono
 			include EnumItem
 			Name = "RobotoMono"
 			Value = 41
 			EnumType = Font
 		end
-
+		
 		module Sarpanch
 			include EnumItem
 			Name = "Sarpanch"
 			Value = 42
 			EnumType = Font
 		end
-
+		
 		module SpecialElite
 			include EnumItem
 			Name = "SpecialElite"
 			Value = 43
 			EnumType = Font
 		end
-
+		
 		module TitilliumWeb
 			include EnumItem
 			Name = "TitilliumWeb"
 			Value = 44
 			EnumType = Font
 		end
-
+		
 		module Ubuntu
 			include EnumItem
 			Name = "Ubuntu"
 			Value = 45
 			EnumType = Font
 		end
-
+		
 		module Unknown
 			include EnumItem
 			Name = "Unknown"
@@ -5178,7 +5178,7 @@ struct Enum
 			EnumType = Font
 		end
 	end
-
+	
 	module FontSize
 		module Size8
 			include EnumItem
@@ -5186,98 +5186,98 @@ struct Enum
 			Value = 0
 			EnumType = FontSize
 		end
-
+		
 		module Size9
 			include EnumItem
 			Name = "Size9"
 			Value = 1
 			EnumType = FontSize
 		end
-
+		
 		module Size10
 			include EnumItem
 			Name = "Size10"
 			Value = 2
 			EnumType = FontSize
 		end
-
+		
 		module Size11
 			include EnumItem
 			Name = "Size11"
 			Value = 3
 			EnumType = FontSize
 		end
-
+		
 		module Size12
 			include EnumItem
 			Name = "Size12"
 			Value = 4
 			EnumType = FontSize
 		end
-
+		
 		module Size14
 			include EnumItem
 			Name = "Size14"
 			Value = 5
 			EnumType = FontSize
 		end
-
+		
 		module Size18
 			include EnumItem
 			Name = "Size18"
 			Value = 6
 			EnumType = FontSize
 		end
-
+		
 		module Size24
 			include EnumItem
 			Name = "Size24"
 			Value = 7
 			EnumType = FontSize
 		end
-
+		
 		module Size36
 			include EnumItem
 			Name = "Size36"
 			Value = 8
 			EnumType = FontSize
 		end
-
+		
 		module Size48
 			include EnumItem
 			Name = "Size48"
 			Value = 9
 			EnumType = FontSize
 		end
-
+		
 		module Size28
 			include EnumItem
 			Name = "Size28"
 			Value = 10
 			EnumType = FontSize
 		end
-
+		
 		module Size32
 			include EnumItem
 			Name = "Size32"
 			Value = 11
 			EnumType = FontSize
 		end
-
+		
 		module Size42
 			include EnumItem
 			Name = "Size42"
 			Value = 12
 			EnumType = FontSize
 		end
-
+		
 		module Size60
 			include EnumItem
 			Name = "Size60"
 			Value = 13
 			EnumType = FontSize
 		end
-
+		
 		module Size96
 			include EnumItem
 			Name = "Size96"
@@ -5285,7 +5285,7 @@ struct Enum
 			EnumType = FontSize
 		end
 	end
-
+	
 	module FontStyle
 		module Normal
 			include EnumItem
@@ -5293,7 +5293,7 @@ struct Enum
 			Value = 0
 			EnumType = FontStyle
 		end
-
+		
 		module Italic
 			include EnumItem
 			Name = "Italic"
@@ -5301,7 +5301,7 @@ struct Enum
 			EnumType = FontStyle
 		end
 	end
-
+	
 	module FontWeight
 		module Thin
 			include EnumItem
@@ -5309,56 +5309,56 @@ struct Enum
 			Value = 100
 			EnumType = FontWeight
 		end
-
+		
 		module ExtraLight
 			include EnumItem
 			Name = "ExtraLight"
 			Value = 200
 			EnumType = FontWeight
 		end
-
+		
 		module Light
 			include EnumItem
 			Name = "Light"
 			Value = 300
 			EnumType = FontWeight
 		end
-
+		
 		module Regular
 			include EnumItem
 			Name = "Regular"
 			Value = 400
 			EnumType = FontWeight
 		end
-
+		
 		module Medium
 			include EnumItem
 			Name = "Medium"
 			Value = 500
 			EnumType = FontWeight
 		end
-
+		
 		module SemiBold
 			include EnumItem
 			Name = "SemiBold"
 			Value = 600
 			EnumType = FontWeight
 		end
-
+		
 		module Bold
 			include EnumItem
 			Name = "Bold"
 			Value = 700
 			EnumType = FontWeight
 		end
-
+		
 		module ExtraBold
 			include EnumItem
 			Name = "ExtraBold"
 			Value = 800
 			EnumType = FontWeight
 		end
-
+		
 		module Heavy
 			include EnumItem
 			Name = "Heavy"
@@ -5366,7 +5366,7 @@ struct Enum
 			EnumType = FontWeight
 		end
 	end
-
+	
 	module FormFactor
 		module Symmetric
 			include EnumItem
@@ -5374,21 +5374,21 @@ struct Enum
 			Value = 0
 			EnumType = FormFactor
 		end
-
+		
 		module Brick
 			include EnumItem
 			Name = "Brick"
 			Value = 1
 			EnumType = FormFactor
 		end
-
+		
 		module Plate
 			include EnumItem
 			Name = "Plate"
 			Value = 2
 			EnumType = FormFactor
 		end
-
+		
 		module Custom
 			include EnumItem
 			Name = "Custom"
@@ -5396,7 +5396,7 @@ struct Enum
 			EnumType = FormFactor
 		end
 	end
-
+	
 	module FrameStyle
 		module Custom
 			include EnumItem
@@ -5404,42 +5404,42 @@ struct Enum
 			Value = 0
 			EnumType = FrameStyle
 		end
-
+		
 		module ChatBlue
 			include EnumItem
 			Name = "ChatBlue"
 			Value = 1
 			EnumType = FrameStyle
 		end
-
+		
 		module RobloxSquare
 			include EnumItem
 			Name = "RobloxSquare"
 			Value = 2
 			EnumType = FrameStyle
 		end
-
+		
 		module RobloxRound
 			include EnumItem
 			Name = "RobloxRound"
 			Value = 3
 			EnumType = FrameStyle
 		end
-
+		
 		module ChatGreen
 			include EnumItem
 			Name = "ChatGreen"
 			Value = 4
 			EnumType = FrameStyle
 		end
-
+		
 		module ChatRed
 			include EnumItem
 			Name = "ChatRed"
 			Value = 5
 			EnumType = FrameStyle
 		end
-
+		
 		module DropShadow
 			include EnumItem
 			Name = "DropShadow"
@@ -5447,7 +5447,7 @@ struct Enum
 			EnumType = FrameStyle
 		end
 	end
-
+	
 	module FramerateManagerMode
 		module Automatic
 			include EnumItem
@@ -5455,14 +5455,14 @@ struct Enum
 			Value = 0
 			EnumType = FramerateManagerMode
 		end
-
+		
 		module On
 			include EnumItem
 			Name = "On"
 			Value = 1
 			EnumType = FramerateManagerMode
 		end
-
+		
 		module Off
 			include EnumItem
 			Name = "Off"
@@ -5470,7 +5470,7 @@ struct Enum
 			EnumType = FramerateManagerMode
 		end
 	end
-
+	
 	module FriendRequestEvent
 		module Issue
 			include EnumItem
@@ -5478,21 +5478,21 @@ struct Enum
 			Value = 0
 			EnumType = FriendRequestEvent
 		end
-
+		
 		module Revoke
 			include EnumItem
 			Name = "Revoke"
 			Value = 1
 			EnumType = FriendRequestEvent
 		end
-
+		
 		module Accept
 			include EnumItem
 			Name = "Accept"
 			Value = 2
 			EnumType = FriendRequestEvent
 		end
-
+		
 		module Deny
 			include EnumItem
 			Name = "Deny"
@@ -5500,7 +5500,7 @@ struct Enum
 			EnumType = FriendRequestEvent
 		end
 	end
-
+	
 	module FriendStatus
 		module Unknown
 			include EnumItem
@@ -5508,28 +5508,28 @@ struct Enum
 			Value = 0
 			EnumType = FriendStatus
 		end
-
+		
 		module NotFriend
 			include EnumItem
 			Name = "NotFriend"
 			Value = 1
 			EnumType = FriendStatus
 		end
-
+		
 		module Friend
 			include EnumItem
 			Name = "Friend"
 			Value = 2
 			EnumType = FriendStatus
 		end
-
+		
 		module FriendRequestSent
 			include EnumItem
 			Name = "FriendRequestSent"
 			Value = 3
 			EnumType = FriendStatus
 		end
-
+		
 		module FriendRequestReceived
 			include EnumItem
 			Name = "FriendRequestReceived"
@@ -5537,7 +5537,7 @@ struct Enum
 			EnumType = FriendStatus
 		end
 	end
-
+	
 	module FunctionalTestResult
 		module Passed
 			include EnumItem
@@ -5545,14 +5545,14 @@ struct Enum
 			Value = 0
 			EnumType = FunctionalTestResult
 		end
-
+		
 		module Warning
 			include EnumItem
 			Name = "Warning"
 			Value = 1
 			EnumType = FunctionalTestResult
 		end
-
+		
 		module Error
 			include EnumItem
 			Name = "Error"
@@ -5560,7 +5560,7 @@ struct Enum
 			EnumType = FunctionalTestResult
 		end
 	end
-
+	
 	module GameAvatarType
 		module R6
 			include EnumItem
@@ -5568,14 +5568,14 @@ struct Enum
 			Value = 0
 			EnumType = GameAvatarType
 		end
-
+		
 		module R15
 			include EnumItem
 			Name = "R15"
 			Value = 1
 			EnumType = GameAvatarType
 		end
-
+		
 		module PlayerChoice
 			include EnumItem
 			Name = "PlayerChoice"
@@ -5583,7 +5583,7 @@ struct Enum
 			EnumType = GameAvatarType
 		end
 	end
-
+	
 	module GearGenreSetting
 		module AllGenres
 			include EnumItem
@@ -5591,7 +5591,7 @@ struct Enum
 			Value = 0
 			EnumType = GearGenreSetting
 		end
-
+		
 		module MatchingGenreOnly
 			include EnumItem
 			Name = "MatchingGenreOnly"
@@ -5599,7 +5599,7 @@ struct Enum
 			EnumType = GearGenreSetting
 		end
 	end
-
+	
 	module GearType
 		module MeleeWeapons
 			include EnumItem
@@ -5607,56 +5607,56 @@ struct Enum
 			Value = 0
 			EnumType = GearType
 		end
-
+		
 		module RangedWeapons
 			include EnumItem
 			Name = "RangedWeapons"
 			Value = 1
 			EnumType = GearType
 		end
-
+		
 		module Explosives
 			include EnumItem
 			Name = "Explosives"
 			Value = 2
 			EnumType = GearType
 		end
-
+		
 		module PowerUps
 			include EnumItem
 			Name = "PowerUps"
 			Value = 3
 			EnumType = GearType
 		end
-
+		
 		module NavigationEnhancers
 			include EnumItem
 			Name = "NavigationEnhancers"
 			Value = 4
 			EnumType = GearType
 		end
-
+		
 		module MusicalInstruments
 			include EnumItem
 			Name = "MusicalInstruments"
 			Value = 5
 			EnumType = GearType
 		end
-
+		
 		module SocialItems
 			include EnumItem
 			Name = "SocialItems"
 			Value = 6
 			EnumType = GearType
 		end
-
+		
 		module BuildingTools
 			include EnumItem
 			Name = "BuildingTools"
 			Value = 7
 			EnumType = GearType
 		end
-
+		
 		module Transport
 			include EnumItem
 			Name = "Transport"
@@ -5664,7 +5664,7 @@ struct Enum
 			EnumType = GearType
 		end
 	end
-
+	
 	module Genre
 		module All
 			include EnumItem
@@ -5672,91 +5672,91 @@ struct Enum
 			Value = 0
 			EnumType = Genre
 		end
-
+		
 		module TownAndCity
 			include EnumItem
 			Name = "TownAndCity"
 			Value = 1
 			EnumType = Genre
 		end
-
+		
 		module Fantasy
 			include EnumItem
 			Name = "Fantasy"
 			Value = 2
 			EnumType = Genre
 		end
-
+		
 		module SciFi
 			include EnumItem
 			Name = "SciFi"
 			Value = 3
 			EnumType = Genre
 		end
-
+		
 		module Ninja
 			include EnumItem
 			Name = "Ninja"
 			Value = 4
 			EnumType = Genre
 		end
-
+		
 		module Scary
 			include EnumItem
 			Name = "Scary"
 			Value = 5
 			EnumType = Genre
 		end
-
+		
 		module Pirate
 			include EnumItem
 			Name = "Pirate"
 			Value = 6
 			EnumType = Genre
 		end
-
+		
 		module Adventure
 			include EnumItem
 			Name = "Adventure"
 			Value = 7
 			EnumType = Genre
 		end
-
+		
 		module Sports
 			include EnumItem
 			Name = "Sports"
 			Value = 8
 			EnumType = Genre
 		end
-
+		
 		module Funny
 			include EnumItem
 			Name = "Funny"
 			Value = 9
 			EnumType = Genre
 		end
-
+		
 		module WildWest
 			include EnumItem
 			Name = "WildWest"
 			Value = 10
 			EnumType = Genre
 		end
-
+		
 		module War
 			include EnumItem
 			Name = "War"
 			Value = 11
 			EnumType = Genre
 		end
-
+		
 		module SkatePark
 			include EnumItem
 			Name = "SkatePark"
 			Value = 12
 			EnumType = Genre
 		end
-
+		
 		module Tutorial
 			include EnumItem
 			Name = "Tutorial"
@@ -5764,7 +5764,7 @@ struct Enum
 			EnumType = Genre
 		end
 	end
-
+	
 	module GraphicsMode
 		module Automatic
 			include EnumItem
@@ -5772,35 +5772,35 @@ struct Enum
 			Value = 1
 			EnumType = GraphicsMode
 		end
-
+		
 		module Direct3D11
 			include EnumItem
 			Name = "Direct3D11"
 			Value = 2
 			EnumType = GraphicsMode
 		end
-
+		
 		module OpenGL
 			include EnumItem
 			Name = "OpenGL"
 			Value = 4
 			EnumType = GraphicsMode
 		end
-
+		
 		module Metal
 			include EnumItem
 			Name = "Metal"
 			Value = 5
 			EnumType = GraphicsMode
 		end
-
+		
 		module Vulkan
 			include EnumItem
 			Name = "Vulkan"
 			Value = 6
 			EnumType = GraphicsMode
 		end
-
+		
 		module NoGraphics
 			include EnumItem
 			Name = "NoGraphics"
@@ -5808,7 +5808,7 @@ struct Enum
 			EnumType = GraphicsMode
 		end
 	end
-
+	
 	module GuiType
 		module Core
 			include EnumItem
@@ -5816,21 +5816,21 @@ struct Enum
 			Value = 0
 			EnumType = GuiType
 		end
-
+		
 		module Custom
 			include EnumItem
 			Name = "Custom"
 			Value = 1
 			EnumType = GuiType
 		end
-
+		
 		module CustomBillboards
 			include EnumItem
 			Name = "CustomBillboards"
 			Value = 3
 			EnumType = GuiType
 		end
-
+		
 		module PlayerNameplates
 			include EnumItem
 			Name = "PlayerNameplates"
@@ -5838,7 +5838,7 @@ struct Enum
 			EnumType = GuiType
 		end
 	end
-
+	
 	module HandlesStyle
 		module Resize
 			include EnumItem
@@ -5846,7 +5846,7 @@ struct Enum
 			Value = 0
 			EnumType = HandlesStyle
 		end
-
+		
 		module Movement
 			include EnumItem
 			Name = "Movement"
@@ -5854,7 +5854,7 @@ struct Enum
 			EnumType = HandlesStyle
 		end
 	end
-
+	
 	module HighlightDepthMode
 		module AlwaysOnTop
 			include EnumItem
@@ -5862,7 +5862,7 @@ struct Enum
 			Value = 0
 			EnumType = HighlightDepthMode
 		end
-
+		
 		module Occluded
 			include EnumItem
 			Name = "Occluded"
@@ -5870,7 +5870,7 @@ struct Enum
 			EnumType = HighlightDepthMode
 		end
 	end
-
+	
 	module HorizontalAlignment
 		module Center
 			include EnumItem
@@ -5878,14 +5878,14 @@ struct Enum
 			Value = 0
 			EnumType = HorizontalAlignment
 		end
-
+		
 		module Left
 			include EnumItem
 			Name = "Left"
 			Value = 1
 			EnumType = HorizontalAlignment
 		end
-
+		
 		module Right
 			include EnumItem
 			Name = "Right"
@@ -5893,7 +5893,7 @@ struct Enum
 			EnumType = HorizontalAlignment
 		end
 	end
-
+	
 	module HoverAnimateSpeed
 		module VerySlow
 			include EnumItem
@@ -5901,28 +5901,28 @@ struct Enum
 			Value = 0
 			EnumType = HoverAnimateSpeed
 		end
-
+		
 		module Slow
 			include EnumItem
 			Name = "Slow"
 			Value = 1
 			EnumType = HoverAnimateSpeed
 		end
-
+		
 		module Medium
 			include EnumItem
 			Name = "Medium"
 			Value = 2
 			EnumType = HoverAnimateSpeed
 		end
-
+		
 		module Fast
 			include EnumItem
 			Name = "Fast"
 			Value = 3
 			EnumType = HoverAnimateSpeed
 		end
-
+		
 		module VeryFast
 			include EnumItem
 			Name = "VeryFast"
@@ -5930,7 +5930,7 @@ struct Enum
 			EnumType = HoverAnimateSpeed
 		end
 	end
-
+	
 	module HttpCachePolicy
 		module None
 			include EnumItem
@@ -5938,28 +5938,28 @@ struct Enum
 			Value = 0
 			EnumType = HttpCachePolicy
 		end
-
+		
 		module Full
 			include EnumItem
 			Name = "Full"
 			Value = 1
 			EnumType = HttpCachePolicy
 		end
-
+		
 		module DataOnly
 			include EnumItem
 			Name = "DataOnly"
 			Value = 2
 			EnumType = HttpCachePolicy
 		end
-
+		
 		module Default
 			include EnumItem
 			Name = "Default"
 			Value = 3
 			EnumType = HttpCachePolicy
 		end
-
+		
 		module InternalRedirectRefresh
 			include EnumItem
 			Name = "InternalRedirectRefresh"
@@ -5967,7 +5967,7 @@ struct Enum
 			EnumType = HttpCachePolicy
 		end
 	end
-
+	
 	module HttpContentType
 		module ApplicationJson
 			include EnumItem
@@ -5975,28 +5975,28 @@ struct Enum
 			Value = 0
 			EnumType = HttpContentType
 		end
-
+		
 		module ApplicationXml
 			include EnumItem
 			Name = "ApplicationXml"
 			Value = 1
 			EnumType = HttpContentType
 		end
-
+		
 		module ApplicationUrlEncoded
 			include EnumItem
 			Name = "ApplicationUrlEncoded"
 			Value = 2
 			EnumType = HttpContentType
 		end
-
+		
 		module TextPlain
 			include EnumItem
 			Name = "TextPlain"
 			Value = 3
 			EnumType = HttpContentType
 		end
-
+		
 		module TextXml
 			include EnumItem
 			Name = "TextXml"
@@ -6004,7 +6004,7 @@ struct Enum
 			EnumType = HttpContentType
 		end
 	end
-
+	
 	module HttpError
 		module OK
 			include EnumItem
@@ -6012,84 +6012,84 @@ struct Enum
 			Value = 0
 			EnumType = HttpError
 		end
-
+		
 		module InvalidUrl
 			include EnumItem
 			Name = "InvalidUrl"
 			Value = 1
 			EnumType = HttpError
 		end
-
+		
 		module DnsResolve
 			include EnumItem
 			Name = "DnsResolve"
 			Value = 2
 			EnumType = HttpError
 		end
-
+		
 		module ConnectFail
 			include EnumItem
 			Name = "ConnectFail"
 			Value = 3
 			EnumType = HttpError
 		end
-
+		
 		module OutOfMemory
 			include EnumItem
 			Name = "OutOfMemory"
 			Value = 4
 			EnumType = HttpError
 		end
-
+		
 		module TimedOut
 			include EnumItem
 			Name = "TimedOut"
 			Value = 5
 			EnumType = HttpError
 		end
-
+		
 		module TooManyRedirects
 			include EnumItem
 			Name = "TooManyRedirects"
 			Value = 6
 			EnumType = HttpError
 		end
-
+		
 		module InvalidRedirect
 			include EnumItem
 			Name = "InvalidRedirect"
 			Value = 7
 			EnumType = HttpError
 		end
-
+		
 		module NetFail
 			include EnumItem
 			Name = "NetFail"
 			Value = 8
 			EnumType = HttpError
 		end
-
+		
 		module Aborted
 			include EnumItem
 			Name = "Aborted"
 			Value = 9
 			EnumType = HttpError
 		end
-
+		
 		module SslConnectFail
 			include EnumItem
 			Name = "SslConnectFail"
 			Value = 10
 			EnumType = HttpError
 		end
-
+		
 		module SslVerificationFail
 			include EnumItem
 			Name = "SslVerificationFail"
 			Value = 11
 			EnumType = HttpError
 		end
-
+		
 		module Unknown
 			include EnumItem
 			Name = "Unknown"
@@ -6097,7 +6097,7 @@ struct Enum
 			EnumType = HttpError
 		end
 	end
-
+	
 	module HttpRequestType
 		module Default
 			include EnumItem
@@ -6105,42 +6105,42 @@ struct Enum
 			Value = 0
 			EnumType = HttpRequestType
 		end
-
+		
 		module MarketplaceService
 			include EnumItem
 			Name = "MarketplaceService"
 			Value = 2
 			EnumType = HttpRequestType
 		end
-
+		
 		module Players
 			include EnumItem
 			Name = "Players"
 			Value = 7
 			EnumType = HttpRequestType
 		end
-
+		
 		module Chat
 			include EnumItem
 			Name = "Chat"
 			Value = 15
 			EnumType = HttpRequestType
 		end
-
+		
 		module Avatar
 			include EnumItem
 			Name = "Avatar"
 			Value = 16
 			EnumType = HttpRequestType
 		end
-
+		
 		module Analytics
 			include EnumItem
 			Name = "Analytics"
 			Value = 23
 			EnumType = HttpRequestType
 		end
-
+		
 		module Localization
 			include EnumItem
 			Name = "Localization"
@@ -6148,7 +6148,7 @@ struct Enum
 			EnumType = HttpRequestType
 		end
 	end
-
+	
 	module HumanoidCollisionType
 		module OuterBox
 			include EnumItem
@@ -6156,7 +6156,7 @@ struct Enum
 			Value = 0
 			EnumType = HumanoidCollisionType
 		end
-
+		
 		module InnerBox
 			include EnumItem
 			Name = "InnerBox"
@@ -6164,7 +6164,7 @@ struct Enum
 			EnumType = HumanoidCollisionType
 		end
 	end
-
+	
 	module HumanoidDisplayDistanceType
 		module Viewer
 			include EnumItem
@@ -6172,14 +6172,14 @@ struct Enum
 			Value = 0
 			EnumType = HumanoidDisplayDistanceType
 		end
-
+		
 		module Subject
 			include EnumItem
 			Name = "Subject"
 			Value = 1
 			EnumType = HumanoidDisplayDistanceType
 		end
-
+		
 		module None
 			include EnumItem
 			Name = "None"
@@ -6187,7 +6187,7 @@ struct Enum
 			EnumType = HumanoidDisplayDistanceType
 		end
 	end
-
+	
 	module HumanoidHealthDisplayType
 		module DisplayWhenDamaged
 			include EnumItem
@@ -6195,14 +6195,14 @@ struct Enum
 			Value = 0
 			EnumType = HumanoidHealthDisplayType
 		end
-
+		
 		module AlwaysOn
 			include EnumItem
 			Name = "AlwaysOn"
 			Value = 1
 			EnumType = HumanoidHealthDisplayType
 		end
-
+		
 		module AlwaysOff
 			include EnumItem
 			Name = "AlwaysOff"
@@ -6210,7 +6210,7 @@ struct Enum
 			EnumType = HumanoidHealthDisplayType
 		end
 	end
-
+	
 	module HumanoidOnlySetCollisionsOnStateChange
 		module Default
 			include EnumItem
@@ -6218,14 +6218,14 @@ struct Enum
 			Value = 0
 			EnumType = HumanoidOnlySetCollisionsOnStateChange
 		end
-
+		
 		module Disabled
 			include EnumItem
 			Name = "Disabled"
 			Value = 1
 			EnumType = HumanoidOnlySetCollisionsOnStateChange
 		end
-
+		
 		module Enabled
 			include EnumItem
 			Name = "Enabled"
@@ -6233,7 +6233,7 @@ struct Enum
 			EnumType = HumanoidOnlySetCollisionsOnStateChange
 		end
 	end
-
+	
 	module HumanoidRigType
 		module R6
 			include EnumItem
@@ -6241,7 +6241,7 @@ struct Enum
 			Value = 0
 			EnumType = HumanoidRigType
 		end
-
+		
 		module R15
 			include EnumItem
 			Name = "R15"
@@ -6249,7 +6249,7 @@ struct Enum
 			EnumType = HumanoidRigType
 		end
 	end
-
+	
 	module HumanoidStateMachineMode
 		module Default
 			include EnumItem
@@ -6257,21 +6257,21 @@ struct Enum
 			Value = 0
 			EnumType = HumanoidStateMachineMode
 		end
-
+		
 		module Legacy
 			include EnumItem
 			Name = "Legacy"
 			Value = 1
 			EnumType = HumanoidStateMachineMode
 		end
-
+		
 		module NoStateMachine
 			include EnumItem
 			Name = "NoStateMachine"
 			Value = 2
 			EnumType = HumanoidStateMachineMode
 		end
-
+		
 		module LuaStateMachine
 			include EnumItem
 			Name = "LuaStateMachine"
@@ -6279,7 +6279,7 @@ struct Enum
 			EnumType = HumanoidStateMachineMode
 		end
 	end
-
+	
 	module HumanoidStateType
 		module FallingDown
 			include EnumItem
@@ -6287,112 +6287,112 @@ struct Enum
 			Value = 0
 			EnumType = HumanoidStateType
 		end
-
+		
 		module Running
 			include EnumItem
 			Name = "Running"
 			Value = 8
 			EnumType = HumanoidStateType
 		end
-
+		
 		module RunningNoPhysics
 			include EnumItem
 			Name = "RunningNoPhysics"
 			Value = 10
 			EnumType = HumanoidStateType
 		end
-
+		
 		module Climbing
 			include EnumItem
 			Name = "Climbing"
 			Value = 12
 			EnumType = HumanoidStateType
 		end
-
+		
 		module StrafingNoPhysics
 			include EnumItem
 			Name = "StrafingNoPhysics"
 			Value = 11
 			EnumType = HumanoidStateType
 		end
-
+		
 		module Ragdoll
 			include EnumItem
 			Name = "Ragdoll"
 			Value = 1
 			EnumType = HumanoidStateType
 		end
-
+		
 		module GettingUp
 			include EnumItem
 			Name = "GettingUp"
 			Value = 2
 			EnumType = HumanoidStateType
 		end
-
+		
 		module Jumping
 			include EnumItem
 			Name = "Jumping"
 			Value = 3
 			EnumType = HumanoidStateType
 		end
-
+		
 		module Landed
 			include EnumItem
 			Name = "Landed"
 			Value = 7
 			EnumType = HumanoidStateType
 		end
-
+		
 		module Flying
 			include EnumItem
 			Name = "Flying"
 			Value = 6
 			EnumType = HumanoidStateType
 		end
-
+		
 		module Freefall
 			include EnumItem
 			Name = "Freefall"
 			Value = 5
 			EnumType = HumanoidStateType
 		end
-
+		
 		module Seated
 			include EnumItem
 			Name = "Seated"
 			Value = 13
 			EnumType = HumanoidStateType
 		end
-
+		
 		module PlatformStanding
 			include EnumItem
 			Name = "PlatformStanding"
 			Value = 14
 			EnumType = HumanoidStateType
 		end
-
+		
 		module Dead
 			include EnumItem
 			Name = "Dead"
 			Value = 15
 			EnumType = HumanoidStateType
 		end
-
+		
 		module Swimming
 			include EnumItem
 			Name = "Swimming"
 			Value = 4
 			EnumType = HumanoidStateType
 		end
-
+		
 		module Physics
 			include EnumItem
 			Name = "Physics"
 			Value = 16
 			EnumType = HumanoidStateType
 		end
-
+		
 		module None
 			include EnumItem
 			Name = "None"
@@ -6400,7 +6400,7 @@ struct Enum
 			EnumType = HumanoidStateType
 		end
 	end
-
+	
 	module IKCollisionsMode
 		module NoCollisions
 			include EnumItem
@@ -6408,14 +6408,14 @@ struct Enum
 			Value = 0
 			EnumType = IKCollisionsMode
 		end
-
+		
 		module OtherMechanismsAnchored
 			include EnumItem
 			Name = "OtherMechanismsAnchored"
 			Value = 1
 			EnumType = IKCollisionsMode
 		end
-
+		
 		module IncludeContactedMechanisms
 			include EnumItem
 			Name = "IncludeContactedMechanisms"
@@ -6423,7 +6423,7 @@ struct Enum
 			EnumType = IKCollisionsMode
 		end
 	end
-
+	
 	module IKControlType
 		module Transform
 			include EnumItem
@@ -6431,21 +6431,21 @@ struct Enum
 			Value = 0
 			EnumType = IKControlType
 		end
-
+		
 		module Position
 			include EnumItem
 			Name = "Position"
 			Value = 1
 			EnumType = IKControlType
 		end
-
+		
 		module Rotation
 			include EnumItem
 			Name = "Rotation"
 			Value = 2
 			EnumType = IKControlType
 		end
-
+		
 		module LookAt
 			include EnumItem
 			Name = "LookAt"
@@ -6453,7 +6453,7 @@ struct Enum
 			EnumType = IKControlType
 		end
 	end
-
+	
 	module IXPLoadingStatus
 		module None
 			include EnumItem
@@ -6461,42 +6461,42 @@ struct Enum
 			Value = 0
 			EnumType = IXPLoadingStatus
 		end
-
+		
 		module Pending
 			include EnumItem
 			Name = "Pending"
 			Value = 1
 			EnumType = IXPLoadingStatus
 		end
-
+		
 		module Initialized
 			include EnumItem
 			Name = "Initialized"
 			Value = 2
 			EnumType = IXPLoadingStatus
 		end
-
+		
 		module ErrorTimedOut
 			include EnumItem
 			Name = "ErrorTimedOut"
 			Value = 6
 			EnumType = IXPLoadingStatus
 		end
-
+		
 		module ErrorConnection
 			include EnumItem
 			Name = "ErrorConnection"
 			Value = 4
 			EnumType = IXPLoadingStatus
 		end
-
+		
 		module ErrorJsonParse
 			include EnumItem
 			Name = "ErrorJsonParse"
 			Value = 5
 			EnumType = IXPLoadingStatus
 		end
-
+		
 		module ErrorInvalidUser
 			include EnumItem
 			Name = "ErrorInvalidUser"
@@ -6504,7 +6504,7 @@ struct Enum
 			EnumType = IXPLoadingStatus
 		end
 	end
-
+	
 	module InOut
 		module Edge
 			include EnumItem
@@ -6512,14 +6512,14 @@ struct Enum
 			Value = 0
 			EnumType = InOut
 		end
-
+		
 		module Inset
 			include EnumItem
 			Name = "Inset"
 			Value = 1
 			EnumType = InOut
 		end
-
+		
 		module Center
 			include EnumItem
 			Name = "Center"
@@ -6527,7 +6527,7 @@ struct Enum
 			EnumType = InOut
 		end
 	end
-
+	
 	module InfoType
 		module Asset
 			include EnumItem
@@ -6535,28 +6535,28 @@ struct Enum
 			Value = 0
 			EnumType = InfoType
 		end
-
+		
 		module Product
 			include EnumItem
 			Name = "Product"
 			Value = 1
 			EnumType = InfoType
 		end
-
+		
 		module GamePass
 			include EnumItem
 			Name = "GamePass"
 			Value = 2
 			EnumType = InfoType
 		end
-
+		
 		module Subscription
 			include EnumItem
 			Name = "Subscription"
 			Value = 3
 			EnumType = InfoType
 		end
-
+		
 		module Bundle
 			include EnumItem
 			Name = "Bundle"
@@ -6564,7 +6564,7 @@ struct Enum
 			EnumType = InfoType
 		end
 	end
-
+	
 	module InitialDockState
 		module Top
 			include EnumItem
@@ -6572,28 +6572,28 @@ struct Enum
 			Value = 0
 			EnumType = InitialDockState
 		end
-
+		
 		module Bottom
 			include EnumItem
 			Name = "Bottom"
 			Value = 1
 			EnumType = InitialDockState
 		end
-
+		
 		module Left
 			include EnumItem
 			Name = "Left"
 			Value = 2
 			EnumType = InitialDockState
 		end
-
+		
 		module Right
 			include EnumItem
 			Name = "Right"
 			Value = 3
 			EnumType = InitialDockState
 		end
-
+		
 		module Float
 			include EnumItem
 			Name = "Float"
@@ -6601,7 +6601,7 @@ struct Enum
 			EnumType = InitialDockState
 		end
 	end
-
+	
 	module InputType
 		module NoInput
 			include EnumItem
@@ -6609,14 +6609,14 @@ struct Enum
 			Value = 0
 			EnumType = InputType
 		end
-
+		
 		module Constant
 			include EnumItem
 			Name = "Constant"
 			Value = 12
 			EnumType = InputType
 		end
-
+		
 		module Sin
 			include EnumItem
 			Name = "Sin"
@@ -6624,7 +6624,7 @@ struct Enum
 			EnumType = InputType
 		end
 	end
-
+	
 	module InterpolationThrottlingMode
 		module Default
 			include EnumItem
@@ -6632,14 +6632,14 @@ struct Enum
 			Value = 0
 			EnumType = InterpolationThrottlingMode
 		end
-
+		
 		module Disabled
 			include EnumItem
 			Name = "Disabled"
 			Value = 1
 			EnumType = InterpolationThrottlingMode
 		end
-
+		
 		module Enabled
 			include EnumItem
 			Name = "Enabled"
@@ -6647,7 +6647,7 @@ struct Enum
 			EnumType = InterpolationThrottlingMode
 		end
 	end
-
+	
 	module JointCreationMode
 		module All
 			include EnumItem
@@ -6655,14 +6655,14 @@ struct Enum
 			Value = 0
 			EnumType = JointCreationMode
 		end
-
+		
 		module Surface
 			include EnumItem
 			Name = "Surface"
 			Value = 1
 			EnumType = JointCreationMode
 		end
-
+		
 		module None
 			include EnumItem
 			Name = "None"
@@ -6670,7 +6670,7 @@ struct Enum
 			EnumType = JointCreationMode
 		end
 	end
-
+	
 	module KeyCode
 		module Unknown
 			include EnumItem
@@ -6678,1771 +6678,1771 @@ struct Enum
 			Value = 0
 			EnumType = KeyCode
 		end
-
+		
 		module Backspace
 			include EnumItem
 			Name = "Backspace"
 			Value = 8
 			EnumType = KeyCode
 		end
-
+		
 		module Tab
 			include EnumItem
 			Name = "Tab"
 			Value = 9
 			EnumType = KeyCode
 		end
-
+		
 		module Clear
 			include EnumItem
 			Name = "Clear"
 			Value = 12
 			EnumType = KeyCode
 		end
-
+		
 		module Return
 			include EnumItem
 			Name = "Return"
 			Value = 13
 			EnumType = KeyCode
 		end
-
+		
 		module Pause
 			include EnumItem
 			Name = "Pause"
 			Value = 19
 			EnumType = KeyCode
 		end
-
+		
 		module Escape
 			include EnumItem
 			Name = "Escape"
 			Value = 27
 			EnumType = KeyCode
 		end
-
+		
 		module Space
 			include EnumItem
 			Name = "Space"
 			Value = 32
 			EnumType = KeyCode
 		end
-
+		
 		module QuotedDouble
 			include EnumItem
 			Name = "QuotedDouble"
 			Value = 34
 			EnumType = KeyCode
 		end
-
+		
 		module Hash
 			include EnumItem
 			Name = "Hash"
 			Value = 35
 			EnumType = KeyCode
 		end
-
+		
 		module Dollar
 			include EnumItem
 			Name = "Dollar"
 			Value = 36
 			EnumType = KeyCode
 		end
-
+		
 		module Percent
 			include EnumItem
 			Name = "Percent"
 			Value = 37
 			EnumType = KeyCode
 		end
-
+		
 		module Ampersand
 			include EnumItem
 			Name = "Ampersand"
 			Value = 38
 			EnumType = KeyCode
 		end
-
+		
 		module Quote
 			include EnumItem
 			Name = "Quote"
 			Value = 39
 			EnumType = KeyCode
 		end
-
+		
 		module LeftParenthesis
 			include EnumItem
 			Name = "LeftParenthesis"
 			Value = 40
 			EnumType = KeyCode
 		end
-
+		
 		module RightParenthesis
 			include EnumItem
 			Name = "RightParenthesis"
 			Value = 41
 			EnumType = KeyCode
 		end
-
+		
 		module Asterisk
 			include EnumItem
 			Name = "Asterisk"
 			Value = 42
 			EnumType = KeyCode
 		end
-
+		
 		module Plus
 			include EnumItem
 			Name = "Plus"
 			Value = 43
 			EnumType = KeyCode
 		end
-
+		
 		module Comma
 			include EnumItem
 			Name = "Comma"
 			Value = 44
 			EnumType = KeyCode
 		end
-
+		
 		module Minus
 			include EnumItem
 			Name = "Minus"
 			Value = 45
 			EnumType = KeyCode
 		end
-
+		
 		module Period
 			include EnumItem
 			Name = "Period"
 			Value = 46
 			EnumType = KeyCode
 		end
-
+		
 		module Slash
 			include EnumItem
 			Name = "Slash"
 			Value = 47
 			EnumType = KeyCode
 		end
-
+		
 		module Zero
 			include EnumItem
 			Name = "Zero"
 			Value = 48
 			EnumType = KeyCode
 		end
-
+		
 		module One
 			include EnumItem
 			Name = "One"
 			Value = 49
 			EnumType = KeyCode
 		end
-
+		
 		module Two
 			include EnumItem
 			Name = "Two"
 			Value = 50
 			EnumType = KeyCode
 		end
-
+		
 		module Three
 			include EnumItem
 			Name = "Three"
 			Value = 51
 			EnumType = KeyCode
 		end
-
+		
 		module Four
 			include EnumItem
 			Name = "Four"
 			Value = 52
 			EnumType = KeyCode
 		end
-
+		
 		module Five
 			include EnumItem
 			Name = "Five"
 			Value = 53
 			EnumType = KeyCode
 		end
-
+		
 		module Six
 			include EnumItem
 			Name = "Six"
 			Value = 54
 			EnumType = KeyCode
 		end
-
+		
 		module Seven
 			include EnumItem
 			Name = "Seven"
 			Value = 55
 			EnumType = KeyCode
 		end
-
+		
 		module Eight
 			include EnumItem
 			Name = "Eight"
 			Value = 56
 			EnumType = KeyCode
 		end
-
+		
 		module Nine
 			include EnumItem
 			Name = "Nine"
 			Value = 57
 			EnumType = KeyCode
 		end
-
+		
 		module Colon
 			include EnumItem
 			Name = "Colon"
 			Value = 58
 			EnumType = KeyCode
 		end
-
+		
 		module Semicolon
 			include EnumItem
 			Name = "Semicolon"
 			Value = 59
 			EnumType = KeyCode
 		end
-
+		
 		module LessThan
 			include EnumItem
 			Name = "LessThan"
 			Value = 60
 			EnumType = KeyCode
 		end
-
+		
 		module Equals
 			include EnumItem
 			Name = "Equals"
 			Value = 61
 			EnumType = KeyCode
 		end
-
+		
 		module GreaterThan
 			include EnumItem
 			Name = "GreaterThan"
 			Value = 62
 			EnumType = KeyCode
 		end
-
+		
 		module Question
 			include EnumItem
 			Name = "Question"
 			Value = 63
 			EnumType = KeyCode
 		end
-
+		
 		module At
 			include EnumItem
 			Name = "At"
 			Value = 64
 			EnumType = KeyCode
 		end
-
+		
 		module LeftBracket
 			include EnumItem
 			Name = "LeftBracket"
 			Value = 91
 			EnumType = KeyCode
 		end
-
+		
 		module BackSlash
 			include EnumItem
 			Name = "BackSlash"
 			Value = 92
 			EnumType = KeyCode
 		end
-
+		
 		module RightBracket
 			include EnumItem
 			Name = "RightBracket"
 			Value = 93
 			EnumType = KeyCode
 		end
-
+		
 		module Caret
 			include EnumItem
 			Name = "Caret"
 			Value = 94
 			EnumType = KeyCode
 		end
-
+		
 		module Underscore
 			include EnumItem
 			Name = "Underscore"
 			Value = 95
 			EnumType = KeyCode
 		end
-
+		
 		module Backquote
 			include EnumItem
 			Name = "Backquote"
 			Value = 96
 			EnumType = KeyCode
 		end
-
+		
 		module A
 			include EnumItem
 			Name = "A"
 			Value = 97
 			EnumType = KeyCode
 		end
-
+		
 		module B
 			include EnumItem
 			Name = "B"
 			Value = 98
 			EnumType = KeyCode
 		end
-
+		
 		module C
 			include EnumItem
 			Name = "C"
 			Value = 99
 			EnumType = KeyCode
 		end
-
+		
 		module D
 			include EnumItem
 			Name = "D"
 			Value = 100
 			EnumType = KeyCode
 		end
-
+		
 		module E
 			include EnumItem
 			Name = "E"
 			Value = 101
 			EnumType = KeyCode
 		end
-
+		
 		module F
 			include EnumItem
 			Name = "F"
 			Value = 102
 			EnumType = KeyCode
 		end
-
+		
 		module G
 			include EnumItem
 			Name = "G"
 			Value = 103
 			EnumType = KeyCode
 		end
-
+		
 		module H
 			include EnumItem
 			Name = "H"
 			Value = 104
 			EnumType = KeyCode
 		end
-
+		
 		module I
 			include EnumItem
 			Name = "I"
 			Value = 105
 			EnumType = KeyCode
 		end
-
+		
 		module J
 			include EnumItem
 			Name = "J"
 			Value = 106
 			EnumType = KeyCode
 		end
-
+		
 		module K
 			include EnumItem
 			Name = "K"
 			Value = 107
 			EnumType = KeyCode
 		end
-
+		
 		module L
 			include EnumItem
 			Name = "L"
 			Value = 108
 			EnumType = KeyCode
 		end
-
+		
 		module M
 			include EnumItem
 			Name = "M"
 			Value = 109
 			EnumType = KeyCode
 		end
-
+		
 		module N
 			include EnumItem
 			Name = "N"
 			Value = 110
 			EnumType = KeyCode
 		end
-
+		
 		module O
 			include EnumItem
 			Name = "O"
 			Value = 111
 			EnumType = KeyCode
 		end
-
+		
 		module P
 			include EnumItem
 			Name = "P"
 			Value = 112
 			EnumType = KeyCode
 		end
-
+		
 		module Q
 			include EnumItem
 			Name = "Q"
 			Value = 113
 			EnumType = KeyCode
 		end
-
+		
 		module R
 			include EnumItem
 			Name = "R"
 			Value = 114
 			EnumType = KeyCode
 		end
-
+		
 		module S
 			include EnumItem
 			Name = "S"
 			Value = 115
 			EnumType = KeyCode
 		end
-
+		
 		module T
 			include EnumItem
 			Name = "T"
 			Value = 116
 			EnumType = KeyCode
 		end
-
+		
 		module U
 			include EnumItem
 			Name = "U"
 			Value = 117
 			EnumType = KeyCode
 		end
-
+		
 		module V
 			include EnumItem
 			Name = "V"
 			Value = 118
 			EnumType = KeyCode
 		end
-
+		
 		module W
 			include EnumItem
 			Name = "W"
 			Value = 119
 			EnumType = KeyCode
 		end
-
+		
 		module X
 			include EnumItem
 			Name = "X"
 			Value = 120
 			EnumType = KeyCode
 		end
-
+		
 		module Y
 			include EnumItem
 			Name = "Y"
 			Value = 121
 			EnumType = KeyCode
 		end
-
+		
 		module Z
 			include EnumItem
 			Name = "Z"
 			Value = 122
 			EnumType = KeyCode
 		end
-
+		
 		module LeftCurly
 			include EnumItem
 			Name = "LeftCurly"
 			Value = 123
 			EnumType = KeyCode
 		end
-
+		
 		module Pipe
 			include EnumItem
 			Name = "Pipe"
 			Value = 124
 			EnumType = KeyCode
 		end
-
+		
 		module RightCurly
 			include EnumItem
 			Name = "RightCurly"
 			Value = 125
 			EnumType = KeyCode
 		end
-
+		
 		module Tilde
 			include EnumItem
 			Name = "Tilde"
 			Value = 126
 			EnumType = KeyCode
 		end
-
+		
 		module Delete
 			include EnumItem
 			Name = "Delete"
 			Value = 127
 			EnumType = KeyCode
 		end
-
+		
 		module KeypadZero
 			include EnumItem
 			Name = "KeypadZero"
 			Value = 256
 			EnumType = KeyCode
 		end
-
+		
 		module KeypadOne
 			include EnumItem
 			Name = "KeypadOne"
 			Value = 257
 			EnumType = KeyCode
 		end
-
+		
 		module KeypadTwo
 			include EnumItem
 			Name = "KeypadTwo"
 			Value = 258
 			EnumType = KeyCode
 		end
-
+		
 		module KeypadThree
 			include EnumItem
 			Name = "KeypadThree"
 			Value = 259
 			EnumType = KeyCode
 		end
-
+		
 		module KeypadFour
 			include EnumItem
 			Name = "KeypadFour"
 			Value = 260
 			EnumType = KeyCode
 		end
-
+		
 		module KeypadFive
 			include EnumItem
 			Name = "KeypadFive"
 			Value = 261
 			EnumType = KeyCode
 		end
-
+		
 		module KeypadSix
 			include EnumItem
 			Name = "KeypadSix"
 			Value = 262
 			EnumType = KeyCode
 		end
-
+		
 		module KeypadSeven
 			include EnumItem
 			Name = "KeypadSeven"
 			Value = 263
 			EnumType = KeyCode
 		end
-
+		
 		module KeypadEight
 			include EnumItem
 			Name = "KeypadEight"
 			Value = 264
 			EnumType = KeyCode
 		end
-
+		
 		module KeypadNine
 			include EnumItem
 			Name = "KeypadNine"
 			Value = 265
 			EnumType = KeyCode
 		end
-
+		
 		module KeypadPeriod
 			include EnumItem
 			Name = "KeypadPeriod"
 			Value = 266
 			EnumType = KeyCode
 		end
-
+		
 		module KeypadDivide
 			include EnumItem
 			Name = "KeypadDivide"
 			Value = 267
 			EnumType = KeyCode
 		end
-
+		
 		module KeypadMultiply
 			include EnumItem
 			Name = "KeypadMultiply"
 			Value = 268
 			EnumType = KeyCode
 		end
-
+		
 		module KeypadMinus
 			include EnumItem
 			Name = "KeypadMinus"
 			Value = 269
 			EnumType = KeyCode
 		end
-
+		
 		module KeypadPlus
 			include EnumItem
 			Name = "KeypadPlus"
 			Value = 270
 			EnumType = KeyCode
 		end
-
+		
 		module KeypadEnter
 			include EnumItem
 			Name = "KeypadEnter"
 			Value = 271
 			EnumType = KeyCode
 		end
-
+		
 		module KeypadEquals
 			include EnumItem
 			Name = "KeypadEquals"
 			Value = 272
 			EnumType = KeyCode
 		end
-
+		
 		module Up
 			include EnumItem
 			Name = "Up"
 			Value = 273
 			EnumType = KeyCode
 		end
-
+		
 		module Down
 			include EnumItem
 			Name = "Down"
 			Value = 274
 			EnumType = KeyCode
 		end
-
+		
 		module Right
 			include EnumItem
 			Name = "Right"
 			Value = 275
 			EnumType = KeyCode
 		end
-
+		
 		module Left
 			include EnumItem
 			Name = "Left"
 			Value = 276
 			EnumType = KeyCode
 		end
-
+		
 		module Insert
 			include EnumItem
 			Name = "Insert"
 			Value = 277
 			EnumType = KeyCode
 		end
-
+		
 		module Home
 			include EnumItem
 			Name = "Home"
 			Value = 278
 			EnumType = KeyCode
 		end
-
+		
 		module End
 			include EnumItem
 			Name = "End"
 			Value = 279
 			EnumType = KeyCode
 		end
-
+		
 		module PageUp
 			include EnumItem
 			Name = "PageUp"
 			Value = 280
 			EnumType = KeyCode
 		end
-
+		
 		module PageDown
 			include EnumItem
 			Name = "PageDown"
 			Value = 281
 			EnumType = KeyCode
 		end
-
+		
 		module LeftShift
 			include EnumItem
 			Name = "LeftShift"
 			Value = 304
 			EnumType = KeyCode
 		end
-
+		
 		module RightShift
 			include EnumItem
 			Name = "RightShift"
 			Value = 303
 			EnumType = KeyCode
 		end
-
+		
 		module LeftMeta
 			include EnumItem
 			Name = "LeftMeta"
 			Value = 310
 			EnumType = KeyCode
 		end
-
+		
 		module RightMeta
 			include EnumItem
 			Name = "RightMeta"
 			Value = 309
 			EnumType = KeyCode
 		end
-
+		
 		module LeftAlt
 			include EnumItem
 			Name = "LeftAlt"
 			Value = 308
 			EnumType = KeyCode
 		end
-
+		
 		module RightAlt
 			include EnumItem
 			Name = "RightAlt"
 			Value = 307
 			EnumType = KeyCode
 		end
-
+		
 		module LeftControl
 			include EnumItem
 			Name = "LeftControl"
 			Value = 306
 			EnumType = KeyCode
 		end
-
+		
 		module RightControl
 			include EnumItem
 			Name = "RightControl"
 			Value = 305
 			EnumType = KeyCode
 		end
-
+		
 		module CapsLock
 			include EnumItem
 			Name = "CapsLock"
 			Value = 301
 			EnumType = KeyCode
 		end
-
+		
 		module NumLock
 			include EnumItem
 			Name = "NumLock"
 			Value = 300
 			EnumType = KeyCode
 		end
-
+		
 		module ScrollLock
 			include EnumItem
 			Name = "ScrollLock"
 			Value = 302
 			EnumType = KeyCode
 		end
-
+		
 		module LeftSuper
 			include EnumItem
 			Name = "LeftSuper"
 			Value = 311
 			EnumType = KeyCode
 		end
-
+		
 		module RightSuper
 			include EnumItem
 			Name = "RightSuper"
 			Value = 312
 			EnumType = KeyCode
 		end
-
+		
 		module Mode
 			include EnumItem
 			Name = "Mode"
 			Value = 313
 			EnumType = KeyCode
 		end
-
+		
 		module Compose
 			include EnumItem
 			Name = "Compose"
 			Value = 314
 			EnumType = KeyCode
 		end
-
+		
 		module Help
 			include EnumItem
 			Name = "Help"
 			Value = 315
 			EnumType = KeyCode
 		end
-
+		
 		module Print
 			include EnumItem
 			Name = "Print"
 			Value = 316
 			EnumType = KeyCode
 		end
-
+		
 		module SysReq
 			include EnumItem
 			Name = "SysReq"
 			Value = 317
 			EnumType = KeyCode
 		end
-
+		
 		module Break
 			include EnumItem
 			Name = "Break"
 			Value = 318
 			EnumType = KeyCode
 		end
-
+		
 		module Menu
 			include EnumItem
 			Name = "Menu"
 			Value = 319
 			EnumType = KeyCode
 		end
-
+		
 		module Power
 			include EnumItem
 			Name = "Power"
 			Value = 320
 			EnumType = KeyCode
 		end
-
+		
 		module Euro
 			include EnumItem
 			Name = "Euro"
 			Value = 321
 			EnumType = KeyCode
 		end
-
+		
 		module Undo
 			include EnumItem
 			Name = "Undo"
 			Value = 322
 			EnumType = KeyCode
 		end
-
+		
 		module F1
 			include EnumItem
 			Name = "F1"
 			Value = 282
 			EnumType = KeyCode
 		end
-
+		
 		module F2
 			include EnumItem
 			Name = "F2"
 			Value = 283
 			EnumType = KeyCode
 		end
-
+		
 		module F3
 			include EnumItem
 			Name = "F3"
 			Value = 284
 			EnumType = KeyCode
 		end
-
+		
 		module F4
 			include EnumItem
 			Name = "F4"
 			Value = 285
 			EnumType = KeyCode
 		end
-
+		
 		module F5
 			include EnumItem
 			Name = "F5"
 			Value = 286
 			EnumType = KeyCode
 		end
-
+		
 		module F6
 			include EnumItem
 			Name = "F6"
 			Value = 287
 			EnumType = KeyCode
 		end
-
+		
 		module F7
 			include EnumItem
 			Name = "F7"
 			Value = 288
 			EnumType = KeyCode
 		end
-
+		
 		module F8
 			include EnumItem
 			Name = "F8"
 			Value = 289
 			EnumType = KeyCode
 		end
-
+		
 		module F9
 			include EnumItem
 			Name = "F9"
 			Value = 290
 			EnumType = KeyCode
 		end
-
+		
 		module F10
 			include EnumItem
 			Name = "F10"
 			Value = 291
 			EnumType = KeyCode
 		end
-
+		
 		module F11
 			include EnumItem
 			Name = "F11"
 			Value = 292
 			EnumType = KeyCode
 		end
-
+		
 		module F12
 			include EnumItem
 			Name = "F12"
 			Value = 293
 			EnumType = KeyCode
 		end
-
+		
 		module F13
 			include EnumItem
 			Name = "F13"
 			Value = 294
 			EnumType = KeyCode
 		end
-
+		
 		module F14
 			include EnumItem
 			Name = "F14"
 			Value = 295
 			EnumType = KeyCode
 		end
-
+		
 		module F15
 			include EnumItem
 			Name = "F15"
 			Value = 296
 			EnumType = KeyCode
 		end
-
+		
 		module World0
 			include EnumItem
 			Name = "World0"
 			Value = 160
 			EnumType = KeyCode
 		end
-
+		
 		module World1
 			include EnumItem
 			Name = "World1"
 			Value = 161
 			EnumType = KeyCode
 		end
-
+		
 		module World2
 			include EnumItem
 			Name = "World2"
 			Value = 162
 			EnumType = KeyCode
 		end
-
+		
 		module World3
 			include EnumItem
 			Name = "World3"
 			Value = 163
 			EnumType = KeyCode
 		end
-
+		
 		module World4
 			include EnumItem
 			Name = "World4"
 			Value = 164
 			EnumType = KeyCode
 		end
-
+		
 		module World5
 			include EnumItem
 			Name = "World5"
 			Value = 165
 			EnumType = KeyCode
 		end
-
+		
 		module World6
 			include EnumItem
 			Name = "World6"
 			Value = 166
 			EnumType = KeyCode
 		end
-
+		
 		module World7
 			include EnumItem
 			Name = "World7"
 			Value = 167
 			EnumType = KeyCode
 		end
-
+		
 		module World8
 			include EnumItem
 			Name = "World8"
 			Value = 168
 			EnumType = KeyCode
 		end
-
+		
 		module World9
 			include EnumItem
 			Name = "World9"
 			Value = 169
 			EnumType = KeyCode
 		end
-
+		
 		module World10
 			include EnumItem
 			Name = "World10"
 			Value = 170
 			EnumType = KeyCode
 		end
-
+		
 		module World11
 			include EnumItem
 			Name = "World11"
 			Value = 171
 			EnumType = KeyCode
 		end
-
+		
 		module World12
 			include EnumItem
 			Name = "World12"
 			Value = 172
 			EnumType = KeyCode
 		end
-
+		
 		module World13
 			include EnumItem
 			Name = "World13"
 			Value = 173
 			EnumType = KeyCode
 		end
-
+		
 		module World14
 			include EnumItem
 			Name = "World14"
 			Value = 174
 			EnumType = KeyCode
 		end
-
+		
 		module World15
 			include EnumItem
 			Name = "World15"
 			Value = 175
 			EnumType = KeyCode
 		end
-
+		
 		module World16
 			include EnumItem
 			Name = "World16"
 			Value = 176
 			EnumType = KeyCode
 		end
-
+		
 		module World17
 			include EnumItem
 			Name = "World17"
 			Value = 177
 			EnumType = KeyCode
 		end
-
+		
 		module World18
 			include EnumItem
 			Name = "World18"
 			Value = 178
 			EnumType = KeyCode
 		end
-
+		
 		module World19
 			include EnumItem
 			Name = "World19"
 			Value = 179
 			EnumType = KeyCode
 		end
-
+		
 		module World20
 			include EnumItem
 			Name = "World20"
 			Value = 180
 			EnumType = KeyCode
 		end
-
+		
 		module World21
 			include EnumItem
 			Name = "World21"
 			Value = 181
 			EnumType = KeyCode
 		end
-
+		
 		module World22
 			include EnumItem
 			Name = "World22"
 			Value = 182
 			EnumType = KeyCode
 		end
-
+		
 		module World23
 			include EnumItem
 			Name = "World23"
 			Value = 183
 			EnumType = KeyCode
 		end
-
+		
 		module World24
 			include EnumItem
 			Name = "World24"
 			Value = 184
 			EnumType = KeyCode
 		end
-
+		
 		module World25
 			include EnumItem
 			Name = "World25"
 			Value = 185
 			EnumType = KeyCode
 		end
-
+		
 		module World26
 			include EnumItem
 			Name = "World26"
 			Value = 186
 			EnumType = KeyCode
 		end
-
+		
 		module World27
 			include EnumItem
 			Name = "World27"
 			Value = 187
 			EnumType = KeyCode
 		end
-
+		
 		module World28
 			include EnumItem
 			Name = "World28"
 			Value = 188
 			EnumType = KeyCode
 		end
-
+		
 		module World29
 			include EnumItem
 			Name = "World29"
 			Value = 189
 			EnumType = KeyCode
 		end
-
+		
 		module World30
 			include EnumItem
 			Name = "World30"
 			Value = 190
 			EnumType = KeyCode
 		end
-
+		
 		module World31
 			include EnumItem
 			Name = "World31"
 			Value = 191
 			EnumType = KeyCode
 		end
-
+		
 		module World32
 			include EnumItem
 			Name = "World32"
 			Value = 192
 			EnumType = KeyCode
 		end
-
+		
 		module World33
 			include EnumItem
 			Name = "World33"
 			Value = 193
 			EnumType = KeyCode
 		end
-
+		
 		module World34
 			include EnumItem
 			Name = "World34"
 			Value = 194
 			EnumType = KeyCode
 		end
-
+		
 		module World35
 			include EnumItem
 			Name = "World35"
 			Value = 195
 			EnumType = KeyCode
 		end
-
+		
 		module World36
 			include EnumItem
 			Name = "World36"
 			Value = 196
 			EnumType = KeyCode
 		end
-
+		
 		module World37
 			include EnumItem
 			Name = "World37"
 			Value = 197
 			EnumType = KeyCode
 		end
-
+		
 		module World38
 			include EnumItem
 			Name = "World38"
 			Value = 198
 			EnumType = KeyCode
 		end
-
+		
 		module World39
 			include EnumItem
 			Name = "World39"
 			Value = 199
 			EnumType = KeyCode
 		end
-
+		
 		module World40
 			include EnumItem
 			Name = "World40"
 			Value = 200
 			EnumType = KeyCode
 		end
-
+		
 		module World41
 			include EnumItem
 			Name = "World41"
 			Value = 201
 			EnumType = KeyCode
 		end
-
+		
 		module World42
 			include EnumItem
 			Name = "World42"
 			Value = 202
 			EnumType = KeyCode
 		end
-
+		
 		module World43
 			include EnumItem
 			Name = "World43"
 			Value = 203
 			EnumType = KeyCode
 		end
-
+		
 		module World44
 			include EnumItem
 			Name = "World44"
 			Value = 204
 			EnumType = KeyCode
 		end
-
+		
 		module World45
 			include EnumItem
 			Name = "World45"
 			Value = 205
 			EnumType = KeyCode
 		end
-
+		
 		module World46
 			include EnumItem
 			Name = "World46"
 			Value = 206
 			EnumType = KeyCode
 		end
-
+		
 		module World47
 			include EnumItem
 			Name = "World47"
 			Value = 207
 			EnumType = KeyCode
 		end
-
+		
 		module World48
 			include EnumItem
 			Name = "World48"
 			Value = 208
 			EnumType = KeyCode
 		end
-
+		
 		module World49
 			include EnumItem
 			Name = "World49"
 			Value = 209
 			EnumType = KeyCode
 		end
-
+		
 		module World50
 			include EnumItem
 			Name = "World50"
 			Value = 210
 			EnumType = KeyCode
 		end
-
+		
 		module World51
 			include EnumItem
 			Name = "World51"
 			Value = 211
 			EnumType = KeyCode
 		end
-
+		
 		module World52
 			include EnumItem
 			Name = "World52"
 			Value = 212
 			EnumType = KeyCode
 		end
-
+		
 		module World53
 			include EnumItem
 			Name = "World53"
 			Value = 213
 			EnumType = KeyCode
 		end
-
+		
 		module World54
 			include EnumItem
 			Name = "World54"
 			Value = 214
 			EnumType = KeyCode
 		end
-
+		
 		module World55
 			include EnumItem
 			Name = "World55"
 			Value = 215
 			EnumType = KeyCode
 		end
-
+		
 		module World56
 			include EnumItem
 			Name = "World56"
 			Value = 216
 			EnumType = KeyCode
 		end
-
+		
 		module World57
 			include EnumItem
 			Name = "World57"
 			Value = 217
 			EnumType = KeyCode
 		end
-
+		
 		module World58
 			include EnumItem
 			Name = "World58"
 			Value = 218
 			EnumType = KeyCode
 		end
-
+		
 		module World59
 			include EnumItem
 			Name = "World59"
 			Value = 219
 			EnumType = KeyCode
 		end
-
+		
 		module World60
 			include EnumItem
 			Name = "World60"
 			Value = 220
 			EnumType = KeyCode
 		end
-
+		
 		module World61
 			include EnumItem
 			Name = "World61"
 			Value = 221
 			EnumType = KeyCode
 		end
-
+		
 		module World62
 			include EnumItem
 			Name = "World62"
 			Value = 222
 			EnumType = KeyCode
 		end
-
+		
 		module World63
 			include EnumItem
 			Name = "World63"
 			Value = 223
 			EnumType = KeyCode
 		end
-
+		
 		module World64
 			include EnumItem
 			Name = "World64"
 			Value = 224
 			EnumType = KeyCode
 		end
-
+		
 		module World65
 			include EnumItem
 			Name = "World65"
 			Value = 225
 			EnumType = KeyCode
 		end
-
+		
 		module World66
 			include EnumItem
 			Name = "World66"
 			Value = 226
 			EnumType = KeyCode
 		end
-
+		
 		module World67
 			include EnumItem
 			Name = "World67"
 			Value = 227
 			EnumType = KeyCode
 		end
-
+		
 		module World68
 			include EnumItem
 			Name = "World68"
 			Value = 228
 			EnumType = KeyCode
 		end
-
+		
 		module World69
 			include EnumItem
 			Name = "World69"
 			Value = 229
 			EnumType = KeyCode
 		end
-
+		
 		module World70
 			include EnumItem
 			Name = "World70"
 			Value = 230
 			EnumType = KeyCode
 		end
-
+		
 		module World71
 			include EnumItem
 			Name = "World71"
 			Value = 231
 			EnumType = KeyCode
 		end
-
+		
 		module World72
 			include EnumItem
 			Name = "World72"
 			Value = 232
 			EnumType = KeyCode
 		end
-
+		
 		module World73
 			include EnumItem
 			Name = "World73"
 			Value = 233
 			EnumType = KeyCode
 		end
-
+		
 		module World74
 			include EnumItem
 			Name = "World74"
 			Value = 234
 			EnumType = KeyCode
 		end
-
+		
 		module World75
 			include EnumItem
 			Name = "World75"
 			Value = 235
 			EnumType = KeyCode
 		end
-
+		
 		module World76
 			include EnumItem
 			Name = "World76"
 			Value = 236
 			EnumType = KeyCode
 		end
-
+		
 		module World77
 			include EnumItem
 			Name = "World77"
 			Value = 237
 			EnumType = KeyCode
 		end
-
+		
 		module World78
 			include EnumItem
 			Name = "World78"
 			Value = 238
 			EnumType = KeyCode
 		end
-
+		
 		module World79
 			include EnumItem
 			Name = "World79"
 			Value = 239
 			EnumType = KeyCode
 		end
-
+		
 		module World80
 			include EnumItem
 			Name = "World80"
 			Value = 240
 			EnumType = KeyCode
 		end
-
+		
 		module World81
 			include EnumItem
 			Name = "World81"
 			Value = 241
 			EnumType = KeyCode
 		end
-
+		
 		module World82
 			include EnumItem
 			Name = "World82"
 			Value = 242
 			EnumType = KeyCode
 		end
-
+		
 		module World83
 			include EnumItem
 			Name = "World83"
 			Value = 243
 			EnumType = KeyCode
 		end
-
+		
 		module World84
 			include EnumItem
 			Name = "World84"
 			Value = 244
 			EnumType = KeyCode
 		end
-
+		
 		module World85
 			include EnumItem
 			Name = "World85"
 			Value = 245
 			EnumType = KeyCode
 		end
-
+		
 		module World86
 			include EnumItem
 			Name = "World86"
 			Value = 246
 			EnumType = KeyCode
 		end
-
+		
 		module World87
 			include EnumItem
 			Name = "World87"
 			Value = 247
 			EnumType = KeyCode
 		end
-
+		
 		module World88
 			include EnumItem
 			Name = "World88"
 			Value = 248
 			EnumType = KeyCode
 		end
-
+		
 		module World89
 			include EnumItem
 			Name = "World89"
 			Value = 249
 			EnumType = KeyCode
 		end
-
+		
 		module World90
 			include EnumItem
 			Name = "World90"
 			Value = 250
 			EnumType = KeyCode
 		end
-
+		
 		module World91
 			include EnumItem
 			Name = "World91"
 			Value = 251
 			EnumType = KeyCode
 		end
-
+		
 		module World92
 			include EnumItem
 			Name = "World92"
 			Value = 252
 			EnumType = KeyCode
 		end
-
+		
 		module World93
 			include EnumItem
 			Name = "World93"
 			Value = 253
 			EnumType = KeyCode
 		end
-
+		
 		module World94
 			include EnumItem
 			Name = "World94"
 			Value = 254
 			EnumType = KeyCode
 		end
-
+		
 		module World95
 			include EnumItem
 			Name = "World95"
 			Value = 255
 			EnumType = KeyCode
 		end
-
+		
 		module ButtonX
 			include EnumItem
 			Name = "ButtonX"
 			Value = 1000
 			EnumType = KeyCode
 		end
-
+		
 		module ButtonY
 			include EnumItem
 			Name = "ButtonY"
 			Value = 1001
 			EnumType = KeyCode
 		end
-
+		
 		module ButtonA
 			include EnumItem
 			Name = "ButtonA"
 			Value = 1002
 			EnumType = KeyCode
 		end
-
+		
 		module ButtonB
 			include EnumItem
 			Name = "ButtonB"
 			Value = 1003
 			EnumType = KeyCode
 		end
-
+		
 		module ButtonR1
 			include EnumItem
 			Name = "ButtonR1"
 			Value = 1004
 			EnumType = KeyCode
 		end
-
+		
 		module ButtonL1
 			include EnumItem
 			Name = "ButtonL1"
 			Value = 1005
 			EnumType = KeyCode
 		end
-
+		
 		module ButtonR2
 			include EnumItem
 			Name = "ButtonR2"
 			Value = 1006
 			EnumType = KeyCode
 		end
-
+		
 		module ButtonL2
 			include EnumItem
 			Name = "ButtonL2"
 			Value = 1007
 			EnumType = KeyCode
 		end
-
+		
 		module ButtonR3
 			include EnumItem
 			Name = "ButtonR3"
 			Value = 1008
 			EnumType = KeyCode
 		end
-
+		
 		module ButtonL3
 			include EnumItem
 			Name = "ButtonL3"
 			Value = 1009
 			EnumType = KeyCode
 		end
-
+		
 		module ButtonStart
 			include EnumItem
 			Name = "ButtonStart"
 			Value = 1010
 			EnumType = KeyCode
 		end
-
+		
 		module ButtonSelect
 			include EnumItem
 			Name = "ButtonSelect"
 			Value = 1011
 			EnumType = KeyCode
 		end
-
+		
 		module DPadLeft
 			include EnumItem
 			Name = "DPadLeft"
 			Value = 1012
 			EnumType = KeyCode
 		end
-
+		
 		module DPadRight
 			include EnumItem
 			Name = "DPadRight"
 			Value = 1013
 			EnumType = KeyCode
 		end
-
+		
 		module DPadUp
 			include EnumItem
 			Name = "DPadUp"
 			Value = 1014
 			EnumType = KeyCode
 		end
-
+		
 		module DPadDown
 			include EnumItem
 			Name = "DPadDown"
 			Value = 1015
 			EnumType = KeyCode
 		end
-
+		
 		module Thumbstick1
 			include EnumItem
 			Name = "Thumbstick1"
 			Value = 1016
 			EnumType = KeyCode
 		end
-
+		
 		module Thumbstick2
 			include EnumItem
 			Name = "Thumbstick2"
@@ -8450,7 +8450,7 @@ struct Enum
 			EnumType = KeyCode
 		end
 	end
-
+	
 	module KeyInterpolationMode
 		module Constant
 			include EnumItem
@@ -8458,14 +8458,14 @@ struct Enum
 			Value = 0
 			EnumType = KeyInterpolationMode
 		end
-
+		
 		module Linear
 			include EnumItem
 			Name = "Linear"
 			Value = 1
 			EnumType = KeyInterpolationMode
 		end
-
+		
 		module Cubic
 			include EnumItem
 			Name = "Cubic"
@@ -8473,7 +8473,7 @@ struct Enum
 			EnumType = KeyInterpolationMode
 		end
 	end
-
+	
 	module KeywordFilterType
 		module Include
 			include EnumItem
@@ -8481,7 +8481,7 @@ struct Enum
 			Value = 0
 			EnumType = KeywordFilterType
 		end
-
+		
 		module Exclude
 			include EnumItem
 			Name = "Exclude"
@@ -8489,7 +8489,7 @@ struct Enum
 			EnumType = KeywordFilterType
 		end
 	end
-
+	
 	module Language
 		module Default
 			include EnumItem
@@ -8498,7 +8498,7 @@ struct Enum
 			EnumType = Language
 		end
 	end
-
+	
 	module LeftRight
 		module Left
 			include EnumItem
@@ -8506,14 +8506,14 @@ struct Enum
 			Value = 0
 			EnumType = LeftRight
 		end
-
+		
 		module Center
 			include EnumItem
 			Name = "Center"
 			Value = 1
 			EnumType = LeftRight
 		end
-
+		
 		module Right
 			include EnumItem
 			Name = "Right"
@@ -8521,7 +8521,7 @@ struct Enum
 			EnumType = LeftRight
 		end
 	end
-
+	
 	module Limb
 		module Head
 			include EnumItem
@@ -8529,42 +8529,42 @@ struct Enum
 			Value = 0
 			EnumType = Limb
 		end
-
+		
 		module Torso
 			include EnumItem
 			Name = "Torso"
 			Value = 1
 			EnumType = Limb
 		end
-
+		
 		module LeftArm
 			include EnumItem
 			Name = "LeftArm"
 			Value = 2
 			EnumType = Limb
 		end
-
+		
 		module RightArm
 			include EnumItem
 			Name = "RightArm"
 			Value = 3
 			EnumType = Limb
 		end
-
+		
 		module LeftLeg
 			include EnumItem
 			Name = "LeftLeg"
 			Value = 4
 			EnumType = Limb
 		end
-
+		
 		module RightLeg
 			include EnumItem
 			Name = "RightLeg"
 			Value = 5
 			EnumType = Limb
 		end
-
+		
 		module Unknown
 			include EnumItem
 			Name = "Unknown"
@@ -8572,7 +8572,7 @@ struct Enum
 			EnumType = Limb
 		end
 	end
-
+	
 	module LineJoinMode
 		module Round
 			include EnumItem
@@ -8580,14 +8580,14 @@ struct Enum
 			Value = 0
 			EnumType = LineJoinMode
 		end
-
+		
 		module Bevel
 			include EnumItem
 			Name = "Bevel"
 			Value = 1
 			EnumType = LineJoinMode
 		end
-
+		
 		module Miter
 			include EnumItem
 			Name = "Miter"
@@ -8595,7 +8595,7 @@ struct Enum
 			EnumType = LineJoinMode
 		end
 	end
-
+	
 	module ListDisplayMode
 		module Horizontal
 			include EnumItem
@@ -8603,7 +8603,7 @@ struct Enum
 			Value = 0
 			EnumType = ListDisplayMode
 		end
-
+		
 		module Vertical
 			include EnumItem
 			Name = "Vertical"
@@ -8611,7 +8611,7 @@ struct Enum
 			EnumType = ListDisplayMode
 		end
 	end
-
+	
 	module ListenerType
 		module Camera
 			include EnumItem
@@ -8619,21 +8619,21 @@ struct Enum
 			Value = 0
 			EnumType = ListenerType
 		end
-
+		
 		module CFrame
 			include EnumItem
 			Name = "CFrame"
 			Value = 1
 			EnumType = ListenerType
 		end
-
+		
 		module ObjectPosition
 			include EnumItem
 			Name = "ObjectPosition"
 			Value = 2
 			EnumType = ListenerType
 		end
-
+		
 		module ObjectCFrame
 			include EnumItem
 			Name = "ObjectCFrame"
@@ -8641,7 +8641,7 @@ struct Enum
 			EnumType = ListenerType
 		end
 	end
-
+	
 	module LoadCharacterLayeredClothing
 		module Default
 			include EnumItem
@@ -8649,14 +8649,14 @@ struct Enum
 			Value = 0
 			EnumType = LoadCharacterLayeredClothing
 		end
-
+		
 		module Disabled
 			include EnumItem
 			Name = "Disabled"
 			Value = 1
 			EnumType = LoadCharacterLayeredClothing
 		end
-
+		
 		module Enabled
 			include EnumItem
 			Name = "Enabled"
@@ -8664,7 +8664,7 @@ struct Enum
 			EnumType = LoadCharacterLayeredClothing
 		end
 	end
-
+	
 	module LoadDynamicHeads
 		module Default
 			include EnumItem
@@ -8672,14 +8672,14 @@ struct Enum
 			Value = 0
 			EnumType = LoadDynamicHeads
 		end
-
+		
 		module Disabled
 			include EnumItem
 			Name = "Disabled"
 			Value = 1
 			EnumType = LoadDynamicHeads
 		end
-
+		
 		module Enabled
 			include EnumItem
 			Name = "Enabled"
@@ -8687,7 +8687,7 @@ struct Enum
 			EnumType = LoadDynamicHeads
 		end
 	end
-
+	
 	module MarkupKind
 		module PlainText
 			include EnumItem
@@ -8695,7 +8695,7 @@ struct Enum
 			Value = 0
 			EnumType = MarkupKind
 		end
-
+		
 		module Markdown
 			include EnumItem
 			Name = "Markdown"
@@ -8703,7 +8703,7 @@ struct Enum
 			EnumType = MarkupKind
 		end
 	end
-
+	
 	module Material
 		module Plastic
 			include EnumItem
@@ -8711,252 +8711,252 @@ struct Enum
 			Value = 256
 			EnumType = Material
 		end
-
+		
 		module Wood
 			include EnumItem
 			Name = "Wood"
 			Value = 512
 			EnumType = Material
 		end
-
+		
 		module Slate
 			include EnumItem
 			Name = "Slate"
 			Value = 800
 			EnumType = Material
 		end
-
+		
 		module Concrete
 			include EnumItem
 			Name = "Concrete"
 			Value = 816
 			EnumType = Material
 		end
-
+		
 		module CorrodedMetal
 			include EnumItem
 			Name = "CorrodedMetal"
 			Value = 1040
 			EnumType = Material
 		end
-
+		
 		module DiamondPlate
 			include EnumItem
 			Name = "DiamondPlate"
 			Value = 1056
 			EnumType = Material
 		end
-
+		
 		module Foil
 			include EnumItem
 			Name = "Foil"
 			Value = 1072
 			EnumType = Material
 		end
-
+		
 		module Grass
 			include EnumItem
 			Name = "Grass"
 			Value = 1280
 			EnumType = Material
 		end
-
+		
 		module Ice
 			include EnumItem
 			Name = "Ice"
 			Value = 1536
 			EnumType = Material
 		end
-
+		
 		module Marble
 			include EnumItem
 			Name = "Marble"
 			Value = 784
 			EnumType = Material
 		end
-
+		
 		module Granite
 			include EnumItem
 			Name = "Granite"
 			Value = 832
 			EnumType = Material
 		end
-
+		
 		module Brick
 			include EnumItem
 			Name = "Brick"
 			Value = 848
 			EnumType = Material
 		end
-
+		
 		module Pebble
 			include EnumItem
 			Name = "Pebble"
 			Value = 864
 			EnumType = Material
 		end
-
+		
 		module Sand
 			include EnumItem
 			Name = "Sand"
 			Value = 1296
 			EnumType = Material
 		end
-
+		
 		module Fabric
 			include EnumItem
 			Name = "Fabric"
 			Value = 1312
 			EnumType = Material
 		end
-
+		
 		module SmoothPlastic
 			include EnumItem
 			Name = "SmoothPlastic"
 			Value = 272
 			EnumType = Material
 		end
-
+		
 		module Metal
 			include EnumItem
 			Name = "Metal"
 			Value = 1088
 			EnumType = Material
 		end
-
+		
 		module WoodPlanks
 			include EnumItem
 			Name = "WoodPlanks"
 			Value = 528
 			EnumType = Material
 		end
-
+		
 		module Cobblestone
 			include EnumItem
 			Name = "Cobblestone"
 			Value = 880
 			EnumType = Material
 		end
-
+		
 		module Air
 			include EnumItem
 			Name = "Air"
 			Value = 1792
 			EnumType = Material
 		end
-
+		
 		module Water
 			include EnumItem
 			Name = "Water"
 			Value = 2048
 			EnumType = Material
 		end
-
+		
 		module Rock
 			include EnumItem
 			Name = "Rock"
 			Value = 896
 			EnumType = Material
 		end
-
+		
 		module Glacier
 			include EnumItem
 			Name = "Glacier"
 			Value = 1552
 			EnumType = Material
 		end
-
+		
 		module Snow
 			include EnumItem
 			Name = "Snow"
 			Value = 1328
 			EnumType = Material
 		end
-
+		
 		module Sandstone
 			include EnumItem
 			Name = "Sandstone"
 			Value = 912
 			EnumType = Material
 		end
-
+		
 		module Mud
 			include EnumItem
 			Name = "Mud"
 			Value = 1344
 			EnumType = Material
 		end
-
+		
 		module Basalt
 			include EnumItem
 			Name = "Basalt"
 			Value = 788
 			EnumType = Material
 		end
-
+		
 		module Ground
 			include EnumItem
 			Name = "Ground"
 			Value = 1360
 			EnumType = Material
 		end
-
+		
 		module CrackedLava
 			include EnumItem
 			Name = "CrackedLava"
 			Value = 804
 			EnumType = Material
 		end
-
+		
 		module Neon
 			include EnumItem
 			Name = "Neon"
 			Value = 288
 			EnumType = Material
 		end
-
+		
 		module Glass
 			include EnumItem
 			Name = "Glass"
 			Value = 1568
 			EnumType = Material
 		end
-
+		
 		module Asphalt
 			include EnumItem
 			Name = "Asphalt"
 			Value = 1376
 			EnumType = Material
 		end
-
+		
 		module LeafyGrass
 			include EnumItem
 			Name = "LeafyGrass"
 			Value = 1284
 			EnumType = Material
 		end
-
+		
 		module Salt
 			include EnumItem
 			Name = "Salt"
 			Value = 1392
 			EnumType = Material
 		end
-
+		
 		module Limestone
 			include EnumItem
 			Name = "Limestone"
 			Value = 820
 			EnumType = Material
 		end
-
+		
 		module Pavement
 			include EnumItem
 			Name = "Pavement"
 			Value = 836
 			EnumType = Material
 		end
-
+		
 		module ForceField
 			include EnumItem
 			Name = "ForceField"
@@ -8964,7 +8964,7 @@ struct Enum
 			EnumType = Material
 		end
 	end
-
+	
 	module MaterialPattern
 		module Regular
 			include EnumItem
@@ -8972,7 +8972,7 @@ struct Enum
 			Value = 0
 			EnumType = MaterialPattern
 		end
-
+		
 		module Organic
 			include EnumItem
 			Name = "Organic"
@@ -8980,7 +8980,7 @@ struct Enum
 			EnumType = MaterialPattern
 		end
 	end
-
+	
 	module MembershipType
 		module None
 			include EnumItem
@@ -8988,28 +8988,28 @@ struct Enum
 			Value = 0
 			EnumType = MembershipType
 		end
-
+		
 		module BuildersClub
 			include EnumItem
 			Name = "BuildersClub"
 			Value = 1
 			EnumType = MembershipType
 		end
-
+		
 		module TurboBuildersClub
 			include EnumItem
 			Name = "TurboBuildersClub"
 			Value = 2
 			EnumType = MembershipType
 		end
-
+		
 		module OutrageousBuildersClub
 			include EnumItem
 			Name = "OutrageousBuildersClub"
 			Value = 3
 			EnumType = MembershipType
 		end
-
+		
 		module Premium
 			include EnumItem
 			Name = "Premium"
@@ -9017,7 +9017,7 @@ struct Enum
 			EnumType = MembershipType
 		end
 	end
-
+	
 	module MeshPartDetailLevel
 		module DistanceBased
 			include EnumItem
@@ -9025,35 +9025,35 @@ struct Enum
 			Value = 0
 			EnumType = MeshPartDetailLevel
 		end
-
+		
 		module Level00
 			include EnumItem
 			Name = "Level00"
 			Value = 1
 			EnumType = MeshPartDetailLevel
 		end
-
+		
 		module Level01
 			include EnumItem
 			Name = "Level01"
 			Value = 2
 			EnumType = MeshPartDetailLevel
 		end
-
+		
 		module Level02
 			include EnumItem
 			Name = "Level02"
 			Value = 3
 			EnumType = MeshPartDetailLevel
 		end
-
+		
 		module Level03
 			include EnumItem
 			Name = "Level03"
 			Value = 4
 			EnumType = MeshPartDetailLevel
 		end
-
+		
 		module Level04
 			include EnumItem
 			Name = "Level04"
@@ -9061,7 +9061,7 @@ struct Enum
 			EnumType = MeshPartDetailLevel
 		end
 	end
-
+	
 	module MeshPartHeadsAndAccessories
 		module Default
 			include EnumItem
@@ -9069,14 +9069,14 @@ struct Enum
 			Value = 0
 			EnumType = MeshPartHeadsAndAccessories
 		end
-
+		
 		module Disabled
 			include EnumItem
 			Name = "Disabled"
 			Value = 1
 			EnumType = MeshPartHeadsAndAccessories
 		end
-
+		
 		module Enabled
 			include EnumItem
 			Name = "Enabled"
@@ -9084,7 +9084,7 @@ struct Enum
 			EnumType = MeshPartHeadsAndAccessories
 		end
 	end
-
+	
 	module MeshScaleUnit
 		module Stud
 			include EnumItem
@@ -9092,35 +9092,35 @@ struct Enum
 			Value = 0
 			EnumType = MeshScaleUnit
 		end
-
+		
 		module Meter
 			include EnumItem
 			Name = "Meter"
 			Value = 1
 			EnumType = MeshScaleUnit
 		end
-
+		
 		module CM
 			include EnumItem
 			Name = "CM"
 			Value = 2
 			EnumType = MeshScaleUnit
 		end
-
+		
 		module MM
 			include EnumItem
 			Name = "MM"
 			Value = 3
 			EnumType = MeshScaleUnit
 		end
-
+		
 		module Foot
 			include EnumItem
 			Name = "Foot"
 			Value = 4
 			EnumType = MeshScaleUnit
 		end
-
+		
 		module Inch
 			include EnumItem
 			Name = "Inch"
@@ -9128,7 +9128,7 @@ struct Enum
 			EnumType = MeshScaleUnit
 		end
 	end
-
+	
 	module MeshType
 		module Head
 			include EnumItem
@@ -9136,77 +9136,77 @@ struct Enum
 			Value = 0
 			EnumType = MeshType
 		end
-
+		
 		module Torso
 			include EnumItem
 			Name = "Torso"
 			Value = 1
 			EnumType = MeshType
 		end
-
+		
 		module Wedge
 			include EnumItem
 			Name = "Wedge"
 			Value = 2
 			EnumType = MeshType
 		end
-
+		
 		module Prism
 			include EnumItem
 			Name = "Prism"
 			Value = 7
 			EnumType = MeshType
 		end
-
+		
 		module Pyramid
 			include EnumItem
 			Name = "Pyramid"
 			Value = 8
 			EnumType = MeshType
 		end
-
+		
 		module ParallelRamp
 			include EnumItem
 			Name = "ParallelRamp"
 			Value = 9
 			EnumType = MeshType
 		end
-
+		
 		module RightAngleRamp
 			include EnumItem
 			Name = "RightAngleRamp"
 			Value = 10
 			EnumType = MeshType
 		end
-
+		
 		module CornerWedge
 			include EnumItem
 			Name = "CornerWedge"
 			Value = 11
 			EnumType = MeshType
 		end
-
+		
 		module Brick
 			include EnumItem
 			Name = "Brick"
 			Value = 6
 			EnumType = MeshType
 		end
-
+		
 		module Sphere
 			include EnumItem
 			Name = "Sphere"
 			Value = 3
 			EnumType = MeshType
 		end
-
+		
 		module Cylinder
 			include EnumItem
 			Name = "Cylinder"
 			Value = 4
 			EnumType = MeshType
 		end
-
+		
 		module FileMesh
 			include EnumItem
 			Name = "FileMesh"
@@ -9214,7 +9214,7 @@ struct Enum
 			EnumType = MeshType
 		end
 	end
-
+	
 	module MessageType
 		module MessageOutput
 			include EnumItem
@@ -9222,21 +9222,21 @@ struct Enum
 			Value = 0
 			EnumType = MessageType
 		end
-
+		
 		module MessageInfo
 			include EnumItem
 			Name = "MessageInfo"
 			Value = 1
 			EnumType = MessageType
 		end
-
+		
 		module MessageWarning
 			include EnumItem
 			Name = "MessageWarning"
 			Value = 2
 			EnumType = MessageType
 		end
-
+		
 		module MessageError
 			include EnumItem
 			Name = "MessageError"
@@ -9244,7 +9244,7 @@ struct Enum
 			EnumType = MessageType
 		end
 	end
-
+	
 	module ModelLevelOfDetail
 		module Automatic
 			include EnumItem
@@ -9252,14 +9252,14 @@ struct Enum
 			Value = 0
 			EnumType = ModelLevelOfDetail
 		end
-
+		
 		module StreamingMesh
 			include EnumItem
 			Name = "StreamingMesh"
 			Value = 1
 			EnumType = ModelLevelOfDetail
 		end
-
+		
 		module Disabled
 			include EnumItem
 			Name = "Disabled"
@@ -9267,7 +9267,7 @@ struct Enum
 			EnumType = ModelLevelOfDetail
 		end
 	end
-
+	
 	module ModelStreamingMode
 		module Default
 			include EnumItem
@@ -9275,28 +9275,28 @@ struct Enum
 			Value = 0
 			EnumType = ModelStreamingMode
 		end
-
+		
 		module Atomic
 			include EnumItem
 			Name = "Atomic"
 			Value = 1
 			EnumType = ModelStreamingMode
 		end
-
+		
 		module Persistent
 			include EnumItem
 			Name = "Persistent"
 			Value = 2
 			EnumType = ModelStreamingMode
 		end
-
+		
 		module PersistentPerPlayer
 			include EnumItem
 			Name = "PersistentPerPlayer"
 			Value = 3
 			EnumType = ModelStreamingMode
 		end
-
+		
 		module Nonatomic
 			include EnumItem
 			Name = "Nonatomic"
@@ -9304,7 +9304,7 @@ struct Enum
 			EnumType = ModelStreamingMode
 		end
 	end
-
+	
 	module ModifierKey
 		module Alt
 			include EnumItem
@@ -9312,21 +9312,21 @@ struct Enum
 			Value = 2
 			EnumType = ModifierKey
 		end
-
+		
 		module Ctrl
 			include EnumItem
 			Name = "Ctrl"
 			Value = 1
 			EnumType = ModifierKey
 		end
-
+		
 		module Meta
 			include EnumItem
 			Name = "Meta"
 			Value = 3
 			EnumType = ModifierKey
 		end
-
+		
 		module Shift
 			include EnumItem
 			Name = "Shift"
@@ -9334,7 +9334,7 @@ struct Enum
 			EnumType = ModifierKey
 		end
 	end
-
+	
 	module MouseBehavior
 		module Default
 			include EnumItem
@@ -9342,14 +9342,14 @@ struct Enum
 			Value = 0
 			EnumType = MouseBehavior
 		end
-
+		
 		module LockCenter
 			include EnumItem
 			Name = "LockCenter"
 			Value = 1
 			EnumType = MouseBehavior
 		end
-
+		
 		module LockCurrentPosition
 			include EnumItem
 			Name = "LockCurrentPosition"
@@ -9357,7 +9357,7 @@ struct Enum
 			EnumType = MouseBehavior
 		end
 	end
-
+	
 	module MoveState
 		module Stopped
 			include EnumItem
@@ -9365,28 +9365,28 @@ struct Enum
 			Value = 0
 			EnumType = MoveState
 		end
-
+		
 		module Coasting
 			include EnumItem
 			Name = "Coasting"
 			Value = 1
 			EnumType = MoveState
 		end
-
+		
 		module Pushing
 			include EnumItem
 			Name = "Pushing"
 			Value = 2
 			EnumType = MoveState
 		end
-
+		
 		module Stopping
 			include EnumItem
 			Name = "Stopping"
 			Value = 3
 			EnumType = MoveState
 		end
-
+		
 		module AirFree
 			include EnumItem
 			Name = "AirFree"
@@ -9394,7 +9394,7 @@ struct Enum
 			EnumType = MoveState
 		end
 	end
-
+	
 	module MuteState
 		module Unmuted
 			include EnumItem
@@ -9402,7 +9402,7 @@ struct Enum
 			Value = 0
 			EnumType = MuteState
 		end
-
+		
 		module Muted
 			include EnumItem
 			Name = "Muted"
@@ -9410,7 +9410,7 @@ struct Enum
 			EnumType = MuteState
 		end
 	end
-
+	
 	module NameOcclusion
 		module OccludeAll
 			include EnumItem
@@ -9418,14 +9418,14 @@ struct Enum
 			Value = 2
 			EnumType = NameOcclusion
 		end
-
+		
 		module EnemyOcclusion
 			include EnumItem
 			Name = "EnemyOcclusion"
 			Value = 1
 			EnumType = NameOcclusion
 		end
-
+		
 		module NoOcclusion
 			include EnumItem
 			Name = "NoOcclusion"
@@ -9433,7 +9433,7 @@ struct Enum
 			EnumType = NameOcclusion
 		end
 	end
-
+	
 	module NetworkOwnership
 		module Automatic
 			include EnumItem
@@ -9441,14 +9441,14 @@ struct Enum
 			Value = 0
 			EnumType = NetworkOwnership
 		end
-
+		
 		module Manual
 			include EnumItem
 			Name = "Manual"
 			Value = 1
 			EnumType = NetworkOwnership
 		end
-
+		
 		module OnContact
 			include EnumItem
 			Name = "OnContact"
@@ -9456,7 +9456,7 @@ struct Enum
 			EnumType = NetworkOwnership
 		end
 	end
-
+	
 	module NormalId
 		module Top
 			include EnumItem
@@ -9464,35 +9464,35 @@ struct Enum
 			Value = 1
 			EnumType = NormalId
 		end
-
+		
 		module Bottom
 			include EnumItem
 			Name = "Bottom"
 			Value = 4
 			EnumType = NormalId
 		end
-
+		
 		module Back
 			include EnumItem
 			Name = "Back"
 			Value = 2
 			EnumType = NormalId
 		end
-
+		
 		module Front
 			include EnumItem
 			Name = "Front"
 			Value = 5
 			EnumType = NormalId
 		end
-
+		
 		module Right
 			include EnumItem
 			Name = "Right"
 			Value = 0
 			EnumType = NormalId
 		end
-
+		
 		module Left
 			include EnumItem
 			Name = "Left"
@@ -9500,7 +9500,7 @@ struct Enum
 			EnumType = NormalId
 		end
 	end
-
+	
 	module OrientationAlignmentMode
 		module OneAttachment
 			include EnumItem
@@ -9508,7 +9508,7 @@ struct Enum
 			Value = 0
 			EnumType = OrientationAlignmentMode
 		end
-
+		
 		module TwoAttachment
 			include EnumItem
 			Name = "TwoAttachment"
@@ -9516,7 +9516,7 @@ struct Enum
 			EnumType = OrientationAlignmentMode
 		end
 	end
-
+	
 	module OutfitSource
 		module All
 			include EnumItem
@@ -9524,14 +9524,14 @@ struct Enum
 			Value = 1
 			EnumType = OutfitSource
 		end
-
+		
 		module Created
 			include EnumItem
 			Name = "Created"
 			Value = 2
 			EnumType = OutfitSource
 		end
-
+		
 		module Purchased
 			include EnumItem
 			Name = "Purchased"
@@ -9539,7 +9539,7 @@ struct Enum
 			EnumType = OutfitSource
 		end
 	end
-
+	
 	module OutfitType
 		module All
 			include EnumItem
@@ -9547,14 +9547,14 @@ struct Enum
 			Value = 1
 			EnumType = OutfitType
 		end
-
+		
 		module Avatar
 			include EnumItem
 			Name = "Avatar"
 			Value = 2
 			EnumType = OutfitType
 		end
-
+		
 		module DynamicHead
 			include EnumItem
 			Name = "DynamicHead"
@@ -9562,7 +9562,7 @@ struct Enum
 			EnumType = OutfitType
 		end
 	end
-
+	
 	module OutputLayoutMode
 		module Horizontal
 			include EnumItem
@@ -9570,7 +9570,7 @@ struct Enum
 			Value = 0
 			EnumType = OutputLayoutMode
 		end
-
+		
 		module Vertical
 			include EnumItem
 			Name = "Vertical"
@@ -9578,7 +9578,7 @@ struct Enum
 			EnumType = OutputLayoutMode
 		end
 	end
-
+	
 	module OverrideMouseIconBehavior
 		module None
 			include EnumItem
@@ -9586,14 +9586,14 @@ struct Enum
 			Value = 0
 			EnumType = OverrideMouseIconBehavior
 		end
-
+		
 		module ForceShow
 			include EnumItem
 			Name = "ForceShow"
 			Value = 1
 			EnumType = OverrideMouseIconBehavior
 		end
-
+		
 		module ForceHide
 			include EnumItem
 			Name = "ForceHide"
@@ -9601,7 +9601,7 @@ struct Enum
 			EnumType = OverrideMouseIconBehavior
 		end
 	end
-
+	
 	module PackagePermission
 		module None
 			include EnumItem
@@ -9609,35 +9609,35 @@ struct Enum
 			Value = 0
 			EnumType = PackagePermission
 		end
-
+		
 		module NoAccess
 			include EnumItem
 			Name = "NoAccess"
 			Value = 1
 			EnumType = PackagePermission
 		end
-
+		
 		module Revoked
 			include EnumItem
 			Name = "Revoked"
 			Value = 2
 			EnumType = PackagePermission
 		end
-
+		
 		module UseView
 			include EnumItem
 			Name = "UseView"
 			Value = 3
 			EnumType = PackagePermission
 		end
-
+		
 		module Edit
 			include EnumItem
 			Name = "Edit"
 			Value = 4
 			EnumType = PackagePermission
 		end
-
+		
 		module Own
 			include EnumItem
 			Name = "Own"
@@ -9645,7 +9645,7 @@ struct Enum
 			EnumType = PackagePermission
 		end
 	end
-
+	
 	module PartType
 		module Ball
 			include EnumItem
@@ -9653,14 +9653,14 @@ struct Enum
 			Value = 0
 			EnumType = PartType
 		end
-
+		
 		module Block
 			include EnumItem
 			Name = "Block"
 			Value = 1
 			EnumType = PartType
 		end
-
+		
 		module Cylinder
 			include EnumItem
 			Name = "Cylinder"
@@ -9668,7 +9668,7 @@ struct Enum
 			EnumType = PartType
 		end
 	end
-
+	
 	module ParticleEmitterShape
 		module Box
 			include EnumItem
@@ -9676,21 +9676,21 @@ struct Enum
 			Value = 0
 			EnumType = ParticleEmitterShape
 		end
-
+		
 		module Sphere
 			include EnumItem
 			Name = "Sphere"
 			Value = 1
 			EnumType = ParticleEmitterShape
 		end
-
+		
 		module Cylinder
 			include EnumItem
 			Name = "Cylinder"
 			Value = 2
 			EnumType = ParticleEmitterShape
 		end
-
+		
 		module Disc
 			include EnumItem
 			Name = "Disc"
@@ -9698,7 +9698,7 @@ struct Enum
 			EnumType = ParticleEmitterShape
 		end
 	end
-
+	
 	module ParticleEmitterShapeInOut
 		module Outward
 			include EnumItem
@@ -9706,14 +9706,14 @@ struct Enum
 			Value = 0
 			EnumType = ParticleEmitterShapeInOut
 		end
-
+		
 		module Inward
 			include EnumItem
 			Name = "Inward"
 			Value = 1
 			EnumType = ParticleEmitterShapeInOut
 		end
-
+		
 		module InAndOut
 			include EnumItem
 			Name = "InAndOut"
@@ -9721,7 +9721,7 @@ struct Enum
 			EnumType = ParticleEmitterShapeInOut
 		end
 	end
-
+	
 	module ParticleEmitterShapeStyle
 		module Volume
 			include EnumItem
@@ -9729,7 +9729,7 @@ struct Enum
 			Value = 0
 			EnumType = ParticleEmitterShapeStyle
 		end
-
+		
 		module Surface
 			include EnumItem
 			Name = "Surface"
@@ -9737,7 +9737,7 @@ struct Enum
 			EnumType = ParticleEmitterShapeStyle
 		end
 	end
-
+	
 	module ParticleFlipbookLayout
 		module None
 			include EnumItem
@@ -9745,21 +9745,21 @@ struct Enum
 			Value = 0
 			EnumType = ParticleFlipbookLayout
 		end
-
+		
 		module Grid2x2
 			include EnumItem
 			Name = "Grid2x2"
 			Value = 1
 			EnumType = ParticleFlipbookLayout
 		end
-
+		
 		module Grid4x4
 			include EnumItem
 			Name = "Grid4x4"
 			Value = 2
 			EnumType = ParticleFlipbookLayout
 		end
-
+		
 		module Grid8x8
 			include EnumItem
 			Name = "Grid8x8"
@@ -9767,7 +9767,7 @@ struct Enum
 			EnumType = ParticleFlipbookLayout
 		end
 	end
-
+	
 	module ParticleFlipbookMode
 		module Loop
 			include EnumItem
@@ -9775,21 +9775,21 @@ struct Enum
 			Value = 0
 			EnumType = ParticleFlipbookMode
 		end
-
+		
 		module OneShot
 			include EnumItem
 			Name = "OneShot"
 			Value = 1
 			EnumType = ParticleFlipbookMode
 		end
-
+		
 		module PingPong
 			include EnumItem
 			Name = "PingPong"
 			Value = 2
 			EnumType = ParticleFlipbookMode
 		end
-
+		
 		module Random
 			include EnumItem
 			Name = "Random"
@@ -9797,7 +9797,7 @@ struct Enum
 			EnumType = ParticleFlipbookMode
 		end
 	end
-
+	
 	module ParticleFlipbookTextureCompatible
 		module NotCompatible
 			include EnumItem
@@ -9805,14 +9805,14 @@ struct Enum
 			Value = 0
 			EnumType = ParticleFlipbookTextureCompatible
 		end
-
+		
 		module Compatible
 			include EnumItem
 			Name = "Compatible"
 			Value = 1
 			EnumType = ParticleFlipbookTextureCompatible
 		end
-
+		
 		module Unknown
 			include EnumItem
 			Name = "Unknown"
@@ -9820,7 +9820,7 @@ struct Enum
 			EnumType = ParticleFlipbookTextureCompatible
 		end
 	end
-
+	
 	module ParticleOrientation
 		module FacingCamera
 			include EnumItem
@@ -9828,21 +9828,21 @@ struct Enum
 			Value = 0
 			EnumType = ParticleOrientation
 		end
-
+		
 		module FacingCameraWorldUp
 			include EnumItem
 			Name = "FacingCameraWorldUp"
 			Value = 1
 			EnumType = ParticleOrientation
 		end
-
+		
 		module VelocityParallel
 			include EnumItem
 			Name = "VelocityParallel"
 			Value = 2
 			EnumType = ParticleOrientation
 		end
-
+		
 		module VelocityPerpendicular
 			include EnumItem
 			Name = "VelocityPerpendicular"
@@ -9850,7 +9850,7 @@ struct Enum
 			EnumType = ParticleOrientation
 		end
 	end
-
+	
 	module PathStatus
 		module Success
 			include EnumItem
@@ -9858,35 +9858,35 @@ struct Enum
 			Value = 0
 			EnumType = PathStatus
 		end
-
+		
 		module ClosestNoPath
 			include EnumItem
 			Name = "ClosestNoPath"
 			Value = 1
 			EnumType = PathStatus
 		end
-
+		
 		module ClosestOutOfRange
 			include EnumItem
 			Name = "ClosestOutOfRange"
 			Value = 2
 			EnumType = PathStatus
 		end
-
+		
 		module FailStartNotEmpty
 			include EnumItem
 			Name = "FailStartNotEmpty"
 			Value = 3
 			EnumType = PathStatus
 		end
-
+		
 		module FailFinishNotEmpty
 			include EnumItem
 			Name = "FailFinishNotEmpty"
 			Value = 4
 			EnumType = PathStatus
 		end
-
+		
 		module NoPath
 			include EnumItem
 			Name = "NoPath"
@@ -9894,7 +9894,7 @@ struct Enum
 			EnumType = PathStatus
 		end
 	end
-
+	
 	module PathWaypointAction
 		module Walk
 			include EnumItem
@@ -9902,14 +9902,14 @@ struct Enum
 			Value = 0
 			EnumType = PathWaypointAction
 		end
-
+		
 		module Jump
 			include EnumItem
 			Name = "Jump"
 			Value = 1
 			EnumType = PathWaypointAction
 		end
-
+		
 		module Custom
 			include EnumItem
 			Name = "Custom"
@@ -9917,7 +9917,7 @@ struct Enum
 			EnumType = PathWaypointAction
 		end
 	end
-
+	
 	module PermissionLevelShown
 		module Game
 			include EnumItem
@@ -9925,28 +9925,28 @@ struct Enum
 			Value = 0
 			EnumType = PermissionLevelShown
 		end
-
+		
 		module RobloxGame
 			include EnumItem
 			Name = "RobloxGame"
 			Value = 1
 			EnumType = PermissionLevelShown
 		end
-
+		
 		module RobloxScript
 			include EnumItem
 			Name = "RobloxScript"
 			Value = 2
 			EnumType = PermissionLevelShown
 		end
-
+		
 		module Studio
 			include EnumItem
 			Name = "Studio"
 			Value = 3
 			EnumType = PermissionLevelShown
 		end
-
+		
 		module Roblox
 			include EnumItem
 			Name = "Roblox"
@@ -9954,7 +9954,7 @@ struct Enum
 			EnumType = PermissionLevelShown
 		end
 	end
-
+	
 	module PhysicsSimulationRate
 		module Fixed240Hz
 			include EnumItem
@@ -9962,14 +9962,14 @@ struct Enum
 			Value = 0
 			EnumType = PhysicsSimulationRate
 		end
-
+		
 		module Fixed120Hz
 			include EnumItem
 			Name = "Fixed120Hz"
 			Value = 1
 			EnumType = PhysicsSimulationRate
 		end
-
+		
 		module Fixed60Hz
 			include EnumItem
 			Name = "Fixed60Hz"
@@ -9977,7 +9977,7 @@ struct Enum
 			EnumType = PhysicsSimulationRate
 		end
 	end
-
+	
 	module PhysicsSteppingMethod
 		module Default
 			include EnumItem
@@ -9985,14 +9985,14 @@ struct Enum
 			Value = 0
 			EnumType = PhysicsSteppingMethod
 		end
-
+		
 		module Fixed
 			include EnumItem
 			Name = "Fixed"
 			Value = 1
 			EnumType = PhysicsSteppingMethod
 		end
-
+		
 		module Adaptive
 			include EnumItem
 			Name = "Adaptive"
@@ -10000,7 +10000,7 @@ struct Enum
 			EnumType = PhysicsSteppingMethod
 		end
 	end
-
+	
 	module Platform
 		module Windows
 			include EnumItem
@@ -10008,133 +10008,133 @@ struct Enum
 			Value = 0
 			EnumType = Platform
 		end
-
+		
 		module OSX
 			include EnumItem
 			Name = "OSX"
 			Value = 1
 			EnumType = Platform
 		end
-
+		
 		module IOS
 			include EnumItem
 			Name = "IOS"
 			Value = 2
 			EnumType = Platform
 		end
-
+		
 		module Android
 			include EnumItem
 			Name = "Android"
 			Value = 3
 			EnumType = Platform
 		end
-
+		
 		module XBoxOne
 			include EnumItem
 			Name = "XBoxOne"
 			Value = 4
 			EnumType = Platform
 		end
-
+		
 		module PS4
 			include EnumItem
 			Name = "PS4"
 			Value = 5
 			EnumType = Platform
 		end
-
+		
 		module PS3
 			include EnumItem
 			Name = "PS3"
 			Value = 6
 			EnumType = Platform
 		end
-
+		
 		module XBox360
 			include EnumItem
 			Name = "XBox360"
 			Value = 7
 			EnumType = Platform
 		end
-
+		
 		module WiiU
 			include EnumItem
 			Name = "WiiU"
 			Value = 8
 			EnumType = Platform
 		end
-
+		
 		module NX
 			include EnumItem
 			Name = "NX"
 			Value = 9
 			EnumType = Platform
 		end
-
+		
 		module Ouya
 			include EnumItem
 			Name = "Ouya"
 			Value = 10
 			EnumType = Platform
 		end
-
+		
 		module AndroidTV
 			include EnumItem
 			Name = "AndroidTV"
 			Value = 11
 			EnumType = Platform
 		end
-
+		
 		module Chromecast
 			include EnumItem
 			Name = "Chromecast"
 			Value = 12
 			EnumType = Platform
 		end
-
+		
 		module Linux
 			include EnumItem
 			Name = "Linux"
 			Value = 13
 			EnumType = Platform
 		end
-
+		
 		module SteamOS
 			include EnumItem
 			Name = "SteamOS"
 			Value = 14
 			EnumType = Platform
 		end
-
+		
 		module WebOS
 			include EnumItem
 			Name = "WebOS"
 			Value = 15
 			EnumType = Platform
 		end
-
+		
 		module DOS
 			include EnumItem
 			Name = "DOS"
 			Value = 16
 			EnumType = Platform
 		end
-
+		
 		module BeOS
 			include EnumItem
 			Name = "BeOS"
 			Value = 17
 			EnumType = Platform
 		end
-
+		
 		module UWP
 			include EnumItem
 			Name = "UWP"
 			Value = 18
 			EnumType = Platform
 		end
-
+		
 		module None
 			include EnumItem
 			Name = "None"
@@ -10142,7 +10142,7 @@ struct Enum
 			EnumType = Platform
 		end
 	end
-
+	
 	module PlaybackState
 		module Begin
 			include EnumItem
@@ -10150,35 +10150,35 @@ struct Enum
 			Value = 0
 			EnumType = PlaybackState
 		end
-
+		
 		module Delayed
 			include EnumItem
 			Name = "Delayed"
 			Value = 1
 			EnumType = PlaybackState
 		end
-
+		
 		module Playing
 			include EnumItem
 			Name = "Playing"
 			Value = 2
 			EnumType = PlaybackState
 		end
-
+		
 		module Paused
 			include EnumItem
 			Name = "Paused"
 			Value = 3
 			EnumType = PlaybackState
 		end
-
+		
 		module Completed
 			include EnumItem
 			Name = "Completed"
 			Value = 4
 			EnumType = PlaybackState
 		end
-
+		
 		module Cancelled
 			include EnumItem
 			Name = "Cancelled"
@@ -10186,7 +10186,7 @@ struct Enum
 			EnumType = PlaybackState
 		end
 	end
-
+	
 	module PlayerActions
 		module CharacterForward
 			include EnumItem
@@ -10194,28 +10194,28 @@ struct Enum
 			Value = 0
 			EnumType = PlayerActions
 		end
-
+		
 		module CharacterBackward
 			include EnumItem
 			Name = "CharacterBackward"
 			Value = 1
 			EnumType = PlayerActions
 		end
-
+		
 		module CharacterLeft
 			include EnumItem
 			Name = "CharacterLeft"
 			Value = 2
 			EnumType = PlayerActions
 		end
-
+		
 		module CharacterRight
 			include EnumItem
 			Name = "CharacterRight"
 			Value = 3
 			EnumType = PlayerActions
 		end
-
+		
 		module CharacterJump
 			include EnumItem
 			Name = "CharacterJump"
@@ -10223,7 +10223,7 @@ struct Enum
 			EnumType = PlayerActions
 		end
 	end
-
+	
 	module PlayerChatType
 		module All
 			include EnumItem
@@ -10231,14 +10231,14 @@ struct Enum
 			Value = 0
 			EnumType = PlayerChatType
 		end
-
+		
 		module Team
 			include EnumItem
 			Name = "Team"
 			Value = 1
 			EnumType = PlayerChatType
 		end
-
+		
 		module Whisper
 			include EnumItem
 			Name = "Whisper"
@@ -10246,7 +10246,7 @@ struct Enum
 			EnumType = PlayerChatType
 		end
 	end
-
+	
 	module PoseEasingDirection
 		module Out
 			include EnumItem
@@ -10254,14 +10254,14 @@ struct Enum
 			Value = 1
 			EnumType = PoseEasingDirection
 		end
-
+		
 		module InOut
 			include EnumItem
 			Name = "InOut"
 			Value = 2
 			EnumType = PoseEasingDirection
 		end
-
+		
 		module In
 			include EnumItem
 			Name = "In"
@@ -10269,7 +10269,7 @@ struct Enum
 			EnumType = PoseEasingDirection
 		end
 	end
-
+	
 	module PoseEasingStyle
 		module Linear
 			include EnumItem
@@ -10277,28 +10277,28 @@ struct Enum
 			Value = 0
 			EnumType = PoseEasingStyle
 		end
-
+		
 		module Constant
 			include EnumItem
 			Name = "Constant"
 			Value = 1
 			EnumType = PoseEasingStyle
 		end
-
+		
 		module Elastic
 			include EnumItem
 			Name = "Elastic"
 			Value = 2
 			EnumType = PoseEasingStyle
 		end
-
+		
 		module Cubic
 			include EnumItem
 			Name = "Cubic"
 			Value = 3
 			EnumType = PoseEasingStyle
 		end
-
+		
 		module Bounce
 			include EnumItem
 			Name = "Bounce"
@@ -10306,7 +10306,7 @@ struct Enum
 			EnumType = PoseEasingStyle
 		end
 	end
-
+	
 	module PositionAlignmentMode
 		module OneAttachment
 			include EnumItem
@@ -10314,7 +10314,7 @@ struct Enum
 			Value = 0
 			EnumType = PositionAlignmentMode
 		end
-
+		
 		module TwoAttachment
 			include EnumItem
 			Name = "TwoAttachment"
@@ -10322,7 +10322,7 @@ struct Enum
 			EnumType = PositionAlignmentMode
 		end
 	end
-
+	
 	module PrivilegeType
 		module Owner
 			include EnumItem
@@ -10330,28 +10330,28 @@ struct Enum
 			Value = 255
 			EnumType = PrivilegeType
 		end
-
+		
 		module Admin
 			include EnumItem
 			Name = "Admin"
 			Value = 240
 			EnumType = PrivilegeType
 		end
-
+		
 		module Member
 			include EnumItem
 			Name = "Member"
 			Value = 128
 			EnumType = PrivilegeType
 		end
-
+		
 		module Visitor
 			include EnumItem
 			Name = "Visitor"
 			Value = 10
 			EnumType = PrivilegeType
 		end
-
+		
 		module Banned
 			include EnumItem
 			Name = "Banned"
@@ -10359,7 +10359,7 @@ struct Enum
 			EnumType = PrivilegeType
 		end
 	end
-
+	
 	module ProductLocationRestriction
 		module AvatarShop
 			include EnumItem
@@ -10367,14 +10367,14 @@ struct Enum
 			Value = 0
 			EnumType = ProductLocationRestriction
 		end
-
+		
 		module AllowedGames
 			include EnumItem
 			Name = "AllowedGames"
 			Value = 1
 			EnumType = ProductLocationRestriction
 		end
-
+		
 		module AllGames
 			include EnumItem
 			Name = "AllGames"
@@ -10382,7 +10382,7 @@ struct Enum
 			EnumType = ProductLocationRestriction
 		end
 	end
-
+	
 	module ProductPurchaseDecision
 		module NotProcessedYet
 			include EnumItem
@@ -10390,7 +10390,7 @@ struct Enum
 			Value = 0
 			EnumType = ProductPurchaseDecision
 		end
-
+		
 		module PurchaseGranted
 			include EnumItem
 			Name = "PurchaseGranted"
@@ -10398,7 +10398,7 @@ struct Enum
 			EnumType = ProductPurchaseDecision
 		end
 	end
-
+	
 	module PromptPublishAssetResult
 		module Success
 			include EnumItem
@@ -10406,28 +10406,28 @@ struct Enum
 			Value = 1
 			EnumType = PromptPublishAssetResult
 		end
-
+		
 		module PermissionDenied
 			include EnumItem
 			Name = "PermissionDenied"
 			Value = 2
 			EnumType = PromptPublishAssetResult
 		end
-
+		
 		module Timeout
 			include EnumItem
 			Name = "Timeout"
 			Value = 3
 			EnumType = PromptPublishAssetResult
 		end
-
+		
 		module UploadFailed
 			include EnumItem
 			Name = "UploadFailed"
 			Value = 4
 			EnumType = PromptPublishAssetResult
 		end
-
+		
 		module NoUserInput
 			include EnumItem
 			Name = "NoUserInput"
@@ -10435,7 +10435,7 @@ struct Enum
 			EnumType = PromptPublishAssetResult
 		end
 	end
-
+	
 	module PropertyStatus
 		module Ok
 			include EnumItem
@@ -10443,14 +10443,14 @@ struct Enum
 			Value = 0
 			EnumType = PropertyStatus
 		end
-
+		
 		module Warning
 			include EnumItem
 			Name = "Warning"
 			Value = 1
 			EnumType = PropertyStatus
 		end
-
+		
 		module Error
 			include EnumItem
 			Name = "Error"
@@ -10458,7 +10458,7 @@ struct Enum
 			EnumType = PropertyStatus
 		end
 	end
-
+	
 	module ProximityPromptExclusivity
 		module OnePerButton
 			include EnumItem
@@ -10466,14 +10466,14 @@ struct Enum
 			Value = 0
 			EnumType = ProximityPromptExclusivity
 		end
-
+		
 		module OneGlobally
 			include EnumItem
 			Name = "OneGlobally"
 			Value = 1
 			EnumType = ProximityPromptExclusivity
 		end
-
+		
 		module AlwaysShow
 			include EnumItem
 			Name = "AlwaysShow"
@@ -10481,7 +10481,7 @@ struct Enum
 			EnumType = ProximityPromptExclusivity
 		end
 	end
-
+	
 	module ProximityPromptInputType
 		module Keyboard
 			include EnumItem
@@ -10489,14 +10489,14 @@ struct Enum
 			Value = 0
 			EnumType = ProximityPromptInputType
 		end
-
+		
 		module Gamepad
 			include EnumItem
 			Name = "Gamepad"
 			Value = 1
 			EnumType = ProximityPromptInputType
 		end
-
+		
 		module Touch
 			include EnumItem
 			Name = "Touch"
@@ -10504,7 +10504,7 @@ struct Enum
 			EnumType = ProximityPromptInputType
 		end
 	end
-
+	
 	module ProximityPromptStyle
 		module Default
 			include EnumItem
@@ -10512,7 +10512,7 @@ struct Enum
 			Value = 0
 			EnumType = ProximityPromptStyle
 		end
-
+		
 		module Custom
 			include EnumItem
 			Name = "Custom"
@@ -10520,7 +10520,7 @@ struct Enum
 			EnumType = ProximityPromptStyle
 		end
 	end
-
+	
 	module QualityLevel
 		module Automatic
 			include EnumItem
@@ -10528,147 +10528,147 @@ struct Enum
 			Value = 0
 			EnumType = QualityLevel
 		end
-
+		
 		module Level01
 			include EnumItem
 			Name = "Level01"
 			Value = 1
 			EnumType = QualityLevel
 		end
-
+		
 		module Level02
 			include EnumItem
 			Name = "Level02"
 			Value = 2
 			EnumType = QualityLevel
 		end
-
+		
 		module Level03
 			include EnumItem
 			Name = "Level03"
 			Value = 3
 			EnumType = QualityLevel
 		end
-
+		
 		module Level04
 			include EnumItem
 			Name = "Level04"
 			Value = 4
 			EnumType = QualityLevel
 		end
-
+		
 		module Level05
 			include EnumItem
 			Name = "Level05"
 			Value = 5
 			EnumType = QualityLevel
 		end
-
+		
 		module Level06
 			include EnumItem
 			Name = "Level06"
 			Value = 6
 			EnumType = QualityLevel
 		end
-
+		
 		module Level07
 			include EnumItem
 			Name = "Level07"
 			Value = 7
 			EnumType = QualityLevel
 		end
-
+		
 		module Level08
 			include EnumItem
 			Name = "Level08"
 			Value = 8
 			EnumType = QualityLevel
 		end
-
+		
 		module Level09
 			include EnumItem
 			Name = "Level09"
 			Value = 9
 			EnumType = QualityLevel
 		end
-
+		
 		module Level10
 			include EnumItem
 			Name = "Level10"
 			Value = 10
 			EnumType = QualityLevel
 		end
-
+		
 		module Level11
 			include EnumItem
 			Name = "Level11"
 			Value = 11
 			EnumType = QualityLevel
 		end
-
+		
 		module Level12
 			include EnumItem
 			Name = "Level12"
 			Value = 12
 			EnumType = QualityLevel
 		end
-
+		
 		module Level13
 			include EnumItem
 			Name = "Level13"
 			Value = 13
 			EnumType = QualityLevel
 		end
-
+		
 		module Level14
 			include EnumItem
 			Name = "Level14"
 			Value = 14
 			EnumType = QualityLevel
 		end
-
+		
 		module Level15
 			include EnumItem
 			Name = "Level15"
 			Value = 15
 			EnumType = QualityLevel
 		end
-
+		
 		module Level16
 			include EnumItem
 			Name = "Level16"
 			Value = 16
 			EnumType = QualityLevel
 		end
-
+		
 		module Level17
 			include EnumItem
 			Name = "Level17"
 			Value = 17
 			EnumType = QualityLevel
 		end
-
+		
 		module Level18
 			include EnumItem
 			Name = "Level18"
 			Value = 18
 			EnumType = QualityLevel
 		end
-
+		
 		module Level19
 			include EnumItem
 			Name = "Level19"
 			Value = 19
 			EnumType = QualityLevel
 		end
-
+		
 		module Level20
 			include EnumItem
 			Name = "Level20"
 			Value = 20
 			EnumType = QualityLevel
 		end
-
+		
 		module Level21
 			include EnumItem
 			Name = "Level21"
@@ -10676,7 +10676,7 @@ struct Enum
 			EnumType = QualityLevel
 		end
 	end
-
+	
 	module R15CollisionType
 		module OuterBox
 			include EnumItem
@@ -10684,7 +10684,7 @@ struct Enum
 			Value = 0
 			EnumType = R15CollisionType
 		end
-
+		
 		module InnerBox
 			include EnumItem
 			Name = "InnerBox"
@@ -10692,7 +10692,7 @@ struct Enum
 			EnumType = R15CollisionType
 		end
 	end
-
+	
 	module RaycastFilterType
 		module Exclude
 			include EnumItem
@@ -10700,7 +10700,7 @@ struct Enum
 			Value = 0
 			EnumType = RaycastFilterType
 		end
-
+		
 		module Include
 			include EnumItem
 			Name = "Include"
@@ -10708,7 +10708,7 @@ struct Enum
 			EnumType = RaycastFilterType
 		end
 	end
-
+	
 	module RejectCharacterDeletions
 		module Default
 			include EnumItem
@@ -10716,14 +10716,14 @@ struct Enum
 			Value = 0
 			EnumType = RejectCharacterDeletions
 		end
-
+		
 		module Disabled
 			include EnumItem
 			Name = "Disabled"
 			Value = 1
 			EnumType = RejectCharacterDeletions
 		end
-
+		
 		module Enabled
 			include EnumItem
 			Name = "Enabled"
@@ -10731,7 +10731,7 @@ struct Enum
 			EnumType = RejectCharacterDeletions
 		end
 	end
-
+	
 	module RenderFidelity
 		module Automatic
 			include EnumItem
@@ -10739,14 +10739,14 @@ struct Enum
 			Value = 0
 			EnumType = RenderFidelity
 		end
-
+		
 		module Precise
 			include EnumItem
 			Name = "Precise"
 			Value = 1
 			EnumType = RenderFidelity
 		end
-
+		
 		module Performance
 			include EnumItem
 			Name = "Performance"
@@ -10754,7 +10754,7 @@ struct Enum
 			EnumType = RenderFidelity
 		end
 	end
-
+	
 	module RenderPriority
 		module First
 			include EnumItem
@@ -10762,28 +10762,28 @@ struct Enum
 			Value = 0
 			EnumType = RenderPriority
 		end
-
+		
 		module Input
 			include EnumItem
 			Name = "Input"
 			Value = 100
 			EnumType = RenderPriority
 		end
-
+		
 		module Camera
 			include EnumItem
 			Name = "Camera"
 			Value = 200
 			EnumType = RenderPriority
 		end
-
+		
 		module Character
 			include EnumItem
 			Name = "Character"
 			Value = 300
 			EnumType = RenderPriority
 		end
-
+		
 		module Last
 			include EnumItem
 			Name = "Last"
@@ -10791,7 +10791,7 @@ struct Enum
 			EnumType = RenderPriority
 		end
 	end
-
+	
 	module RenderingTestComparisonMethod
 		module Psnr
 			include EnumItem
@@ -10799,7 +10799,7 @@ struct Enum
 			Value = 0
 			EnumType = RenderingTestComparisonMethod
 		end
-
+		
 		module Diff
 			include EnumItem
 			Name = "Diff"
@@ -10807,7 +10807,7 @@ struct Enum
 			EnumType = RenderingTestComparisonMethod
 		end
 	end
-
+	
 	module ReplicateInstanceDestroySetting
 		module Default
 			include EnumItem
@@ -10815,14 +10815,14 @@ struct Enum
 			Value = 0
 			EnumType = ReplicateInstanceDestroySetting
 		end
-
+		
 		module Disabled
 			include EnumItem
 			Name = "Disabled"
 			Value = 1
 			EnumType = ReplicateInstanceDestroySetting
 		end
-
+		
 		module Enabled
 			include EnumItem
 			Name = "Enabled"
@@ -10830,7 +10830,7 @@ struct Enum
 			EnumType = ReplicateInstanceDestroySetting
 		end
 	end
-
+	
 	module ResamplerMode
 		module Default
 			include EnumItem
@@ -10838,7 +10838,7 @@ struct Enum
 			Value = 0
 			EnumType = ResamplerMode
 		end
-
+		
 		module Pixelated
 			include EnumItem
 			Name = "Pixelated"
@@ -10846,7 +10846,7 @@ struct Enum
 			EnumType = ResamplerMode
 		end
 	end
-
+	
 	module ReservedHighlightId
 		module Standard
 			include EnumItem
@@ -10854,21 +10854,21 @@ struct Enum
 			Value = 0
 			EnumType = ReservedHighlightId
 		end
-
+		
 		module Selection
 			include EnumItem
 			Name = "Selection"
 			Value = 524288
 			EnumType = ReservedHighlightId
 		end
-
+		
 		module Hover
 			include EnumItem
 			Name = "Hover"
 			Value = 262144
 			EnumType = ReservedHighlightId
 		end
-
+		
 		module Active
 			include EnumItem
 			Name = "Active"
@@ -10876,7 +10876,7 @@ struct Enum
 			EnumType = ReservedHighlightId
 		end
 	end
-
+	
 	module RestPose
 		module Default
 			include EnumItem
@@ -10884,14 +10884,14 @@ struct Enum
 			Value = 0
 			EnumType = RestPose
 		end
-
+		
 		module RotationsReset
 			include EnumItem
 			Name = "RotationsReset"
 			Value = 1
 			EnumType = RestPose
 		end
-
+		
 		module Custom
 			include EnumItem
 			Name = "Custom"
@@ -10899,7 +10899,7 @@ struct Enum
 			EnumType = RestPose
 		end
 	end
-
+	
 	module ReturnKeyType
 		module Default
 			include EnumItem
@@ -10907,35 +10907,35 @@ struct Enum
 			Value = 0
 			EnumType = ReturnKeyType
 		end
-
+		
 		module Done
 			include EnumItem
 			Name = "Done"
 			Value = 1
 			EnumType = ReturnKeyType
 		end
-
+		
 		module Go
 			include EnumItem
 			Name = "Go"
 			Value = 2
 			EnumType = ReturnKeyType
 		end
-
+		
 		module Next
 			include EnumItem
 			Name = "Next"
 			Value = 3
 			EnumType = ReturnKeyType
 		end
-
+		
 		module Search
 			include EnumItem
 			Name = "Search"
 			Value = 4
 			EnumType = ReturnKeyType
 		end
-
+		
 		module Send
 			include EnumItem
 			Name = "Send"
@@ -10943,7 +10943,7 @@ struct Enum
 			EnumType = ReturnKeyType
 		end
 	end
-
+	
 	module ReverbType
 		module NoReverb
 			include EnumItem
@@ -10951,161 +10951,161 @@ struct Enum
 			Value = 0
 			EnumType = ReverbType
 		end
-
+		
 		module GenericReverb
 			include EnumItem
 			Name = "GenericReverb"
 			Value = 1
 			EnumType = ReverbType
 		end
-
+		
 		module PaddedCell
 			include EnumItem
 			Name = "PaddedCell"
 			Value = 2
 			EnumType = ReverbType
 		end
-
+		
 		module Room
 			include EnumItem
 			Name = "Room"
 			Value = 3
 			EnumType = ReverbType
 		end
-
+		
 		module Bathroom
 			include EnumItem
 			Name = "Bathroom"
 			Value = 4
 			EnumType = ReverbType
 		end
-
+		
 		module LivingRoom
 			include EnumItem
 			Name = "LivingRoom"
 			Value = 5
 			EnumType = ReverbType
 		end
-
+		
 		module StoneRoom
 			include EnumItem
 			Name = "StoneRoom"
 			Value = 6
 			EnumType = ReverbType
 		end
-
+		
 		module Auditorium
 			include EnumItem
 			Name = "Auditorium"
 			Value = 7
 			EnumType = ReverbType
 		end
-
+		
 		module ConcertHall
 			include EnumItem
 			Name = "ConcertHall"
 			Value = 8
 			EnumType = ReverbType
 		end
-
+		
 		module Cave
 			include EnumItem
 			Name = "Cave"
 			Value = 9
 			EnumType = ReverbType
 		end
-
+		
 		module Arena
 			include EnumItem
 			Name = "Arena"
 			Value = 10
 			EnumType = ReverbType
 		end
-
+		
 		module Hangar
 			include EnumItem
 			Name = "Hangar"
 			Value = 11
 			EnumType = ReverbType
 		end
-
+		
 		module CarpettedHallway
 			include EnumItem
 			Name = "CarpettedHallway"
 			Value = 12
 			EnumType = ReverbType
 		end
-
+		
 		module Hallway
 			include EnumItem
 			Name = "Hallway"
 			Value = 13
 			EnumType = ReverbType
 		end
-
+		
 		module StoneCorridor
 			include EnumItem
 			Name = "StoneCorridor"
 			Value = 14
 			EnumType = ReverbType
 		end
-
+		
 		module Alley
 			include EnumItem
 			Name = "Alley"
 			Value = 15
 			EnumType = ReverbType
 		end
-
+		
 		module Forest
 			include EnumItem
 			Name = "Forest"
 			Value = 16
 			EnumType = ReverbType
 		end
-
+		
 		module City
 			include EnumItem
 			Name = "City"
 			Value = 17
 			EnumType = ReverbType
 		end
-
+		
 		module Mountains
 			include EnumItem
 			Name = "Mountains"
 			Value = 18
 			EnumType = ReverbType
 		end
-
+		
 		module Quarry
 			include EnumItem
 			Name = "Quarry"
 			Value = 19
 			EnumType = ReverbType
 		end
-
+		
 		module Plain
 			include EnumItem
 			Name = "Plain"
 			Value = 20
 			EnumType = ReverbType
 		end
-
+		
 		module ParkingLot
 			include EnumItem
 			Name = "ParkingLot"
 			Value = 21
 			EnumType = ReverbType
 		end
-
+		
 		module SewerPipe
 			include EnumItem
 			Name = "SewerPipe"
 			Value = 22
 			EnumType = ReverbType
 		end
-
+		
 		module UnderWater
 			include EnumItem
 			Name = "UnderWater"
@@ -11113,7 +11113,7 @@ struct Enum
 			EnumType = ReverbType
 		end
 	end
-
+	
 	module RibbonTool
 		module Select
 			include EnumItem
@@ -11121,63 +11121,63 @@ struct Enum
 			Value = 0
 			EnumType = RibbonTool
 		end
-
+		
 		module Scale
 			include EnumItem
 			Name = "Scale"
 			Value = 1
 			EnumType = RibbonTool
 		end
-
+		
 		module Rotate
 			include EnumItem
 			Name = "Rotate"
 			Value = 2
 			EnumType = RibbonTool
 		end
-
+		
 		module Move
 			include EnumItem
 			Name = "Move"
 			Value = 3
 			EnumType = RibbonTool
 		end
-
+		
 		module Transform
 			include EnumItem
 			Name = "Transform"
 			Value = 4
 			EnumType = RibbonTool
 		end
-
+		
 		module ColorPicker
 			include EnumItem
 			Name = "ColorPicker"
 			Value = 5
 			EnumType = RibbonTool
 		end
-
+		
 		module MaterialPicker
 			include EnumItem
 			Name = "MaterialPicker"
 			Value = 6
 			EnumType = RibbonTool
 		end
-
+		
 		module Group
 			include EnumItem
 			Name = "Group"
 			Value = 7
 			EnumType = RibbonTool
 		end
-
+		
 		module Ungroup
 			include EnumItem
 			Name = "Ungroup"
 			Value = 8
 			EnumType = RibbonTool
 		end
-
+		
 		module None
 			include EnumItem
 			Name = "None"
@@ -11185,7 +11185,7 @@ struct Enum
 			EnumType = RibbonTool
 		end
 	end
-
+	
 	module RigScale
 		module Default
 			include EnumItem
@@ -11193,14 +11193,14 @@ struct Enum
 			Value = 0
 			EnumType = RigScale
 		end
-
+		
 		module Rthro
 			include EnumItem
 			Name = "Rthro"
 			Value = 1
 			EnumType = RigScale
 		end
-
+		
 		module RthroNarrow
 			include EnumItem
 			Name = "RthroNarrow"
@@ -11208,7 +11208,7 @@ struct Enum
 			EnumType = RigScale
 		end
 	end
-
+	
 	module RigType
 		module R15
 			include EnumItem
@@ -11216,14 +11216,14 @@ struct Enum
 			Value = 0
 			EnumType = RigType
 		end
-
+		
 		module Custom
 			include EnumItem
 			Name = "Custom"
 			Value = 1
 			EnumType = RigType
 		end
-
+		
 		module None
 			include EnumItem
 			Name = "None"
@@ -11231,7 +11231,7 @@ struct Enum
 			EnumType = RigType
 		end
 	end
-
+	
 	module RollOffMode
 		module Inverse
 			include EnumItem
@@ -11239,21 +11239,21 @@ struct Enum
 			Value = 0
 			EnumType = RollOffMode
 		end
-
+		
 		module Linear
 			include EnumItem
 			Name = "Linear"
 			Value = 1
 			EnumType = RollOffMode
 		end
-
+		
 		module InverseTapered
 			include EnumItem
 			Name = "InverseTapered"
 			Value = 3
 			EnumType = RollOffMode
 		end
-
+		
 		module LinearSquare
 			include EnumItem
 			Name = "LinearSquare"
@@ -11261,7 +11261,7 @@ struct Enum
 			EnumType = RollOffMode
 		end
 	end
-
+	
 	module RotationOrder
 		module XYZ
 			include EnumItem
@@ -11269,35 +11269,35 @@ struct Enum
 			Value = 0
 			EnumType = RotationOrder
 		end
-
+		
 		module XZY
 			include EnumItem
 			Name = "XZY"
 			Value = 1
 			EnumType = RotationOrder
 		end
-
+		
 		module YZX
 			include EnumItem
 			Name = "YZX"
 			Value = 2
 			EnumType = RotationOrder
 		end
-
+		
 		module YXZ
 			include EnumItem
 			Name = "YXZ"
 			Value = 3
 			EnumType = RotationOrder
 		end
-
+		
 		module ZXY
 			include EnumItem
 			Name = "ZXY"
 			Value = 4
 			EnumType = RotationOrder
 		end
-
+		
 		module ZYX
 			include EnumItem
 			Name = "ZYX"
@@ -11305,7 +11305,7 @@ struct Enum
 			EnumType = RotationOrder
 		end
 	end
-
+	
 	module RotationType
 		module MovementRelative
 			include EnumItem
@@ -11313,7 +11313,7 @@ struct Enum
 			Value = 0
 			EnumType = RotationType
 		end
-
+		
 		module CameraRelative
 			include EnumItem
 			Name = "CameraRelative"
@@ -11321,7 +11321,7 @@ struct Enum
 			EnumType = RotationType
 		end
 	end
-
+	
 	module RtlTextSupport
 		module Default
 			include EnumItem
@@ -11329,14 +11329,14 @@ struct Enum
 			Value = 0
 			EnumType = RtlTextSupport
 		end
-
+		
 		module Disabled
 			include EnumItem
 			Name = "Disabled"
 			Value = 1
 			EnumType = RtlTextSupport
 		end
-
+		
 		module Enabled
 			include EnumItem
 			Name = "Enabled"
@@ -11344,7 +11344,7 @@ struct Enum
 			EnumType = RtlTextSupport
 		end
 	end
-
+	
 	module RunContext
 		module Legacy
 			include EnumItem
@@ -11352,21 +11352,21 @@ struct Enum
 			Value = 0
 			EnumType = RunContext
 		end
-
+		
 		module Server
 			include EnumItem
 			Name = "Server"
 			Value = 1
 			EnumType = RunContext
 		end
-
+		
 		module Client
 			include EnumItem
 			Name = "Client"
 			Value = 2
 			EnumType = RunContext
 		end
-
+		
 		module Plugin
 			include EnumItem
 			Name = "Plugin"
@@ -11374,7 +11374,7 @@ struct Enum
 			EnumType = RunContext
 		end
 	end
-
+	
 	module RuntimeUndoBehavior
 		module Aggregate
 			include EnumItem
@@ -11382,14 +11382,14 @@ struct Enum
 			Value = 0
 			EnumType = RuntimeUndoBehavior
 		end
-
+		
 		module Snapshot
 			include EnumItem
 			Name = "Snapshot"
 			Value = 1
 			EnumType = RuntimeUndoBehavior
 		end
-
+		
 		module Hybrid
 			include EnumItem
 			Name = "Hybrid"
@@ -11397,7 +11397,7 @@ struct Enum
 			EnumType = RuntimeUndoBehavior
 		end
 	end
-
+	
 	module SafeAreaCompatibility
 		module None
 			include EnumItem
@@ -11405,7 +11405,7 @@ struct Enum
 			Value = 0
 			EnumType = SafeAreaCompatibility
 		end
-
+		
 		module FullscreenExtension
 			include EnumItem
 			Name = "FullscreenExtension"
@@ -11413,7 +11413,7 @@ struct Enum
 			EnumType = SafeAreaCompatibility
 		end
 	end
-
+	
 	module SalesTypeFilter
 		module All
 			include EnumItem
@@ -11421,14 +11421,14 @@ struct Enum
 			Value = 1
 			EnumType = SalesTypeFilter
 		end
-
+		
 		module Collectibles
 			include EnumItem
 			Name = "Collectibles"
 			Value = 2
 			EnumType = SalesTypeFilter
 		end
-
+		
 		module Premium
 			include EnumItem
 			Name = "Premium"
@@ -11436,7 +11436,7 @@ struct Enum
 			EnumType = SalesTypeFilter
 		end
 	end
-
+	
 	module SaveAvatarThumbnailCustomizationFailure
 		module BadThumbnailType
 			include EnumItem
@@ -11444,28 +11444,28 @@ struct Enum
 			Value = 1
 			EnumType = SaveAvatarThumbnailCustomizationFailure
 		end
-
+		
 		module BadYRotDeg
 			include EnumItem
 			Name = "BadYRotDeg"
 			Value = 2
 			EnumType = SaveAvatarThumbnailCustomizationFailure
 		end
-
+		
 		module BadFieldOfViewDeg
 			include EnumItem
 			Name = "BadFieldOfViewDeg"
 			Value = 3
 			EnumType = SaveAvatarThumbnailCustomizationFailure
 		end
-
+		
 		module BadDistanceScale
 			include EnumItem
 			Name = "BadDistanceScale"
 			Value = 4
 			EnumType = SaveAvatarThumbnailCustomizationFailure
 		end
-
+		
 		module Other
 			include EnumItem
 			Name = "Other"
@@ -11473,7 +11473,7 @@ struct Enum
 			EnumType = SaveAvatarThumbnailCustomizationFailure
 		end
 	end
-
+	
 	module SaveFilter
 		module SaveAll
 			include EnumItem
@@ -11481,14 +11481,14 @@ struct Enum
 			Value = 2
 			EnumType = SaveFilter
 		end
-
+		
 		module SaveWorld
 			include EnumItem
 			Name = "SaveWorld"
 			Value = 0
 			EnumType = SaveFilter
 		end
-
+		
 		module SaveGame
 			include EnumItem
 			Name = "SaveGame"
@@ -11496,7 +11496,7 @@ struct Enum
 			EnumType = SaveFilter
 		end
 	end
-
+	
 	module SavedQualitySetting
 		module Automatic
 			include EnumItem
@@ -11504,70 +11504,70 @@ struct Enum
 			Value = 0
 			EnumType = SavedQualitySetting
 		end
-
+		
 		module QualityLevel1
 			include EnumItem
 			Name = "QualityLevel1"
 			Value = 1
 			EnumType = SavedQualitySetting
 		end
-
+		
 		module QualityLevel2
 			include EnumItem
 			Name = "QualityLevel2"
 			Value = 2
 			EnumType = SavedQualitySetting
 		end
-
+		
 		module QualityLevel3
 			include EnumItem
 			Name = "QualityLevel3"
 			Value = 3
 			EnumType = SavedQualitySetting
 		end
-
+		
 		module QualityLevel4
 			include EnumItem
 			Name = "QualityLevel4"
 			Value = 4
 			EnumType = SavedQualitySetting
 		end
-
+		
 		module QualityLevel5
 			include EnumItem
 			Name = "QualityLevel5"
 			Value = 5
 			EnumType = SavedQualitySetting
 		end
-
+		
 		module QualityLevel6
 			include EnumItem
 			Name = "QualityLevel6"
 			Value = 6
 			EnumType = SavedQualitySetting
 		end
-
+		
 		module QualityLevel7
 			include EnumItem
 			Name = "QualityLevel7"
 			Value = 7
 			EnumType = SavedQualitySetting
 		end
-
+		
 		module QualityLevel8
 			include EnumItem
 			Name = "QualityLevel8"
 			Value = 8
 			EnumType = SavedQualitySetting
 		end
-
+		
 		module QualityLevel9
 			include EnumItem
 			Name = "QualityLevel9"
 			Value = 9
 			EnumType = SavedQualitySetting
 		end
-
+		
 		module QualityLevel10
 			include EnumItem
 			Name = "QualityLevel10"
@@ -11575,7 +11575,7 @@ struct Enum
 			EnumType = SavedQualitySetting
 		end
 	end
-
+	
 	module ScaleType
 		module Stretch
 			include EnumItem
@@ -11583,28 +11583,28 @@ struct Enum
 			Value = 0
 			EnumType = ScaleType
 		end
-
+		
 		module Slice
 			include EnumItem
 			Name = "Slice"
 			Value = 1
 			EnumType = ScaleType
 		end
-
+		
 		module Tile
 			include EnumItem
 			Name = "Tile"
 			Value = 2
 			EnumType = ScaleType
 		end
-
+		
 		module Fit
 			include EnumItem
 			Name = "Fit"
 			Value = 3
 			EnumType = ScaleType
 		end
-
+		
 		module Crop
 			include EnumItem
 			Name = "Crop"
@@ -11612,7 +11612,7 @@ struct Enum
 			EnumType = ScaleType
 		end
 	end
-
+	
 	module ScopeCheckResult
 		module ConsentAccepted
 			include EnumItem
@@ -11620,49 +11620,49 @@ struct Enum
 			Value = 0
 			EnumType = ScopeCheckResult
 		end
-
+		
 		module InvalidScopes
 			include EnumItem
 			Name = "InvalidScopes"
 			Value = 1
 			EnumType = ScopeCheckResult
 		end
-
+		
 		module Timeout
 			include EnumItem
 			Name = "Timeout"
 			Value = 2
 			EnumType = ScopeCheckResult
 		end
-
+		
 		module NoUserInput
 			include EnumItem
 			Name = "NoUserInput"
 			Value = 3
 			EnumType = ScopeCheckResult
 		end
-
+		
 		module BackendError
 			include EnumItem
 			Name = "BackendError"
 			Value = 4
 			EnumType = ScopeCheckResult
 		end
-
+		
 		module UnexpectedError
 			include EnumItem
 			Name = "UnexpectedError"
 			Value = 5
 			EnumType = ScopeCheckResult
 		end
-
+		
 		module InvalidArgument
 			include EnumItem
 			Name = "InvalidArgument"
 			Value = 6
 			EnumType = ScopeCheckResult
 		end
-
+		
 		module ConsentDenied
 			include EnumItem
 			Name = "ConsentDenied"
@@ -11670,7 +11670,7 @@ struct Enum
 			EnumType = ScopeCheckResult
 		end
 	end
-
+	
 	module ScreenInsets
 		module None
 			include EnumItem
@@ -11678,14 +11678,14 @@ struct Enum
 			Value = 0
 			EnumType = ScreenInsets
 		end
-
+		
 		module DeviceSafeInsets
 			include EnumItem
 			Name = "DeviceSafeInsets"
 			Value = 1
 			EnumType = ScreenInsets
 		end
-
+		
 		module CoreUISafeInsets
 			include EnumItem
 			Name = "CoreUISafeInsets"
@@ -11693,7 +11693,7 @@ struct Enum
 			EnumType = ScreenInsets
 		end
 	end
-
+	
 	module ScreenOrientation
 		module LandscapeLeft
 			include EnumItem
@@ -11701,28 +11701,28 @@ struct Enum
 			Value = 0
 			EnumType = ScreenOrientation
 		end
-
+		
 		module LandscapeRight
 			include EnumItem
 			Name = "LandscapeRight"
 			Value = 1
 			EnumType = ScreenOrientation
 		end
-
+		
 		module LandscapeSensor
 			include EnumItem
 			Name = "LandscapeSensor"
 			Value = 2
 			EnumType = ScreenOrientation
 		end
-
+		
 		module Portrait
 			include EnumItem
 			Name = "Portrait"
 			Value = 3
 			EnumType = ScreenOrientation
 		end
-
+		
 		module Sensor
 			include EnumItem
 			Name = "Sensor"
@@ -11730,7 +11730,7 @@ struct Enum
 			EnumType = ScreenOrientation
 		end
 	end
-
+	
 	module ScrollBarInset
 		module None
 			include EnumItem
@@ -11738,14 +11738,14 @@ struct Enum
 			Value = 0
 			EnumType = ScrollBarInset
 		end
-
+		
 		module ScrollBar
 			include EnumItem
 			Name = "ScrollBar"
 			Value = 1
 			EnumType = ScrollBarInset
 		end
-
+		
 		module Always
 			include EnumItem
 			Name = "Always"
@@ -11753,7 +11753,7 @@ struct Enum
 			EnumType = ScrollBarInset
 		end
 	end
-
+	
 	module ScrollingDirection
 		module X
 			include EnumItem
@@ -11761,14 +11761,14 @@ struct Enum
 			Value = 1
 			EnumType = ScrollingDirection
 		end
-
+		
 		module Y
 			include EnumItem
 			Name = "Y"
 			Value = 2
 			EnumType = ScrollingDirection
 		end
-
+		
 		module XY
 			include EnumItem
 			Name = "XY"
@@ -11776,7 +11776,7 @@ struct Enum
 			EnumType = ScrollingDirection
 		end
 	end
-
+	
 	module SelectionBehavior
 		module Escape
 			include EnumItem
@@ -11784,7 +11784,7 @@ struct Enum
 			Value = 0
 			EnumType = SelectionBehavior
 		end
-
+		
 		module Stop
 			include EnumItem
 			Name = "Stop"
@@ -11792,7 +11792,7 @@ struct Enum
 			EnumType = SelectionBehavior
 		end
 	end
-
+	
 	module SensorMode
 		module Floor
 			include EnumItem
@@ -11800,7 +11800,7 @@ struct Enum
 			Value = 0
 			EnumType = SensorMode
 		end
-
+		
 		module Ladder
 			include EnumItem
 			Name = "Ladder"
@@ -11808,7 +11808,7 @@ struct Enum
 			EnumType = SensorMode
 		end
 	end
-
+	
 	module SensorUpdateType
 		module OnRead
 			include EnumItem
@@ -11816,7 +11816,7 @@ struct Enum
 			Value = 0
 			EnumType = SensorUpdateType
 		end
-
+		
 		module Manual
 			include EnumItem
 			Name = "Manual"
@@ -11824,7 +11824,7 @@ struct Enum
 			EnumType = SensorUpdateType
 		end
 	end
-
+	
 	module ServerAudioBehavior
 		module Enabled
 			include EnumItem
@@ -11832,14 +11832,14 @@ struct Enum
 			Value = 0
 			EnumType = ServerAudioBehavior
 		end
-
+		
 		module Muted
 			include EnumItem
 			Name = "Muted"
 			Value = 1
 			EnumType = ServerAudioBehavior
 		end
-
+		
 		module OnlineGame
 			include EnumItem
 			Name = "OnlineGame"
@@ -11847,7 +11847,7 @@ struct Enum
 			EnumType = ServerAudioBehavior
 		end
 	end
-
+	
 	module ServiceVisibility
 		module Always
 			include EnumItem
@@ -11855,14 +11855,14 @@ struct Enum
 			Value = 0
 			EnumType = ServiceVisibility
 		end
-
+		
 		module Off
 			include EnumItem
 			Name = "Off"
 			Value = 1
 			EnumType = ServiceVisibility
 		end
-
+		
 		module WithChildren
 			include EnumItem
 			Name = "WithChildren"
@@ -11870,7 +11870,7 @@ struct Enum
 			EnumType = ServiceVisibility
 		end
 	end
-
+	
 	module Severity
 		module Error
 			include EnumItem
@@ -11878,21 +11878,21 @@ struct Enum
 			Value = 1
 			EnumType = Severity
 		end
-
+		
 		module Warning
 			include EnumItem
 			Name = "Warning"
 			Value = 2
 			EnumType = Severity
 		end
-
+		
 		module Information
 			include EnumItem
 			Name = "Information"
 			Value = 3
 			EnumType = Severity
 		end
-
+		
 		module Hint
 			include EnumItem
 			Name = "Hint"
@@ -11900,7 +11900,7 @@ struct Enum
 			EnumType = Severity
 		end
 	end
-
+	
 	module SignalBehavior
 		module Default
 			include EnumItem
@@ -11908,21 +11908,21 @@ struct Enum
 			Value = 0
 			EnumType = SignalBehavior
 		end
-
+		
 		module Immediate
 			include EnumItem
 			Name = "Immediate"
 			Value = 1
 			EnumType = SignalBehavior
 		end
-
+		
 		module Deferred
 			include EnumItem
 			Name = "Deferred"
 			Value = 2
 			EnumType = SignalBehavior
 		end
-
+		
 		module AncestryDeferred
 			include EnumItem
 			Name = "AncestryDeferred"
@@ -11930,7 +11930,7 @@ struct Enum
 			EnumType = SignalBehavior
 		end
 	end
-
+	
 	module SizeConstraint
 		module RelativeXY
 			include EnumItem
@@ -11938,14 +11938,14 @@ struct Enum
 			Value = 0
 			EnumType = SizeConstraint
 		end
-
+		
 		module RelativeXX
 			include EnumItem
 			Name = "RelativeXX"
 			Value = 1
 			EnumType = SizeConstraint
 		end
-
+		
 		module RelativeYY
 			include EnumItem
 			Name = "RelativeYY"
@@ -11953,7 +11953,7 @@ struct Enum
 			EnumType = SizeConstraint
 		end
 	end
-
+	
 	module SolverConvergenceVisualizationMode
 		module Disabled
 			include EnumItem
@@ -11961,14 +11961,14 @@ struct Enum
 			Value = 0
 			EnumType = SolverConvergenceVisualizationMode
 		end
-
+		
 		module PerIsland
 			include EnumItem
 			Name = "PerIsland"
 			Value = 1
 			EnumType = SolverConvergenceVisualizationMode
 		end
-
+		
 		module PerEdge
 			include EnumItem
 			Name = "PerEdge"
@@ -11976,7 +11976,7 @@ struct Enum
 			EnumType = SolverConvergenceVisualizationMode
 		end
 	end
-
+	
 	module SortDirection
 		module Ascending
 			include EnumItem
@@ -11984,7 +11984,7 @@ struct Enum
 			Value = 0
 			EnumType = SortDirection
 		end
-
+		
 		module Descending
 			include EnumItem
 			Name = "Descending"
@@ -11992,7 +11992,7 @@ struct Enum
 			EnumType = SortDirection
 		end
 	end
-
+	
 	module SortOrder
 		module LayoutOrder
 			include EnumItem
@@ -12000,14 +12000,14 @@ struct Enum
 			Value = 2
 			EnumType = SortOrder
 		end
-
+		
 		module Name
 			include EnumItem
 			Name = "Name"
 			Value = 0
 			EnumType = SortOrder
 		end
-
+		
 		module Custom
 			include EnumItem
 			Name = "Custom"
@@ -12015,7 +12015,7 @@ struct Enum
 			EnumType = SortOrder
 		end
 	end
-
+	
 	module SpecialKey
 		module Insert
 			include EnumItem
@@ -12023,35 +12023,35 @@ struct Enum
 			Value = 0
 			EnumType = SpecialKey
 		end
-
+		
 		module Home
 			include EnumItem
 			Name = "Home"
 			Value = 1
 			EnumType = SpecialKey
 		end
-
+		
 		module End
 			include EnumItem
 			Name = "End"
 			Value = 2
 			EnumType = SpecialKey
 		end
-
+		
 		module PageUp
 			include EnumItem
 			Name = "PageUp"
 			Value = 3
 			EnumType = SpecialKey
 		end
-
+		
 		module PageDown
 			include EnumItem
 			Name = "PageDown"
 			Value = 4
 			EnumType = SpecialKey
 		end
-
+		
 		module ChatHotkey
 			include EnumItem
 			Name = "ChatHotkey"
@@ -12059,7 +12059,7 @@ struct Enum
 			EnumType = SpecialKey
 		end
 	end
-
+	
 	module StartCorner
 		module TopLeft
 			include EnumItem
@@ -12067,21 +12067,21 @@ struct Enum
 			Value = 0
 			EnumType = StartCorner
 		end
-
+		
 		module TopRight
 			include EnumItem
 			Name = "TopRight"
 			Value = 1
 			EnumType = StartCorner
 		end
-
+		
 		module BottomLeft
 			include EnumItem
 			Name = "BottomLeft"
 			Value = 2
 			EnumType = StartCorner
 		end
-
+		
 		module BottomRight
 			include EnumItem
 			Name = "BottomRight"
@@ -12089,7 +12089,7 @@ struct Enum
 			EnumType = StartCorner
 		end
 	end
-
+	
 	module Status
 		module Poison
 			include EnumItem
@@ -12097,7 +12097,7 @@ struct Enum
 			Value = 0
 			EnumType = Status
 		end
-
+		
 		module Confusion
 			include EnumItem
 			Name = "Confusion"
@@ -12105,7 +12105,7 @@ struct Enum
 			EnumType = Status
 		end
 	end
-
+	
 	module StreamOutBehavior
 		module Default
 			include EnumItem
@@ -12113,14 +12113,14 @@ struct Enum
 			Value = 0
 			EnumType = StreamOutBehavior
 		end
-
+		
 		module LowMemory
 			include EnumItem
 			Name = "LowMemory"
 			Value = 1
 			EnumType = StreamOutBehavior
 		end
-
+		
 		module Opportunistic
 			include EnumItem
 			Name = "Opportunistic"
@@ -12128,7 +12128,7 @@ struct Enum
 			EnumType = StreamOutBehavior
 		end
 	end
-
+	
 	module StreamingIntegrityMode
 		module Default
 			include EnumItem
@@ -12136,21 +12136,21 @@ struct Enum
 			Value = 0
 			EnumType = StreamingIntegrityMode
 		end
-
+		
 		module Disabled
 			include EnumItem
 			Name = "Disabled"
 			Value = 1
 			EnumType = StreamingIntegrityMode
 		end
-
+		
 		module MinimumRadiusPause
 			include EnumItem
 			Name = "MinimumRadiusPause"
 			Value = 2
 			EnumType = StreamingIntegrityMode
 		end
-
+		
 		module PauseOutsideLoadedArea
 			include EnumItem
 			Name = "PauseOutsideLoadedArea"
@@ -12158,7 +12158,7 @@ struct Enum
 			EnumType = StreamingIntegrityMode
 		end
 	end
-
+	
 	module StreamingPauseMode
 		module Default
 			include EnumItem
@@ -12166,14 +12166,14 @@ struct Enum
 			Value = 0
 			EnumType = StreamingPauseMode
 		end
-
+		
 		module Disabled
 			include EnumItem
 			Name = "Disabled"
 			Value = 1
 			EnumType = StreamingPauseMode
 		end
-
+		
 		module ClientPhysicsPause
 			include EnumItem
 			Name = "ClientPhysicsPause"
@@ -12181,7 +12181,7 @@ struct Enum
 			EnumType = StreamingPauseMode
 		end
 	end
-
+	
 	module StudioCloseMode
 		module None
 			include EnumItem
@@ -12189,14 +12189,14 @@ struct Enum
 			Value = 0
 			EnumType = StudioCloseMode
 		end
-
+		
 		module CloseStudio
 			include EnumItem
 			Name = "CloseStudio"
 			Value = 1
 			EnumType = StudioCloseMode
 		end
-
+		
 		module CloseDoc
 			include EnumItem
 			Name = "CloseDoc"
@@ -12204,7 +12204,7 @@ struct Enum
 			EnumType = StudioCloseMode
 		end
 	end
-
+	
 	module StudioDataModelType
 		module Edit
 			include EnumItem
@@ -12212,28 +12212,28 @@ struct Enum
 			Value = 0
 			EnumType = StudioDataModelType
 		end
-
+		
 		module PlayClient
 			include EnumItem
 			Name = "PlayClient"
 			Value = 1
 			EnumType = StudioDataModelType
 		end
-
+		
 		module PlayServer
 			include EnumItem
 			Name = "PlayServer"
 			Value = 2
 			EnumType = StudioDataModelType
 		end
-
+		
 		module Standalone
 			include EnumItem
 			Name = "Standalone"
 			Value = 3
 			EnumType = StudioDataModelType
 		end
-
+		
 		module None
 			include EnumItem
 			Name = "None"
@@ -12241,7 +12241,7 @@ struct Enum
 			EnumType = StudioDataModelType
 		end
 	end
-
+	
 	module StudioScriptEditorColorCategories
 		module Default
 			include EnumItem
@@ -12249,308 +12249,308 @@ struct Enum
 			Value = 0
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module Operator
 			include EnumItem
 			Name = "Operator"
 			Value = 1
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module Number
 			include EnumItem
 			Name = "Number"
 			Value = 2
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module String
 			include EnumItem
 			Name = "String"
 			Value = 3
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module Comment
 			include EnumItem
 			Name = "Comment"
 			Value = 4
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module Keyword
 			include EnumItem
 			Name = "Keyword"
 			Value = 5
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module Builtin
 			include EnumItem
 			Name = "Builtin"
 			Value = 6
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module Method
 			include EnumItem
 			Name = "Method"
 			Value = 7
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module Property
 			include EnumItem
 			Name = "Property"
 			Value = 8
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module Nil
 			include EnumItem
 			Name = "Nil"
 			Value = 9
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module Bool
 			include EnumItem
 			Name = "Bool"
 			Value = 10
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module Function
 			include EnumItem
 			Name = "Function"
 			Value = 11
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module Local
 			include EnumItem
 			Name = "Local"
 			Value = 12
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module Self
 			include EnumItem
 			Name = "Self"
 			Value = 13
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module LuauKeyword
 			include EnumItem
 			Name = "LuauKeyword"
 			Value = 14
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module FunctionName
 			include EnumItem
 			Name = "FunctionName"
 			Value = 15
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module TODO
 			include EnumItem
 			Name = "TODO"
 			Value = 16
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module Background
 			include EnumItem
 			Name = "Background"
 			Value = 17
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module SelectionText
 			include EnumItem
 			Name = "SelectionText"
 			Value = 18
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module SelectionBackground
 			include EnumItem
 			Name = "SelectionBackground"
 			Value = 19
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module FindSelectionBackground
 			include EnumItem
 			Name = "FindSelectionBackground"
 			Value = 20
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module MatchingWordBackground
 			include EnumItem
 			Name = "MatchingWordBackground"
 			Value = 21
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module Warning
 			include EnumItem
 			Name = "Warning"
 			Value = 22
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module Error
 			include EnumItem
 			Name = "Error"
 			Value = 23
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module Info
 			include EnumItem
 			Name = "Info"
 			Value = 24
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module Hint
 			include EnumItem
 			Name = "Hint"
 			Value = 25
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module Whitespace
 			include EnumItem
 			Name = "Whitespace"
 			Value = 26
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module ActiveLine
 			include EnumItem
 			Name = "ActiveLine"
 			Value = 27
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module DebuggerCurrentLine
 			include EnumItem
 			Name = "DebuggerCurrentLine"
 			Value = 28
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module DebuggerErrorLine
 			include EnumItem
 			Name = "DebuggerErrorLine"
 			Value = 29
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module Ruler
 			include EnumItem
 			Name = "Ruler"
 			Value = 30
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module Bracket
 			include EnumItem
 			Name = "Bracket"
 			Value = 31
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module MenuPrimaryText
 			include EnumItem
 			Name = "MenuPrimaryText"
 			Value = 32
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module MenuSecondaryText
 			include EnumItem
 			Name = "MenuSecondaryText"
 			Value = 33
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module MenuSelectedText
 			include EnumItem
 			Name = "MenuSelectedText"
 			Value = 34
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module MenuBackground
 			include EnumItem
 			Name = "MenuBackground"
 			Value = 35
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module MenuSelectedBackground
 			include EnumItem
 			Name = "MenuSelectedBackground"
 			Value = 36
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module MenuScrollbarBackground
 			include EnumItem
 			Name = "MenuScrollbarBackground"
 			Value = 37
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module MenuScrollbarHandle
 			include EnumItem
 			Name = "MenuScrollbarHandle"
 			Value = 38
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module MenuBorder
 			include EnumItem
 			Name = "MenuBorder"
 			Value = 39
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module DocViewCodeBackground
 			include EnumItem
 			Name = "DocViewCodeBackground"
 			Value = 40
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module AICOOverlayText
 			include EnumItem
 			Name = "AICOOverlayText"
 			Value = 41
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module AICOOverlayButtonBackground
 			include EnumItem
 			Name = "AICOOverlayButtonBackground"
 			Value = 42
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module AICOOverlayButtonBackgroundHover
 			include EnumItem
 			Name = "AICOOverlayButtonBackgroundHover"
 			Value = 43
 			EnumType = StudioScriptEditorColorCategories
 		end
-
+		
 		module AICOOverlayButtonBackgroundPressed
 			include EnumItem
 			Name = "AICOOverlayButtonBackgroundPressed"
@@ -12558,7 +12558,7 @@ struct Enum
 			EnumType = StudioScriptEditorColorCategories
 		end
 	end
-
+	
 	module StudioScriptEditorColorPresets
 		module RobloxDefault
 			include EnumItem
@@ -12566,21 +12566,21 @@ struct Enum
 			Value = 0
 			EnumType = StudioScriptEditorColorPresets
 		end
-
+		
 		module Extra1
 			include EnumItem
 			Name = "Extra1"
 			Value = 1
 			EnumType = StudioScriptEditorColorPresets
 		end
-
+		
 		module Extra2
 			include EnumItem
 			Name = "Extra2"
 			Value = 2
 			EnumType = StudioScriptEditorColorPresets
 		end
-
+		
 		module Custom
 			include EnumItem
 			Name = "Custom"
@@ -12588,7 +12588,7 @@ struct Enum
 			EnumType = StudioScriptEditorColorPresets
 		end
 	end
-
+	
 	module StudioStyleGuideColor
 		module MainBackground
 			include EnumItem
@@ -12596,861 +12596,861 @@ struct Enum
 			Value = 0
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module Titlebar
 			include EnumItem
 			Name = "Titlebar"
 			Value = 1
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module Dropdown
 			include EnumItem
 			Name = "Dropdown"
 			Value = 2
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module Tooltip
 			include EnumItem
 			Name = "Tooltip"
 			Value = 3
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module Notification
 			include EnumItem
 			Name = "Notification"
 			Value = 4
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScrollBar
 			include EnumItem
 			Name = "ScrollBar"
 			Value = 5
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScrollBarBackground
 			include EnumItem
 			Name = "ScrollBarBackground"
 			Value = 6
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module TabBar
 			include EnumItem
 			Name = "TabBar"
 			Value = 7
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module Tab
 			include EnumItem
 			Name = "Tab"
 			Value = 8
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module FilterButtonDefault
 			include EnumItem
 			Name = "FilterButtonDefault"
 			Value = 9
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module FilterButtonHover
 			include EnumItem
 			Name = "FilterButtonHover"
 			Value = 10
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module FilterButtonChecked
 			include EnumItem
 			Name = "FilterButtonChecked"
 			Value = 11
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module FilterButtonAccent
 			include EnumItem
 			Name = "FilterButtonAccent"
 			Value = 12
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module FilterButtonBorder
 			include EnumItem
 			Name = "FilterButtonBorder"
 			Value = 13
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module FilterButtonBorderAlt
 			include EnumItem
 			Name = "FilterButtonBorderAlt"
 			Value = 14
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module RibbonTab
 			include EnumItem
 			Name = "RibbonTab"
 			Value = 15
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module RibbonTabTopBar
 			include EnumItem
 			Name = "RibbonTabTopBar"
 			Value = 16
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module Button
 			include EnumItem
 			Name = "Button"
 			Value = 17
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module MainButton
 			include EnumItem
 			Name = "MainButton"
 			Value = 18
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module RibbonButton
 			include EnumItem
 			Name = "RibbonButton"
 			Value = 19
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ViewPortBackground
 			include EnumItem
 			Name = "ViewPortBackground"
 			Value = 20
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module InputFieldBackground
 			include EnumItem
 			Name = "InputFieldBackground"
 			Value = 21
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module Item
 			include EnumItem
 			Name = "Item"
 			Value = 22
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module TableItem
 			include EnumItem
 			Name = "TableItem"
 			Value = 23
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module CategoryItem
 			include EnumItem
 			Name = "CategoryItem"
 			Value = 24
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module GameSettingsTableItem
 			include EnumItem
 			Name = "GameSettingsTableItem"
 			Value = 25
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module GameSettingsTooltip
 			include EnumItem
 			Name = "GameSettingsTooltip"
 			Value = 26
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module EmulatorBar
 			include EnumItem
 			Name = "EmulatorBar"
 			Value = 27
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module EmulatorDropDown
 			include EnumItem
 			Name = "EmulatorDropDown"
 			Value = 28
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ColorPickerFrame
 			include EnumItem
 			Name = "ColorPickerFrame"
 			Value = 29
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module CurrentMarker
 			include EnumItem
 			Name = "CurrentMarker"
 			Value = 30
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module Border
 			include EnumItem
 			Name = "Border"
 			Value = 31
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DropShadow
 			include EnumItem
 			Name = "DropShadow"
 			Value = 32
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module Shadow
 			include EnumItem
 			Name = "Shadow"
 			Value = 33
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module Light
 			include EnumItem
 			Name = "Light"
 			Value = 34
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module Dark
 			include EnumItem
 			Name = "Dark"
 			Value = 35
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module Mid
 			include EnumItem
 			Name = "Mid"
 			Value = 36
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module MainText
 			include EnumItem
 			Name = "MainText"
 			Value = 37
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module SubText
 			include EnumItem
 			Name = "SubText"
 			Value = 38
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module TitlebarText
 			include EnumItem
 			Name = "TitlebarText"
 			Value = 39
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module BrightText
 			include EnumItem
 			Name = "BrightText"
 			Value = 40
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DimmedText
 			include EnumItem
 			Name = "DimmedText"
 			Value = 41
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module LinkText
 			include EnumItem
 			Name = "LinkText"
 			Value = 42
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module WarningText
 			include EnumItem
 			Name = "WarningText"
 			Value = 43
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ErrorText
 			include EnumItem
 			Name = "ErrorText"
 			Value = 44
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module InfoText
 			include EnumItem
 			Name = "InfoText"
 			Value = 45
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module SensitiveText
 			include EnumItem
 			Name = "SensitiveText"
 			Value = 46
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptSideWidget
 			include EnumItem
 			Name = "ScriptSideWidget"
 			Value = 47
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptBackground
 			include EnumItem
 			Name = "ScriptBackground"
 			Value = 48
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptText
 			include EnumItem
 			Name = "ScriptText"
 			Value = 49
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptSelectionText
 			include EnumItem
 			Name = "ScriptSelectionText"
 			Value = 50
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptSelectionBackground
 			include EnumItem
 			Name = "ScriptSelectionBackground"
 			Value = 51
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptFindSelectionBackground
 			include EnumItem
 			Name = "ScriptFindSelectionBackground"
 			Value = 52
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptMatchingWordSelectionBackground
 			include EnumItem
 			Name = "ScriptMatchingWordSelectionBackground"
 			Value = 53
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptOperator
 			include EnumItem
 			Name = "ScriptOperator"
 			Value = 54
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptNumber
 			include EnumItem
 			Name = "ScriptNumber"
 			Value = 55
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptString
 			include EnumItem
 			Name = "ScriptString"
 			Value = 56
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptComment
 			include EnumItem
 			Name = "ScriptComment"
 			Value = 57
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptKeyword
 			include EnumItem
 			Name = "ScriptKeyword"
 			Value = 58
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptBuiltInFunction
 			include EnumItem
 			Name = "ScriptBuiltInFunction"
 			Value = 59
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptWarning
 			include EnumItem
 			Name = "ScriptWarning"
 			Value = 60
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptError
 			include EnumItem
 			Name = "ScriptError"
 			Value = 61
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptInformation
 			include EnumItem
 			Name = "ScriptInformation"
 			Value = 62
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptHint
 			include EnumItem
 			Name = "ScriptHint"
 			Value = 63
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptWhitespace
 			include EnumItem
 			Name = "ScriptWhitespace"
 			Value = 64
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptRuler
 			include EnumItem
 			Name = "ScriptRuler"
 			Value = 65
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DocViewCodeBackground
 			include EnumItem
 			Name = "DocViewCodeBackground"
 			Value = 66
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DebuggerCurrentLine
 			include EnumItem
 			Name = "DebuggerCurrentLine"
 			Value = 67
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DebuggerErrorLine
 			include EnumItem
 			Name = "DebuggerErrorLine"
 			Value = 68
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptEditorCurrentLine
 			include EnumItem
 			Name = "ScriptEditorCurrentLine"
 			Value = 107
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DiffFilePathText
 			include EnumItem
 			Name = "DiffFilePathText"
 			Value = 69
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DiffTextHunkInfo
 			include EnumItem
 			Name = "DiffTextHunkInfo"
 			Value = 70
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DiffTextNoChange
 			include EnumItem
 			Name = "DiffTextNoChange"
 			Value = 71
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DiffTextAddition
 			include EnumItem
 			Name = "DiffTextAddition"
 			Value = 72
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DiffTextDeletion
 			include EnumItem
 			Name = "DiffTextDeletion"
 			Value = 73
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DiffTextSeparatorBackground
 			include EnumItem
 			Name = "DiffTextSeparatorBackground"
 			Value = 74
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DiffTextNoChangeBackground
 			include EnumItem
 			Name = "DiffTextNoChangeBackground"
 			Value = 75
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DiffTextAdditionBackground
 			include EnumItem
 			Name = "DiffTextAdditionBackground"
 			Value = 76
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DiffTextDeletionBackground
 			include EnumItem
 			Name = "DiffTextDeletionBackground"
 			Value = 77
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DiffLineNum
 			include EnumItem
 			Name = "DiffLineNum"
 			Value = 78
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DiffLineNumSeparatorBackground
 			include EnumItem
 			Name = "DiffLineNumSeparatorBackground"
 			Value = 79
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DiffLineNumNoChangeBackground
 			include EnumItem
 			Name = "DiffLineNumNoChangeBackground"
 			Value = 80
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DiffLineNumAdditionBackground
 			include EnumItem
 			Name = "DiffLineNumAdditionBackground"
 			Value = 81
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DiffLineNumDeletionBackground
 			include EnumItem
 			Name = "DiffLineNumDeletionBackground"
 			Value = 82
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DiffFilePathBackground
 			include EnumItem
 			Name = "DiffFilePathBackground"
 			Value = 83
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DiffFilePathBorder
 			include EnumItem
 			Name = "DiffFilePathBorder"
 			Value = 84
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ChatIncomingBgColor
 			include EnumItem
 			Name = "ChatIncomingBgColor"
 			Value = 85
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ChatIncomingTextColor
 			include EnumItem
 			Name = "ChatIncomingTextColor"
 			Value = 86
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ChatOutgoingBgColor
 			include EnumItem
 			Name = "ChatOutgoingBgColor"
 			Value = 87
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ChatOutgoingTextColor
 			include EnumItem
 			Name = "ChatOutgoingTextColor"
 			Value = 88
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ChatModeratedMessageColor
 			include EnumItem
 			Name = "ChatModeratedMessageColor"
 			Value = 89
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module Separator
 			include EnumItem
 			Name = "Separator"
 			Value = 90
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ButtonBorder
 			include EnumItem
 			Name = "ButtonBorder"
 			Value = 91
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ButtonText
 			include EnumItem
 			Name = "ButtonText"
 			Value = 92
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module InputFieldBorder
 			include EnumItem
 			Name = "InputFieldBorder"
 			Value = 93
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module CheckedFieldBackground
 			include EnumItem
 			Name = "CheckedFieldBackground"
 			Value = 94
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module CheckedFieldBorder
 			include EnumItem
 			Name = "CheckedFieldBorder"
 			Value = 95
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module CheckedFieldIndicator
 			include EnumItem
 			Name = "CheckedFieldIndicator"
 			Value = 96
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module HeaderSection
 			include EnumItem
 			Name = "HeaderSection"
 			Value = 97
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module Midlight
 			include EnumItem
 			Name = "Midlight"
 			Value = 98
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module StatusBar
 			include EnumItem
 			Name = "StatusBar"
 			Value = 99
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DialogButton
 			include EnumItem
 			Name = "DialogButton"
 			Value = 100
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DialogButtonText
 			include EnumItem
 			Name = "DialogButtonText"
 			Value = 101
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DialogButtonBorder
 			include EnumItem
 			Name = "DialogButtonBorder"
 			Value = 102
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DialogMainButton
 			include EnumItem
 			Name = "DialogMainButton"
 			Value = 103
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module DialogMainButtonText
 			include EnumItem
 			Name = "DialogMainButtonText"
 			Value = 104
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module InfoBarWarningBackground
 			include EnumItem
 			Name = "InfoBarWarningBackground"
 			Value = 105
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module InfoBarWarningText
 			include EnumItem
 			Name = "InfoBarWarningText"
 			Value = 106
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptMethod
 			include EnumItem
 			Name = "ScriptMethod"
 			Value = 108
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptProperty
 			include EnumItem
 			Name = "ScriptProperty"
 			Value = 109
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptNil
 			include EnumItem
 			Name = "ScriptNil"
 			Value = 110
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptBool
 			include EnumItem
 			Name = "ScriptBool"
 			Value = 111
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptFunction
 			include EnumItem
 			Name = "ScriptFunction"
 			Value = 112
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptLocal
 			include EnumItem
 			Name = "ScriptLocal"
 			Value = 113
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptSelf
 			include EnumItem
 			Name = "ScriptSelf"
 			Value = 114
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptLuauKeyword
 			include EnumItem
 			Name = "ScriptLuauKeyword"
 			Value = 115
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptFunctionName
 			include EnumItem
 			Name = "ScriptFunctionName"
 			Value = 116
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptTodo
 			include EnumItem
 			Name = "ScriptTodo"
 			Value = 117
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module ScriptBracket
 			include EnumItem
 			Name = "ScriptBracket"
 			Value = 118
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module AICOOverlayText
 			include EnumItem
 			Name = "AICOOverlayText"
 			Value = 128
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module AICOOverlayButtonBackground
 			include EnumItem
 			Name = "AICOOverlayButtonBackground"
 			Value = 129
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module AICOOverlayButtonBackgroundHover
 			include EnumItem
 			Name = "AICOOverlayButtonBackgroundHover"
 			Value = 130
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module AICOOverlayButtonBackgroundPressed
 			include EnumItem
 			Name = "AICOOverlayButtonBackgroundPressed"
 			Value = 131
 			EnumType = StudioStyleGuideColor
 		end
-
+		
 		module AttributeCog
 			include EnumItem
 			Name = "AttributeCog"
@@ -13458,7 +13458,7 @@ struct Enum
 			EnumType = StudioStyleGuideColor
 		end
 	end
-
+	
 	module StudioStyleGuideModifier
 		module Default
 			include EnumItem
@@ -13466,28 +13466,28 @@ struct Enum
 			Value = 0
 			EnumType = StudioStyleGuideModifier
 		end
-
+		
 		module Selected
 			include EnumItem
 			Name = "Selected"
 			Value = 1
 			EnumType = StudioStyleGuideModifier
 		end
-
+		
 		module Pressed
 			include EnumItem
 			Name = "Pressed"
 			Value = 2
 			EnumType = StudioStyleGuideModifier
 		end
-
+		
 		module Disabled
 			include EnumItem
 			Name = "Disabled"
 			Value = 3
 			EnumType = StudioStyleGuideModifier
 		end
-
+		
 		module Hover
 			include EnumItem
 			Name = "Hover"
@@ -13495,7 +13495,7 @@ struct Enum
 			EnumType = StudioStyleGuideModifier
 		end
 	end
-
+	
 	module Style
 		module AlternatingSupports
 			include EnumItem
@@ -13503,14 +13503,14 @@ struct Enum
 			Value = 0
 			EnumType = Style
 		end
-
+		
 		module BridgeStyleSupports
 			include EnumItem
 			Name = "BridgeStyleSupports"
 			Value = 1
 			EnumType = Style
 		end
-
+		
 		module NoSupports
 			include EnumItem
 			Name = "NoSupports"
@@ -13518,7 +13518,7 @@ struct Enum
 			EnumType = Style
 		end
 	end
-
+	
 	module SurfaceConstraint
 		module None
 			include EnumItem
@@ -13526,21 +13526,21 @@ struct Enum
 			Value = 0
 			EnumType = SurfaceConstraint
 		end
-
+		
 		module Hinge
 			include EnumItem
 			Name = "Hinge"
 			Value = 1
 			EnumType = SurfaceConstraint
 		end
-
+		
 		module SteppingMotor
 			include EnumItem
 			Name = "SteppingMotor"
 			Value = 2
 			EnumType = SurfaceConstraint
 		end
-
+		
 		module Motor
 			include EnumItem
 			Name = "Motor"
@@ -13548,7 +13548,7 @@ struct Enum
 			EnumType = SurfaceConstraint
 		end
 	end
-
+	
 	module SurfaceGuiShape
 		module Flat
 			include EnumItem
@@ -13556,7 +13556,7 @@ struct Enum
 			Value = 0
 			EnumType = SurfaceGuiShape
 		end
-
+		
 		module CurvedHorizontally
 			include EnumItem
 			Name = "CurvedHorizontally"
@@ -13564,7 +13564,7 @@ struct Enum
 			EnumType = SurfaceGuiShape
 		end
 	end
-
+	
 	module SurfaceGuiSizingMode
 		module FixedSize
 			include EnumItem
@@ -13572,7 +13572,7 @@ struct Enum
 			Value = 0
 			EnumType = SurfaceGuiSizingMode
 		end
-
+		
 		module PixelsPerStud
 			include EnumItem
 			Name = "PixelsPerStud"
@@ -13580,7 +13580,7 @@ struct Enum
 			EnumType = SurfaceGuiSizingMode
 		end
 	end
-
+	
 	module SurfaceType
 		module Smooth
 			include EnumItem
@@ -13588,63 +13588,63 @@ struct Enum
 			Value = 0
 			EnumType = SurfaceType
 		end
-
+		
 		module Glue
 			include EnumItem
 			Name = "Glue"
 			Value = 1
 			EnumType = SurfaceType
 		end
-
+		
 		module Weld
 			include EnumItem
 			Name = "Weld"
 			Value = 2
 			EnumType = SurfaceType
 		end
-
+		
 		module Studs
 			include EnumItem
 			Name = "Studs"
 			Value = 3
 			EnumType = SurfaceType
 		end
-
+		
 		module Inlet
 			include EnumItem
 			Name = "Inlet"
 			Value = 4
 			EnumType = SurfaceType
 		end
-
+		
 		module Universal
 			include EnumItem
 			Name = "Universal"
 			Value = 5
 			EnumType = SurfaceType
 		end
-
+		
 		module Hinge
 			include EnumItem
 			Name = "Hinge"
 			Value = 6
 			EnumType = SurfaceType
 		end
-
+		
 		module Motor
 			include EnumItem
 			Name = "Motor"
 			Value = 7
 			EnumType = SurfaceType
 		end
-
+		
 		module SteppingMotor
 			include EnumItem
 			Name = "SteppingMotor"
 			Value = 8
 			EnumType = SurfaceType
 		end
-
+		
 		module SmoothNoOutlines
 			include EnumItem
 			Name = "SmoothNoOutlines"
@@ -13652,7 +13652,7 @@ struct Enum
 			EnumType = SurfaceType
 		end
 	end
-
+	
 	module SwipeDirection
 		module Right
 			include EnumItem
@@ -13660,28 +13660,28 @@ struct Enum
 			Value = 0
 			EnumType = SwipeDirection
 		end
-
+		
 		module Left
 			include EnumItem
 			Name = "Left"
 			Value = 1
 			EnumType = SwipeDirection
 		end
-
+		
 		module Up
 			include EnumItem
 			Name = "Up"
 			Value = 2
 			EnumType = SwipeDirection
 		end
-
+		
 		module Down
 			include EnumItem
 			Name = "Down"
 			Value = 3
 			EnumType = SwipeDirection
 		end
-
+		
 		module None
 			include EnumItem
 			Name = "None"
@@ -13689,7 +13689,7 @@ struct Enum
 			EnumType = SwipeDirection
 		end
 	end
-
+	
 	module TableMajorAxis
 		module RowMajor
 			include EnumItem
@@ -13697,7 +13697,7 @@ struct Enum
 			Value = 0
 			EnumType = TableMajorAxis
 		end
-
+		
 		module ColumnMajor
 			include EnumItem
 			Name = "ColumnMajor"
@@ -13705,7 +13705,7 @@ struct Enum
 			EnumType = TableMajorAxis
 		end
 	end
-
+	
 	module Technology
 		module Compatibility
 			include EnumItem
@@ -13713,28 +13713,28 @@ struct Enum
 			Value = 2
 			EnumType = Technology
 		end
-
+		
 		module Voxel
 			include EnumItem
 			Name = "Voxel"
 			Value = 1
 			EnumType = Technology
 		end
-
+		
 		module ShadowMap
 			include EnumItem
 			Name = "ShadowMap"
 			Value = 3
 			EnumType = Technology
 		end
-
+		
 		module Legacy
 			include EnumItem
 			Name = "Legacy"
 			Value = 0
 			EnumType = Technology
 		end
-
+		
 		module Future
 			include EnumItem
 			Name = "Future"
@@ -13742,7 +13742,7 @@ struct Enum
 			EnumType = Technology
 		end
 	end
-
+	
 	module TeleportMethod
 		module TeleportToSpawnByName
 			include EnumItem
@@ -13750,28 +13750,28 @@ struct Enum
 			Value = 0
 			EnumType = TeleportMethod
 		end
-
+		
 		module TeleportToPlaceInstance
 			include EnumItem
 			Name = "TeleportToPlaceInstance"
 			Value = 1
 			EnumType = TeleportMethod
 		end
-
+		
 		module TeleportToPrivateServer
 			include EnumItem
 			Name = "TeleportToPrivateServer"
 			Value = 2
 			EnumType = TeleportMethod
 		end
-
+		
 		module TeleportPartyAsync
 			include EnumItem
 			Name = "TeleportPartyAsync"
 			Value = 3
 			EnumType = TeleportMethod
 		end
-
+		
 		module TeleportUnknown
 			include EnumItem
 			Name = "TeleportUnknown"
@@ -13779,7 +13779,7 @@ struct Enum
 			EnumType = TeleportMethod
 		end
 	end
-
+	
 	module TeleportResult
 		module Success
 			include EnumItem
@@ -13787,49 +13787,49 @@ struct Enum
 			Value = 0
 			EnumType = TeleportResult
 		end
-
+		
 		module Failure
 			include EnumItem
 			Name = "Failure"
 			Value = 1
 			EnumType = TeleportResult
 		end
-
+		
 		module GameNotFound
 			include EnumItem
 			Name = "GameNotFound"
 			Value = 2
 			EnumType = TeleportResult
 		end
-
+		
 		module GameEnded
 			include EnumItem
 			Name = "GameEnded"
 			Value = 3
 			EnumType = TeleportResult
 		end
-
+		
 		module GameFull
 			include EnumItem
 			Name = "GameFull"
 			Value = 4
 			EnumType = TeleportResult
 		end
-
+		
 		module Unauthorized
 			include EnumItem
 			Name = "Unauthorized"
 			Value = 5
 			EnumType = TeleportResult
 		end
-
+		
 		module Flooded
 			include EnumItem
 			Name = "Flooded"
 			Value = 6
 			EnumType = TeleportResult
 		end
-
+		
 		module IsTeleporting
 			include EnumItem
 			Name = "IsTeleporting"
@@ -13837,7 +13837,7 @@ struct Enum
 			EnumType = TeleportResult
 		end
 	end
-
+	
 	module TeleportState
 		module RequestedFromServer
 			include EnumItem
@@ -13845,28 +13845,28 @@ struct Enum
 			Value = 0
 			EnumType = TeleportState
 		end
-
+		
 		module Started
 			include EnumItem
 			Name = "Started"
 			Value = 1
 			EnumType = TeleportState
 		end
-
+		
 		module WaitingForServer
 			include EnumItem
 			Name = "WaitingForServer"
 			Value = 2
 			EnumType = TeleportState
 		end
-
+		
 		module Failed
 			include EnumItem
 			Name = "Failed"
 			Value = 3
 			EnumType = TeleportState
 		end
-
+		
 		module InProgress
 			include EnumItem
 			Name = "InProgress"
@@ -13874,7 +13874,7 @@ struct Enum
 			EnumType = TeleportState
 		end
 	end
-
+	
 	module TeleportType
 		module ToPlace
 			include EnumItem
@@ -13882,14 +13882,14 @@ struct Enum
 			Value = 0
 			EnumType = TeleportType
 		end
-
+		
 		module ToInstance
 			include EnumItem
 			Name = "ToInstance"
 			Value = 1
 			EnumType = TeleportType
 		end
-
+		
 		module ToReservedServer
 			include EnumItem
 			Name = "ToReservedServer"
@@ -13897,7 +13897,7 @@ struct Enum
 			EnumType = TeleportType
 		end
 	end
-
+	
 	module TerrainAcquisitionMethod
 		module None
 			include EnumItem
@@ -13905,77 +13905,77 @@ struct Enum
 			Value = 0
 			EnumType = TerrainAcquisitionMethod
 		end
-
+		
 		module Legacy
 			include EnumItem
 			Name = "Legacy"
 			Value = 1
 			EnumType = TerrainAcquisitionMethod
 		end
-
+		
 		module Template
 			include EnumItem
 			Name = "Template"
 			Value = 2
 			EnumType = TerrainAcquisitionMethod
 		end
-
+		
 		module Generate
 			include EnumItem
 			Name = "Generate"
 			Value = 3
 			EnumType = TerrainAcquisitionMethod
 		end
-
+		
 		module Import
 			include EnumItem
 			Name = "Import"
 			Value = 4
 			EnumType = TerrainAcquisitionMethod
 		end
-
+		
 		module Convert
 			include EnumItem
 			Name = "Convert"
 			Value = 5
 			EnumType = TerrainAcquisitionMethod
 		end
-
+		
 		module EditAddTool
 			include EnumItem
 			Name = "EditAddTool"
 			Value = 6
 			EnumType = TerrainAcquisitionMethod
 		end
-
+		
 		module EditSeaLevelTool
 			include EnumItem
 			Name = "EditSeaLevelTool"
 			Value = 7
 			EnumType = TerrainAcquisitionMethod
 		end
-
+		
 		module EditReplaceTool
 			include EnumItem
 			Name = "EditReplaceTool"
 			Value = 8
 			EnumType = TerrainAcquisitionMethod
 		end
-
+		
 		module RegionFillTool
 			include EnumItem
 			Name = "RegionFillTool"
 			Value = 9
 			EnumType = TerrainAcquisitionMethod
 		end
-
+		
 		module RegionPasteTool
 			include EnumItem
 			Name = "RegionPasteTool"
 			Value = 10
 			EnumType = TerrainAcquisitionMethod
 		end
-
+		
 		module Other
 			include EnumItem
 			Name = "Other"
@@ -13983,7 +13983,7 @@ struct Enum
 			EnumType = TerrainAcquisitionMethod
 		end
 	end
-
+	
 	module TerrainFace
 		module Top
 			include EnumItem
@@ -13991,14 +13991,14 @@ struct Enum
 			Value = 0
 			EnumType = TerrainFace
 		end
-
+		
 		module Side
 			include EnumItem
 			Name = "Side"
 			Value = 1
 			EnumType = TerrainFace
 		end
-
+		
 		module Bottom
 			include EnumItem
 			Name = "Bottom"
@@ -14006,7 +14006,7 @@ struct Enum
 			EnumType = TerrainFace
 		end
 	end
-
+	
 	module TextChatMessageStatus
 		module Unknown
 			include EnumItem
@@ -14014,49 +14014,49 @@ struct Enum
 			Value = 1
 			EnumType = TextChatMessageStatus
 		end
-
+		
 		module Success
 			include EnumItem
 			Name = "Success"
 			Value = 2
 			EnumType = TextChatMessageStatus
 		end
-
+		
 		module Sending
 			include EnumItem
 			Name = "Sending"
 			Value = 3
 			EnumType = TextChatMessageStatus
 		end
-
+		
 		module TextFilterFailed
 			include EnumItem
 			Name = "TextFilterFailed"
 			Value = 4
 			EnumType = TextChatMessageStatus
 		end
-
+		
 		module Floodchecked
 			include EnumItem
 			Name = "Floodchecked"
 			Value = 5
 			EnumType = TextChatMessageStatus
 		end
-
+		
 		module InvalidPrivacySettings
 			include EnumItem
 			Name = "InvalidPrivacySettings"
 			Value = 6
 			EnumType = TextChatMessageStatus
 		end
-
+		
 		module InvalidTextChannelPermissions
 			include EnumItem
 			Name = "InvalidTextChannelPermissions"
 			Value = 7
 			EnumType = TextChatMessageStatus
 		end
-
+		
 		module MessageTooLong
 			include EnumItem
 			Name = "MessageTooLong"
@@ -14064,7 +14064,7 @@ struct Enum
 			EnumType = TextChatMessageStatus
 		end
 	end
-
+	
 	module TextFilterContext
 		module PublicChat
 			include EnumItem
@@ -14072,7 +14072,7 @@ struct Enum
 			Value = 1
 			EnumType = TextFilterContext
 		end
-
+		
 		module PrivateChat
 			include EnumItem
 			Name = "PrivateChat"
@@ -14080,7 +14080,7 @@ struct Enum
 			EnumType = TextFilterContext
 		end
 	end
-
+	
 	module TextInputType
 		module Default
 			include EnumItem
@@ -14088,56 +14088,56 @@ struct Enum
 			Value = 0
 			EnumType = TextInputType
 		end
-
+		
 		module NoSuggestions
 			include EnumItem
 			Name = "NoSuggestions"
 			Value = 1
 			EnumType = TextInputType
 		end
-
+		
 		module Number
 			include EnumItem
 			Name = "Number"
 			Value = 2
 			EnumType = TextInputType
 		end
-
+		
 		module Email
 			include EnumItem
 			Name = "Email"
 			Value = 3
 			EnumType = TextInputType
 		end
-
+		
 		module Phone
 			include EnumItem
 			Name = "Phone"
 			Value = 4
 			EnumType = TextInputType
 		end
-
+		
 		module Password
 			include EnumItem
 			Name = "Password"
 			Value = 5
 			EnumType = TextInputType
 		end
-
+		
 		module PasswordShown
 			include EnumItem
 			Name = "PasswordShown"
 			Value = 6
 			EnumType = TextInputType
 		end
-
+		
 		module Username
 			include EnumItem
 			Name = "Username"
 			Value = 7
 			EnumType = TextInputType
 		end
-
+		
 		module OneTimePassword
 			include EnumItem
 			Name = "OneTimePassword"
@@ -14145,7 +14145,7 @@ struct Enum
 			EnumType = TextInputType
 		end
 	end
-
+	
 	module TextTruncate
 		module None
 			include EnumItem
@@ -14153,7 +14153,7 @@ struct Enum
 			Value = 0
 			EnumType = TextTruncate
 		end
-
+		
 		module AtEnd
 			include EnumItem
 			Name = "AtEnd"
@@ -14161,7 +14161,7 @@ struct Enum
 			EnumType = TextTruncate
 		end
 	end
-
+	
 	module TextXAlignment
 		module Left
 			include EnumItem
@@ -14169,14 +14169,14 @@ struct Enum
 			Value = 0
 			EnumType = TextXAlignment
 		end
-
+		
 		module Center
 			include EnumItem
 			Name = "Center"
 			Value = 2
 			EnumType = TextXAlignment
 		end
-
+		
 		module Right
 			include EnumItem
 			Name = "Right"
@@ -14184,7 +14184,7 @@ struct Enum
 			EnumType = TextXAlignment
 		end
 	end
-
+	
 	module TextYAlignment
 		module Top
 			include EnumItem
@@ -14192,14 +14192,14 @@ struct Enum
 			Value = 0
 			EnumType = TextYAlignment
 		end
-
+		
 		module Center
 			include EnumItem
 			Name = "Center"
 			Value = 1
 			EnumType = TextYAlignment
 		end
-
+		
 		module Bottom
 			include EnumItem
 			Name = "Bottom"
@@ -14207,7 +14207,7 @@ struct Enum
 			EnumType = TextYAlignment
 		end
 	end
-
+	
 	module TextureMode
 		module Stretch
 			include EnumItem
@@ -14215,14 +14215,14 @@ struct Enum
 			Value = 0
 			EnumType = TextureMode
 		end
-
+		
 		module Wrap
 			include EnumItem
 			Name = "Wrap"
 			Value = 1
 			EnumType = TextureMode
 		end
-
+		
 		module Static
 			include EnumItem
 			Name = "Static"
@@ -14230,7 +14230,7 @@ struct Enum
 			EnumType = TextureMode
 		end
 	end
-
+	
 	module TextureQueryType
 		module NonHumanoid
 			include EnumItem
@@ -14238,21 +14238,21 @@ struct Enum
 			Value = 0
 			EnumType = TextureQueryType
 		end
-
+		
 		module NonHumanoidOrphaned
 			include EnumItem
 			Name = "NonHumanoidOrphaned"
 			Value = 1
 			EnumType = TextureQueryType
 		end
-
+		
 		module Humanoid
 			include EnumItem
 			Name = "Humanoid"
 			Value = 2
 			EnumType = TextureQueryType
 		end
-
+		
 		module HumanoidOrphaned
 			include EnumItem
 			Name = "HumanoidOrphaned"
@@ -14260,7 +14260,7 @@ struct Enum
 			EnumType = TextureQueryType
 		end
 	end
-
+	
 	module ThreadPoolConfig
 		module Auto
 			include EnumItem
@@ -14268,70 +14268,70 @@ struct Enum
 			Value = 0
 			EnumType = ThreadPoolConfig
 		end
-
+		
 		module PerCore1
 			include EnumItem
 			Name = "PerCore1"
 			Value = 101
 			EnumType = ThreadPoolConfig
 		end
-
+		
 		module PerCore2
 			include EnumItem
 			Name = "PerCore2"
 			Value = 102
 			EnumType = ThreadPoolConfig
 		end
-
+		
 		module PerCore3
 			include EnumItem
 			Name = "PerCore3"
 			Value = 103
 			EnumType = ThreadPoolConfig
 		end
-
+		
 		module PerCore4
 			include EnumItem
 			Name = "PerCore4"
 			Value = 104
 			EnumType = ThreadPoolConfig
 		end
-
+		
 		module Threads1
 			include EnumItem
 			Name = "Threads1"
 			Value = 1
 			EnumType = ThreadPoolConfig
 		end
-
+		
 		module Threads2
 			include EnumItem
 			Name = "Threads2"
 			Value = 2
 			EnumType = ThreadPoolConfig
 		end
-
+		
 		module Threads3
 			include EnumItem
 			Name = "Threads3"
 			Value = 3
 			EnumType = ThreadPoolConfig
 		end
-
+		
 		module Threads4
 			include EnumItem
 			Name = "Threads4"
 			Value = 4
 			EnumType = ThreadPoolConfig
 		end
-
+		
 		module Threads8
 			include EnumItem
 			Name = "Threads8"
 			Value = 8
 			EnumType = ThreadPoolConfig
 		end
-
+		
 		module Threads16
 			include EnumItem
 			Name = "Threads16"
@@ -14339,7 +14339,7 @@ struct Enum
 			EnumType = ThreadPoolConfig
 		end
 	end
-
+	
 	module ThrottlingPriority
 		module Extreme
 			include EnumItem
@@ -14347,14 +14347,14 @@ struct Enum
 			Value = 2
 			EnumType = ThrottlingPriority
 		end
-
+		
 		module ElevatedOnServer
 			include EnumItem
 			Name = "ElevatedOnServer"
 			Value = 1
 			EnumType = ThrottlingPriority
 		end
-
+		
 		module Default
 			include EnumItem
 			Name = "Default"
@@ -14362,7 +14362,7 @@ struct Enum
 			EnumType = ThrottlingPriority
 		end
 	end
-
+	
 	module ThumbnailSize
 		module Size48x48
 			include EnumItem
@@ -14370,42 +14370,42 @@ struct Enum
 			Value = 0
 			EnumType = ThumbnailSize
 		end
-
+		
 		module Size180x180
 			include EnumItem
 			Name = "Size180x180"
 			Value = 1
 			EnumType = ThumbnailSize
 		end
-
+		
 		module Size420x420
 			include EnumItem
 			Name = "Size420x420"
 			Value = 2
 			EnumType = ThumbnailSize
 		end
-
+		
 		module Size60x60
 			include EnumItem
 			Name = "Size60x60"
 			Value = 3
 			EnumType = ThumbnailSize
 		end
-
+		
 		module Size100x100
 			include EnumItem
 			Name = "Size100x100"
 			Value = 4
 			EnumType = ThumbnailSize
 		end
-
+		
 		module Size150x150
 			include EnumItem
 			Name = "Size150x150"
 			Value = 5
 			EnumType = ThumbnailSize
 		end
-
+		
 		module Size352x352
 			include EnumItem
 			Name = "Size352x352"
@@ -14413,7 +14413,7 @@ struct Enum
 			EnumType = ThumbnailSize
 		end
 	end
-
+	
 	module ThumbnailType
 		module HeadShot
 			include EnumItem
@@ -14421,14 +14421,14 @@ struct Enum
 			Value = 0
 			EnumType = ThumbnailType
 		end
-
+		
 		module AvatarBust
 			include EnumItem
 			Name = "AvatarBust"
 			Value = 1
 			EnumType = ThumbnailType
 		end
-
+		
 		module AvatarThumbnail
 			include EnumItem
 			Name = "AvatarThumbnail"
@@ -14436,7 +14436,7 @@ struct Enum
 			EnumType = ThumbnailType
 		end
 	end
-
+	
 	module TickCountSampleMethod
 		module Fast
 			include EnumItem
@@ -14444,14 +14444,14 @@ struct Enum
 			Value = 0
 			EnumType = TickCountSampleMethod
 		end
-
+		
 		module Benchmark
 			include EnumItem
 			Name = "Benchmark"
 			Value = 1
 			EnumType = TickCountSampleMethod
 		end
-
+		
 		module Precise
 			include EnumItem
 			Name = "Precise"
@@ -14459,7 +14459,7 @@ struct Enum
 			EnumType = TickCountSampleMethod
 		end
 	end
-
+	
 	module TopBottom
 		module Top
 			include EnumItem
@@ -14467,14 +14467,14 @@ struct Enum
 			Value = 0
 			EnumType = TopBottom
 		end
-
+		
 		module Center
 			include EnumItem
 			Name = "Center"
 			Value = 1
 			EnumType = TopBottom
 		end
-
+		
 		module Bottom
 			include EnumItem
 			Name = "Bottom"
@@ -14482,7 +14482,7 @@ struct Enum
 			EnumType = TopBottom
 		end
 	end
-
+	
 	module TouchCameraMovementMode
 		module Default
 			include EnumItem
@@ -14490,21 +14490,21 @@ struct Enum
 			Value = 0
 			EnumType = TouchCameraMovementMode
 		end
-
+		
 		module Follow
 			include EnumItem
 			Name = "Follow"
 			Value = 2
 			EnumType = TouchCameraMovementMode
 		end
-
+		
 		module Classic
 			include EnumItem
 			Name = "Classic"
 			Value = 1
 			EnumType = TouchCameraMovementMode
 		end
-
+		
 		module Orbital
 			include EnumItem
 			Name = "Orbital"
@@ -14512,7 +14512,7 @@ struct Enum
 			EnumType = TouchCameraMovementMode
 		end
 	end
-
+	
 	module TouchMovementMode
 		module Default
 			include EnumItem
@@ -14520,35 +14520,35 @@ struct Enum
 			Value = 0
 			EnumType = TouchMovementMode
 		end
-
+		
 		module Thumbstick
 			include EnumItem
 			Name = "Thumbstick"
 			Value = 1
 			EnumType = TouchMovementMode
 		end
-
+		
 		module DPad
 			include EnumItem
 			Name = "DPad"
 			Value = 2
 			EnumType = TouchMovementMode
 		end
-
+		
 		module Thumbpad
 			include EnumItem
 			Name = "Thumbpad"
 			Value = 3
 			EnumType = TouchMovementMode
 		end
-
+		
 		module ClickToMove
 			include EnumItem
 			Name = "ClickToMove"
 			Value = 4
 			EnumType = TouchMovementMode
 		end
-
+		
 		module DynamicThumbstick
 			include EnumItem
 			Name = "DynamicThumbstick"
@@ -14556,7 +14556,7 @@ struct Enum
 			EnumType = TouchMovementMode
 		end
 	end
-
+	
 	module TrackerError
 		module Ok
 			include EnumItem
@@ -14564,63 +14564,63 @@ struct Enum
 			Value = 0
 			EnumType = TrackerError
 		end
-
+		
 		module NoService
 			include EnumItem
 			Name = "NoService"
 			Value = 1
 			EnumType = TrackerError
 		end
-
+		
 		module InitFailed
 			include EnumItem
 			Name = "InitFailed"
 			Value = 2
 			EnumType = TrackerError
 		end
-
+		
 		module NoVideo
 			include EnumItem
 			Name = "NoVideo"
 			Value = 3
 			EnumType = TrackerError
 		end
-
+		
 		module VideoError
 			include EnumItem
 			Name = "VideoError"
 			Value = 4
 			EnumType = TrackerError
 		end
-
+		
 		module VideoNoPermission
 			include EnumItem
 			Name = "VideoNoPermission"
 			Value = 5
 			EnumType = TrackerError
 		end
-
+		
 		module VideoUnsupported
 			include EnumItem
 			Name = "VideoUnsupported"
 			Value = 6
 			EnumType = TrackerError
 		end
-
+		
 		module NoAudio
 			include EnumItem
 			Name = "NoAudio"
 			Value = 7
 			EnumType = TrackerError
 		end
-
+		
 		module AudioError
 			include EnumItem
 			Name = "AudioError"
 			Value = 8
 			EnumType = TrackerError
 		end
-
+		
 		module AudioNoPermission
 			include EnumItem
 			Name = "AudioNoPermission"
@@ -14628,7 +14628,7 @@ struct Enum
 			EnumType = TrackerError
 		end
 	end
-
+	
 	module TrackerExtrapolationFlagMode
 		module Auto
 			include EnumItem
@@ -14636,21 +14636,21 @@ struct Enum
 			Value = 3
 			EnumType = TrackerExtrapolationFlagMode
 		end
-
+		
 		module ForceDisabled
 			include EnumItem
 			Name = "ForceDisabled"
 			Value = 0
 			EnumType = TrackerExtrapolationFlagMode
 		end
-
+		
 		module ExtrapolateFacsAndPose
 			include EnumItem
 			Name = "ExtrapolateFacsAndPose"
 			Value = 1
 			EnumType = TrackerExtrapolationFlagMode
 		end
-
+		
 		module ExtrapolateFacsOnly
 			include EnumItem
 			Name = "ExtrapolateFacsOnly"
@@ -14658,7 +14658,7 @@ struct Enum
 			EnumType = TrackerExtrapolationFlagMode
 		end
 	end
-
+	
 	module TrackerLodFlagMode
 		module Auto
 			include EnumItem
@@ -14666,14 +14666,14 @@ struct Enum
 			Value = 2
 			EnumType = TrackerLodFlagMode
 		end
-
+		
 		module ForceFalse
 			include EnumItem
 			Name = "ForceFalse"
 			Value = 0
 			EnumType = TrackerLodFlagMode
 		end
-
+		
 		module ForceTrue
 			include EnumItem
 			Name = "ForceTrue"
@@ -14681,7 +14681,7 @@ struct Enum
 			EnumType = TrackerLodFlagMode
 		end
 	end
-
+	
 	module TrackerLodValueMode
 		module Auto
 			include EnumItem
@@ -14689,14 +14689,14 @@ struct Enum
 			Value = 2
 			EnumType = TrackerLodValueMode
 		end
-
+		
 		module Force0
 			include EnumItem
 			Name = "Force0"
 			Value = 0
 			EnumType = TrackerLodValueMode
 		end
-
+		
 		module Force1
 			include EnumItem
 			Name = "Force1"
@@ -14704,7 +14704,7 @@ struct Enum
 			EnumType = TrackerLodValueMode
 		end
 	end
-
+	
 	module TrackerMode
 		module None
 			include EnumItem
@@ -14712,21 +14712,21 @@ struct Enum
 			Value = 0
 			EnumType = TrackerMode
 		end
-
+		
 		module Audio
 			include EnumItem
 			Name = "Audio"
 			Value = 1
 			EnumType = TrackerMode
 		end
-
+		
 		module Video
 			include EnumItem
 			Name = "Video"
 			Value = 2
 			EnumType = TrackerMode
 		end
-
+		
 		module AudioVideo
 			include EnumItem
 			Name = "AudioVideo"
@@ -14734,7 +14734,7 @@ struct Enum
 			EnumType = TrackerMode
 		end
 	end
-
+	
 	module TrackerPromptEvent
 		module LODCameraRecommendDisable
 			include EnumItem
@@ -14743,7 +14743,7 @@ struct Enum
 			EnumType = TrackerPromptEvent
 		end
 	end
-
+	
 	module TriStateBoolean
 		module Unknown
 			include EnumItem
@@ -14751,14 +14751,14 @@ struct Enum
 			Value = 0
 			EnumType = TriStateBoolean
 		end
-
+		
 		module True
 			include EnumItem
 			Name = "True"
 			Value = 1
 			EnumType = TriStateBoolean
 		end
-
+		
 		module False
 			include EnumItem
 			Name = "False"
@@ -14766,7 +14766,7 @@ struct Enum
 			EnumType = TriStateBoolean
 		end
 	end
-
+	
 	module TweenStatus
 		module Canceled
 			include EnumItem
@@ -14774,7 +14774,7 @@ struct Enum
 			Value = 0
 			EnumType = TweenStatus
 		end
-
+		
 		module Completed
 			include EnumItem
 			Name = "Completed"
@@ -14782,7 +14782,7 @@ struct Enum
 			EnumType = TweenStatus
 		end
 	end
-
+	
 	module UITheme
 		module Light
 			include EnumItem
@@ -14790,7 +14790,7 @@ struct Enum
 			Value = 0
 			EnumType = UITheme
 		end
-
+		
 		module Dark
 			include EnumItem
 			Name = "Dark"
@@ -14798,7 +14798,7 @@ struct Enum
 			EnumType = UITheme
 		end
 	end
-
+	
 	module UiMessageType
 		module UiMessageError
 			include EnumItem
@@ -14806,7 +14806,7 @@ struct Enum
 			Value = 0
 			EnumType = UiMessageType
 		end
-
+		
 		module UiMessageInfo
 			include EnumItem
 			Name = "UiMessageInfo"
@@ -14814,7 +14814,7 @@ struct Enum
 			EnumType = UiMessageType
 		end
 	end
-
+	
 	module UsageContext
 		module Default
 			include EnumItem
@@ -14822,7 +14822,7 @@ struct Enum
 			Value = 0
 			EnumType = UsageContext
 		end
-
+		
 		module Preview
 			include EnumItem
 			Name = "Preview"
@@ -14830,7 +14830,7 @@ struct Enum
 			EnumType = UsageContext
 		end
 	end
-
+	
 	module UserCFrame
 		module Head
 			include EnumItem
@@ -14838,21 +14838,21 @@ struct Enum
 			Value = 0
 			EnumType = UserCFrame
 		end
-
+		
 		module LeftHand
 			include EnumItem
 			Name = "LeftHand"
 			Value = 1
 			EnumType = UserCFrame
 		end
-
+		
 		module RightHand
 			include EnumItem
 			Name = "RightHand"
 			Value = 2
 			EnumType = UserCFrame
 		end
-
+		
 		module Floor
 			include EnumItem
 			Name = "Floor"
@@ -14860,7 +14860,7 @@ struct Enum
 			EnumType = UserCFrame
 		end
 	end
-
+	
 	module UserInputState
 		module Begin
 			include EnumItem
@@ -14868,28 +14868,28 @@ struct Enum
 			Value = 0
 			EnumType = UserInputState
 		end
-
+		
 		module Change
 			include EnumItem
 			Name = "Change"
 			Value = 1
 			EnumType = UserInputState
 		end
-
+		
 		module End
 			include EnumItem
 			Name = "End"
 			Value = 2
 			EnumType = UserInputState
 		end
-
+		
 		module Cancel
 			include EnumItem
 			Name = "Cancel"
 			Value = 3
 			EnumType = UserInputState
 		end
-
+		
 		module None
 			include EnumItem
 			Name = "None"
@@ -14897,7 +14897,7 @@ struct Enum
 			EnumType = UserInputState
 		end
 	end
-
+	
 	module UserInputType
 		module MouseButton1
 			include EnumItem
@@ -14905,140 +14905,140 @@ struct Enum
 			Value = 0
 			EnumType = UserInputType
 		end
-
+		
 		module MouseButton2
 			include EnumItem
 			Name = "MouseButton2"
 			Value = 1
 			EnumType = UserInputType
 		end
-
+		
 		module MouseButton3
 			include EnumItem
 			Name = "MouseButton3"
 			Value = 2
 			EnumType = UserInputType
 		end
-
+		
 		module MouseWheel
 			include EnumItem
 			Name = "MouseWheel"
 			Value = 3
 			EnumType = UserInputType
 		end
-
+		
 		module MouseMovement
 			include EnumItem
 			Name = "MouseMovement"
 			Value = 4
 			EnumType = UserInputType
 		end
-
+		
 		module Touch
 			include EnumItem
 			Name = "Touch"
 			Value = 7
 			EnumType = UserInputType
 		end
-
+		
 		module Keyboard
 			include EnumItem
 			Name = "Keyboard"
 			Value = 8
 			EnumType = UserInputType
 		end
-
+		
 		module Focus
 			include EnumItem
 			Name = "Focus"
 			Value = 9
 			EnumType = UserInputType
 		end
-
+		
 		module Accelerometer
 			include EnumItem
 			Name = "Accelerometer"
 			Value = 10
 			EnumType = UserInputType
 		end
-
+		
 		module Gyro
 			include EnumItem
 			Name = "Gyro"
 			Value = 11
 			EnumType = UserInputType
 		end
-
+		
 		module Gamepad1
 			include EnumItem
 			Name = "Gamepad1"
 			Value = 12
 			EnumType = UserInputType
 		end
-
+		
 		module Gamepad2
 			include EnumItem
 			Name = "Gamepad2"
 			Value = 13
 			EnumType = UserInputType
 		end
-
+		
 		module Gamepad3
 			include EnumItem
 			Name = "Gamepad3"
 			Value = 14
 			EnumType = UserInputType
 		end
-
+		
 		module Gamepad4
 			include EnumItem
 			Name = "Gamepad4"
 			Value = 15
 			EnumType = UserInputType
 		end
-
+		
 		module Gamepad5
 			include EnumItem
 			Name = "Gamepad5"
 			Value = 16
 			EnumType = UserInputType
 		end
-
+		
 		module Gamepad6
 			include EnumItem
 			Name = "Gamepad6"
 			Value = 17
 			EnumType = UserInputType
 		end
-
+		
 		module Gamepad7
 			include EnumItem
 			Name = "Gamepad7"
 			Value = 18
 			EnumType = UserInputType
 		end
-
+		
 		module Gamepad8
 			include EnumItem
 			Name = "Gamepad8"
 			Value = 19
 			EnumType = UserInputType
 		end
-
+		
 		module TextInput
 			include EnumItem
 			Name = "TextInput"
 			Value = 20
 			EnumType = UserInputType
 		end
-
+		
 		module InputMethod
 			include EnumItem
 			Name = "InputMethod"
 			Value = 21
 			EnumType = UserInputType
 		end
-
+		
 		module None
 			include EnumItem
 			Name = "None"
@@ -15046,7 +15046,7 @@ struct Enum
 			EnumType = UserInputType
 		end
 	end
-
+	
 	module VRPlayMode
 		module Seated
 			include EnumItem
@@ -15054,7 +15054,7 @@ struct Enum
 			Value = 0
 			EnumType = VRPlayMode
 		end
-
+		
 		module Standing
 			include EnumItem
 			Name = "Standing"
@@ -15062,7 +15062,7 @@ struct Enum
 			EnumType = VRPlayMode
 		end
 	end
-
+	
 	module VRSafetyBubbleMode
 		module NoOne
 			include EnumItem
@@ -15070,14 +15070,14 @@ struct Enum
 			Value = 0
 			EnumType = VRSafetyBubbleMode
 		end
-
+		
 		module OnlyFriends
 			include EnumItem
 			Name = "OnlyFriends"
 			Value = 1
 			EnumType = VRSafetyBubbleMode
 		end
-
+		
 		module Anyone
 			include EnumItem
 			Name = "Anyone"
@@ -15085,7 +15085,7 @@ struct Enum
 			EnumType = VRSafetyBubbleMode
 		end
 	end
-
+	
 	module VRScaling
 		module World
 			include EnumItem
@@ -15093,7 +15093,7 @@ struct Enum
 			Value = 0
 			EnumType = VRScaling
 		end
-
+		
 		module Off
 			include EnumItem
 			Name = "Off"
@@ -15101,7 +15101,7 @@ struct Enum
 			EnumType = VRScaling
 		end
 	end
-
+	
 	module VRSessionState
 		module Idle
 			include EnumItem
@@ -15109,28 +15109,28 @@ struct Enum
 			Value = 1
 			EnumType = VRSessionState
 		end
-
+		
 		module Visible
 			include EnumItem
 			Name = "Visible"
 			Value = 2
 			EnumType = VRSessionState
 		end
-
+		
 		module Focused
 			include EnumItem
 			Name = "Focused"
 			Value = 3
 			EnumType = VRSessionState
 		end
-
+		
 		module Stopping
 			include EnumItem
 			Name = "Stopping"
 			Value = 4
 			EnumType = VRSessionState
 		end
-
+		
 		module Undefined
 			include EnumItem
 			Name = "Undefined"
@@ -15138,7 +15138,7 @@ struct Enum
 			EnumType = VRSessionState
 		end
 	end
-
+	
 	module VRTouchpad
 		module Left
 			include EnumItem
@@ -15146,7 +15146,7 @@ struct Enum
 			Value = 0
 			EnumType = VRTouchpad
 		end
-
+		
 		module Right
 			include EnumItem
 			Name = "Right"
@@ -15154,7 +15154,7 @@ struct Enum
 			EnumType = VRTouchpad
 		end
 	end
-
+	
 	module VRTouchpadMode
 		module Touch
 			include EnumItem
@@ -15162,14 +15162,14 @@ struct Enum
 			Value = 0
 			EnumType = VRTouchpadMode
 		end
-
+		
 		module VirtualThumbstick
 			include EnumItem
 			Name = "VirtualThumbstick"
 			Value = 1
 			EnumType = VRTouchpadMode
 		end
-
+		
 		module ABXY
 			include EnumItem
 			Name = "ABXY"
@@ -15177,7 +15177,7 @@ struct Enum
 			EnumType = VRTouchpadMode
 		end
 	end
-
+	
 	module VelocityConstraintMode
 		module Line
 			include EnumItem
@@ -15185,14 +15185,14 @@ struct Enum
 			Value = 0
 			EnumType = VelocityConstraintMode
 		end
-
+		
 		module Plane
 			include EnumItem
 			Name = "Plane"
 			Value = 1
 			EnumType = VelocityConstraintMode
 		end
-
+		
 		module Vector
 			include EnumItem
 			Name = "Vector"
@@ -15200,7 +15200,7 @@ struct Enum
 			EnumType = VelocityConstraintMode
 		end
 	end
-
+	
 	module VerticalAlignment
 		module Center
 			include EnumItem
@@ -15208,14 +15208,14 @@ struct Enum
 			Value = 0
 			EnumType = VerticalAlignment
 		end
-
+		
 		module Top
 			include EnumItem
 			Name = "Top"
 			Value = 1
 			EnumType = VerticalAlignment
 		end
-
+		
 		module Bottom
 			include EnumItem
 			Name = "Bottom"
@@ -15223,7 +15223,7 @@ struct Enum
 			EnumType = VerticalAlignment
 		end
 	end
-
+	
 	module VerticalScrollBarPosition
 		module Left
 			include EnumItem
@@ -15231,7 +15231,7 @@ struct Enum
 			Value = 1
 			EnumType = VerticalScrollBarPosition
 		end
-
+		
 		module Right
 			include EnumItem
 			Name = "Right"
@@ -15239,7 +15239,7 @@ struct Enum
 			EnumType = VerticalScrollBarPosition
 		end
 	end
-
+	
 	module VibrationMotor
 		module Large
 			include EnumItem
@@ -15247,35 +15247,35 @@ struct Enum
 			Value = 0
 			EnumType = VibrationMotor
 		end
-
+		
 		module Small
 			include EnumItem
 			Name = "Small"
 			Value = 1
 			EnumType = VibrationMotor
 		end
-
+		
 		module LeftTrigger
 			include EnumItem
 			Name = "LeftTrigger"
 			Value = 2
 			EnumType = VibrationMotor
 		end
-
+		
 		module RightTrigger
 			include EnumItem
 			Name = "RightTrigger"
 			Value = 3
 			EnumType = VibrationMotor
 		end
-
+		
 		module LeftHand
 			include EnumItem
 			Name = "LeftHand"
 			Value = 4
 			EnumType = VibrationMotor
 		end
-
+		
 		module RightHand
 			include EnumItem
 			Name = "RightHand"
@@ -15283,7 +15283,7 @@ struct Enum
 			EnumType = VibrationMotor
 		end
 	end
-
+	
 	module VirtualCursorMode
 		module Default
 			include EnumItem
@@ -15291,14 +15291,14 @@ struct Enum
 			Value = 0
 			EnumType = VirtualCursorMode
 		end
-
+		
 		module Disabled
 			include EnumItem
 			Name = "Disabled"
 			Value = 1
 			EnumType = VirtualCursorMode
 		end
-
+		
 		module Enabled
 			include EnumItem
 			Name = "Enabled"
@@ -15306,7 +15306,7 @@ struct Enum
 			EnumType = VirtualCursorMode
 		end
 	end
-
+	
 	module VirtualInputMode
 		module Recording
 			include EnumItem
@@ -15314,14 +15314,14 @@ struct Enum
 			Value = 1
 			EnumType = VirtualInputMode
 		end
-
+		
 		module Playing
 			include EnumItem
 			Name = "Playing"
 			Value = 2
 			EnumType = VirtualInputMode
 		end
-
+		
 		module None
 			include EnumItem
 			Name = "None"
@@ -15329,7 +15329,7 @@ struct Enum
 			EnumType = VirtualInputMode
 		end
 	end
-
+	
 	module VoiceChatState
 		module Idle
 			include EnumItem
@@ -15337,42 +15337,42 @@ struct Enum
 			Value = 0
 			EnumType = VoiceChatState
 		end
-
+		
 		module Joining
 			include EnumItem
 			Name = "Joining"
 			Value = 1
 			EnumType = VoiceChatState
 		end
-
+		
 		module JoiningRetry
 			include EnumItem
 			Name = "JoiningRetry"
 			Value = 2
 			EnumType = VoiceChatState
 		end
-
+		
 		module Joined
 			include EnumItem
 			Name = "Joined"
 			Value = 3
 			EnumType = VoiceChatState
 		end
-
+		
 		module Leaving
 			include EnumItem
 			Name = "Leaving"
 			Value = 4
 			EnumType = VoiceChatState
 		end
-
+		
 		module Ended
 			include EnumItem
 			Name = "Ended"
 			Value = 5
 			EnumType = VoiceChatState
 		end
-
+		
 		module Failed
 			include EnumItem
 			Name = "Failed"
@@ -15380,7 +15380,7 @@ struct Enum
 			EnumType = VoiceChatState
 		end
 	end
-
+	
 	module VolumetricAudio
 		module Disabled
 			include EnumItem
@@ -15388,14 +15388,14 @@ struct Enum
 			Value = 0
 			EnumType = VolumetricAudio
 		end
-
+		
 		module Automatic
 			include EnumItem
 			Name = "Automatic"
 			Value = 1
 			EnumType = VolumetricAudio
 		end
-
+		
 		module Enabled
 			include EnumItem
 			Name = "Enabled"
@@ -15403,7 +15403,7 @@ struct Enum
 			EnumType = VolumetricAudio
 		end
 	end
-
+	
 	module WaterDirection
 		module NegX
 			include EnumItem
@@ -15411,35 +15411,35 @@ struct Enum
 			Value = 0
 			EnumType = WaterDirection
 		end
-
+		
 		module X
 			include EnumItem
 			Name = "X"
 			Value = 1
 			EnumType = WaterDirection
 		end
-
+		
 		module NegY
 			include EnumItem
 			Name = "NegY"
 			Value = 2
 			EnumType = WaterDirection
 		end
-
+		
 		module Y
 			include EnumItem
 			Name = "Y"
 			Value = 3
 			EnumType = WaterDirection
 		end
-
+		
 		module NegZ
 			include EnumItem
 			Name = "NegZ"
 			Value = 4
 			EnumType = WaterDirection
 		end
-
+		
 		module Z
 			include EnumItem
 			Name = "Z"
@@ -15447,7 +15447,7 @@ struct Enum
 			EnumType = WaterDirection
 		end
 	end
-
+	
 	module WaterForce
 		module None
 			include EnumItem
@@ -15455,28 +15455,28 @@ struct Enum
 			Value = 0
 			EnumType = WaterForce
 		end
-
+		
 		module Small
 			include EnumItem
 			Name = "Small"
 			Value = 1
 			EnumType = WaterForce
 		end
-
+		
 		module Medium
 			include EnumItem
 			Name = "Medium"
 			Value = 2
 			EnumType = WaterForce
 		end
-
+		
 		module Strong
 			include EnumItem
 			Name = "Strong"
 			Value = 3
 			EnumType = WaterForce
 		end
-
+		
 		module Max
 			include EnumItem
 			Name = "Max"
@@ -15484,7 +15484,7 @@ struct Enum
 			EnumType = WaterForce
 		end
 	end
-
+	
 	module WrapLayerAutoSkin
 		module Disabled
 			include EnumItem
@@ -15492,14 +15492,14 @@ struct Enum
 			Value = 0
 			EnumType = WrapLayerAutoSkin
 		end
-
+		
 		module EnabledPreserve
 			include EnumItem
 			Name = "EnabledPreserve"
 			Value = 1
 			EnumType = WrapLayerAutoSkin
 		end
-
+		
 		module EnabledOverride
 			include EnumItem
 			Name = "EnabledOverride"
@@ -15507,7 +15507,7 @@ struct Enum
 			EnumType = WrapLayerAutoSkin
 		end
 	end
-
+	
 	module WrapLayerDebugMode
 		module None
 			include EnumItem
@@ -15515,91 +15515,91 @@ struct Enum
 			Value = 0
 			EnumType = WrapLayerDebugMode
 		end
-
+		
 		module BoundCage
 			include EnumItem
 			Name = "BoundCage"
 			Value = 1
 			EnumType = WrapLayerDebugMode
 		end
-
+		
 		module LayerCage
 			include EnumItem
 			Name = "LayerCage"
 			Value = 2
 			EnumType = WrapLayerDebugMode
 		end
-
+		
 		module BoundCageAndLinks
 			include EnumItem
 			Name = "BoundCageAndLinks"
 			Value = 3
 			EnumType = WrapLayerDebugMode
 		end
-
+		
 		module Reference
 			include EnumItem
 			Name = "Reference"
 			Value = 4
 			EnumType = WrapLayerDebugMode
 		end
-
+		
 		module Rbf
 			include EnumItem
 			Name = "Rbf"
 			Value = 5
 			EnumType = WrapLayerDebugMode
 		end
-
+		
 		module OuterCage
 			include EnumItem
 			Name = "OuterCage"
 			Value = 6
 			EnumType = WrapLayerDebugMode
 		end
-
+		
 		module ReferenceMeshAfterMorph
 			include EnumItem
 			Name = "ReferenceMeshAfterMorph"
 			Value = 7
 			EnumType = WrapLayerDebugMode
 		end
-
+		
 		module HSROuterDetail
 			include EnumItem
 			Name = "HSROuterDetail"
 			Value = 8
 			EnumType = WrapLayerDebugMode
 		end
-
+		
 		module HSROuter
 			include EnumItem
 			Name = "HSROuter"
 			Value = 9
 			EnumType = WrapLayerDebugMode
 		end
-
+		
 		module HSRInner
 			include EnumItem
 			Name = "HSRInner"
 			Value = 10
 			EnumType = WrapLayerDebugMode
 		end
-
+		
 		module HSRInnerReverse
 			include EnumItem
 			Name = "HSRInnerReverse"
 			Value = 11
 			EnumType = WrapLayerDebugMode
 		end
-
+		
 		module LayerCageFittedToBase
 			include EnumItem
 			Name = "LayerCageFittedToBase"
 			Value = 12
 			EnumType = WrapLayerDebugMode
 		end
-
+		
 		module LayerCageFittedToPrev
 			include EnumItem
 			Name = "LayerCageFittedToPrev"
@@ -15607,7 +15607,7 @@ struct Enum
 			EnumType = WrapLayerDebugMode
 		end
 	end
-
+	
 	module WrapTargetDebugMode
 		module None
 			include EnumItem
@@ -15615,56 +15615,56 @@ struct Enum
 			Value = 0
 			EnumType = WrapTargetDebugMode
 		end
-
+		
 		module TargetCageOriginal
 			include EnumItem
 			Name = "TargetCageOriginal"
 			Value = 1
 			EnumType = WrapTargetDebugMode
 		end
-
+		
 		module TargetCageCompressed
 			include EnumItem
 			Name = "TargetCageCompressed"
 			Value = 2
 			EnumType = WrapTargetDebugMode
 		end
-
+		
 		module TargetCageInterface
 			include EnumItem
 			Name = "TargetCageInterface"
 			Value = 3
 			EnumType = WrapTargetDebugMode
 		end
-
+		
 		module TargetLayerCageOriginal
 			include EnumItem
 			Name = "TargetLayerCageOriginal"
 			Value = 4
 			EnumType = WrapTargetDebugMode
 		end
-
+		
 		module TargetLayerCageCompressed
 			include EnumItem
 			Name = "TargetLayerCageCompressed"
 			Value = 5
 			EnumType = WrapTargetDebugMode
 		end
-
+		
 		module TargetLayerInterface
 			include EnumItem
 			Name = "TargetLayerInterface"
 			Value = 6
 			EnumType = WrapTargetDebugMode
 		end
-
+		
 		module Rbf
 			include EnumItem
 			Name = "Rbf"
 			Value = 7
 			EnumType = WrapTargetDebugMode
 		end
-
+		
 		module OuterCageDetail
 			include EnumItem
 			Name = "OuterCageDetail"
@@ -15672,7 +15672,7 @@ struct Enum
 			EnumType = WrapTargetDebugMode
 		end
 	end
-
+	
 	module ZIndexBehavior
 		module Global
 			include EnumItem
@@ -15680,7 +15680,7 @@ struct Enum
 			Value = 0
 			EnumType = ZIndexBehavior
 		end
-
+		
 		module Sibling
 			include EnumItem
 			Name = "Sibling"

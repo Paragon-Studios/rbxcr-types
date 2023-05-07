@@ -1,5 +1,4 @@
 require "./class/enum_generator"
-require "./class/reflection_metadata"
 require "./class/timer"
 require "./api.d"
 require "crest"

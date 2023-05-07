@@ -231,7 +231,7 @@ class ClassGenerator < Generator
     write "end"
   end
 
-  private def generate_args(params : Array(API::Parameter), args : Array(String) = [] of String) : String
+  private def get_param_names(params : Array(API::Parameter)) : Array(String)
     param_names = params.map { |param| param.name }
     param_names.each_with_index do |name, i|
       if param_names.index(name) == i + 1
@@ -242,8 +242,13 @@ class ClassGenerator < Generator
         end
       end
     end
+    param_names
+  end
 
+  private def generate_args(params : Array(API::Parameter), args : Array(String) = [] of String) : String
+    param_names = get_param_names
     optional = false
+
     params.each_with_index do |param, i|
       param_type = safe_value_type param.type
       arg_name = safe_arg_name param_names[i]
@@ -266,11 +271,12 @@ class ClassGenerator < Generator
     args.join ", "
   end
 
-  private def generate_callback(callback : API::Callback, class_name : String)
-    args : String = generate_args callback.parameters
+  private def generate_callback(callback : API::Callback, class_name : String, e)
     description = (callback.description || "").trim != "" ?
       callback.description
       : @metadata.not_nil!.get_callback_desc(class_name, callback.name)
+
+    write "#{callback.name} : #{callback.parameters.map { |param| safe_value_type param.type }.join ", "} -> Nil"
   end
 
   private def generate_event(event : API::Event, class_name : String)

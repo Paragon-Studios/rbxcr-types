@@ -148,6 +148,8 @@ CLASS_BLACKLIST = Set(String).new [
 	"ReflectionMetadataProperties",
 	"ReflectionMetadataYieldFunctions",
 
+  "Studio",
+
 	# unused
 	"UGCValidationService",
 	"RbxAnalyticsService",
@@ -243,6 +245,7 @@ VALUE_TYPE_MAP = {
   "Array" => "Array",
 	"BinaryString" => nil,
 	"bool" => "Bool",
+  "string" => "String",
 	"Connection" => "RBXScriptConnection",
 	"Content" => "String",
 	"CoordinateFrame" => "CFrame",
@@ -270,7 +273,6 @@ RETURN_TYPE_MAP = {
 }
 
 ARG_NAME_MAP = {
-  "function" => "callback",
 	"debugger" => "debug",
 	"old" => "oldValue",
 	"new" => "newValue"

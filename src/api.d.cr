@@ -145,10 +145,6 @@ module API
     @[JSON::Field(key: "ReturnType")]
     property return_type : ValueType
 
-    def initialize(parameters, @return_type)
-      super parameters
-    end
-
     def to_s
       "API::Function<member_type: Function, name: #{@name}, security: #{@security}, tags: #{@tags}, description: #{@description}, parameters: #{@parameters}, return_type: #{@return_type}>"
     end
@@ -165,14 +161,6 @@ module API
     property thread_safety : String
     @[JSON::Field(key: "ValueType")]
     property value_type : ValueType
-
-    def initialize(
-      @category,
-      @default,
-      @serialization,
-      @thread_safety,
-      @value_type
-    ) end
 
     def to_s
       "API::Property<member_type: Function, name: #{@name}, security: #{@security}, tags: #{@tags}, description: #{@description}, category: #{@category}, serialization: #{@serialization}, value_type: #{@value_type}>"
@@ -195,10 +183,10 @@ module API
   class ValueType
     include JSON::Serializable
 
-    @[JSON::Field(key: "Category")]
-    property category : String
     @[JSON::Field(key: "Name", emit_null: true)]
     property name : String?
+    @[JSON::Field(key: "Category")]
+    property category : String
 
     def to_s
       "API::ValueType<name: #{@name}, category: #{@category}>"

@@ -36,7 +36,7 @@ end
 
 def safe_value_type(value_type : API::ValueType) : String?
   return "Enum::#{value_type.name}" if value_type.category == "Enum"
-  if !value_type.name.nil? && value_type.name.not_nil![-1] == "?"
+  if !value_type.name.nil? && value_type.name.not_nil![-1] == '?'
     non_optional_type = value_type.name.not_nil![0..-2]
     mapped_type = VALUE_TYPE_MAP.has_key?(non_optional_type) ? VALUE_TYPE_MAP[non_optional_type] : non_optional_type
     mapped_type + '?' unless mapped_type.nil?
@@ -86,6 +86,10 @@ def multifilter(list : Array(T), result_arr_amount : Int32, &condition : T -> In
   results
 end
 
+def snake_case(s : String) : String
+  s.gsub(/([a-z])([A-Z])/) { |match| "#{match[0]}_#{match[1].downcase}" }.downcase
+end
+
 class ClassGenerator < Generator
   @class_refs = {} of String => API::Class
 
@@ -122,7 +126,9 @@ class ClassGenerator < Generator
 
   private def should_generate_class?(rbx_class : API::Class) : Bool
     superclass = rbx_class.superclass != ROOT_CLASS_NAME ? @class_refs[rbx_class.superclass] : nil
-    return false if !superclass.nil? && !should_generate_class?(superclass)
+    unless superclass.nil?
+      return false unless should_generate_class?(superclass)
+    end
     return false if CLASS_BLACKLIST.includes?(rbx_class.name)
     return false if @security != "PluginSecurity" && PLUGIN_ONLY_CLASSES.includes?(rbx_class.name)
     true
@@ -130,7 +136,7 @@ class ClassGenerator < Generator
 
   private def should_generate_member?(rbx_class : API::Class, member : API::Member) : Bool
     return false if member.name.nil?
-    return false if MEMBER_BLACKLIST.has_key?(rbx_class.name) && MEMBER_BLACKLIST[rbx_class.name].includes?(member.name)
+    return false if MEMBER_BLACKLIST.has_key?(rbx_class.name) ? MEMBER_BLACKLIST[rbx_class.name].includes?(member.name) : false
     return false unless can_read?(rbx_class.name, member)
     if has_tag?(member, "Deprecated")
       first_char = member.name[0]
@@ -155,13 +161,9 @@ class ClassGenerator < Generator
 		extended : String?,
 		&callback : API::Class -> Nil
 	)
-		write "module #{table_name} #{rbx_classes.empty? ? "; end" : ""}"
+		write "class #{table_name} < #{extended} #{rbx_classes.empty? ? "; end" : ""}"
 		unless rbx_classes.empty?
       push_indent
-      extended.split(", ").each do |extension|
-        write "include #{extension}"
-        write ""
-      end unless extended.nil?
 
 			if callback.nil?
         callback = ->(api_class : API::Class) { write "#{api_class.name} : #{api_class.name}" }
@@ -178,17 +180,6 @@ class ClassGenerator < Generator
 
   private def by_name(a : API::Class, b : API::Class) : Int32
     a.name.downcase < b.name.downcase ? -1 : 1
-  end
-
-  private def generate_instances_tables(rbx_classes : Array(API::Class))
-    services, creatable_instances, abstract_instances, instances = multifilter(rbx_classes, 4) do |rbx_class|
-      ((has_tag?(rbx_class, "Service") ? 0 : is_creatable?(rbx_class)) ?
-        1 : ABSTRACT_CLASSES.includes?(rbx_class.name)) ? 2 : 3
-    end
-    (generate_instance_class("Services", services.sort { |a, b| by_name a, b }, nil) { |rbx_class| rbx_class }) unless services.empty?
-    (generate_instance_class("CreatableInstances", creatable_instances.sort { |a, b| by_name a, b }, nil) { |rbx_class| rbx_class }) unless creatable_instances.empty?
-    (generate_instance_class("AbstractInstances", abstract_instances.sort { |a, b| by_name a, b }, nil) { |rbx_class| rbx_class }) unless creatable_instances.empty?
-    (generate_instance_class("Instances", instances.sort { |a, b| by_name a, b }, "Services, CreatableInstances, AbstractInstances") { |rbx_class| rbx_class }) unless instances.empty?
   end
 
   # Returns the given `class_name` if it's in `@class_refs`
@@ -211,7 +202,8 @@ class ClassGenerator < Generator
     end
 
     return unless no_security || !members.empty?
-    write "module #{class_name}"
+    return if class_name == "Studio"
+    write "class #{class_name}#{rbx_class.superclass != ROOT_CLASS_NAME ? " < #{rbx_class.superclass}" : ""}"
     push_indent
 
     members.each do |member|
@@ -219,7 +211,7 @@ class ClassGenerator < Generator
       when "Callback"
         generate_callback member.as API::Callback, class_name
       when "Event"
-        generate_event member.as API::Callback, class_name
+        generate_event member.as API::Event, class_name
       when "Function"
         generate_function member.as API::Function, class_name
       when "Property"
@@ -229,10 +221,11 @@ class ClassGenerator < Generator
 
     pop_indent
     write "end"
+    write ""
   end
 
   private def get_param_names(params : Array(API::Parameter)) : Array(String)
-    param_names = params.map { |param| param.name }
+    param_names = params.map { |param| snake_case param.name }
     param_names.each_with_index do |name, i|
       if param_names.index(name) == i + 1
         n = 0
@@ -245,10 +238,8 @@ class ClassGenerator < Generator
     param_names
   end
 
-  private def get_param_types(params : Array(API::Parameter)) : String
-    params
-      .map { |param| safe_value_type param.type }
-      .join ", "
+  private def get_param_types(params : Array(API::Parameter)) : Array(String)
+    params.map { |param| (safe_value_type param.type) || "NULL" }
   end
 
   private def generate_args(params : Array(API::Parameter), args : Array(String) = [] of String) : String
@@ -256,7 +247,7 @@ class ClassGenerator < Generator
     optional = false
 
     params.each_with_index do |param, i|
-      param_type = safe_value_type param.type
+      param_type : String? = safe_value_type param.type
       arg_name = safe_arg_name param_names[i]
       optional ||= !param.default.nil? || param_type == "any"
       if !arg_name.nil? && param_type == "Instance"
@@ -264,12 +255,12 @@ class ClassGenerator < Generator
           k != "Instance" && arg_name.downcase.includes?(k.downcase)
         end
         unless findings.empty?
-          part_pos = findings.index "Part"
+          part_pos : Int32? = findings.index "Part"
           do_splice = !findings.includes?("Part") && !findings.empty? && !arg_name.downcase.includes?("or")
           findings.delete_at(part_pos.not_nil!) if do_splice && !part_pos.nil?
           param_type =
             safe_renamed_instance(findings.find { |found| found.downcase == arg_name.downcase }) ||
-            findings.map { |found| found.downcase == arg_name.downcase }
+            findings.map { |found| safe_renamed_instance found }.join " | "
         end
       end
       args << "#{arg_name || "arg#{i}"} #{!param_type.nil? ? ": #{param_type}#{optional ? "?" : ""}" : ""}"
@@ -282,20 +273,16 @@ class ClassGenerator < Generator
       callback.description
       : @metadata.not_nil!.get_callback_desc(class_name, callback.name)
 
-    write "#{callback.name} = Callback(#{get_param_types callback.parameters} -> Nil).new do |#{get_param_names(callback.parameters).join ", "}|"
-    write ""
-    write "end"
+    write "property #{snake_case callback.name} : #{get_param_types(callback.parameters).join ", "} -> _"
   end
 
   private def generate_event(event : API::Callback, class_name : String)
-    args = generate_args event.parameters
     description = (event.description || "").trim != "" ?
       event.description
       : @metadata.not_nil!.get_event_desc(class_name, event.name)
 
-    write "#{event.name} = RBXScriptSignal((#{get_param_types event.parameters}) -> Nil).new do |#{get_param_names(event.parameters).join ", "}|"
-    write ""
-    write "end"
+    type_list = get_param_types(event.parameters).join ", "
+    write "getter #{snake_case event.name} : ScriptSignal(#{type_list == "" ? "Nil" : type_list} -> Nil)"
   end
 
   private def generate_function(function : API::Function, class_name : String)
@@ -305,8 +292,7 @@ class ClassGenerator < Generator
       function.description
       : @metadata.not_nil!.get_method_desc(class_name, function.name)
 
-    write "#{function.name} = Method((#{get_param_types function.parameters}) -> Nil).new do |#{get_param_names(function.parameters).join ", "}|"
-    write ""
+    write "def #{snake_case function.name}(#{generate_args function.parameters}) : _"
     write "end"
   end
 
@@ -317,7 +303,8 @@ class ClassGenerator < Generator
       : @metadata.not_nil!.get_prop_desc(class_name, property.name)
 
     definitely_defined = property.value_type.category != "Class"
-    write "#{safe_name property.name} : Object"
+    prefix = (can_write?(class_name, property) && !has_tag?(property, "ReadOnly")) ? "property" : "getter"
+    write "#{prefix} #{snake_case safe_name property.name} : #{value_type}#{definitely_defined ? "" : '?'}"
   end
 
   # Generates each class in `rbx_classes`
@@ -331,9 +318,9 @@ class ClassGenerator < Generator
   private def generate_header
     write "# THIS FILE IS AUTOMATICALLY GENERATED AND SHOULD NOT BE EDITED MANUALLY!"
     write ""
-    write "require \"./#{@lower_security}.d\"" unless @lower_security.nil?
-    # write "require \"./roblox.d\""
+    write "require \"../Roblox.d\""
     write "require \"./Enums.d\""
+    write "require \"./#{@lower_security}.d\"" unless @lower_security.nil?
     write ""
   end
 
@@ -347,10 +334,16 @@ class ClassGenerator < Generator
       superclass.subclasses.not_nil! << class_name unless superclass.nil? || superclass.subclasses.nil?
     end
 
-    classes_to_generate = rbx_classes.select { |rbx_class| should_generate_class?(rbx_class) }
+    classes_to_generate : Array(API::Class) = rbx_classes.select { |rbx_class| should_generate_class?(rbx_class) }
     generate_header
-    generate_instances_tables classes_to_generate.select { |rbx_class| @defined_class_names.includes?(rbx_class.name) }
+    write "module Rbx"
+    push_indent
+
     generate_classes rbx_classes
+
+    pop_indent
+    write "end"
+
     write_file
   end
 end

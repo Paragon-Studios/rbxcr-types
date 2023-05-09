@@ -3,3 +3,6629 @@
 require "./PluginSecurity.d"
 require "./Enums.d"
 
+# GENERATED ROBLOX INSTANCE CLASSES
+
+module Instance
+	Archivable : Object
+	ClassName : Object
+	Name : Object
+	Parent : Object
+	ClearAllChildren = Method(() -> Nil).new do ||
+	
+	end
+	Clone = Method(() -> Nil).new do ||
+	
+	end
+	Destroy = Method(() -> Nil).new do ||
+	
+	end
+	FindFirstAncestor = Method((string) -> Nil).new do |name|
+	
+	end
+	FindFirstAncestorOfClass = Method((string) -> Nil).new do |className|
+	
+	end
+	FindFirstAncestorWhichIsA = Method((string) -> Nil).new do |className|
+	
+	end
+	FindFirstChild = Method((string, Bool) -> Nil).new do |name, recursive|
+	
+	end
+	FindFirstChildOfClass = Method((string) -> Nil).new do |className|
+	
+	end
+	FindFirstChildWhichIsA = Method((string, Bool) -> Nil).new do |className, recursive|
+	
+	end
+	FindFirstDescendant = Method((string) -> Nil).new do |name|
+	
+	end
+	GetActor = Method(() -> Nil).new do ||
+	
+	end
+	GetAttribute = Method((string) -> Nil).new do |attribute|
+	
+	end
+	GetAttributeChangedSignal = Method((string) -> Nil).new do |attribute|
+	
+	end
+	GetAttributes = Method(() -> Nil).new do ||
+	
+	end
+	GetChildren = Method(() -> Nil).new do ||
+	
+	end
+	GetDescendants = Method(() -> Nil).new do ||
+	
+	end
+	GetFullName = Method(() -> Nil).new do ||
+	
+	end
+	GetPropertyChangedSignal = Method((string) -> Nil).new do |property|
+	
+	end
+	IsA = Method((string) -> Nil).new do |className|
+	
+	end
+	IsAncestorOf = Method((Instance) -> Nil).new do |descendant|
+	
+	end
+	IsDescendantOf = Method((Instance) -> Nil).new do |ancestor|
+	
+	end
+	SetAttribute = Method((string, Hash) -> Nil).new do |attribute, value|
+	
+	end
+	WaitForChild = Method((string, Float64) -> Nil).new do |childName, timeOut|
+	
+	end
+	AncestryChanged = RBXScriptSignal((Instance, Instance) -> Nil).new do |child, parent|
+	
+	end
+	AttributeChanged = RBXScriptSignal((string) -> Nil).new do |attribute|
+	
+	end
+	Changed = RBXScriptSignal((string) -> Nil).new do |property|
+	
+	end
+	ChildAdded = RBXScriptSignal((Instance) -> Nil).new do |child|
+	
+	end
+	ChildRemoved = RBXScriptSignal((Instance) -> Nil).new do |child|
+	
+	end
+	DescendantAdded = RBXScriptSignal((Instance) -> Nil).new do |descendant|
+	
+	end
+	DescendantRemoving = RBXScriptSignal((Instance) -> Nil).new do |descendant|
+	
+	end
+	Destroying = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+end
+module Accoutrement
+	AttachmentForward : Object
+	AttachmentPoint : Object
+	AttachmentPos : Object
+	AttachmentRight : Object
+	AttachmentUp : Object
+end
+module Accessory
+	AccessoryType : Object
+end
+module Hat
+end
+module AdPortal
+	PortalStatus : Object
+	Status : Object
+end
+module AdService
+	ShowVideoAd = Method(() -> Nil).new do ||
+	
+	end
+	VideoAdClosed = RBXScriptSignal((Bool) -> Nil).new do |adShown|
+	
+	end
+end
+module AdvancedDragger
+end
+module AnalyticsService
+	FireCustomEvent = Method((Instance, string, Hash) -> Nil).new do |player, eventCategory, customData|
+	
+	end
+	FireEvent = Method((string, Hash) -> Nil).new do |category, value|
+	
+	end
+	FireInGameEconomyEvent = Method((Instance, string, Enum::AnalyticsEconomyAction, string, Int32, string, Hash, Hash) -> Nil).new do |player, itemName, economyAction, itemCategory, amount, currency, location, customData|
+	
+	end
+	FireLogEvent = Method((Instance, Enum::AnalyticsLogLevel, string, Hash, Hash) -> Nil).new do |player, logLevel, message, debugInfo, customData|
+	
+	end
+	FirePlayerProgressionEvent = Method((Instance, string, Enum::AnalyticsProgressionStatus, Hash, Hash, Hash) -> Nil).new do |player, category, progressionStatus, location, statistics, customData|
+	
+	end
+end
+module Animation
+	AnimationId : Object
+end
+module AnimationClip
+	Loop : Object
+	Priority : Object
+end
+module CurveAnimation
+end
+module KeyframeSequence
+	AddKeyframe = Method((Instance) -> Nil).new do |keyframe|
+	
+	end
+	GetKeyframes = Method(() -> Nil).new do ||
+	
+	end
+	RemoveKeyframe = Method((Instance) -> Nil).new do |keyframe|
+	
+	end
+end
+module AnimationClipProvider
+	RegisterActiveAnimationClip = Method((AnimationClip) -> Nil).new do |animationClip|
+	
+	end
+	RegisterAnimationClip = Method((AnimationClip) -> Nil).new do |animationClip|
+	
+	end
+	GetAnimationClipAsync = Method((String) -> Nil).new do |assetId|
+	
+	end
+	GetAnimations = Method((Int64) -> Nil).new do |userId|
+	
+	end
+end
+module AnimationController
+	GetPlayingAnimationTracks = Method(() -> Nil).new do ||
+	
+	end
+	LoadAnimation = Method((Animation) -> Nil).new do |animation|
+	
+	end
+	AnimationPlayed = RBXScriptSignal((AnimationTrack) -> Nil).new do |animationTrack|
+	
+	end
+end
+module AnimationFromVideoCreatorService
+end
+module AnimationFromVideoCreatorStudioService
+end
+module AnimationRigData
+end
+module AnimationStreamTrack
+	Animation : Object
+	IsPlaying : Object
+	Priority : Object
+	WeightCurrent : Object
+	WeightTarget : Object
+end
+module AnimationTrack
+	Animation : Object
+	IsPlaying : Object
+	Length : Object
+	Looped : Object
+	Priority : Object
+	Speed : Object
+	TimePosition : Object
+	WeightCurrent : Object
+	WeightTarget : Object
+	AdjustSpeed = Method((Float32) -> Nil).new do |speed|
+	
+	end
+	AdjustWeight = Method((Float32, Float32) -> Nil).new do |weight, fadeTime|
+	
+	end
+	GetMarkerReachedSignal = Method((string) -> Nil).new do |name|
+	
+	end
+	GetTimeOfKeyframe = Method((string) -> Nil).new do |keyframeName|
+	
+	end
+	Play = Method((Float32, Float32, Float32) -> Nil).new do |fadeTime, weight, speed|
+	
+	end
+	Stop = Method((Float32) -> Nil).new do |fadeTime|
+	
+	end
+	DidLoop = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	Ended = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	KeyframeReached = RBXScriptSignal((string) -> Nil).new do |keyframeName|
+	
+	end
+	Stopped = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+end
+module Animator
+	EvaluationThrottled : Object
+	PreferLodEnabled : Object
+	ApplyJointVelocities = Method((Hash) -> Nil).new do |motors|
+	
+	end
+	GetPlayingAnimationTracks = Method(() -> Nil).new do ||
+	
+	end
+	LoadAnimation = Method((Animation) -> Nil).new do |animation|
+	
+	end
+	AnimationPlayed = RBXScriptSignal((AnimationTrack) -> Nil).new do |animationTrack|
+	
+	end
+end
+module AppUpdateService
+end
+module AssetCounterService
+end
+module AssetDeliveryProxy
+	Interface : Object
+	Port : Object
+	StartServer : Object
+end
+module AssetImportService
+end
+module AssetImportSession
+	UploadComplete = RBXScriptSignal((Hash) -> Nil).new do |results|
+	
+	end
+	UploadCompleteDeprecated = RBXScriptSignal((Bool, Hash) -> Nil).new do |succeeded, errorMap|
+	
+	end
+	UploadProgress = RBXScriptSignal((Float32) -> Nil).new do |progressRatio|
+	
+	end
+end
+module AssetManagerService
+end
+module AssetPatchSettings
+	ContentId : Object
+	OutputPath : Object
+	PatchId : Object
+end
+module AssetService
+	CreatePlaceAsync = Method((string, Int64, string) -> Nil).new do |placeName, templatePlaceID, description|
+	
+	end
+	CreatePlaceInPlayerInventoryAsync = Method((Instance, string, Int64, string) -> Nil).new do |player, placeName, templatePlaceID, description|
+	
+	end
+	GetAssetIdsForPackage = Method((Int64) -> Nil).new do |packageAssetId|
+	
+	end
+	GetBundleDetailsAsync = Method((Int64) -> Nil).new do |bundleId|
+	
+	end
+	GetCreatorAssetID = Method((Int64) -> Nil).new do |creationID|
+	
+	end
+	GetGamePlacesAsync = Method(() -> Nil).new do ||
+	
+	end
+	PromptPublishAssetAsync = Method((Player, Instance, Enum::AssetType) -> Nil).new do |player, instance, assetType|
+	
+	end
+	SavePlaceAsync = Method(() -> Nil).new do ||
+	
+	end
+	SearchAudio = Method((AudioSearchParams) -> Nil).new do |searchParameters|
+	
+	end
+end
+module Atmosphere
+	Color : Object
+	Decay : Object
+	Density : Object
+	Glare : Object
+	Haze : Object
+	Offset : Object
+end
+module Attachment
+	Axis : Object
+	CFrame : Object
+	Orientation : Object
+	Position : Object
+	Rotation : Object
+	SecondaryAxis : Object
+	Visible : Object
+	WorldAxis : Object
+	WorldCFrame : Object
+	WorldOrientation : Object
+	WorldPosition : Object
+	WorldRotation : Object
+	WorldSecondaryAxis : Object
+	GetAxis = Method(() -> Nil).new do ||
+	
+	end
+	GetSecondaryAxis = Method(() -> Nil).new do ||
+	
+	end
+	SetAxis = Method((Vector3) -> Nil).new do |axis|
+	
+	end
+	SetSecondaryAxis = Method((Vector3) -> Nil).new do |axis|
+	
+	end
+end
+module Bone
+	Transform : Object
+	TransformedCFrame : Object
+	TransformedWorldCFrame : Object
+end
+module AudioSearchParams
+	Album : Object
+	Artist : Object
+	AudioSubType : Object
+	AudioSubtype : Object
+	MaxDuration : Object
+	MinDuration : Object
+	SearchKeyword : Object
+	Tag : Object
+	Title : Object
+end
+module AvatarEditorService
+	GetAccessoryType = Method((Enum::AvatarAssetType) -> Nil).new do |avatarAssetType|
+	
+	end
+	PromptAllowInventoryReadAccess = Method(() -> Nil).new do ||
+	
+	end
+	PromptCreateOutfit = Method((HumanoidDescription, Enum::HumanoidRigType) -> Nil).new do |outfit, rigType|
+	
+	end
+	PromptDeleteOutfit = Method((Int64) -> Nil).new do |outfitId|
+	
+	end
+	PromptRenameOutfit = Method((Int64) -> Nil).new do |outfitId|
+	
+	end
+	PromptSaveAvatar = Method((HumanoidDescription, Enum::HumanoidRigType) -> Nil).new do |humanoidDescription, rigType|
+	
+	end
+	PromptSetFavorite = Method((Int64, Enum::AvatarItemType, Bool) -> Nil).new do |itemId, itemType, shouldFavorite|
+	
+	end
+	PromptUpdateOutfit = Method((Int64, HumanoidDescription, Enum::HumanoidRigType) -> Nil).new do |outfitId, updatedOutfit, rigType|
+	
+	end
+	CheckApplyDefaultClothing = Method((HumanoidDescription) -> Nil).new do |humanoidDescription|
+	
+	end
+	ConformToAvatarRules = Method((HumanoidDescription) -> Nil).new do |humanoidDescription|
+	
+	end
+	GetAvatarRules = Method(() -> Nil).new do ||
+	
+	end
+	GetBatchItemDetails = Method((Array, Enum::AvatarItemType) -> Nil).new do |itemIds, itemType|
+	
+	end
+	GetFavorite = Method((Int64, Enum::AvatarItemType) -> Nil).new do |itemId, itemType|
+	
+	end
+	GetInventory = Method((Array) -> Nil).new do |assetTypes|
+	
+	end
+	GetItemDetails = Method((Int64, Enum::AvatarItemType) -> Nil).new do |itemId, itemType|
+	
+	end
+	GetOutfits = Method((Enum::OutfitSource, Enum::OutfitType) -> Nil).new do |outfitSource, outfitType|
+	
+	end
+	GetRecommendedAssets = Method((Enum::AvatarAssetType, Int64) -> Nil).new do |assetType, contextAssetId|
+	
+	end
+	GetRecommendedBundles = Method((Int64) -> Nil).new do |bundleId|
+	
+	end
+	SearchCatalog = Method((CatalogSearchParams) -> Nil).new do |searchParameters|
+	
+	end
+	PromptAllowInventoryReadAccessCompleted = RBXScriptSignal((Enum::AvatarPromptResult) -> Nil).new do |result|
+	
+	end
+	PromptCreateOutfitCompleted = RBXScriptSignal((Enum::AvatarPromptResult, Hash) -> Nil).new do |result, failureType|
+	
+	end
+	PromptDeleteOutfitCompleted = RBXScriptSignal((Enum::AvatarPromptResult) -> Nil).new do |result|
+	
+	end
+	PromptRenameOutfitCompleted = RBXScriptSignal((Enum::AvatarPromptResult) -> Nil).new do |result|
+	
+	end
+	PromptSaveAvatarCompleted = RBXScriptSignal((Enum::AvatarPromptResult, HumanoidDescription) -> Nil).new do |result, humanoidDescription|
+	
+	end
+	PromptSetFavoriteCompleted = RBXScriptSignal((Enum::AvatarPromptResult) -> Nil).new do |result|
+	
+	end
+	PromptUpdateOutfitCompleted = RBXScriptSignal((Enum::AvatarPromptResult) -> Nil).new do |result|
+	
+	end
+end
+module AvatarImportService
+end
+module Backpack
+end
+module BadgeService
+	AwardBadge = Method((Int64, Int64) -> Nil).new do |userId, badgeId|
+	
+	end
+	GetBadgeInfoAsync = Method((Int64) -> Nil).new do |badgeId|
+	
+	end
+	IsDisabled = Method((Int64) -> Nil).new do |badgeId|
+	
+	end
+	IsLegal = Method((Int64) -> Nil).new do |badgeId|
+	
+	end
+	UserHasBadge = Method((Int64, Int64) -> Nil).new do |userId, badgeId|
+	
+	end
+	UserHasBadgeAsync = Method((Int64, Int64) -> Nil).new do |userId, badgeId|
+	
+	end
+end
+module BaseImportData
+	Id : Object
+	ImportName : Object
+	ShouldImport : Object
+end
+module AnimationImportData
+end
+module FacsImportData
+end
+module GroupImportData
+	Anchored : Object
+	ImportAsModelAsset : Object
+	InsertInWorkspace : Object
+end
+module JointImportData
+end
+module MaterialImportData
+	DiffuseFilePath : Object
+	IsPbr : Object
+	MetalnessFilePath : Object
+	NormalFilePath : Object
+	RoughnessFilePath : Object
+end
+module MeshImportData
+	Anchored : Object
+	CageManifold : Object
+	CageMeshIntersectedPreview : Object
+	CageMeshNotIntersected : Object
+	CageNoOverlappingVertices : Object
+	CageNonManifoldPreview : Object
+	CageOverlappingVerticesPreview : Object
+	CageUVMatched : Object
+	CageUVMisMatchedPreview : Object
+	Dimensions : Object
+	DoubleSided : Object
+	IgnoreVertexColors : Object
+	IrrelevantCageModifiedPreview : Object
+	MeshHoleDetectedPreview : Object
+	MeshNoHoleDetected : Object
+	NoIrrelevantCageModified : Object
+	NoOuterCageFarExtendedFromMesh : Object
+	OuterCageFarExtendedFromMeshPreview : Object
+	PolygonCount : Object
+	UseImportedPivot : Object
+end
+module RootImportData
+	AddModelToInventory : Object
+	Anchored : Object
+	AnimationIdForRestPose : Object
+	ExistingPackageId : Object
+	FileDimensions : Object
+	ImportAsModelAsset : Object
+	ImportAsPackage : Object
+	InsertInWorkspace : Object
+	InsertWithScenePosition : Object
+	InvertNegativeFaces : Object
+	MergeMeshes : Object
+	PolygonCount : Object
+	RestPose : Object
+	RigScale : Object
+	RigType : Object
+	ScaleUnit : Object
+	UseSceneOriginAsCFrame : Object
+	UseSceneOriginAsPivot : Object
+	UsesCages : Object
+	WorldForward : Object
+	WorldUp : Object
+end
+module BasePlayerGui
+	GetGuiObjectsAtPosition = Method((Int32, Int32) -> Nil).new do |x, y|
+	
+	end
+end
+module CoreGui
+	Version : Object
+end
+module PlayerGui
+	CurrentScreenOrientation : Object
+	ScreenOrientation : Object
+	SelectionImageObject : Object
+	GetTopbarTransparency = Method(() -> Nil).new do ||
+	
+	end
+	SetTopbarTransparency = Method((Float32) -> Nil).new do |transparency|
+	
+	end
+	TopbarTransparencyChangedSignal = RBXScriptSignal((Float32) -> Nil).new do |transparency|
+	
+	end
+end
+module StarterGui
+	ResetPlayerGuiOnSpawn : Object
+	ScreenOrientation : Object
+	GetCoreGuiEnabled = Method((Enum::CoreGuiType) -> Nil).new do |coreGuiType|
+	
+	end
+	SetCore = Method((string, Hash) -> Nil).new do |parameterName, value|
+	
+	end
+	SetCoreGuiEnabled = Method((Enum::CoreGuiType, Bool) -> Nil).new do |coreGuiType, enabled|
+	
+	end
+	GetCore = Method((string) -> Nil).new do |parameterName|
+	
+	end
+end
+module BaseWrap
+	CageMeshId : Object
+	CageOrigin : Object
+	CageOriginWorld : Object
+	ImportOrigin : Object
+	ImportOriginWorld : Object
+end
+module WrapLayer
+	AutoSkin : Object
+	BindOffset : Object
+	Enabled : Object
+	Order : Object
+	Puffiness : Object
+	ReferenceMeshId : Object
+	ReferenceOrigin : Object
+	ReferenceOriginWorld : Object
+	ShrinkFactor : Object
+end
+module WrapTarget
+	Stiffness : Object
+end
+module Beam
+	Attachment0 : Object
+	Attachment1 : Object
+	Brightness : Object
+	Color : Object
+	CurveSize0 : Object
+	CurveSize1 : Object
+	Enabled : Object
+	FaceCamera : Object
+	LightEmission : Object
+	LightInfluence : Object
+	Segments : Object
+	Texture : Object
+	TextureLength : Object
+	TextureMode : Object
+	TextureSpeed : Object
+	Transparency : Object
+	Width0 : Object
+	Width1 : Object
+	ZOffset : Object
+	SetTextureOffset = Method((Float32) -> Nil).new do |offset|
+	
+	end
+end
+module BindableEvent
+	Fire = Method((Array) -> Nil).new do |arguments|
+	
+	end
+	Event = RBXScriptSignal((Array) -> Nil).new do |arguments|
+	
+	end
+end
+module BindableFunction
+	Invoke = Method((Array) -> Nil).new do |arguments|
+	
+	end
+	OnInvoke = Callback(Array -> Nil).new do |arguments|
+	
+	end
+end
+module BodyMover
+end
+module BodyAngularVelocity
+	AngularVelocity : Object
+	MaxTorque : Object
+	P : Object
+	angularvelocity : Object
+end
+module BodyForce
+	Force : Object
+end
+module BodyGyro
+	CFrame : Object
+	D : Object
+	MaxTorque : Object
+	P : Object
+end
+module BodyPosition
+	D : Object
+	MaxForce : Object
+	P : Object
+	Position : Object
+	GetLastForce = Method(() -> Nil).new do ||
+	
+	end
+	lastForce = Method(() -> Nil).new do ||
+	
+	end
+	ReachedTarget = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+end
+module BodyThrust
+	Force : Object
+	Location : Object
+end
+module BodyVelocity
+	MaxForce : Object
+	P : Object
+	Velocity : Object
+	GetLastForce = Method(() -> Nil).new do ||
+	
+	end
+	lastForce = Method(() -> Nil).new do ||
+	
+	end
+end
+module RocketPropulsion
+	CartoonFactor : Object
+	MaxSpeed : Object
+	MaxThrust : Object
+	MaxTorque : Object
+	Target : Object
+	TargetOffset : Object
+	TargetRadius : Object
+	ThrustD : Object
+	ThrustP : Object
+	TurnD : Object
+	TurnP : Object
+	Abort = Method(() -> Nil).new do ||
+	
+	end
+	Fire = Method(() -> Nil).new do ||
+	
+	end
+	ReachedTarget = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+end
+module Breakpoint
+end
+module BrowserService
+end
+module BulkImportService
+end
+module CSGOptions
+end
+module CacheableContentProvider
+end
+module HSRDataContentProvider
+end
+module MeshContentProvider
+end
+module SolidModelContentProvider
+end
+module CalloutService
+end
+module Camera
+	CFrame : Object
+	CameraSubject : Object
+	CameraType : Object
+	CoordinateFrame : Object
+	DiagonalFieldOfView : Object
+	FieldOfView : Object
+	FieldOfViewMode : Object
+	Focus : Object
+	HeadLocked : Object
+	HeadScale : Object
+	MaxAxisFieldOfView : Object
+	NearPlaneZ : Object
+	ViewportSize : Object
+	GetLargestCutoffDistance = Method((Array(Instance)) -> Nil).new do |ignoreList|
+	
+	end
+	GetPanSpeed = Method(() -> Nil).new do ||
+	
+	end
+	GetPartsObscuringTarget = Method((Array, Array(Instance)) -> Nil).new do |castPoints, ignoreList|
+	
+	end
+	GetRenderCFrame = Method(() -> Nil).new do ||
+	
+	end
+	GetRoll = Method(() -> Nil).new do ||
+	
+	end
+	GetTiltSpeed = Method(() -> Nil).new do ||
+	
+	end
+	Interpolate = Method((CFrame, CFrame, Float32) -> Nil).new do |endPos, endFocus, duration|
+	
+	end
+	PanUnits = Method((Int32) -> Nil).new do |units|
+	
+	end
+	ScreenPointToRay = Method((Float32, Float32, Float32) -> Nil).new do |x, y, depth|
+	
+	end
+	SetCameraPanMode = Method((Enum::CameraPanMode) -> Nil).new do |mode|
+	
+	end
+	SetRoll = Method((Float32) -> Nil).new do |rollAngle|
+	
+	end
+	TiltUnits = Method((Int32) -> Nil).new do |units|
+	
+	end
+	ViewportPointToRay = Method((Float32, Float32, Float32) -> Nil).new do |x, y, depth|
+	
+	end
+	WorldToScreenPoint = Method((Vector3) -> Nil).new do |worldPoint|
+	
+	end
+	WorldToViewportPoint = Method((Vector3) -> Nil).new do |worldPoint|
+	
+	end
+	ZoomToExtents = Method((CFrame, Vector3) -> Nil).new do |boundingBoxCFrame, boundingBoxSize|
+	
+	end
+	InterpolationFinished = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+end
+module ChangeHistoryService
+	GetCanRedo = Method(() -> Nil).new do ||
+	
+	end
+	GetCanUndo = Method(() -> Nil).new do ||
+	
+	end
+	Redo = Method(() -> Nil).new do ||
+	
+	end
+	ResetWaypoints = Method(() -> Nil).new do ||
+	
+	end
+	SetEnabled = Method((Bool) -> Nil).new do |state|
+	
+	end
+	SetWaypoint = Method((string) -> Nil).new do |name|
+	
+	end
+	Undo = Method(() -> Nil).new do ||
+	
+	end
+	OnRedo = RBXScriptSignal((string) -> Nil).new do |waypoint|
+	
+	end
+	OnUndo = RBXScriptSignal((string) -> Nil).new do |waypoint|
+	
+	end
+end
+module CharacterAppearance
+end
+module BodyColors
+	HeadColor : Object
+	HeadColor3 : Object
+	LeftArmColor : Object
+	LeftArmColor3 : Object
+	LeftLegColor : Object
+	LeftLegColor3 : Object
+	RightArmColor : Object
+	RightArmColor3 : Object
+	RightLegColor : Object
+	RightLegColor3 : Object
+	TorsoColor : Object
+	TorsoColor3 : Object
+end
+module CharacterMesh
+	BaseTextureId : Object
+	BodyPart : Object
+	MeshId : Object
+	OverlayTextureId : Object
+end
+module Clothing
+	Color3 : Object
+end
+module Pants
+	PantsTemplate : Object
+end
+module Shirt
+	ShirtTemplate : Object
+end
+module ShirtGraphic
+	Color3 : Object
+	Graphic : Object
+end
+module Skin
+	SkinColor : Object
+end
+module Chat
+	BubbleChatEnabled : Object
+	LoadDefaultChat : Object
+	Chat = Method((Instance, string, Enum::ChatColor) -> Nil).new do |partOrCharacter, message, color|
+	
+	end
+	InvokeChatCallback = Method((Enum::ChatCallbackType, Array) -> Nil).new do |callbackType, callbackArguments|
+	
+	end
+	RegisterChatCallback = Method((Enum::ChatCallbackType, Callback) -> Nil).new do |callbackType, callbackFunction|
+	
+	end
+	SetBubbleChatSettings = Method((Hash) -> Nil).new do |settings|
+	
+	end
+	CanUserChatAsync = Method((Int64) -> Nil).new do |userId|
+	
+	end
+	CanUsersChatAsync = Method((Int64, Int64) -> Nil).new do |userIdFrom, userIdTo|
+	
+	end
+	FilterStringAsync = Method((string, Player, Player) -> Nil).new do |stringToFilter, playerFrom, playerTo|
+	
+	end
+	FilterStringForBroadcast = Method((string, Player) -> Nil).new do |stringToFilter, playerFrom|
+	
+	end
+	FilterStringForPlayerAsync = Method((string, Player) -> Nil).new do |stringToFilter, playerToFilterFor|
+	
+	end
+	Chatted = RBXScriptSignal((Instance, string, Enum::ChatColor) -> Nil).new do |part, message, color|
+	
+	end
+end
+module ClickDetector
+	CursorIcon : Object
+	MaxActivationDistance : Object
+	MouseClick = RBXScriptSignal((Player) -> Nil).new do |playerWhoClicked|
+	
+	end
+	MouseHoverEnter = RBXScriptSignal((Player) -> Nil).new do |playerWhoHovered|
+	
+	end
+	MouseHoverLeave = RBXScriptSignal((Player) -> Nil).new do |playerWhoHovered|
+	
+	end
+	RightMouseClick = RBXScriptSignal((Player) -> Nil).new do |playerWhoClicked|
+	
+	end
+end
+module Clouds
+	Color : Object
+	Cover : Object
+	Density : Object
+	Enabled : Object
+end
+module ClusterPacketCache
+end
+module CollectionService
+	AddTag = Method((Instance, string) -> Nil).new do |instance, tag|
+	
+	end
+	GetAllTags = Method(() -> Nil).new do ||
+	
+	end
+	GetInstanceAddedSignal = Method((string) -> Nil).new do |tag|
+	
+	end
+	GetInstanceRemovedSignal = Method((string) -> Nil).new do |tag|
+	
+	end
+	GetTagged = Method((string) -> Nil).new do |tag|
+	
+	end
+	GetTags = Method((Instance) -> Nil).new do |instance|
+	
+	end
+	HasTag = Method((Instance, string) -> Nil).new do |instance, tag|
+	
+	end
+	RemoveTag = Method((Instance, string) -> Nil).new do |instance, tag|
+	
+	end
+	ItemAdded = RBXScriptSignal((Instance) -> Nil).new do |instance|
+	
+	end
+	ItemRemoved = RBXScriptSignal((Instance) -> Nil).new do |instance|
+	
+	end
+	TagAdded = RBXScriptSignal((string) -> Nil).new do |tag|
+	
+	end
+	TagRemoved = RBXScriptSignal((string) -> Nil).new do |tag|
+	
+	end
+end
+module CommandInstance
+	AllowGUIAccessPoints : Object
+	DisplayName : Object
+	Name : Object
+end
+module CommandService
+end
+module Configuration
+end
+module ConfigureServerService
+end
+module Constraint
+	Active : Object
+	Attachment0 : Object
+	Attachment1 : Object
+	Color : Object
+	Enabled : Object
+	Visible : Object
+end
+module AlignOrientation
+	AlignType : Object
+	CFrame : Object
+	MaxAngularVelocity : Object
+	MaxTorque : Object
+	Mode : Object
+	PrimaryAxis : Object
+	PrimaryAxisOnly : Object
+	ReactionTorqueEnabled : Object
+	Responsiveness : Object
+	RigidityEnabled : Object
+	SecondaryAxis : Object
+end
+module AlignPosition
+	ApplyAtCenterOfMass : Object
+	MaxForce : Object
+	MaxVelocity : Object
+	Mode : Object
+	Position : Object
+	ReactionForceEnabled : Object
+	Responsiveness : Object
+	RigidityEnabled : Object
+end
+module AngularVelocity
+	AngularVelocity : Object
+	MaxTorque : Object
+	ReactionTorqueEnabled : Object
+	RelativeTo : Object
+end
+module AnimationConstraint
+	IsKinematic : Object
+	MaxForce : Object
+	MaxTorque : Object
+	Transform : Object
+end
+module BallSocketConstraint
+	LimitsEnabled : Object
+	MaxFrictionTorque : Object
+	Radius : Object
+	Restitution : Object
+	TwistLimitsEnabled : Object
+	TwistLowerAngle : Object
+	TwistUpperAngle : Object
+	UpperAngle : Object
+end
+module HingeConstraint
+	ActuatorType : Object
+	AngularResponsiveness : Object
+	AngularSpeed : Object
+	AngularVelocity : Object
+	CurrentAngle : Object
+	LimitsEnabled : Object
+	LowerAngle : Object
+	MotorMaxAcceleration : Object
+	MotorMaxTorque : Object
+	Radius : Object
+	Restitution : Object
+	ServoMaxTorque : Object
+	TargetAngle : Object
+	UpperAngle : Object
+end
+module LineForce
+	ApplyAtCenterOfMass : Object
+	InverseSquareLaw : Object
+	Magnitude : Object
+	MaxForce : Object
+	ReactionForceEnabled : Object
+end
+module LinearVelocity
+	LineDirection : Object
+	LineVelocity : Object
+	MaxForce : Object
+	PlaneVelocity : Object
+	PrimaryTangentAxis : Object
+	RelativeTo : Object
+	SecondaryTangentAxis : Object
+	VectorVelocity : Object
+	VelocityConstraintMode : Object
+end
+module PlaneConstraint
+end
+module Plane
+end
+module RigidConstraint
+end
+module RodConstraint
+	CurrentDistance : Object
+	Length : Object
+	LimitAngle0 : Object
+	LimitAngle1 : Object
+	LimitsEnabled : Object
+	Thickness : Object
+end
+module RopeConstraint
+	CurrentDistance : Object
+	Length : Object
+	Restitution : Object
+	Thickness : Object
+	WinchEnabled : Object
+	WinchForce : Object
+	WinchResponsiveness : Object
+	WinchSpeed : Object
+	WinchTarget : Object
+end
+module SlidingBallConstraint
+	ActuatorType : Object
+	CurrentPosition : Object
+	LimitsEnabled : Object
+	LinearResponsiveness : Object
+	LowerLimit : Object
+	MotorMaxAcceleration : Object
+	MotorMaxForce : Object
+	Restitution : Object
+	ServoMaxForce : Object
+	Size : Object
+	Speed : Object
+	TargetPosition : Object
+	UpperLimit : Object
+	Velocity : Object
+end
+module CylindricalConstraint
+	AngularActuatorType : Object
+	AngularLimitsEnabled : Object
+	AngularResponsiveness : Object
+	AngularRestitution : Object
+	AngularSpeed : Object
+	AngularVelocity : Object
+	CurrentAngle : Object
+	InclinationAngle : Object
+	LowerAngle : Object
+	MotorMaxAngularAcceleration : Object
+	MotorMaxTorque : Object
+	RotationAxisVisible : Object
+	ServoMaxTorque : Object
+	TargetAngle : Object
+	UpperAngle : Object
+	WorldRotationAxis : Object
+end
+module PrismaticConstraint
+end
+module SpringConstraint
+	Coils : Object
+	CurrentLength : Object
+	Damping : Object
+	FreeLength : Object
+	LimitsEnabled : Object
+	MaxForce : Object
+	MaxLength : Object
+	MinLength : Object
+	Radius : Object
+	Stiffness : Object
+	Thickness : Object
+end
+module Torque
+	RelativeTo : Object
+	Torque : Object
+end
+module TorsionSpringConstraint
+	Coils : Object
+	CurrentAngle : Object
+	Damping : Object
+	LimitEnabled : Object
+	LimitsEnabled : Object
+	MaxAngle : Object
+	MaxTorque : Object
+	Radius : Object
+	Restitution : Object
+	Stiffness : Object
+end
+module UniversalConstraint
+	LimitsEnabled : Object
+	MaxAngle : Object
+	Radius : Object
+	Restitution : Object
+end
+module VectorForce
+	ApplyAtCenterOfMass : Object
+	Force : Object
+	RelativeTo : Object
+end
+module ContentProvider
+	BaseUrl : Object
+	RequestQueueSize : Object
+	GetAssetFetchStatus = Method((String) -> Nil).new do |contentId|
+	
+	end
+	GetAssetFetchStatusChangedSignal = Method((String) -> Nil).new do |contentId|
+	
+	end
+	ListEncryptedAssets = Method(() -> Nil).new do ||
+	
+	end
+	Preload = Method((String) -> Nil).new do |contentId|
+	
+	end
+	RegisterDefaultEncryptionKey = Method((string) -> Nil).new do |encryptionKey|
+	
+	end
+	RegisterDefaultSessionKey = Method((string) -> Nil).new do |sessionKey|
+	
+	end
+	RegisterEncryptedAsset = Method((String, string) -> Nil).new do |assetId, encryptionKey|
+	
+	end
+	RegisterSessionEncryptedAsset = Method((String, string) -> Nil).new do |contentId, sessionKey|
+	
+	end
+	UnregisterDefaultEncryptionKey = Method(() -> Nil).new do ||
+	
+	end
+	UnregisterEncryptedAsset = Method((String) -> Nil).new do |assetId|
+	
+	end
+	PreloadAsync = Method((Array, Callback) -> Nil).new do |contentIdList, callbackFunction|
+	
+	end
+	AssetFetchFailed = RBXScriptSignal((String) -> Nil).new do |assetId|
+	
+	end
+end
+module ContextActionService
+	BindAction = Method((string, Callback, Bool, Array) -> Nil).new do |actionName, functionToBind, createTouchButton, inputTypes|
+	
+	end
+	BindActionAtPriority = Method((string, Callback, Bool, Int32, Array) -> Nil).new do |actionName, functionToBind, createTouchButton, priorityLevel, inputTypes|
+	
+	end
+	BindActionToInputTypes = Method((string, Callback, Bool, Array) -> Nil).new do |actionName, functionToBind, createTouchButton, inputTypes|
+	
+	end
+	BindActivate = Method((Enum::UserInputType, Array) -> Nil).new do |userInputTypeForActivation, keyCodesForActivation|
+	
+	end
+	GetAllBoundActionInfo = Method(() -> Nil).new do ||
+	
+	end
+	GetBoundActionInfo = Method((string) -> Nil).new do |actionName|
+	
+	end
+	GetCurrentLocalToolIcon = Method(() -> Nil).new do ||
+	
+	end
+	SetDescription = Method((string, string) -> Nil).new do |actionName, description|
+	
+	end
+	SetImage = Method((string, string) -> Nil).new do |actionName, image|
+	
+	end
+	SetPosition = Method((string, UDim2) -> Nil).new do |actionName, position|
+	
+	end
+	SetTitle = Method((string, string) -> Nil).new do |actionName, title|
+	
+	end
+	UnbindAction = Method((string) -> Nil).new do |actionName|
+	
+	end
+	UnbindActivate = Method((Enum::UserInputType, Enum::KeyCode) -> Nil).new do |userInputTypeForActivation, keyCodeForActivation|
+	
+	end
+	UnbindAllActions = Method(() -> Nil).new do ||
+	
+	end
+	GetButton = Method((string) -> Nil).new do |actionName|
+	
+	end
+	LocalToolEquipped = RBXScriptSignal((Instance) -> Nil).new do |toolEquipped|
+	
+	end
+	LocalToolUnequipped = RBXScriptSignal((Instance) -> Nil).new do |toolUnequipped|
+	
+	end
+end
+module Controller
+	BindButton = Method((Enum::Button, string) -> Nil).new do |button, caption|
+	
+	end
+	GetButton = Method((Enum::Button) -> Nil).new do |button|
+	
+	end
+	UnbindButton = Method((Enum::Button) -> Nil).new do |button|
+	
+	end
+	ButtonChanged = RBXScriptSignal((Enum::Button) -> Nil).new do |button|
+	
+	end
+end
+module HumanoidController
+end
+module SkateboardController
+	Steer : Object
+	Throttle : Object
+	AxisChanged = RBXScriptSignal((string) -> Nil).new do |axis|
+	
+	end
+end
+module VehicleController
+end
+module ControllerBase
+	MoveSpeedFactor : Object
+	RigidityEnabled : Object
+end
+module AirController
+	BalanceMaxTorque : Object
+	BalanceRigidityEnabled : Object
+	BalanceSpeed : Object
+	LinearImpulse : Object
+	MaintainAngularMomentum : Object
+	MaintainLinearMomentum : Object
+	MoveMaxForce : Object
+	OrientationMaxTorque : Object
+	OrientationSpeedFactor : Object
+	TurnMaxTorque : Object
+	TurnSpeedFactor : Object
+	VectorForce : Object
+end
+module ClimbController
+	AccelerationTime : Object
+	BalanceMaxTorque : Object
+	BalanceRigidityEnabled : Object
+	BalanceSpeed : Object
+	MoveMaxForce : Object
+	OrientationMaxTorque : Object
+	OrientationSpeedFactor : Object
+end
+module GroundController
+	AccelerationLean : Object
+	AccelerationTime : Object
+	AlignSpeed : Object
+	AlignTorque : Object
+	BalanceMaxTorque : Object
+	BalanceRigidityEnabled : Object
+	BalanceSpeed : Object
+	DecelerationTime : Object
+	Friction : Object
+	FrictionWeight : Object
+	GroundOffset : Object
+	StandForce : Object
+	StandSpeed : Object
+	TurnSpeedFactor : Object
+	TurningFactor : Object
+end
+module SwimController
+	AccelerationTime : Object
+	PitchMaxTorque : Object
+	PitchSpeedFactor : Object
+	RollMaxTorque : Object
+	RollSpeedFactor : Object
+end
+module ControllerManager
+	ActiveController : Object
+	BaseMoveSpeed : Object
+	BaseTurnSpeed : Object
+	ClimbSensor : Object
+	FacingDirection : Object
+	GroundSensor : Object
+	MovingDirection : Object
+end
+module ControllerService
+end
+module CookiesService
+end
+module CorePackages
+end
+module CoreScriptDebuggingManagerHelper
+end
+module CoreScriptSyncService
+end
+module CrossDMScriptChangeListener
+end
+module CustomEvent
+	GetAttachedReceivers = Method(() -> Nil).new do ||
+	
+	end
+	SetValue = Method((Float32) -> Nil).new do |newValue|
+	
+	end
+	ReceiverConnected = RBXScriptSignal((Instance) -> Nil).new do |receiver|
+	
+	end
+	ReceiverDisconnected = RBXScriptSignal((Instance) -> Nil).new do |receiver|
+	
+	end
+end
+module CustomEventReceiver
+	Source : Object
+	GetCurrentValue = Method(() -> Nil).new do ||
+	
+	end
+	EventConnected = RBXScriptSignal((Instance) -> Nil).new do |event|
+	
+	end
+	EventDisconnected = RBXScriptSignal((Instance) -> Nil).new do |event|
+	
+	end
+	SourceValueChanged = RBXScriptSignal((Float32) -> Nil).new do |newValue|
+	
+	end
+end
+module DataModelMesh
+	Offset : Object
+	Scale : Object
+	VertexColor : Object
+end
+module BevelMesh
+end
+module BlockMesh
+end
+module CylinderMesh
+end
+module FileMesh
+	MeshId : Object
+	TextureId : Object
+end
+module SpecialMesh
+	MeshType : Object
+end
+module DataModelPatchService
+end
+module DataModelSession
+end
+module DataStoreIncrementOptions
+	GetMetadata = Method(() -> Nil).new do ||
+	
+	end
+	SetMetadata = Method((Hash) -> Nil).new do |attributes|
+	
+	end
+end
+module DataStoreInfo
+	CreatedTime : Object
+	DataStoreName : Object
+	UpdatedTime : Object
+end
+module DataStoreKey
+	KeyName : Object
+end
+module DataStoreKeyInfo
+	CreatedTime : Object
+	UpdatedTime : Object
+	Version : Object
+	GetMetadata = Method(() -> Nil).new do ||
+	
+	end
+	GetUserIds = Method(() -> Nil).new do ||
+	
+	end
+end
+module DataStoreObjectVersionInfo
+	CreatedTime : Object
+	IsDeleted : Object
+	Version : Object
+end
+module DataStoreOptions
+	AllScopes : Object
+	SetExperimentalFeatures = Method((Hash) -> Nil).new do |experimentalFeatures|
+	
+	end
+end
+module DataStoreService
+	GetDataStore = Method((string, string, Instance) -> Nil).new do |name, scope, options|
+	
+	end
+	GetGlobalDataStore = Method(() -> Nil).new do ||
+	
+	end
+	GetOrderedDataStore = Method((string, string) -> Nil).new do |name, scope|
+	
+	end
+	GetRequestBudgetForRequestType = Method((Enum::DataStoreRequestType) -> Nil).new do |requestType|
+	
+	end
+	ListDataStoresAsync = Method((string, Int32, string) -> Nil).new do |prefix, pageSize, cursor|
+	
+	end
+end
+module DataStoreSetOptions
+	GetMetadata = Method(() -> Nil).new do ||
+	
+	end
+	SetMetadata = Method((Hash) -> Nil).new do |attributes|
+	
+	end
+end
+module Debris
+	MaxItems : Object
+	AddItem = Method((Instance, Float64) -> Nil).new do |item, lifetime|
+	
+	end
+end
+module DebugSettings
+	DataModel : Object
+	InstanceCount : Object
+	IsScriptStackTracingEnabled : Object
+	JobCount : Object
+	PlayerCount : Object
+	ReportSoundWarnings : Object
+	RobloxVersion : Object
+	TickCountPreciseOverride : Object
+end
+module DebuggablePluginWatcher
+end
+module DebuggerBreakpoint
+	Condition : Object
+	ContinueExecution : Object
+	IsEnabled : Object
+	Line : Object
+	LogExpression : Object
+	isContextDependentBreakpoint : Object
+end
+module DebuggerConnection
+end
+module LocalDebuggerConnection
+end
+module DebuggerConnectionManager
+end
+module DebuggerLuaResponse
+end
+module DebuggerManager
+	DebuggingEnabled : Object
+	AddDebugger = Method((Instance) -> Nil).new do |script|
+	
+	end
+	GetDebuggers = Method(() -> Nil).new do ||
+	
+	end
+	Resume = Method(() -> Nil).new do ||
+	
+	end
+	StepIn = Method(() -> Nil).new do ||
+	
+	end
+	StepOut = Method(() -> Nil).new do ||
+	
+	end
+	StepOver = Method(() -> Nil).new do ||
+	
+	end
+	DebuggerAdded = RBXScriptSignal((Instance) -> Nil).new do |debugger|
+	
+	end
+	DebuggerRemoved = RBXScriptSignal((Instance) -> Nil).new do |debugger|
+	
+	end
+end
+module DebuggerUIService
+end
+module DebuggerVariable
+end
+module DebuggerWatch
+	Expression : Object
+end
+module DeviceIdService
+end
+module Dialog
+	BehaviorType : Object
+	ConversationDistance : Object
+	GoodbyeChoiceActive : Object
+	GoodbyeDialog : Object
+	InUse : Object
+	InitialPrompt : Object
+	Purpose : Object
+	Tone : Object
+	TriggerDistance : Object
+	TriggerOffset : Object
+	GetCurrentPlayers = Method(() -> Nil).new do ||
+	
+	end
+	DialogChoiceSelected = RBXScriptSignal((Instance, Instance) -> Nil).new do |player, dialogChoice|
+	
+	end
+end
+module DialogChoice
+	GoodbyeChoiceActive : Object
+	GoodbyeDialog : Object
+	ResponseDialog : Object
+	UserDialog : Object
+end
+module DraftsService
+end
+module Dragger
+	AxisRotate = Method((Enum::Axis) -> Nil).new do |axis|
+	
+	end
+	MouseDown = Method((Instance, Vector3, Array(Instance)) -> Nil).new do |mousePart, pointOnMousePart, parts|
+	
+	end
+	MouseMove = Method((Ray) -> Nil).new do |mouseRay|
+	
+	end
+	MouseUp = Method(() -> Nil).new do ||
+	
+	end
+end
+module DraggerService
+	AlignDraggedObjects : Object
+	AngleSnapEnabled : Object
+	AngleSnapIncrement : Object
+	AnimateHover : Object
+	CollisionsEnabled : Object
+	DraggerCoordinateSpace : Object
+	DraggerMovementMode : Object
+	GeometrySnapColor : Object
+	HoverAnimateFrequency : Object
+	HoverThickness : Object
+	JointsEnabled : Object
+	LinearSnapEnabled : Object
+	LinearSnapIncrement : Object
+	ShowHover : Object
+	ShowPivotIndicator : Object
+end
+module EulerRotationCurve
+	RotationOrder : Object
+	GetAnglesAtTime = Method((Float32) -> Nil).new do |time|
+	
+	end
+	GetRotationAtTime = Method((Float32) -> Nil).new do |time|
+	
+	end
+	X = Method(() -> Nil).new do ||
+	
+	end
+	Y = Method(() -> Nil).new do ||
+	
+	end
+	Z = Method(() -> Nil).new do ||
+	
+	end
+end
+module EventIngestService
+end
+module ExperienceAuthService
+end
+module ExperienceInviteOptions
+	InviteMessageId : Object
+	InviteUser : Object
+	LaunchData : Object
+	PromptMessage : Object
+end
+module Explosion
+	BlastPressure : Object
+	BlastRadius : Object
+	DestroyJointRadiusPercent : Object
+	ExplosionType : Object
+	Position : Object
+	TimeScale : Object
+	Visible : Object
+	Hit = RBXScriptSignal((BasePart, Float32) -> Nil).new do |part, distance|
+	
+	end
+end
+module FaceAnimatorService
+end
+module FaceControls
+end
+module FaceInstance
+	Face : Object
+end
+module Decal
+	Color3 : Object
+	LocalTransparencyModifier : Object
+	Shiny : Object
+	Specular : Object
+	Texture : Object
+	Transparency : Object
+	ZIndex : Object
+end
+module Texture
+	OffsetStudsU : Object
+	OffsetStudsV : Object
+	StudsPerTileU : Object
+	StudsPerTileV : Object
+end
+module FacialAnimationRecordingService
+end
+module FacialAnimationStreamingService
+end
+module FacialAnimationStreamingServiceStats
+end
+module FacialAnimationStreamingServiceV2
+end
+module Feature
+	FaceId : Object
+	InOut : Object
+	LeftRight : Object
+	TopBottom : Object
+end
+module Hole
+end
+module MotorFeature
+end
+module File
+	Size : Object
+	GetBinaryContents = Method(() -> Nil).new do ||
+	
+	end
+	GetTemporaryId = Method(() -> Nil).new do ||
+	
+	end
+end
+module Fire
+	Color : Object
+	Enabled : Object
+	Heat : Object
+	SecondaryColor : Object
+	Size : Object
+	TimeScale : Object
+end
+module FlagStandService
+end
+module FloatCurve
+	Length : Object
+	GetKeyAtIndex = Method((Int32) -> Nil).new do |index|
+	
+	end
+	GetKeyIndicesAtTime = Method((Float32) -> Nil).new do |time|
+	
+	end
+	GetKeys = Method(() -> Nil).new do ||
+	
+	end
+	GetValueAtTime = Method((Float32) -> Nil).new do |time|
+	
+	end
+	InsertKey = Method((FloatCurveKey) -> Nil).new do |key|
+	
+	end
+	RemoveKeyAtIndex = Method((Int32, Int32) -> Nil).new do |startingIndex, count|
+	
+	end
+	SetKeys = Method((Array) -> Nil).new do |keys|
+	
+	end
+end
+module FlyweightService
+end
+module CSGDictionaryService
+end
+module NonReplicatedCSGDictionaryService
+end
+module Folder
+end
+module ForceField
+	Visible : Object
+end
+module FriendService
+end
+module FunctionalTest
+	Description : Object
+	Error = Method((string) -> Nil).new do |message|
+	
+	end
+	Failed = Method((string) -> Nil).new do |message|
+	
+	end
+	Pass = Method((string) -> Nil).new do |message|
+	
+	end
+	Passed = Method((string) -> Nil).new do |message|
+	
+	end
+	Warn = Method((string) -> Nil).new do |message|
+	
+	end
+end
+module GamePassService
+	PlayerHasPass = Method((Player, Int64) -> Nil).new do |player, gamePassId|
+	
+	end
+end
+module GameSettings
+	VideoCaptureEnabled : Object
+end
+module GamepadService
+	GamepadCursorEnabled : Object
+	DisableGamepadCursor = Method(() -> Nil).new do ||
+	
+	end
+	EnableGamepadCursor = Method((Instance) -> Nil).new do |guiObject|
+	
+	end
+end
+module Geometry
+end
+module GetTextBoundsParams
+	Font : Object
+	Size : Object
+	Text : Object
+	Width : Object
+end
+module GlobalDataStore
+	OnUpdate = Method((string, Callback) -> Nil).new do |key, callback|
+	
+	end
+	GetAsync = Method((string) -> Nil).new do |key|
+	
+	end
+	IncrementAsync = Method((string, Int32, Array, DataStoreIncrementOptions) -> Nil).new do |key, delta, userIds, options|
+	
+	end
+	RemoveAsync = Method((string) -> Nil).new do |key|
+	
+	end
+	SetAsync = Method((string, Hash, Array, DataStoreSetOptions) -> Nil).new do |key, value, userIds, options|
+	
+	end
+	UpdateAsync = Method((string, Callback) -> Nil).new do |key, transformFunction|
+	
+	end
+end
+module DataStore
+	GetVersionAsync = Method((string, string) -> Nil).new do |key, version|
+	
+	end
+	ListKeysAsync = Method((string, Int32, string, Bool) -> Nil).new do |prefix, pageSize, cursor, excludeDeleted|
+	
+	end
+	ListVersionsAsync = Method((string, Enum::SortDirection, Int64, Int64, Int32) -> Nil).new do |key, sortDirection, minDate, maxDate, pageSize|
+	
+	end
+	RemoveVersionAsync = Method((string, string) -> Nil).new do |key, version|
+	
+	end
+end
+module OrderedDataStore
+	GetSortedAsync = Method((Bool, Int32, Hash, Hash) -> Nil).new do |ascending, pagesize, minValue, maxValue|
+	
+	end
+end
+module GoogleAnalyticsConfiguration
+end
+module GroupService
+	GetAlliesAsync = Method((Int64) -> Nil).new do |groupId|
+	
+	end
+	GetEnemiesAsync = Method((Int64) -> Nil).new do |groupId|
+	
+	end
+	GetGroupInfoAsync = Method((Int64) -> Nil).new do |groupId|
+	
+	end
+	GetGroupsAsync = Method((Int64) -> Nil).new do |userId|
+	
+	end
+end
+module GuiBase
+end
+module GuiBase2d
+	AbsolutePosition : Object
+	AbsoluteRotation : Object
+	AbsoluteSize : Object
+	AutoLocalize : Object
+	Localize : Object
+	RootLocalizationTable : Object
+	SelectionBehaviorDown : Object
+	SelectionBehaviorLeft : Object
+	SelectionBehaviorRight : Object
+	SelectionBehaviorUp : Object
+	SelectionGroup : Object
+	SelectionChanged = RBXScriptSignal((Bool, GuiObject, GuiObject) -> Nil).new do |amISelected, previousSelection, newSelection|
+	
+	end
+end
+module GuiObject
+	Active : Object
+	AnchorPoint : Object
+	AutomaticSize : Object
+	BackgroundColor : Object
+	BackgroundColor3 : Object
+	BackgroundTransparency : Object
+	BorderColor : Object
+	BorderColor3 : Object
+	BorderMode : Object
+	BorderSizePixel : Object
+	ClipsDescendants : Object
+	Draggable : Object
+	LayoutOrder : Object
+	NextSelectionDown : Object
+	NextSelectionLeft : Object
+	NextSelectionRight : Object
+	NextSelectionUp : Object
+	Position : Object
+	Rotation : Object
+	Selectable : Object
+	SelectionImageObject : Object
+	SelectionOrder : Object
+	Size : Object
+	SizeConstraint : Object
+	Transparency : Object
+	Visible : Object
+	ZIndex : Object
+	TweenPosition = Method((UDim2, Enum::EasingDirection, Enum::EasingStyle, Float32, Bool, Callback) -> Nil).new do |endPosition, easingDirection, easingStyle, time, override, callback|
+	
+	end
+	TweenSize = Method((UDim2, Enum::EasingDirection, Enum::EasingStyle, Float32, Bool, Callback) -> Nil).new do |endSize, easingDirection, easingStyle, time, override, callback|
+	
+	end
+	TweenSizeAndPosition = Method((UDim2, UDim2, Enum::EasingDirection, Enum::EasingStyle, Float32, Bool, Callback) -> Nil).new do |endSize, endPosition, easingDirection, easingStyle, time, override, callback|
+	
+	end
+	DragBegin = RBXScriptSignal((UDim2) -> Nil).new do |initialPosition|
+	
+	end
+	DragStopped = RBXScriptSignal((Int32, Int32) -> Nil).new do |x, y|
+	
+	end
+	InputBegan = RBXScriptSignal((InputObject) -> Nil).new do |input|
+	
+	end
+	InputChanged = RBXScriptSignal((InputObject) -> Nil).new do |input|
+	
+	end
+	InputEnded = RBXScriptSignal((InputObject) -> Nil).new do |input|
+	
+	end
+	MouseEnter = RBXScriptSignal((Int32, Int32) -> Nil).new do |x, y|
+	
+	end
+	MouseLeave = RBXScriptSignal((Int32, Int32) -> Nil).new do |x, y|
+	
+	end
+	MouseMoved = RBXScriptSignal((Int32, Int32) -> Nil).new do |x, y|
+	
+	end
+	MouseWheelBackward = RBXScriptSignal((Int32, Int32) -> Nil).new do |x, y|
+	
+	end
+	MouseWheelForward = RBXScriptSignal((Int32, Int32) -> Nil).new do |x, y|
+	
+	end
+	SelectionGained = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	SelectionLost = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	TouchLongPress = RBXScriptSignal((Array, Enum::UserInputState) -> Nil).new do |touchPositions, state|
+	
+	end
+	TouchPan = RBXScriptSignal((Array, Vector2, Vector2, Enum::UserInputState) -> Nil).new do |touchPositions, totalTranslation, velocity, state|
+	
+	end
+	TouchPinch = RBXScriptSignal((Array, Float32, Float32, Enum::UserInputState) -> Nil).new do |touchPositions, scale, velocity, state|
+	
+	end
+	TouchRotate = RBXScriptSignal((Array, Float32, Float32, Enum::UserInputState) -> Nil).new do |touchPositions, rotation, velocity, state|
+	
+	end
+	TouchSwipe = RBXScriptSignal((Enum::SwipeDirection, Int32) -> Nil).new do |swipeDirection, numberOfTouches|
+	
+	end
+	TouchTap = RBXScriptSignal((Array) -> Nil).new do |touchPositions|
+	
+	end
+end
+module CanvasGroup
+	GroupColor3 : Object
+	GroupTransparency : Object
+end
+module Frame
+	Style : Object
+end
+module GuiButton
+	AutoButtonColor : Object
+	Modal : Object
+	Selected : Object
+	Style : Object
+	Activated = RBXScriptSignal((InputObject, Int32) -> Nil).new do |inputObject, clickCount|
+	
+	end
+	MouseButton1Click = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	MouseButton1Down = RBXScriptSignal((Int32, Int32) -> Nil).new do |x, y|
+	
+	end
+	MouseButton1Up = RBXScriptSignal((Int32, Int32) -> Nil).new do |x, y|
+	
+	end
+	MouseButton2Click = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	MouseButton2Down = RBXScriptSignal((Int32, Int32) -> Nil).new do |x, y|
+	
+	end
+	MouseButton2Up = RBXScriptSignal((Int32, Int32) -> Nil).new do |x, y|
+	
+	end
+end
+module ImageButton
+	HoverImage : Object
+	Image : Object
+	ImageColor3 : Object
+	ImageRectOffset : Object
+	ImageRectSize : Object
+	ImageTransparency : Object
+	IsLoaded : Object
+	PressedImage : Object
+	ResampleMode : Object
+	ScaleType : Object
+	SliceCenter : Object
+	SliceScale : Object
+	TileSize : Object
+end
+module TextButton
+	ContentText : Object
+	Font : Object
+	FontFace : Object
+	FontSize : Object
+	LineHeight : Object
+	LocalizedText : Object
+	MaxVisibleGraphemes : Object
+	RichText : Object
+	Text : Object
+	TextBounds : Object
+	TextColor : Object
+	TextColor3 : Object
+	TextFits : Object
+	TextScaled : Object
+	TextSize : Object
+	TextStrokeColor3 : Object
+	TextStrokeTransparency : Object
+	TextTransparency : Object
+	TextTruncate : Object
+	TextWrap : Object
+	TextWrapped : Object
+	TextXAlignment : Object
+	TextYAlignment : Object
+end
+module GuiLabel
+end
+module ImageLabel
+	Image : Object
+	ImageColor3 : Object
+	ImageRectOffset : Object
+	ImageRectSize : Object
+	ImageTransparency : Object
+	IsLoaded : Object
+	ResampleMode : Object
+	ScaleType : Object
+	SliceCenter : Object
+	SliceScale : Object
+	TileSize : Object
+end
+module TextLabel
+	ContentText : Object
+	Font : Object
+	FontFace : Object
+	FontSize : Object
+	LineHeight : Object
+	LocalizedText : Object
+	MaxVisibleGraphemes : Object
+	RichText : Object
+	Text : Object
+	TextBounds : Object
+	TextColor : Object
+	TextColor3 : Object
+	TextFits : Object
+	TextScaled : Object
+	TextSize : Object
+	TextStrokeColor3 : Object
+	TextStrokeTransparency : Object
+	TextTransparency : Object
+	TextTruncate : Object
+	TextWrap : Object
+	TextWrapped : Object
+	TextXAlignment : Object
+	TextYAlignment : Object
+end
+module ScrollingFrame
+	AbsoluteCanvasSize : Object
+	AbsoluteWindowSize : Object
+	AutomaticCanvasSize : Object
+	BottomImage : Object
+	CanvasPosition : Object
+	CanvasSize : Object
+	ElasticBehavior : Object
+	HorizontalScrollBarInset : Object
+	MidImage : Object
+	ScrollBarImageColor3 : Object
+	ScrollBarImageTransparency : Object
+	ScrollBarThickness : Object
+	ScrollingDirection : Object
+	ScrollingEnabled : Object
+	TopImage : Object
+	VerticalScrollBarInset : Object
+	VerticalScrollBarPosition : Object
+end
+module TextBox
+	ClearTextOnFocus : Object
+	ContentText : Object
+	CursorPosition : Object
+	Font : Object
+	FontFace : Object
+	FontSize : Object
+	LineHeight : Object
+	MaxVisibleGraphemes : Object
+	MultiLine : Object
+	PlaceholderColor3 : Object
+	PlaceholderText : Object
+	RichText : Object
+	SelectionStart : Object
+	ShowNativeInput : Object
+	Text : Object
+	TextBounds : Object
+	TextColor : Object
+	TextColor3 : Object
+	TextEditable : Object
+	TextFits : Object
+	TextScaled : Object
+	TextSize : Object
+	TextStrokeColor3 : Object
+	TextStrokeTransparency : Object
+	TextTransparency : Object
+	TextTruncate : Object
+	TextWrap : Object
+	TextWrapped : Object
+	TextXAlignment : Object
+	TextYAlignment : Object
+	CaptureFocus = Method(() -> Nil).new do ||
+	
+	end
+	IsFocused = Method(() -> Nil).new do ||
+	
+	end
+	ReleaseFocus = Method((Bool) -> Nil).new do |submitted|
+	
+	end
+	FocusLost = RBXScriptSignal((Bool, InputObject) -> Nil).new do |enterPressed, inputThatCausedFocusLoss|
+	
+	end
+	Focused = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	ReturnPressedFromOnScreenKeyboard = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+end
+module VideoFrame
+	IsLoaded : Object
+	Looped : Object
+	Playing : Object
+	Resolution : Object
+	TimeLength : Object
+	TimePosition : Object
+	Video : Object
+	Volume : Object
+	Pause = Method(() -> Nil).new do ||
+	
+	end
+	Play = Method(() -> Nil).new do ||
+	
+	end
+	DidLoop = RBXScriptSignal((string) -> Nil).new do |video|
+	
+	end
+	Ended = RBXScriptSignal((string) -> Nil).new do |video|
+	
+	end
+	Loaded = RBXScriptSignal((string) -> Nil).new do |video|
+	
+	end
+	Paused = RBXScriptSignal((string) -> Nil).new do |video|
+	
+	end
+	Played = RBXScriptSignal((string) -> Nil).new do |video|
+	
+	end
+end
+module ViewportFrame
+	Ambient : Object
+	CurrentCamera : Object
+	ImageColor3 : Object
+	ImageTransparency : Object
+	LightColor : Object
+	LightDirection : Object
+end
+module LayerCollector
+	Enabled : Object
+	ResetOnSpawn : Object
+	ZIndexBehavior : Object
+	GetLayoutNodeTree = Method(() -> Nil).new do ||
+	
+	end
+end
+module BillboardGui
+	Active : Object
+	Adornee : Object
+	AlwaysOnTop : Object
+	Brightness : Object
+	ClipsDescendants : Object
+	CurrentDistance : Object
+	DistanceLowerLimit : Object
+	DistanceStep : Object
+	DistanceUpperLimit : Object
+	ExtentsOffset : Object
+	ExtentsOffsetWorldSpace : Object
+	LightInfluence : Object
+	MaxDistance : Object
+	PlayerToHideFrom : Object
+	Size : Object
+	SizeOffset : Object
+	StudsOffset : Object
+	StudsOffsetWorldSpace : Object
+end
+module PluginGui
+	Title : Object
+	BindToClose = Method((Callback) -> Nil).new do |function|
+	
+	end
+	GetRelativeMousePosition = Method(() -> Nil).new do ||
+	
+	end
+	PluginDragDropped = RBXScriptSignal((Hash) -> Nil).new do |dragData|
+	
+	end
+	PluginDragEntered = RBXScriptSignal((Hash) -> Nil).new do |dragData|
+	
+	end
+	PluginDragLeft = RBXScriptSignal((Hash) -> Nil).new do |dragData|
+	
+	end
+	PluginDragMoved = RBXScriptSignal((Hash) -> Nil).new do |dragData|
+	
+	end
+	WindowFocusReleased = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	WindowFocused = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+end
+module DockWidgetPluginGui
+	HostWidgetWasRestored : Object
+end
+module QWidgetPluginGui
+end
+module ScreenGui
+	ClipToDeviceSafeArea : Object
+	DisplayOrder : Object
+	IgnoreGuiInset : Object
+	SafeAreaCompatibility : Object
+	ScreenInsets : Object
+end
+module GuiMain
+end
+module SurfaceGuiBase
+	Active : Object
+	Adornee : Object
+	Face : Object
+end
+module AdGui
+	AdShape : Object
+	FallbackImage : Object
+	Status : Object
+end
+module SurfaceGui
+	AlwaysOnTop : Object
+	Brightness : Object
+	CanvasSize : Object
+	ClipsDescendants : Object
+	LightInfluence : Object
+	PixelsPerStud : Object
+	SizingMode : Object
+	ToolPunchThroughDistance : Object
+	ZOffset : Object
+end
+module TextureGuiExperimental
+	Size : Object
+	TemporaryId : Object
+end
+module GuiBase3d
+	Color : Object
+	Color3 : Object
+	Transparency : Object
+	Visible : Object
+end
+module FloorWire
+	CycleOffset : Object
+	From : Object
+	StudsBetweenTextures : Object
+	Texture : Object
+	TextureSize : Object
+	To : Object
+	Velocity : Object
+	WireRadius : Object
+end
+module InstanceAdornment
+	Adornee : Object
+end
+module SelectionBox
+	LineThickness : Object
+	SurfaceColor : Object
+	SurfaceColor3 : Object
+	SurfaceTransparency : Object
+end
+module PVAdornment
+	Adornee : Object
+end
+module HandleAdornment
+	AdornCullingMode : Object
+	AlwaysOnTop : Object
+	CFrame : Object
+	SizeRelativeOffset : Object
+	ZIndex : Object
+	MouseButton1Down = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	MouseButton1Up = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	MouseEnter = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	MouseLeave = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+end
+module BoxHandleAdornment
+	Size : Object
+end
+module ConeHandleAdornment
+	Height : Object
+	Radius : Object
+end
+module CylinderHandleAdornment
+	Angle : Object
+	Height : Object
+	InnerRadius : Object
+	Radius : Object
+end
+module ImageHandleAdornment
+	Image : Object
+	Size : Object
+end
+module LineHandleAdornment
+	Length : Object
+	Thickness : Object
+end
+module SphereHandleAdornment
+	Radius : Object
+end
+module WireframeHandleAdornment
+	Scale : Object
+	AddLine = Method((Vector3, Vector3) -> Nil).new do |from, to|
+	
+	end
+	AddLines = Method((Array) -> Nil).new do |points|
+	
+	end
+	AddPath = Method((Array, Bool) -> Nil).new do |points, loop|
+	
+	end
+	Clear = Method(() -> Nil).new do ||
+	
+	end
+end
+module ParabolaAdornment
+end
+module SelectionSphere
+	SurfaceColor : Object
+	SurfaceColor3 : Object
+	SurfaceTransparency : Object
+end
+module PartAdornment
+	Adornee : Object
+end
+module HandlesBase
+end
+module ArcHandles
+	Axes : Object
+	MouseButton1Down = RBXScriptSignal((Enum::Axis) -> Nil).new do |axis|
+	
+	end
+	MouseButton1Up = RBXScriptSignal((Enum::Axis) -> Nil).new do |axis|
+	
+	end
+	MouseDrag = RBXScriptSignal((Enum::Axis, Float32, Float32) -> Nil).new do |axis, relativeAngle, deltaRadius|
+	
+	end
+	MouseEnter = RBXScriptSignal((Enum::Axis) -> Nil).new do |axis|
+	
+	end
+	MouseLeave = RBXScriptSignal((Enum::Axis) -> Nil).new do |axis|
+	
+	end
+end
+module Handles
+	Faces : Object
+	Style : Object
+	MouseButton1Down = RBXScriptSignal((Enum::NormalId) -> Nil).new do |face|
+	
+	end
+	MouseButton1Up = RBXScriptSignal((Enum::NormalId) -> Nil).new do |face|
+	
+	end
+	MouseDrag = RBXScriptSignal((Enum::NormalId, Float32) -> Nil).new do |face, distance|
+	
+	end
+	MouseEnter = RBXScriptSignal((Enum::NormalId) -> Nil).new do |face|
+	
+	end
+	MouseLeave = RBXScriptSignal((Enum::NormalId) -> Nil).new do |face|
+	
+	end
+end
+module SurfaceSelection
+	TargetSurface : Object
+end
+module SelectionLasso
+	Humanoid : Object
+end
+module SelectionPartLasso
+	Part : Object
+end
+module SelectionPointLasso
+	Point : Object
+end
+module GuiService
+	AutoSelectGuiEnabled : Object
+	CoreGuiNavigationEnabled : Object
+	GuiNavigationEnabled : Object
+	IsModalDialog : Object
+	IsWindows : Object
+	MenuIsOpen : Object
+	SelectedObject : Object
+	TouchControlsEnabled : Object
+	AddSelectionParent = Method((string, Instance) -> Nil).new do |selectionName, selectionParent|
+	
+	end
+	AddSelectionTuple = Method((string, Array) -> Nil).new do |selectionName, selections|
+	
+	end
+	CloseInspectMenu = Method(() -> Nil).new do ||
+	
+	end
+	GetEmotesMenuOpen = Method(() -> Nil).new do ||
+	
+	end
+	GetGameplayPausedNotificationEnabled = Method(() -> Nil).new do ||
+	
+	end
+	GetGuiInset = Method(() -> Nil).new do ||
+	
+	end
+	GetInspectMenuEnabled = Method(() -> Nil).new do ||
+	
+	end
+	InspectPlayerFromHumanoidDescription = Method((Instance, string) -> Nil).new do |humanoidDescription, name|
+	
+	end
+	InspectPlayerFromUserId = Method((Int64) -> Nil).new do |userId|
+	
+	end
+	IsTenFootInterface = Method(() -> Nil).new do ||
+	
+	end
+	RemoveSelectionGroup = Method((string) -> Nil).new do |selectionName|
+	
+	end
+	Select = Method((Instance) -> Nil).new do |selectionParent|
+	
+	end
+	SetEmotesMenuOpen = Method((Bool) -> Nil).new do |isOpen|
+	
+	end
+	SetGameplayPausedNotificationEnabled = Method((Bool) -> Nil).new do |enabled|
+	
+	end
+	SetInspectMenuEnabled = Method((Bool) -> Nil).new do |enabled|
+	
+	end
+	MenuClosed = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	MenuOpened = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+end
+module GuidRegistryService
+end
+module HapticService
+	GetMotor = Method((Enum::UserInputType, Enum::VibrationMotor) -> Nil).new do |inputType, vibrationMotor|
+	
+	end
+	IsMotorSupported = Method((Enum::UserInputType, Enum::VibrationMotor) -> Nil).new do |inputType, vibrationMotor|
+	
+	end
+	IsVibrationSupported = Method((Enum::UserInputType) -> Nil).new do |inputType|
+	
+	end
+	SetMotor = Method((Enum::UserInputType, Enum::VibrationMotor, Array) -> Nil).new do |inputType, vibrationMotor, vibrationValues|
+	
+	end
+end
+module HeightmapImporterService
+end
+module HiddenSurfaceRemovalAsset
+end
+module Highlight
+	Adornee : Object
+	DepthMode : Object
+	Enabled : Object
+	FillColor : Object
+	FillTransparency : Object
+	OutlineColor : Object
+	OutlineTransparency : Object
+end
+module Hopper
+end
+module HttpRbxApiService
+	RequestLimitedAsync = Method((Hash, Enum::ThrottlingPriority, Enum::HttpContentType, Enum::HttpRequestType) -> Nil).new do |requestOptions, priority, content_type, httpRequestType|
+	
+	end
+end
+module HttpRequest
+end
+module HttpService
+	GenerateGUID = Method((Bool) -> Nil).new do |wrapInCurlyBraces|
+	
+	end
+	JSONDecode = Method((string) -> Nil).new do |input|
+	
+	end
+	JSONEncode = Method((Hash) -> Nil).new do |input|
+	
+	end
+	UrlEncode = Method((string) -> Nil).new do |input|
+	
+	end
+	GetAsync = Method((string, Bool, Hash) -> Nil).new do |url, nocache, headers|
+	
+	end
+	PostAsync = Method((string, string, Enum::HttpContentType, Bool, Hash) -> Nil).new do |url, data, content_type, compress, headers|
+	
+	end
+	RequestAsync = Method((Hash) -> Nil).new do |requestOptions|
+	
+	end
+end
+module Humanoid
+	AutoJumpEnabled : Object
+	AutoRotate : Object
+	AutomaticScalingEnabled : Object
+	BreakJointsOnDeath : Object
+	CameraOffset : Object
+	CollisionType : Object
+	DisplayDistanceType : Object
+	DisplayName : Object
+	EvaluateStateMachine : Object
+	FloorMaterial : Object
+	Health : Object
+	HealthDisplayDistance : Object
+	HealthDisplayType : Object
+	HipHeight : Object
+	Jump : Object
+	JumpHeight : Object
+	JumpPower : Object
+	LeftLeg : Object
+	MaxHealth : Object
+	MaxSlopeAngle : Object
+	MoveDirection : Object
+	NameDisplayDistance : Object
+	NameOcclusion : Object
+	PlatformStand : Object
+	RequiresNeck : Object
+	RigType : Object
+	RightLeg : Object
+	RootPart : Object
+	SeatPart : Object
+	Sit : Object
+	TargetPoint : Object
+	Torso : Object
+	UseJumpPower : Object
+	WalkSpeed : Object
+	WalkToPart : Object
+	WalkToPoint : Object
+	AddAccessory = Method((Instance) -> Nil).new do |accessory|
+	
+	end
+	AddCustomStatus = Method((string) -> Nil).new do |status|
+	
+	end
+	AddStatus = Method((Enum::Status) -> Nil).new do |status|
+	
+	end
+	BuildRigFromAttachments = Method(() -> Nil).new do ||
+	
+	end
+	ChangeState = Method((Enum::HumanoidStateType) -> Nil).new do |state|
+	
+	end
+	EquipTool = Method((Instance) -> Nil).new do |tool|
+	
+	end
+	GetAccessories = Method(() -> Nil).new do ||
+	
+	end
+	GetAppliedDescription = Method(() -> Nil).new do ||
+	
+	end
+	GetBodyPartR15 = Method((Instance) -> Nil).new do |part|
+	
+	end
+	GetLimb = Method((Instance) -> Nil).new do |part|
+	
+	end
+	GetPlayingAnimationTracks = Method(() -> Nil).new do ||
+	
+	end
+	GetState = Method(() -> Nil).new do ||
+	
+	end
+	GetStateEnabled = Method((Enum::HumanoidStateType) -> Nil).new do |state|
+	
+	end
+	GetStatuses = Method(() -> Nil).new do ||
+	
+	end
+	HasCustomStatus = Method((string) -> Nil).new do |status|
+	
+	end
+	HasStatus = Method((Enum::Status) -> Nil).new do |status|
+	
+	end
+	LoadAnimation = Method((Animation) -> Nil).new do |animation|
+	
+	end
+	Move = Method((Vector3, Bool) -> Nil).new do |moveDirection, relativeToCamera|
+	
+	end
+	MoveTo = Method((Vector3, Instance) -> Nil).new do |location, part|
+	
+	end
+	RemoveAccessories = Method(() -> Nil).new do ||
+	
+	end
+	RemoveCustomStatus = Method((string) -> Nil).new do |status|
+	
+	end
+	RemoveStatus = Method((Enum::Status) -> Nil).new do |status|
+	
+	end
+	ReplaceBodyPartR15 = Method((Enum::BodyPartR15, BasePart) -> Nil).new do |bodyPart, part|
+	
+	end
+	SetStateEnabled = Method((Enum::HumanoidStateType, Bool) -> Nil).new do |state, enabled|
+	
+	end
+	TakeDamage = Method((Float32) -> Nil).new do |amount|
+	
+	end
+	UnequipTools = Method(() -> Nil).new do ||
+	
+	end
+	ApplyDescription = Method((HumanoidDescription, Enum::AssetTypeVerification) -> Nil).new do |humanoidDescription, assetTypeVerification|
+	
+	end
+	ApplyDescriptionReset = Method((HumanoidDescription, Enum::AssetTypeVerification) -> Nil).new do |humanoidDescription, assetTypeVerification|
+	
+	end
+	PlayEmote = Method((string) -> Nil).new do |emoteName|
+	
+	end
+	AnimationPlayed = RBXScriptSignal((AnimationTrack) -> Nil).new do |animationTrack|
+	
+	end
+	Climbing = RBXScriptSignal((Float32) -> Nil).new do |speed|
+	
+	end
+	CustomStatusAdded = RBXScriptSignal((string) -> Nil).new do |status|
+	
+	end
+	CustomStatusRemoved = RBXScriptSignal((string) -> Nil).new do |status|
+	
+	end
+	Died = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	FallingDown = RBXScriptSignal((Bool) -> Nil).new do |active|
+	
+	end
+	FreeFalling = RBXScriptSignal((Bool) -> Nil).new do |active|
+	
+	end
+	GettingUp = RBXScriptSignal((Bool) -> Nil).new do |active|
+	
+	end
+	HealthChanged = RBXScriptSignal((Float32) -> Nil).new do |health|
+	
+	end
+	Jumping = RBXScriptSignal((Bool) -> Nil).new do |active|
+	
+	end
+	MoveToFinished = RBXScriptSignal((Bool) -> Nil).new do |reached|
+	
+	end
+	PlatformStanding = RBXScriptSignal((Bool) -> Nil).new do |active|
+	
+	end
+	Ragdoll = RBXScriptSignal((Bool) -> Nil).new do |active|
+	
+	end
+	Running = RBXScriptSignal((Float32) -> Nil).new do |speed|
+	
+	end
+	Seated = RBXScriptSignal((Bool, BasePart) -> Nil).new do |active, currentSeatPart|
+	
+	end
+	StateChanged = RBXScriptSignal((Enum::HumanoidStateType, Enum::HumanoidStateType) -> Nil).new do |old, new|
+	
+	end
+	StateEnabledChanged = RBXScriptSignal((Enum::HumanoidStateType, Bool) -> Nil).new do |state, isEnabled|
+	
+	end
+	StatusAdded = RBXScriptSignal((Enum::Status) -> Nil).new do |status|
+	
+	end
+	StatusRemoved = RBXScriptSignal((Enum::Status) -> Nil).new do |status|
+	
+	end
+	Strafing = RBXScriptSignal((Bool) -> Nil).new do |active|
+	
+	end
+	Swimming = RBXScriptSignal((Float32) -> Nil).new do |speed|
+	
+	end
+	Touched = RBXScriptSignal((BasePart, BasePart) -> Nil).new do |touchingPart, humanoidPart|
+	
+	end
+end
+module HumanoidDescription
+	BackAccessory : Object
+	BodyTypeScale : Object
+	ClimbAnimation : Object
+	DepthScale : Object
+	Face : Object
+	FaceAccessory : Object
+	FallAnimation : Object
+	FrontAccessory : Object
+	GraphicTShirt : Object
+	HairAccessory : Object
+	HatAccessory : Object
+	Head : Object
+	HeadColor : Object
+	HeadScale : Object
+	HeightScale : Object
+	IdleAnimation : Object
+	JumpAnimation : Object
+	LeftArm : Object
+	LeftArmColor : Object
+	LeftLeg : Object
+	LeftLegColor : Object
+	MoodAnimation : Object
+	NeckAccessory : Object
+	Pants : Object
+	ProportionScale : Object
+	RightArm : Object
+	RightArmColor : Object
+	RightLeg : Object
+	RightLegColor : Object
+	RunAnimation : Object
+	Shirt : Object
+	ShouldersAccessory : Object
+	SwimAnimation : Object
+	Torso : Object
+	TorsoColor : Object
+	WaistAccessory : Object
+	WalkAnimation : Object
+	WidthScale : Object
+	AddEmote = Method((string, Int64) -> Nil).new do |name, assetId|
+	
+	end
+	GetAccessories = Method((Bool) -> Nil).new do |includeRigidAccessories|
+	
+	end
+	GetEmotes = Method(() -> Nil).new do ||
+	
+	end
+	GetEquippedEmotes = Method(() -> Nil).new do ||
+	
+	end
+	RemoveEmote = Method((string) -> Nil).new do |name|
+	
+	end
+	SetAccessories = Method((Array, Bool) -> Nil).new do |accessories, includeRigidAccessories|
+	
+	end
+	SetEmotes = Method((Hash) -> Nil).new do |emotes|
+	
+	end
+	SetEquippedEmotes = Method((Array) -> Nil).new do |equippedEmotes|
+	
+	end
+	EmotesChanged = RBXScriptSignal((Hash) -> Nil).new do |newEmotes|
+	
+	end
+	EquippedEmotesChanged = RBXScriptSignal((Array) -> Nil).new do |newEquippedEmotes|
+	
+	end
+end
+module IKControl
+	ChainRoot : Object
+	Enabled : Object
+	EndEffector : Object
+	EndEffectorOffset : Object
+	Offset : Object
+	Pole : Object
+	Priority : Object
+	SmoothTime : Object
+	Target : Object
+	Type : Object
+	Weight : Object
+	GetChainCount = Method(() -> Nil).new do ||
+	
+	end
+	GetChainLength = Method(() -> Nil).new do ||
+	
+	end
+	GetNodeLocalCFrame = Method((Int32) -> Nil).new do |index|
+	
+	end
+	GetNodeWorldCFrame = Method((Int32) -> Nil).new do |index|
+	
+	end
+	GetRawFinalTarget = Method(() -> Nil).new do ||
+	
+	end
+	GetSmoothedFinalTarget = Method(() -> Nil).new do ||
+	
+	end
+end
+module ILegacyStudioBridge
+end
+module LegacyStudioBridge
+end
+module IXPService
+end
+module ImageDataExperimental
+	Size : Object
+	TemporaryId : Object
+	Clear = Method(() -> Nil).new do ||
+	
+	end
+	DrawCircle = Method((Vector2, Int32, Color3, Float32) -> Nil).new do |center, radius, color, alpha|
+	
+	end
+	Resize = Method((Vector2) -> Nil).new do |newSize|
+	
+	end
+	Rotate = Method((Float32, Bool) -> Nil).new do |degrees, resizeCanvas|
+	
+	end
+	PopulateFromImageAsync = Method((String) -> Nil).new do |textureId|
+	
+	end
+end
+module IncrementalPatchBuilder
+	AddPathsToBundle : Object
+	BuildDebouncePeriod : Object
+	HighCompression : Object
+	SerializePatch : Object
+	ZstdCompression : Object
+end
+module InputObject
+	Delta : Object
+	KeyCode : Object
+	Position : Object
+	UserInputState : Object
+	UserInputType : Object
+	IsModifierKeyDown = Method((Enum::ModifierKey) -> Nil).new do |modifierKey|
+	
+	end
+end
+module InsertService
+	AllowInsertFreeModels : Object
+	ApproveAssetId = Method((Int64) -> Nil).new do |assetId|
+	
+	end
+	ApproveAssetVersionId = Method((Int64) -> Nil).new do |assetVersionId|
+	
+	end
+	Insert = Method((Instance) -> Nil).new do |instance|
+	
+	end
+	GetBaseCategories = Method(() -> Nil).new do ||
+	
+	end
+	GetBaseSets = Method(() -> Nil).new do ||
+	
+	end
+	GetCollection = Method((Int64) -> Nil).new do |categoryId|
+	
+	end
+	GetFreeDecals = Method((string, Int32) -> Nil).new do |searchText, pageNum|
+	
+	end
+	GetFreeModels = Method((string, Int32) -> Nil).new do |searchText, pageNum|
+	
+	end
+	GetLatestAssetVersionAsync = Method((Int64) -> Nil).new do |assetId|
+	
+	end
+	GetUserCategories = Method((Int64) -> Nil).new do |userId|
+	
+	end
+	GetUserSets = Method((Int64) -> Nil).new do |userId|
+	
+	end
+	LoadAsset = Method((Int64) -> Nil).new do |assetId|
+	
+	end
+	LoadAssetVersion = Method((Int64) -> Nil).new do |assetVersionId|
+	
+	end
+	InternalDelete = RBXScriptSignal((Instance) -> Nil).new do |instance|
+	
+	end
+end
+module InternalSyncItem
+end
+module InternalSyncService
+end
+module JointInstance
+	Active : Object
+	C0 : Object
+	C1 : Object
+	Enabled : Object
+	Part0 : Object
+	Part1 : Object
+end
+module DynamicRotate
+	BaseAngle : Object
+end
+module RotateP
+end
+module RotateV
+end
+module Glue
+	F0 : Object
+	F1 : Object
+	F2 : Object
+	F3 : Object
+end
+module ManualSurfaceJointInstance
+end
+module ManualGlue
+end
+module ManualWeld
+end
+module Motor
+	CurrentAngle : Object
+	DesiredAngle : Object
+	MaxVelocity : Object
+	SetDesiredAngle = Method((Float32) -> Nil).new do |value|
+	
+	end
+end
+module Motor6D
+	Transform : Object
+end
+module Rotate
+end
+module Snap
+end
+module VelocityMotor
+	CurrentAngle : Object
+	DesiredAngle : Object
+	Hole : Object
+	MaxVelocity : Object
+end
+module Weld
+end
+module JointsService
+	ClearJoinAfterMoveJoints = Method(() -> Nil).new do ||
+	
+	end
+	CreateJoinAfterMoveJoints = Method(() -> Nil).new do ||
+	
+	end
+	SetJoinAfterMoveInstance = Method((Instance) -> Nil).new do |joinInstance|
+	
+	end
+	SetJoinAfterMoveTarget = Method((Instance) -> Nil).new do |joinTarget|
+	
+	end
+	ShowPermissibleJoints = Method(() -> Nil).new do ||
+	
+	end
+end
+module KeyboardService
+end
+module Keyframe
+	Time : Object
+	AddMarker = Method((Instance) -> Nil).new do |marker|
+	
+	end
+	AddPose = Method((Instance) -> Nil).new do |pose|
+	
+	end
+	GetMarkers = Method(() -> Nil).new do ||
+	
+	end
+	GetPoses = Method(() -> Nil).new do ||
+	
+	end
+	RemoveMarker = Method((Instance) -> Nil).new do |marker|
+	
+	end
+	RemovePose = Method((Instance) -> Nil).new do |pose|
+	
+	end
+end
+module KeyframeMarker
+	Value : Object
+end
+module KeyframeSequenceProvider
+	RegisterActiveKeyframeSequence = Method((Instance) -> Nil).new do |keyframeSequence|
+	
+	end
+	RegisterKeyframeSequence = Method((Instance) -> Nil).new do |keyframeSequence|
+	
+	end
+	GetAnimations = Method((Int64) -> Nil).new do |userId|
+	
+	end
+	GetKeyframeSequenceAsync = Method((String) -> Nil).new do |assetId|
+	
+	end
+end
+module LSPFileSyncService
+end
+module LanguageService
+end
+module Light
+	Brightness : Object
+	Color : Object
+	Enabled : Object
+	Shadows : Object
+end
+module PointLight
+	Range : Object
+end
+module SpotLight
+	Angle : Object
+	Face : Object
+	Range : Object
+end
+module SurfaceLight
+	Angle : Object
+	Face : Object
+	Range : Object
+end
+module Lighting
+	Ambient : Object
+	Brightness : Object
+	ClockTime : Object
+	ColorShift_Bottom : Object
+	ColorShift_Top : Object
+	EnvironmentDiffuseScale : Object
+	EnvironmentSpecularScale : Object
+	ExposureCompensation : Object
+	FogColor : Object
+	FogEnd : Object
+	FogStart : Object
+	GeographicLatitude : Object
+	GlobalShadows : Object
+	OutdoorAmbient : Object
+	Outlines : Object
+	ShadowColor : Object
+	ShadowSoftness : Object
+	TimeOfDay : Object
+	GetMinutesAfterMidnight = Method(() -> Nil).new do ||
+	
+	end
+	GetMoonDirection = Method(() -> Nil).new do ||
+	
+	end
+	GetMoonPhase = Method(() -> Nil).new do ||
+	
+	end
+	GetSunDirection = Method(() -> Nil).new do ||
+	
+	end
+	SetMinutesAfterMidnight = Method((Float64) -> Nil).new do |minutes|
+	
+	end
+	LightingChanged = RBXScriptSignal((Bool) -> Nil).new do |skyChanged|
+	
+	end
+end
+module LiveScriptingService
+end
+module LocalStorageService
+end
+module AppStorageService
+end
+module UserStorageService
+end
+module LocalizationService
+	RobloxLocaleId : Object
+	SystemLocaleId : Object
+	GetCorescriptLocalizations = Method(() -> Nil).new do ||
+	
+	end
+	GetTableEntries = Method((Instance) -> Nil).new do |instance|
+	
+	end
+	GetTranslatorForPlayer = Method((Instance) -> Nil).new do |player|
+	
+	end
+	GetCountryRegionForPlayerAsync = Method((Instance) -> Nil).new do |player|
+	
+	end
+	GetTranslatorForLocaleAsync = Method((string) -> Nil).new do |locale|
+	
+	end
+	GetTranslatorForPlayerAsync = Method((Instance) -> Nil).new do |player|
+	
+	end
+end
+module LocalizationTable
+	DevelopmentLanguage : Object
+	Root : Object
+	SourceLocaleId : Object
+	GetContents = Method(() -> Nil).new do ||
+	
+	end
+	GetEntries = Method(() -> Nil).new do ||
+	
+	end
+	GetString = Method((string, string) -> Nil).new do |targetLocaleId, key|
+	
+	end
+	GetTranslator = Method((string) -> Nil).new do |localeId|
+	
+	end
+	RemoveEntry = Method((string, string, string) -> Nil).new do |key, source, context|
+	
+	end
+	RemoveEntryValue = Method((string, string, string, string) -> Nil).new do |key, source, context, localeId|
+	
+	end
+	RemoveKey = Method((string) -> Nil).new do |key|
+	
+	end
+	RemoveTargetLocale = Method((string) -> Nil).new do |localeId|
+	
+	end
+	SetContents = Method((string) -> Nil).new do |contents|
+	
+	end
+	SetEntries = Method((Hash) -> Nil).new do |entries|
+	
+	end
+	SetEntry = Method((string, string, string) -> Nil).new do |key, targetLocaleId, text|
+	
+	end
+	SetEntryContext = Method((string, string, string, string) -> Nil).new do |key, source, context, newContext|
+	
+	end
+	SetEntryExample = Method((string, string, string, string) -> Nil).new do |key, source, context, example|
+	
+	end
+	SetEntryKey = Method((string, string, string, string) -> Nil).new do |key, source, context, newKey|
+	
+	end
+	SetEntrySource = Method((string, string, string, string) -> Nil).new do |key, source, context, newSource|
+	
+	end
+	SetEntryValue = Method((string, string, string, string, string) -> Nil).new do |key, source, context, localeId, text|
+	
+	end
+end
+module CloudLocalizationTable
+end
+module LodDataEntity
+	EntityLodEnabled : Object
+end
+module LodDataService
+end
+module LogService
+	GetLogHistory = Method(() -> Nil).new do ||
+	
+	end
+	MessageOut = RBXScriptSignal((string, Enum::MessageType) -> Nil).new do |message, messageType|
+	
+	end
+end
+module LoginService
+end
+module LuaSettings
+end
+module LuaSourceContainer
+	LockGrantedOrNot = RBXScriptSignal((Bool) -> Nil).new do |granted|
+	
+	end
+	LostLock = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	RequestLock = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+end
+module BaseScript
+	Disabled : Object
+	Enabled : Object
+	LinkedSource : Object
+	RunContext : Object
+end
+module CoreScript
+end
+module Script
+end
+module LocalScript
+end
+module ModuleScript
+	LinkedSource : Object
+end
+module LuaWebService
+end
+module LuauScriptAnalyzerService
+end
+module MarkerCurve
+	Length : Object
+	GetMarkerAtIndex = Method((Int32) -> Nil).new do |index|
+	
+	end
+	GetMarkers = Method(() -> Nil).new do ||
+	
+	end
+	InsertMarkerAtTime = Method((Float32, string) -> Nil).new do |time, marker|
+	
+	end
+	RemoveMarkerAtIndex = Method((Int32, Int32) -> Nil).new do |startingIndex, count|
+	
+	end
+end
+module MarketplaceService
+	PromptBundlePurchase = Method((Instance, Int64) -> Nil).new do |player, bundleId|
+	
+	end
+	PromptGamePassPurchase = Method((Instance, Int64) -> Nil).new do |player, gamePassId|
+	
+	end
+	PromptPremiumPurchase = Method((Instance) -> Nil).new do |player|
+	
+	end
+	PromptProductPurchase = Method((Instance, Int64, Bool, Enum::CurrencyType) -> Nil).new do |player, productId, equipIfPurchased, currencyType|
+	
+	end
+	PromptPurchase = Method((Instance, Int64, Bool, Enum::CurrencyType) -> Nil).new do |player, assetId, equipIfPurchased, currencyType|
+	
+	end
+	PromptSubscriptionCancellation = Method((Instance, Int64) -> Nil).new do |player, subscriptionId|
+	
+	end
+	PromptSubscriptionPurchase = Method((Instance, Int64) -> Nil).new do |player, subscriptionId|
+	
+	end
+	GetDeveloperProductsAsync = Method(() -> Nil).new do ||
+	
+	end
+	GetProductInfo = Method((Int64, Enum::InfoType) -> Nil).new do |assetId, infoType|
+	
+	end
+	IsPlayerSubscribed = Method((Instance, Int64) -> Nil).new do |player, subscriptionId|
+	
+	end
+	PlayerOwnsAsset = Method((Instance, Int64) -> Nil).new do |player, assetId|
+	
+	end
+	PlayerOwnsBundle = Method((Player, Int64) -> Nil).new do |player, bundleId|
+	
+	end
+	UserOwnsGamePassAsync = Method((Int64, Int64) -> Nil).new do |userId, gamePassId|
+	
+	end
+	PromptBundlePurchaseFinished = RBXScriptSignal((Instance, Int64, Bool) -> Nil).new do |player, bundleId, wasPurchased|
+	
+	end
+	PromptGamePassPurchaseFinished = RBXScriptSignal((Instance, Int64, Bool) -> Nil).new do |player, gamePassId, wasPurchased|
+	
+	end
+	PromptPremiumPurchaseFinished = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	PromptProductPurchaseFinished = RBXScriptSignal((Int64, Int64, Bool) -> Nil).new do |userId, productId, isPurchased|
+	
+	end
+	PromptPurchaseFinished = RBXScriptSignal((Instance, Int64, Bool) -> Nil).new do |player, assetId, isPurchased|
+	
+	end
+	PromptSubscriptionCancellationFinished = RBXScriptSignal((Instance, Int64, Bool) -> Nil).new do |player, subscriptionId, wasCanceled|
+	
+	end
+	PromptSubscriptionPurchaseFinished = RBXScriptSignal((Instance, Int64, Bool) -> Nil).new do |player, subscriptionId, wasPurchased|
+	
+	end
+	ProcessReceipt = Callback(Hash -> Nil).new do |receiptInfo|
+	
+	end
+end
+module MaterialGenerationService
+end
+module MaterialGenerationSession
+end
+module MaterialService
+	GetBaseMaterialOverride = Method((Enum::Material) -> Nil).new do |material|
+	
+	end
+	GetMaterialVariant = Method((Enum::Material, string) -> Nil).new do |material, name|
+	
+	end
+	SetBaseMaterialOverride = Method((Enum::Material, string) -> Nil).new do |material, name|
+	
+	end
+end
+module MaterialVariant
+	CustomPhysicalProperties : Object
+	MaterialPattern : Object
+	StudsPerTile : Object
+end
+module MemStorageConnection
+	Disconnect = Method(() -> Nil).new do ||
+	
+	end
+end
+module MemStorageService
+end
+module MemoryStoreQueue
+	AddAsync = Method((Hash, Int64, Float64) -> Nil).new do |value, expiration, priority|
+	
+	end
+	ReadAsync = Method((Int32, Bool, Float64) -> Nil).new do |count, allOrNothing, waitTimeout|
+	
+	end
+	RemoveAsync = Method((string) -> Nil).new do |id|
+	
+	end
+end
+module MemoryStoreService
+	GetQueue = Method((string, Int32) -> Nil).new do |name, invisibilityTimeout|
+	
+	end
+	GetSortedMap = Method((string) -> Nil).new do |name|
+	
+	end
+end
+module MemoryStoreSortedMap
+	GetAsync = Method((string) -> Nil).new do |key|
+	
+	end
+	GetRangeAsync = Method((Enum::SortDirection, Int32, string, string) -> Nil).new do |direction, count, exclusiveLowerBound, exclusiveUpperBound|
+	
+	end
+	RemoveAsync = Method((string) -> Nil).new do |key|
+	
+	end
+	SetAsync = Method((string, Hash, Int64) -> Nil).new do |key, value, expiration|
+	
+	end
+	UpdateAsync = Method((string, Callback, Int64) -> Nil).new do |key, transformFunction, expiration|
+	
+	end
+end
+module MeshDataExperimental
+	Size : Object
+	PopulateFromMeshAsync = Method((String) -> Nil).new do |meshId|
+	
+	end
+end
+module Message
+	Text : Object
+end
+module Hint
+end
+module MessageBusConnection
+end
+module MessageBusService
+end
+module MessagingService
+	PublishAsync = Method((string, Hash) -> Nil).new do |topic, message|
+	
+	end
+	SubscribeAsync = Method((string, Callback) -> Nil).new do |topic, callback|
+	
+	end
+end
+module MetaBreakpoint
+end
+module MetaBreakpointContext
+end
+module MetaBreakpointManager
+end
+module Mouse
+	Hit : Object
+	Icon : Object
+	Origin : Object
+	Target : Object
+	TargetFilter : Object
+	TargetSurface : Object
+	UnitRay : Object
+	ViewSizeX : Object
+	ViewSizeY : Object
+	X : Object
+	Y : Object
+	Button1Down = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	Button1Up = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	Button2Down = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	Button2Up = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	Idle = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	KeyDown = RBXScriptSignal((string) -> Nil).new do |key|
+	
+	end
+	KeyUp = RBXScriptSignal((string) -> Nil).new do |key|
+	
+	end
+	Move = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	WheelBackward = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	WheelForward = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+end
+module PlayerMouse
+end
+module PluginMouse
+	DragEnter = RBXScriptSignal((Array(Instance)) -> Nil).new do |instances|
+	
+	end
+end
+module MouseService
+end
+module MultipleDocumentInterfaceInstance
+end
+module NetworkMarker
+	Received = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+end
+module NetworkPeer
+	SetOutgoingKBPSLimit = Method((Int32) -> Nil).new do |limit|
+	
+	end
+end
+module NetworkClient
+	ConnectionAccepted = RBXScriptSignal((string, Instance) -> Nil).new do |peer, replicator|
+	
+	end
+	ConnectionFailed = RBXScriptSignal((string, Int32, string) -> Nil).new do |peer, code, reason|
+	
+	end
+end
+module NetworkServer
+	EncryptStringForPlayerId = Method((string, Int64) -> Nil).new do |toEncrypt, playerId|
+	
+	end
+end
+module NetworkReplicator
+	GetPlayer = Method(() -> Nil).new do ||
+	
+	end
+end
+module ClientReplicator
+end
+module ServerReplicator
+end
+module NetworkSettings
+	EmulatedTotalMemoryInMB : Object
+	FreeMemoryMBytes : Object
+	HttpProxyEnabled : Object
+	HttpProxyURL : Object
+	IncomingReplicationLag : Object
+	PrintJoinSizeBreakdown : Object
+	PrintPhysicsErrors : Object
+	PrintStreamInstanceQuota : Object
+	RandomizeJoinInstanceOrder : Object
+	RenderStreamedRegions : Object
+	ShowActiveAnimationAsset : Object
+end
+module NoCollisionConstraint
+	Enabled : Object
+	Part0 : Object
+	Part1 : Object
+end
+module NotificationService
+	Roblox17sConnectionChanged = RBXScriptSignal((string, Enum::ConnectionState, string) -> Nil).new do |connectionName, connectionState, namespaceSequenceNumbers|
+	
+	end
+	Roblox17sEventReceived = RBXScriptSignal((Hash) -> Nil).new do |eventData|
+	
+	end
+end
+module PVInstance
+	GetPivot = Method(() -> Nil).new do ||
+	
+	end
+	PivotTo = Method((CFrame) -> Nil).new do |targetCFrame|
+	
+	end
+end
+module BasePart
+	Anchored : Object
+	AssemblyAngularVelocity : Object
+	AssemblyCenterOfMass : Object
+	AssemblyLinearVelocity : Object
+	AssemblyMass : Object
+	AssemblyRootPart : Object
+	BackParamA : Object
+	BackParamB : Object
+	BackSurface : Object
+	BackSurfaceInput : Object
+	BottomParamA : Object
+	BottomParamB : Object
+	BottomSurface : Object
+	BottomSurfaceInput : Object
+	BrickColor : Object
+	CFrame : Object
+	CanCollide : Object
+	CanQuery : Object
+	CanTouch : Object
+	CastShadow : Object
+	CenterOfMass : Object
+	CollisionGroup : Object
+	CollisionGroupId : Object
+	Color : Object
+	CurrentPhysicalProperties : Object
+	CustomPhysicalProperties : Object
+	Elasticity : Object
+	ExtentsCFrame : Object
+	ExtentsSize : Object
+	Friction : Object
+	FrontParamA : Object
+	FrontParamB : Object
+	FrontSurface : Object
+	FrontSurfaceInput : Object
+	LeftParamA : Object
+	LeftParamB : Object
+	LeftSurface : Object
+	LeftSurfaceInput : Object
+	LocalTransparencyModifier : Object
+	Locked : Object
+	Mass : Object
+	Massless : Object
+	Material : Object
+	MaterialVariant : Object
+	Orientation : Object
+	PivotOffset : Object
+	Position : Object
+	ReceiveAge : Object
+	Reflectance : Object
+	ResizeIncrement : Object
+	ResizeableFaces : Object
+	RightParamA : Object
+	RightParamB : Object
+	RightSurface : Object
+	RightSurfaceInput : Object
+	RootPriority : Object
+	RotVelocity : Object
+	Rotation : Object
+	Size : Object
+	SpecificGravity : Object
+	TopParamA : Object
+	TopParamB : Object
+	TopSurface : Object
+	TopSurfaceInput : Object
+	Transparency : Object
+	Velocity : Object
+	ApplyAngularImpulse = Method((Vector3) -> Nil).new do |impulse|
+	
+	end
+	ApplyImpulse = Method((Vector3) -> Nil).new do |impulse|
+	
+	end
+	ApplyImpulseAtPosition = Method((Vector3, Vector3) -> Nil).new do |impulse, position|
+	
+	end
+	BreakJoints = Method(() -> Nil).new do ||
+	
+	end
+	CanCollideWith = Method((BasePart) -> Nil).new do |part|
+	
+	end
+	CanSetNetworkOwnership = Method(() -> Nil).new do ||
+	
+	end
+	GetConnectedParts = Method((Bool) -> Nil).new do |recursive|
+	
+	end
+	GetJoints = Method(() -> Nil).new do ||
+	
+	end
+	GetMass = Method(() -> Nil).new do ||
+	
+	end
+	GetNetworkOwner = Method(() -> Nil).new do ||
+	
+	end
+	GetNetworkOwnershipAuto = Method(() -> Nil).new do ||
+	
+	end
+	GetRenderCFrame = Method(() -> Nil).new do ||
+	
+	end
+	GetRootPart = Method(() -> Nil).new do ||
+	
+	end
+	GetTouchingParts = Method(() -> Nil).new do ||
+	
+	end
+	GetVelocityAtPosition = Method((Vector3) -> Nil).new do |position|
+	
+	end
+	IsGrounded = Method(() -> Nil).new do ||
+	
+	end
+	MakeJoints = Method(() -> Nil).new do ||
+	
+	end
+	Resize = Method((Enum::NormalId, Int32) -> Nil).new do |normalId, deltaAmount|
+	
+	end
+	SetNetworkOwner = Method((Player) -> Nil).new do |playerInstance|
+	
+	end
+	SetNetworkOwnershipAuto = Method(() -> Nil).new do ||
+	
+	end
+	IntersectAsync = Method((Array(Instance), Enum::CollisionFidelity, Enum::RenderFidelity) -> Nil).new do |parts, collisionfidelity, renderFidelity|
+	
+	end
+	SubtractAsync = Method((Array(Instance), Enum::CollisionFidelity, Enum::RenderFidelity) -> Nil).new do |parts, collisionfidelity, renderFidelity|
+	
+	end
+	UnionAsync = Method((Array(Instance), Enum::CollisionFidelity, Enum::RenderFidelity) -> Nil).new do |parts, collisionfidelity, renderFidelity|
+	
+	end
+	subtractAsync2_INTERNAL = Method((Array(Instance), Enum::CollisionFidelity, Enum::RenderFidelity) -> Nil).new do |parts, collisionfidelity, renderFidelity|
+	
+	end
+	unionAsync2_INTERNAL = Method((Array(Instance), Enum::CollisionFidelity, Enum::RenderFidelity) -> Nil).new do |parts, collisionfidelity, renderFidelity|
+	
+	end
+	LocalSimulationTouched = RBXScriptSignal((BasePart) -> Nil).new do |part|
+	
+	end
+	OutfitChanged = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	StoppedTouching = RBXScriptSignal((BasePart) -> Nil).new do |otherPart|
+	
+	end
+	TouchEnded = RBXScriptSignal((BasePart) -> Nil).new do |otherPart|
+	
+	end
+	Touched = RBXScriptSignal((BasePart) -> Nil).new do |otherPart|
+	
+	end
+end
+module CornerWedgePart
+end
+module FormFactorPart
+	FormFactor : Object
+end
+module Part
+	Shape : Object
+end
+module FlagStand
+	TeamColor : Object
+	FlagCaptured = RBXScriptSignal((Instance) -> Nil).new do |player|
+	
+	end
+end
+module Platform
+	RemoteCreateMotor6D = RBXScriptSignal((Instance) -> Nil).new do |humanoid|
+	
+	end
+	RemoteDestroyMotor6D = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+end
+module Seat
+	Disabled : Object
+	Occupant : Object
+	Sit = Method((Instance) -> Nil).new do |humanoid|
+	
+	end
+	RemoteCreateSeatWeld = RBXScriptSignal((Instance) -> Nil).new do |humanoid|
+	
+	end
+	RemoteDestroySeatWeld = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+end
+module SkateboardPlatform
+	Controller : Object
+	ControllingHumanoid : Object
+	Steer : Object
+	StickyWheels : Object
+	Throttle : Object
+	ApplySpecificImpulse = Method((Vector3) -> Nil).new do |impulseWorld|
+	
+	end
+	Equipped = RBXScriptSignal((Instance, Instance) -> Nil).new do |humanoid, skateboardController|
+	
+	end
+	MoveStateChanged = RBXScriptSignal((Enum::MoveState, Enum::MoveState) -> Nil).new do |newState, oldState|
+	
+	end
+	RemoteCreateMotor6D = RBXScriptSignal((Instance) -> Nil).new do |humanoid|
+	
+	end
+	RemoteDestroyMotor6D = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	Unequipped = RBXScriptSignal((Instance) -> Nil).new do |humanoid|
+	
+	end
+end
+module SpawnLocation
+	AllowTeamChangeOnTouch : Object
+	Duration : Object
+	Enabled : Object
+	Neutral : Object
+	TeamColor : Object
+end
+module WedgePart
+end
+module Terrain
+	IsSmooth : Object
+	MaxExtents : Object
+	WaterColor : Object
+	WaterReflectance : Object
+	WaterTransparency : Object
+	WaterWaveSize : Object
+	WaterWaveSpeed : Object
+	AutowedgeCell = Method((Int32, Int32, Int32) -> Nil).new do |x, y, z|
+	
+	end
+	AutowedgeCells = Method((Region3int16) -> Nil).new do |region|
+	
+	end
+	CellCenterToWorld = Method((Int32, Int32, Int32) -> Nil).new do |x, y, z|
+	
+	end
+	CellCornerToWorld = Method((Int32, Int32, Int32) -> Nil).new do |x, y, z|
+	
+	end
+	Clear = Method(() -> Nil).new do ||
+	
+	end
+	CopyRegion = Method((Region3int16) -> Nil).new do |region|
+	
+	end
+	CountCells = Method(() -> Nil).new do ||
+	
+	end
+	FillBall = Method((Vector3, Float32, Enum::Material) -> Nil).new do |center, radius, material|
+	
+	end
+	FillBlock = Method((CFrame, Vector3, Enum::Material) -> Nil).new do |cframe, size, material|
+	
+	end
+	FillCylinder = Method((CFrame, Float32, Float32, Enum::Material) -> Nil).new do |cframe, height, radius, material|
+	
+	end
+	FillRegion = Method((Region3, Float32, Enum::Material) -> Nil).new do |region, resolution, material|
+	
+	end
+	FillWedge = Method((CFrame, Vector3, Enum::Material) -> Nil).new do |cframe, size, material|
+	
+	end
+	GetCell = Method((Int32, Int32, Int32) -> Nil).new do |x, y, z|
+	
+	end
+	GetMaterialColor = Method((Enum::Material) -> Nil).new do |material|
+	
+	end
+	GetWaterCell = Method((Int32, Int32, Int32) -> Nil).new do |x, y, z|
+	
+	end
+	PasteRegion = Method((TerrainRegion, Vector3int16, Bool) -> Nil).new do |region, corner, pasteEmptyCells|
+	
+	end
+	ReadVoxels = Method((Region3, Float32) -> Nil).new do |region, resolution|
+	
+	end
+	ReplaceMaterial = Method((Region3, Float32, Enum::Material, Enum::Material) -> Nil).new do |region, resolution, sourceMaterial, targetMaterial|
+	
+	end
+	SetCell = Method((Int32, Int32, Int32, Enum::CellMaterial, Enum::CellBlock, Enum::CellOrientation) -> Nil).new do |x, y, z, material, block, orientation|
+	
+	end
+	SetCells = Method((Region3int16, Enum::CellMaterial, Enum::CellBlock, Enum::CellOrientation) -> Nil).new do |region, material, block, orientation|
+	
+	end
+	SetMaterialColor = Method((Enum::Material, Color3) -> Nil).new do |material, value|
+	
+	end
+	SetWaterCell = Method((Int32, Int32, Int32, Enum::WaterForce, Enum::WaterDirection) -> Nil).new do |x, y, z, force, direction|
+	
+	end
+	WorldToCell = Method((Vector3) -> Nil).new do |position|
+	
+	end
+	WorldToCellPreferEmpty = Method((Vector3) -> Nil).new do |position|
+	
+	end
+	WorldToCellPreferSolid = Method((Vector3) -> Nil).new do |position|
+	
+	end
+	WriteVoxels = Method((Region3, Float32, Array, Array) -> Nil).new do |region, resolution, materials, occupancy|
+	
+	end
+end
+module TriangleMeshPart
+	CollisionFidelity : Object
+	MeshSize : Object
+end
+module MeshPart
+	DoubleSided : Object
+	HasJointOffset : Object
+	HasSkinnedMesh : Object
+	JointOffset : Object
+	MeshId : Object
+	RenderFidelity : Object
+	TextureID : Object
+	ApplyMesh = Method((Instance) -> Nil).new do |meshPart|
+	
+	end
+end
+module PartOperation
+	RenderFidelity : Object
+	SmoothingAngle : Object
+	TriangleCount : Object
+	UsePartColor : Object
+end
+module IntersectOperation
+end
+module NegateOperation
+end
+module UnionOperation
+end
+module TrussPart
+	Style : Object
+end
+module VehicleSeat
+	AreHingesDetected : Object
+	Disabled : Object
+	HeadsUpDisplay : Object
+	MaxSpeed : Object
+	Occupant : Object
+	Steer : Object
+	SteerFloat : Object
+	Throttle : Object
+	ThrottleFloat : Object
+	Torque : Object
+	TurnSpeed : Object
+	Sit = Method((Instance) -> Nil).new do |humanoid|
+	
+	end
+	RemoteCreateSeatWeld = RBXScriptSignal((Instance) -> Nil).new do |humanoid|
+	
+	end
+	RemoteDestroySeatWeld = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+end
+module Model
+	ModelStreamingMode : Object
+	PrimaryPart : Object
+	WorldPivot : Object
+	AddPersistentPlayer = Method((Player) -> Nil).new do |playerInstance|
+	
+	end
+	BreakJoints = Method(() -> Nil).new do ||
+	
+	end
+	GetBoundingBox = Method(() -> Nil).new do ||
+	
+	end
+	GetExtentsSize = Method(() -> Nil).new do ||
+	
+	end
+	GetModelCFrame = Method(() -> Nil).new do ||
+	
+	end
+	GetModelSize = Method(() -> Nil).new do ||
+	
+	end
+	GetPrimaryPartCFrame = Method(() -> Nil).new do ||
+	
+	end
+	GetScale = Method(() -> Nil).new do ||
+	
+	end
+	MakeJoints = Method(() -> Nil).new do ||
+	
+	end
+	MoveTo = Method((Vector3) -> Nil).new do |position|
+	
+	end
+	RemovePersistentPlayer = Method((Player) -> Nil).new do |playerInstance|
+	
+	end
+	ResetOrientationToIdentity = Method(() -> Nil).new do ||
+	
+	end
+	ScaleTo = Method((Float32) -> Nil).new do |newScaleFactor|
+	
+	end
+	SetIdentityOrientation = Method(() -> Nil).new do ||
+	
+	end
+	SetPrimaryPartCFrame = Method((CFrame) -> Nil).new do |cframe|
+	
+	end
+	TranslateBy = Method((Vector3) -> Nil).new do |delta|
+	
+	end
+	move = Method((Vector3) -> Nil).new do |location|
+	
+	end
+end
+module Actor
+	BindToMessage = Method((string, Callback) -> Nil).new do |topic, function|
+	
+	end
+	BindToMessageParallel = Method((string, Callback) -> Nil).new do |topic, function|
+	
+	end
+	SendMessage = Method((string, Array) -> Nil).new do |topic, message|
+	
+	end
+end
+module BackpackItem
+	TextureId : Object
+end
+module HopperBin
+	Active : Object
+	BinType : Object
+	Deselected = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	ReplicatedSelected = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	Selected = RBXScriptSignal((Instance) -> Nil).new do |mouse|
+	
+	end
+end
+module Tool
+	CanBeDropped : Object
+	Enabled : Object
+	Grip : Object
+	GripForward : Object
+	GripPos : Object
+	GripRight : Object
+	GripUp : Object
+	ManualActivationOnly : Object
+	RequiresHandle : Object
+	ToolTip : Object
+	Activate = Method(() -> Nil).new do ||
+	
+	end
+	Deactivate = Method(() -> Nil).new do ||
+	
+	end
+	Activated = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	Deactivated = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	Equipped = RBXScriptSignal((Mouse) -> Nil).new do |mouse|
+	
+	end
+	Unequipped = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+end
+module Flag
+	TeamColor : Object
+end
+module Status
+end
+module WorldRoot
+	ArePartsTouchingOthers = Method((Array(Instance), Float32) -> Nil).new do |partList, overlapIgnored|
+	
+	end
+	Blockcast = Method((CFrame, Vector3, Vector3, RaycastParams) -> Nil).new do |cframe, size, direction, params|
+	
+	end
+	BulkMoveTo = Method((Array(Instance), Array, Enum::BulkMoveMode) -> Nil).new do |partList, cframeList, eventMode|
+	
+	end
+	FindPartOnRay = Method((Ray, Instance, Bool, Bool) -> Nil).new do |ray, ignoreDescendantsInstance, terrainCellsAreCubes, ignoreWater|
+	
+	end
+	FindPartOnRayWithIgnoreList = Method((Ray, Array(Instance), Bool, Bool) -> Nil).new do |ray, ignoreDescendantsTable, terrainCellsAreCubes, ignoreWater|
+	
+	end
+	FindPartOnRayWithWhitelist = Method((Ray, Array(Instance), Bool) -> Nil).new do |ray, whitelistDescendantsTable, ignoreWater|
+	
+	end
+	FindPartsInRegion3 = Method((Region3, Instance, Int32) -> Nil).new do |region, ignoreDescendantsInstance, maxParts|
+	
+	end
+	FindPartsInRegion3WithIgnoreList = Method((Region3, Array(Instance), Int32) -> Nil).new do |region, ignoreDescendantsTable, maxParts|
+	
+	end
+	FindPartsInRegion3WithWhiteList = Method((Region3, Array(Instance), Int32) -> Nil).new do |region, whitelistDescendantsTable, maxParts|
+	
+	end
+	GetPartBoundsInBox = Method((CFrame, Vector3, OverlapParams) -> Nil).new do |cframe, size, overlapParams|
+	
+	end
+	GetPartBoundsInRadius = Method((Vector3, Float32, OverlapParams) -> Nil).new do |position, radius, overlapParams|
+	
+	end
+	GetPartsInPart = Method((BasePart, OverlapParams) -> Nil).new do |part, overlapParams|
+	
+	end
+	IsRegion3Empty = Method((Region3, Instance) -> Nil).new do |region, ignoreDescendentsInstance|
+	
+	end
+	IsRegion3EmptyWithIgnoreList = Method((Region3, Array(Instance)) -> Nil).new do |region, ignoreDescendentsTable|
+	
+	end
+	Raycast = Method((Vector3, Vector3, RaycastParams) -> Nil).new do |origin, direction, raycastParams|
+	
+	end
+	Spherecast = Method((Vector3, Float32, Vector3, RaycastParams) -> Nil).new do |position, radius, direction, params|
+	
+	end
+end
+module Workspace
+	AllowThirdPartySales : Object
+	ClientAnimatorThrottling : Object
+	CurrentCamera : Object
+	DistributedGameTime : Object
+	FallenPartsDestroyHeight : Object
+	GlobalWind : Object
+	Gravity : Object
+	InterpolationThrottling : Object
+	Retargeting : Object
+	StreamingEnabled : Object
+	Terrain : Object
+	GetNumAwakeParts = Method(() -> Nil).new do ||
+	
+	end
+	GetPhysicsThrottling = Method(() -> Nil).new do ||
+	
+	end
+	GetRealPhysicsFPS = Method(() -> Nil).new do ||
+	
+	end
+	GetServerTimeNow = Method(() -> Nil).new do ||
+	
+	end
+	JoinToOutsiders = Method((Array(Instance), Enum::JointCreationMode) -> Nil).new do |objects, jointType|
+	
+	end
+	PGSIsEnabled = Method(() -> Nil).new do ||
+	
+	end
+	UnjoinFromOutsiders = Method((Array(Instance)) -> Nil).new do |objects|
+	
+	end
+	PersistentLoaded = RBXScriptSignal((Player) -> Nil).new do |player|
+	
+	end
+end
+module WorldModel
+end
+module PackageLink
+	PackageId : Object
+	VersionNumber : Object
+end
+module PackageService
+end
+module PackageUIService
+end
+module Pages
+	IsFinished : Object
+	GetCurrentPage = Method(() -> Nil).new do ||
+	
+	end
+	AdvanceToNextPageAsync = Method(() -> Nil).new do ||
+	
+	end
+end
+module AudioPages
+end
+module CatalogPages
+end
+module DataStoreKeyPages
+	Cursor : Object
+end
+module DataStoreListingPages
+	Cursor : Object
+end
+module DataStorePages
+end
+module DataStoreVersionPages
+end
+module FriendPages
+end
+module InventoryPages
+end
+module EmotesPages
+end
+module OutfitPages
+end
+module StandardPages
+end
+module PartOperationAsset
+end
+module ParticleEmitter
+	Acceleration : Object
+	Brightness : Object
+	Color : Object
+	Drag : Object
+	EmissionDirection : Object
+	Enabled : Object
+	FlipbookFramerate : Object
+	FlipbookIncompatible : Object
+	FlipbookLayout : Object
+	FlipbookMode : Object
+	FlipbookStartRandom : Object
+	Lifetime : Object
+	LightEmission : Object
+	LightInfluence : Object
+	LockedToPart : Object
+	Orientation : Object
+	Rate : Object
+	RotSpeed : Object
+	Rotation : Object
+	Shape : Object
+	ShapeInOut : Object
+	ShapePartial : Object
+	ShapeStyle : Object
+	Size : Object
+	Speed : Object
+	SpreadAngle : Object
+	Squash : Object
+	Texture : Object
+	TimeScale : Object
+	Transparency : Object
+	VelocityInheritance : Object
+	VelocitySpread : Object
+	ZOffset : Object
+	Clear = Method(() -> Nil).new do ||
+	
+	end
+	Emit = Method((Int32) -> Nil).new do |particleCount|
+	
+	end
+	OnClearRequested = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	OnEmitRequested = RBXScriptSignal((Int32) -> Nil).new do |particleCount|
+	
+	end
+end
+module PatchBundlerFileWatch
+end
+module PatchMapping
+	FlattenTree : Object
+	PatchId : Object
+	TargetPath : Object
+end
+module Path
+	Status : Object
+	GetPointCoordinates = Method(() -> Nil).new do ||
+	
+	end
+	GetWaypoints = Method(() -> Nil).new do ||
+	
+	end
+	CheckOcclusionAsync = Method((Int32) -> Nil).new do |start|
+	
+	end
+	ComputeAsync = Method((Vector3, Vector3) -> Nil).new do |start, finish|
+	
+	end
+	Blocked = RBXScriptSignal((Int32) -> Nil).new do |blockedWaypointIdx|
+	
+	end
+	Unblocked = RBXScriptSignal((Int32) -> Nil).new do |unblockedWaypointIdx|
+	
+	end
+end
+module PathfindingLink
+	Attachment0 : Object
+	Attachment1 : Object
+	IsBidirectional : Object
+	Label : Object
+end
+module PathfindingModifier
+	Label : Object
+	PassThrough : Object
+end
+module PathfindingService
+	EmptyCutoff : Object
+	CreatePath = Method((Hash) -> Nil).new do |agentParameters|
+	
+	end
+	ComputeRawPathAsync = Method((Vector3, Vector3, Float32) -> Nil).new do |start, finish, maxDistance|
+	
+	end
+	ComputeSmoothPathAsync = Method((Vector3, Vector3, Float32) -> Nil).new do |start, finish, maxDistance|
+	
+	end
+	FindPathAsync = Method((Vector3, Vector3) -> Nil).new do |start, finish|
+	
+	end
+end
+module PausedState
+end
+module PausedStateBreakpoint
+end
+module PausedStateException
+end
+module PermissionsService
+end
+module PhysicsService
+	CollisionGroupContainsPart = Method((string, BasePart) -> Nil).new do |name, part|
+	
+	end
+	CollisionGroupSetCollidable = Method((string, string, Bool) -> Nil).new do |name1, name2, collidable|
+	
+	end
+	CollisionGroupsAreCollidable = Method((string, string) -> Nil).new do |name1, name2|
+	
+	end
+	CreateCollisionGroup = Method((string) -> Nil).new do |name|
+	
+	end
+	GetCollisionGroupId = Method((string) -> Nil).new do |name|
+	
+	end
+	GetCollisionGroupName = Method((Int32) -> Nil).new do |name|
+	
+	end
+	GetCollisionGroups = Method(() -> Nil).new do ||
+	
+	end
+	GetMaxCollisionGroups = Method(() -> Nil).new do ||
+	
+	end
+	GetRegisteredCollisionGroups = Method(() -> Nil).new do ||
+	
+	end
+	IsCollisionGroupRegistered = Method((string) -> Nil).new do |name|
+	
+	end
+	RegisterCollisionGroup = Method((string) -> Nil).new do |name|
+	
+	end
+	RemoveCollisionGroup = Method((string) -> Nil).new do |name|
+	
+	end
+	RenameCollisionGroup = Method((string, string) -> Nil).new do |from, to|
+	
+	end
+	SetPartCollisionGroup = Method((BasePart, string) -> Nil).new do |part, name|
+	
+	end
+	UnregisterCollisionGroup = Method((string) -> Nil).new do |name|
+	
+	end
+end
+module PhysicsSettings
+	AllowSleep : Object
+	AreAnchorsShown : Object
+	AreAssembliesShown : Object
+	AreAwakePartsHighlighted : Object
+	AreBodyTypesShown : Object
+	AreContactIslandsShown : Object
+	AreContactPointsShown : Object
+	AreJointCoordinatesShown : Object
+	AreMechanismsShown : Object
+	AreModelCoordsShown : Object
+	AreOwnersShown : Object
+	ArePartCoordsShown : Object
+	AreRegionsShown : Object
+	AreTerrainReplicationRegionsShown : Object
+	AreUnalignedPartsShown : Object
+	AreWorldCoordsShown : Object
+	DisableCSGv2 : Object
+	ForceCSGv2 : Object
+	IsInterpolationThrottleShown : Object
+	IsReceiveAgeShown : Object
+	IsTreeShown : Object
+	PhysicsEnvironmentalThrottle : Object
+	ShowDecompositionGeometry : Object
+	ThrottleAdjustTime : Object
+	UseCSGv2 : Object
+end
+module Player
+	AccountAge : Object
+	AutoJumpEnabled : Object
+	CameraMaxZoomDistance : Object
+	CameraMinZoomDistance : Object
+	CameraMode : Object
+	CanLoadCharacterAppearance : Object
+	Character : Object
+	CharacterAppearance : Object
+	CharacterAppearanceId : Object
+	DataComplexity : Object
+	DataReady : Object
+	DevCameraOcclusionMode : Object
+	DevComputerCameraMode : Object
+	DevComputerMovementMode : Object
+	DevEnableMouseLock : Object
+	DevTouchCameraMode : Object
+	DevTouchMovementMode : Object
+	DisplayName : Object
+	FollowUserId : Object
+	GameplayPaused : Object
+	HasVerifiedBadge : Object
+	HealthDisplayDistance : Object
+	LocaleId : Object
+	MembershipType : Object
+	NameDisplayDistance : Object
+	Neutral : Object
+	ReplicationFocus : Object
+	RespawnLocation : Object
+	Team : Object
+	TeamColor : Object
+	UserId : Object
+	ClearCharacterAppearance = Method(() -> Nil).new do ||
+	
+	end
+	DistanceFromCharacter = Method((Vector3) -> Nil).new do |point|
+	
+	end
+	GetJoinData = Method(() -> Nil).new do ||
+	
+	end
+	GetMouse = Method(() -> Nil).new do ||
+	
+	end
+	GetNetworkPing = Method(() -> Nil).new do ||
+	
+	end
+	HasAppearanceLoaded = Method(() -> Nil).new do ||
+	
+	end
+	IsVerified = Method(() -> Nil).new do ||
+	
+	end
+	Kick = Method((string) -> Nil).new do |message|
+	
+	end
+	LoadBoolean = Method((string) -> Nil).new do |key|
+	
+	end
+	LoadCharacterAppearance = Method((Instance) -> Nil).new do |assetInstance|
+	
+	end
+	LoadInstance = Method((string) -> Nil).new do |key|
+	
+	end
+	LoadNumber = Method((string) -> Nil).new do |key|
+	
+	end
+	LoadString = Method((string) -> Nil).new do |key|
+	
+	end
+	Move = Method((Vector3, Bool) -> Nil).new do |walkDirection, relativeToCamera|
+	
+	end
+	SaveBoolean = Method((string, Bool) -> Nil).new do |key, value|
+	
+	end
+	SaveInstance = Method((string, Instance) -> Nil).new do |key, value|
+	
+	end
+	SaveNumber = Method((string, Float64) -> Nil).new do |key, value|
+	
+	end
+	SaveString = Method((string, string) -> Nil).new do |key, value|
+	
+	end
+	GetFriendsOnline = Method((Int32) -> Nil).new do |maxFriends|
+	
+	end
+	GetRankInGroup = Method((Int64) -> Nil).new do |groupId|
+	
+	end
+	GetRoleInGroup = Method((Int64) -> Nil).new do |groupId|
+	
+	end
+	IsBestFriendsWith = Method((Int64) -> Nil).new do |userId|
+	
+	end
+	IsFriendsWith = Method((Int64) -> Nil).new do |userId|
+	
+	end
+	IsInGroup = Method((Int64) -> Nil).new do |groupId|
+	
+	end
+	LoadCharacter = Method(() -> Nil).new do ||
+	
+	end
+	LoadCharacterWithHumanoidDescription = Method((HumanoidDescription) -> Nil).new do |humanoidDescription|
+	
+	end
+	RequestStreamAroundAsync = Method((Vector3, Float64) -> Nil).new do |position, timeOut|
+	
+	end
+	WaitForDataReady = Method(() -> Nil).new do ||
+	
+	end
+	CharacterAdded = RBXScriptSignal((Model) -> Nil).new do |character|
+	
+	end
+	CharacterAppearanceLoaded = RBXScriptSignal((Model) -> Nil).new do |character|
+	
+	end
+	CharacterRemoving = RBXScriptSignal((Model) -> Nil).new do |character|
+	
+	end
+	Chatted = RBXScriptSignal((string, Player) -> Nil).new do |message, recipient|
+	
+	end
+	Idled = RBXScriptSignal((Float64) -> Nil).new do |time|
+	
+	end
+	OnTeleport = RBXScriptSignal((Enum::TeleportState, Int64, string) -> Nil).new do |teleportState, placeId, spawnName|
+	
+	end
+end
+module PlayerEmulatorService
+end
+module PlayerScripts
+	ClearComputerCameraMovementModes = Method(() -> Nil).new do ||
+	
+	end
+	ClearComputerMovementModes = Method(() -> Nil).new do ||
+	
+	end
+	ClearTouchCameraMovementModes = Method(() -> Nil).new do ||
+	
+	end
+	ClearTouchMovementModes = Method(() -> Nil).new do ||
+	
+	end
+	RegisterComputerCameraMovementMode = Method((Enum::ComputerCameraMovementMode) -> Nil).new do |cameraMovementMode|
+	
+	end
+	RegisterComputerMovementMode = Method((Enum::ComputerMovementMode) -> Nil).new do |movementMode|
+	
+	end
+	RegisterTouchCameraMovementMode = Method((Enum::TouchCameraMovementMode) -> Nil).new do |cameraMovementMode|
+	
+	end
+	RegisterTouchMovementMode = Method((Enum::TouchMovementMode) -> Nil).new do |movementMode|
+	
+	end
+end
+module Players
+	BubbleChat : Object
+	CharacterAutoLoads : Object
+	ClassicChat : Object
+	LocalPlayer : Object
+	MaxPlayers : Object
+	NumPlayers : Object
+	PreferredPlayers : Object
+	RespawnTime : Object
+	GetPlayerByUserId = Method((Int64) -> Nil).new do |userId|
+	
+	end
+	GetPlayerFromCharacter = Method((Model) -> Nil).new do |character|
+	
+	end
+	GetPlayers = Method(() -> Nil).new do ||
+	
+	end
+	playerFromCharacter = Method((Model) -> Nil).new do |character|
+	
+	end
+	players = Method(() -> Nil).new do ||
+	
+	end
+	CreateHumanoidModelFromDescription = Method((HumanoidDescription, Enum::HumanoidRigType, Enum::AssetTypeVerification) -> Nil).new do |description, rigType, assetTypeVerification|
+	
+	end
+	CreateHumanoidModelFromUserId = Method((Int64) -> Nil).new do |userId|
+	
+	end
+	GetCharacterAppearanceAsync = Method((Int64) -> Nil).new do |userId|
+	
+	end
+	GetCharacterAppearanceInfoAsync = Method((Int64) -> Nil).new do |userId|
+	
+	end
+	GetFriendsAsync = Method((Int64) -> Nil).new do |userId|
+	
+	end
+	GetHumanoidDescriptionFromOutfitId = Method((Int64) -> Nil).new do |outfitId|
+	
+	end
+	GetHumanoidDescriptionFromUserId = Method((Int64) -> Nil).new do |userId|
+	
+	end
+	GetNameFromUserIdAsync = Method((Int64) -> Nil).new do |userId|
+	
+	end
+	GetUserIdFromNameAsync = Method((string) -> Nil).new do |userName|
+	
+	end
+	GetUserThumbnailAsync = Method((Int64, Enum::ThumbnailType, Enum::ThumbnailSize) -> Nil).new do |userId, thumbnailType, thumbnailSize|
+	
+	end
+	PlayerAdded = RBXScriptSignal((Player) -> Nil).new do |player|
+	
+	end
+	PlayerMembershipChanged = RBXScriptSignal((Player) -> Nil).new do |player|
+	
+	end
+	PlayerRemoving = RBXScriptSignal((Player) -> Nil).new do |player|
+	
+	end
+end
+module Plugin
+	CollisionEnabled : Object
+	GridSize : Object
+	Activate = Method((Bool) -> Nil).new do |exclusiveMouse|
+	
+	end
+	CreatePluginAction = Method((string, string, string, string, Bool) -> Nil).new do |actionId, text, statusTip, iconName, allowBinding|
+	
+	end
+	CreatePluginMenu = Method((string, string, string) -> Nil).new do |id, title, icon|
+	
+	end
+	CreateToolbar = Method((string) -> Nil).new do |name|
+	
+	end
+	Deactivate = Method(() -> Nil).new do ||
+	
+	end
+	GetJoinMode = Method(() -> Nil).new do ||
+	
+	end
+	GetMouse = Method(() -> Nil).new do ||
+	
+	end
+	GetSelectedRibbonTool = Method(() -> Nil).new do ||
+	
+	end
+	GetSetting = Method((string) -> Nil).new do |key|
+	
+	end
+	GetStudioUserId = Method(() -> Nil).new do ||
+	
+	end
+	Intersect = Method((Array(Instance)) -> Nil).new do |objects|
+	
+	end
+	IsActivated = Method(() -> Nil).new do ||
+	
+	end
+	IsActivatedWithExclusiveMouse = Method(() -> Nil).new do ||
+	
+	end
+	Negate = Method((Array(Instance)) -> Nil).new do |objects|
+	
+	end
+	OpenScript = Method((LuaSourceContainer, Int32) -> Nil).new do |script, lineNumber|
+	
+	end
+	OpenWikiPage = Method((string) -> Nil).new do |url|
+	
+	end
+	SaveSelectedToRoblox = Method(() -> Nil).new do ||
+	
+	end
+	SelectRibbonTool = Method((Enum::RibbonTool, UDim2) -> Nil).new do |tool, position|
+	
+	end
+	Separate = Method((Array(Instance)) -> Nil).new do |objects|
+	
+	end
+	SetSetting = Method((string, Hash) -> Nil).new do |key, value|
+	
+	end
+	StartDrag = Method((Hash) -> Nil).new do |dragData|
+	
+	end
+	Union = Method((Array(Instance)) -> Nil).new do |objects|
+	
+	end
+	CreateDockWidgetPluginGui = Method((string, DockWidgetPluginGuiInfo) -> Nil).new do |pluginGuiId, dockWidgetPluginGuiInfo|
+	
+	end
+	ImportFbxAnimation = Method((Instance, Bool) -> Nil).new do |rigModel, isR15|
+	
+	end
+	ImportFbxRig = Method((Bool) -> Nil).new do |isR15|
+	
+	end
+	PromptForExistingAssetId = Method((string) -> Nil).new do |assetType|
+	
+	end
+	PromptSaveSelection = Method((string) -> Nil).new do |suggestedFileName|
+	
+	end
+	Deactivation = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	Unloading = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+end
+module PluginAction
+	ActionId : Object
+	AllowBinding : Object
+	StatusTip : Object
+	Text : Object
+	Triggered = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+end
+module PluginDebugService
+end
+module PluginDragEvent
+	Data : Object
+	MimeType : Object
+	Position : Object
+	Sender : Object
+end
+module PluginGuiService
+end
+module PluginManagementService
+end
+module PluginManager
+end
+module PluginManagerInterface
+end
+module PluginMenu
+	Icon : Object
+	Title : Object
+	AddAction = Method((Instance) -> Nil).new do |action|
+	
+	end
+	AddMenu = Method((Instance) -> Nil).new do |menu|
+	
+	end
+	AddNewAction = Method((string, string, string) -> Nil).new do |actionId, text, icon|
+	
+	end
+	AddSeparator = Method(() -> Nil).new do ||
+	
+	end
+	Clear = Method(() -> Nil).new do ||
+	
+	end
+	ShowAsync = Method(() -> Nil).new do ||
+	
+	end
+end
+module PluginPolicyService
+end
+module PluginToolbar
+	CreateButton = Method((string, string, string, string) -> Nil).new do |buttonId, tooltip, iconname, text|
+	
+	end
+end
+module PluginToolbarButton
+	ClickableWhenViewportHidden : Object
+	Enabled : Object
+	Icon : Object
+	SetActive = Method((Bool) -> Nil).new do |active|
+	
+	end
+	Click = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+end
+module PointsService
+	GetAwardablePoints = Method(() -> Nil).new do ||
+	
+	end
+	AwardPoints = Method((Int64, Int32) -> Nil).new do |userId, amount|
+	
+	end
+	GetGamePointBalance = Method((Int64) -> Nil).new do |userId|
+	
+	end
+	GetPointBalance = Method((Int64) -> Nil).new do |userId|
+	
+	end
+	PointsAwarded = RBXScriptSignal((Int64, Int32, Int32, Int32) -> Nil).new do |userId, pointsAwarded, userBalanceInGame, userTotalBalance|
+	
+	end
+end
+module PolicyService
+	GetPolicyInfoForPlayerAsync = Method((Instance) -> Nil).new do |player|
+	
+	end
+end
+module PoseBase
+	EasingDirection : Object
+	EasingStyle : Object
+	Weight : Object
+end
+module NumberPose
+	Value : Object
+end
+module Pose
+	CFrame : Object
+	MaskWeight : Object
+	AddSubPose = Method((Instance) -> Nil).new do |pose|
+	
+	end
+	GetSubPoses = Method(() -> Nil).new do ||
+	
+	end
+	RemoveSubPose = Method((Instance) -> Nil).new do |pose|
+	
+	end
+end
+module PostEffect
+	Enabled : Object
+end
+module BloomEffect
+	Intensity : Object
+	Size : Object
+	Threshold : Object
+end
+module BlurEffect
+	Size : Object
+end
+module ColorCorrectionEffect
+	Brightness : Object
+	Contrast : Object
+	Saturation : Object
+	TintColor : Object
+end
+module DepthOfFieldEffect
+	FarIntensity : Object
+	FocusDistance : Object
+	InFocusRadius : Object
+	NearIntensity : Object
+end
+module SunRaysEffect
+	Intensity : Object
+	Spread : Object
+end
+module ProcessInstancePhysicsService
+end
+module ProximityPrompt
+	ActionText : Object
+	AutoLocalize : Object
+	ClickablePrompt : Object
+	Enabled : Object
+	Exclusivity : Object
+	GamepadKeyCode : Object
+	HoldDuration : Object
+	KeyboardKeyCode : Object
+	MaxActivationDistance : Object
+	ObjectText : Object
+	RequiresLineOfSight : Object
+	RootLocalizationTable : Object
+	Style : Object
+	UIOffset : Object
+	InputHoldBegin = Method(() -> Nil).new do ||
+	
+	end
+	InputHoldEnd = Method(() -> Nil).new do ||
+	
+	end
+	PromptButtonHoldBegan = RBXScriptSignal((Player) -> Nil).new do |playerWhoTriggered|
+	
+	end
+	PromptButtonHoldEnded = RBXScriptSignal((Player) -> Nil).new do |playerWhoTriggered|
+	
+	end
+	PromptHidden = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	PromptShown = RBXScriptSignal((Enum::ProximityPromptInputType) -> Nil).new do |inputType|
+	
+	end
+	TriggerEnded = RBXScriptSignal((Player) -> Nil).new do |playerWhoTriggered|
+	
+	end
+	Triggered = RBXScriptSignal((Player) -> Nil).new do |playerWhoTriggered|
+	
+	end
+end
+module ProximityPromptService
+	Enabled : Object
+	MaxPromptsVisible : Object
+	PromptButtonHoldBegan = RBXScriptSignal((ProximityPrompt, Player) -> Nil).new do |prompt, playerWhoTriggered|
+	
+	end
+	PromptButtonHoldEnded = RBXScriptSignal((ProximityPrompt, Player) -> Nil).new do |prompt, playerWhoTriggered|
+	
+	end
+	PromptHidden = RBXScriptSignal((ProximityPrompt) -> Nil).new do |prompt|
+	
+	end
+	PromptShown = RBXScriptSignal((ProximityPrompt, Enum::ProximityPromptInputType) -> Nil).new do |prompt, inputType|
+	
+	end
+	PromptTriggerEnded = RBXScriptSignal((ProximityPrompt, Player) -> Nil).new do |prompt, playerWhoTriggered|
+	
+	end
+	PromptTriggered = RBXScriptSignal((ProximityPrompt, Player) -> Nil).new do |prompt, playerWhoTriggered|
+	
+	end
+end
+module PublishService
+end
+module RbxAnalyticsService
+end
+module ReflectionMetadata
+end
+module ReflectionMetadataCallbacks
+end
+module ReflectionMetadataClasses
+end
+module ReflectionMetadataEnums
+end
+module ReflectionMetadataEvents
+end
+module ReflectionMetadataFunctions
+end
+module ReflectionMetadataItem
+	Browsable : Object
+	ClassCategory : Object
+	ClientOnly : Object
+	Constraint : Object
+	Deprecated : Object
+	EditingDisabled : Object
+	EditorType : Object
+	FFlag : Object
+	IsBackend : Object
+	PropertyOrder : Object
+	ScriptContext : Object
+	ServerOnly : Object
+	SliderScaling : Object
+	UIMaximum : Object
+	UIMinimum : Object
+	UINumTicks : Object
+end
+module ReflectionMetadataClass
+	ExplorerImageIndex : Object
+	ExplorerOrder : Object
+	Insertable : Object
+	PreferredParent : Object
+end
+module ReflectionMetadataEnum
+end
+module ReflectionMetadataEnumItem
+end
+module ReflectionMetadataMember
+end
+module ReflectionMetadataProperties
+end
+module ReflectionMetadataYieldFunctions
+end
+module RemoteCursorService
+end
+module RemoteDebuggerServer
+end
+module RemoteEvent
+	FireAllClients = Method((Array) -> Nil).new do |arguments|
+	
+	end
+	FireClient = Method((Player, Array) -> Nil).new do |player, arguments|
+	
+	end
+	FireServer = Method((Array) -> Nil).new do |arguments|
+	
+	end
+	OnClientEvent = RBXScriptSignal((Array) -> Nil).new do |arguments|
+	
+	end
+	OnServerEvent = RBXScriptSignal((Player, Array) -> Nil).new do |player, arguments|
+	
+	end
+end
+module RemoteFunction
+	InvokeClient = Method((Player, Array) -> Nil).new do |player, arguments|
+	
+	end
+	InvokeServer = Method((Array) -> Nil).new do |arguments|
+	
+	end
+	RemoteOnInvokeClient = RBXScriptSignal((Int32, Array) -> Nil).new do |id, arguments|
+	
+	end
+	RemoteOnInvokeError = RBXScriptSignal((Int32, string) -> Nil).new do |id, arguments|
+	
+	end
+	RemoteOnInvokeServer = RBXScriptSignal((Int32, Player, Array) -> Nil).new do |id, player, arguments|
+	
+	end
+	RemoteOnInvokeSuccess = RBXScriptSignal((Int32, Array) -> Nil).new do |id, arguments|
+	
+	end
+	OnClientInvoke = Callback(Array -> Nil).new do |arguments|
+	
+	end
+	OnServerInvoke = Callback(Player, Array -> Nil).new do |player, arguments|
+	
+	end
+end
+module RenderSettings
+	AutoFRMLevel : Object
+	EagerBulkExecution : Object
+	EditQualityLevel : Object
+	EnableFRM : Object
+	ExportMergeByMaterial : Object
+	FrameRateManager : Object
+	GraphicsMode : Object
+	MeshCacheSize : Object
+	MeshPartDetailLevel : Object
+	QualityLevel : Object
+	ReloadAssets : Object
+	RenderCSGTrianglesDebug : Object
+	ShowBoundingBoxes : Object
+	GetMaxQualityLevel = Method(() -> Nil).new do ||
+	
+	end
+end
+module RenderingTest
+	CFrame : Object
+	ComparisonDiffThreshold : Object
+	ComparisonMethod : Object
+	ComparisonPsnrThreshold : Object
+	Description : Object
+	FieldOfView : Object
+	Orientation : Object
+	Position : Object
+	QualityLevel : Object
+	ShouldSkip : Object
+	Ticket : Object
+	RenderdocTriggerCapture = Method(() -> Nil).new do ||
+	
+	end
+end
+module ReplicatedFirst
+	RemoveDefaultLoadingScreen = Method(() -> Nil).new do ||
+	
+	end
+end
+module ReplicatedStorage
+end
+module RobloxPluginGuiService
+end
+module RobloxReplicatedStorage
+end
+module RotationCurve
+	Length : Object
+	GetKeyAtIndex = Method((Int32) -> Nil).new do |index|
+	
+	end
+	GetKeyIndicesAtTime = Method((Float32) -> Nil).new do |time|
+	
+	end
+	GetKeys = Method(() -> Nil).new do ||
+	
+	end
+	GetValueAtTime = Method((Float32) -> Nil).new do |time|
+	
+	end
+	InsertKey = Method((RotationCurveKey) -> Nil).new do |key|
+	
+	end
+	RemoveKeyAtIndex = Method((Int32, Int32) -> Nil).new do |startingIndex, count|
+	
+	end
+	SetKeys = Method((Array) -> Nil).new do |keys|
+	
+	end
+end
+module RtMessagingService
+end
+module RunService
+	BindToRenderStep = Method((string, Int32, Callback) -> Nil).new do |name, priority, function|
+	
+	end
+	IsClient = Method(() -> Nil).new do ||
+	
+	end
+	IsRunMode = Method(() -> Nil).new do ||
+	
+	end
+	IsRunning = Method(() -> Nil).new do ||
+	
+	end
+	IsServer = Method(() -> Nil).new do ||
+	
+	end
+	IsStudio = Method(() -> Nil).new do ||
+	
+	end
+	UnbindFromRenderStep = Method((string) -> Nil).new do |name|
+	
+	end
+	Heartbeat = RBXScriptSignal((Float64) -> Nil).new do |deltaTime|
+	
+	end
+	PostSimulation = RBXScriptSignal((Float64) -> Nil).new do |deltaTimeSim|
+	
+	end
+	PreAnimation = RBXScriptSignal((Float64) -> Nil).new do |deltaTimeSim|
+	
+	end
+	PreRender = RBXScriptSignal((Float64) -> Nil).new do |deltaTimeRender|
+	
+	end
+	PreSimulation = RBXScriptSignal((Float64) -> Nil).new do |deltaTimeSim|
+	
+	end
+	RenderStepped = RBXScriptSignal((Float64) -> Nil).new do |deltaTime|
+	
+	end
+	Stepped = RBXScriptSignal((Float64, Float64) -> Nil).new do |time, deltaTime|
+	
+	end
+end
+module RuntimeScriptService
+end
+module SafetyService
+end
+module ScreenshotHud
+	CameraButtonIcon : Object
+	CameraButtonPosition : Object
+	CloseButtonPosition : Object
+	CloseWhenScreenshotTaken : Object
+	ExperienceNameOverlayEnabled : Object
+	OverlayFont : Object
+	UsernameOverlayEnabled : Object
+	Visible : Object
+end
+module ScriptBuilder
+end
+module SyncScriptBuilder
+	CoverageInfo : Object
+	DebugInfo : Object
+	PackAsSource : Object
+	RawBytecode : Object
+end
+module ScriptChangeService
+end
+module ScriptCloneWatcher
+end
+module ScriptCloneWatcherHelper
+end
+module ScriptContext
+	Error = RBXScriptSignal((string, string, Instance) -> Nil).new do |message, stackTrace, script|
+	
+	end
+end
+module ScriptDebugger
+	CurrentLine : Object
+	IsDebugging : Object
+	IsPaused : Object
+	Script : Object
+	AddWatch = Method((string) -> Nil).new do |expression|
+	
+	end
+	GetBreakpoints = Method(() -> Nil).new do ||
+	
+	end
+	GetGlobals = Method((Int32) -> Nil).new do |stackFrame|
+	
+	end
+	GetLocals = Method((Int32) -> Nil).new do |stackFrame|
+	
+	end
+	GetStack = Method(() -> Nil).new do ||
+	
+	end
+	GetUpvalues = Method((Int32) -> Nil).new do |stackFrame|
+	
+	end
+	GetWatchValue = Method((Instance) -> Nil).new do |watch|
+	
+	end
+	GetWatches = Method(() -> Nil).new do ||
+	
+	end
+	SetBreakpoint = Method((Int32, Bool) -> Nil).new do |line, isContextDependentBreakpoint|
+	
+	end
+	SetGlobal = Method((string, Hash, Int32) -> Nil).new do |name, value, stackFrame|
+	
+	end
+	SetLocal = Method((string, Hash, Int32) -> Nil).new do |name, value, stackFrame|
+	
+	end
+	SetUpvalue = Method((string, Hash, Int32) -> Nil).new do |name, value, stackFrame|
+	
+	end
+	BreakpointAdded = RBXScriptSignal((Instance) -> Nil).new do |breakpoint|
+	
+	end
+	BreakpointRemoved = RBXScriptSignal((Instance) -> Nil).new do |breakpoint|
+	
+	end
+	EncounteredBreak = RBXScriptSignal((Int32, Enum::BreakReason) -> Nil).new do |line, breakReason|
+	
+	end
+	Resuming = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	WatchAdded = RBXScriptSignal((Instance) -> Nil).new do |watch|
+	
+	end
+	WatchRemoved = RBXScriptSignal((Instance) -> Nil).new do |watch|
+	
+	end
+end
+module ScriptDocument
+end
+module ScriptEditorService
+end
+module ScriptRegistrationService
+end
+module ScriptRuntime
+end
+module ScriptService
+end
+module Selection
+	SelectionThickness : Object
+	Add = Method((Array(Instance)) -> Nil).new do |instancesToAdd|
+	
+	end
+	Get = Method(() -> Nil).new do ||
+	
+	end
+	Remove = Method((Array(Instance)) -> Nil).new do |instancesToRemove|
+	
+	end
+	Set = Method((Array(Instance)) -> Nil).new do |selection|
+	
+	end
+	SelectionChanged = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+end
+module SelectionHighlightManager
+end
+module SensorBase
+	UpdateType : Object
+	Sense = Method(() -> Nil).new do ||
+	
+	end
+	OnSensorOutputChanged = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+end
+module BuoyancySensor
+	FullySubmerged : Object
+	TouchingSurface : Object
+end
+module ControllerSensor
+end
+module ControllerPartSensor
+	HitFrame : Object
+	HitNormal : Object
+	SearchDistance : Object
+	SensedPart : Object
+	SensorMode : Object
+end
+module ServerScriptService
+end
+module ServerStorage
+end
+module ServiceProvider
+	FindService = Method((string) -> Nil).new do |className|
+	
+	end
+	GetService = Method((string) -> Nil).new do |className|
+	
+	end
+	service = Method((string) -> Nil).new do |className|
+	
+	end
+	Close = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	ServiceAdded = RBXScriptSignal((Instance) -> Nil).new do |service|
+	
+	end
+	ServiceRemoving = RBXScriptSignal((Instance) -> Nil).new do |service|
+	
+	end
+end
+module DataModel
+	CreatorId : Object
+	CreatorType : Object
+	GameId : Object
+	GearGenreSetting : Object
+	Genre : Object
+	JobId : Object
+	PlaceId : Object
+	PlaceVersion : Object
+	PrivateServerId : Object
+	PrivateServerOwnerId : Object
+	VIPServerId : Object
+	VIPServerOwnerId : Object
+	Workspace : Object
+	lighting : Object
+	BindToClose = Method((Callback) -> Nil).new do |function|
+	
+	end
+	GetMessage = Method(() -> Nil).new do ||
+	
+	end
+	GetRemoteBuildMode = Method(() -> Nil).new do ||
+	
+	end
+	IsGearTypeAllowed = Method((Enum::GearType) -> Nil).new do |gearType|
+	
+	end
+	IsLoaded = Method(() -> Nil).new do ||
+	
+	end
+	SavePlace = Method((Enum::SaveFilter) -> Nil).new do |saveFilter|
+	
+	end
+	AllowedGearTypeChanged = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	GraphicsQualityChangeRequest = RBXScriptSignal((Bool) -> Nil).new do |betterQuality|
+	
+	end
+	ItemChanged = RBXScriptSignal((Instance, string) -> Nil).new do |object, descriptor|
+	
+	end
+	Loaded = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	OnClose = Callback( -> Nil).new do ||
+	
+	end
+end
+module GenericSettings
+end
+module AnalysticsSettings
+end
+module GlobalSettings
+	GetFFlag = Method((string) -> Nil).new do |name|
+	
+	end
+	GetFVariable = Method((string) -> Nil).new do |name|
+	
+	end
+end
+module UserSettings
+	IsUserFeatureEnabled = Method((string) -> Nil).new do |name|
+	
+	end
+	Reset = Method(() -> Nil).new do ||
+	
+	end
+end
+module ServiceVisibilityService
+end
+module SessionService
+end
+module SharedTableRegistry
+	GetSharedTable = Method((string) -> Nil).new do |name|
+	
+	end
+	SetSharedTable = Method((string, SharedTable?) -> Nil).new do |name, st|
+	
+	end
+end
+module ShorelineUpgraderService
+end
+module Sky
+	CelestialBodiesShown : Object
+	MoonAngularSize : Object
+	MoonTextureId : Object
+	SkyboxBk : Object
+	SkyboxDn : Object
+	SkyboxFt : Object
+	SkyboxLf : Object
+	SkyboxRt : Object
+	SkyboxUp : Object
+	StarCount : Object
+	SunAngularSize : Object
+	SunTextureId : Object
+end
+module Smoke
+	Color : Object
+	Enabled : Object
+	Opacity : Object
+	RiseVelocity : Object
+	Size : Object
+	TimeScale : Object
+end
+module SmoothVoxelsUpgraderService
+end
+module SnippetService
+end
+module SocialService
+	PromptGameInvite = Method((Instance, Instance) -> Nil).new do |player, experienceInviteOptions|
+	
+	end
+	CanSendGameInviteAsync = Method((Instance, Int64) -> Nil).new do |player, recipientId|
+	
+	end
+	GameInvitePromptClosed = RBXScriptSignal((Instance, Array) -> Nil).new do |player, recipientIds|
+	
+	end
+end
+module Sound
+	EmitterSize : Object
+	IsLoaded : Object
+	IsPaused : Object
+	IsPlaying : Object
+	LoopRegion : Object
+	Looped : Object
+	MaxDistance : Object
+	MinDistance : Object
+	Pitch : Object
+	PlayOnRemove : Object
+	PlaybackLoudness : Object
+	PlaybackRegion : Object
+	PlaybackRegionsEnabled : Object
+	PlaybackSpeed : Object
+	Playing : Object
+	RollOffMaxDistance : Object
+	RollOffMinDistance : Object
+	RollOffMode : Object
+	SoundGroup : Object
+	SoundId : Object
+	TimeLength : Object
+	TimePosition : Object
+	Volume : Object
+	Pause = Method(() -> Nil).new do ||
+	
+	end
+	Play = Method(() -> Nil).new do ||
+	
+	end
+	Resume = Method(() -> Nil).new do ||
+	
+	end
+	Stop = Method(() -> Nil).new do ||
+	
+	end
+	DidLoop = RBXScriptSignal((string, Int32) -> Nil).new do |soundId, numOfTimesLooped|
+	
+	end
+	Ended = RBXScriptSignal((string) -> Nil).new do |soundId|
+	
+	end
+	Loaded = RBXScriptSignal((string) -> Nil).new do |soundId|
+	
+	end
+	Paused = RBXScriptSignal((string) -> Nil).new do |soundId|
+	
+	end
+	Played = RBXScriptSignal((string) -> Nil).new do |soundId|
+	
+	end
+	Resumed = RBXScriptSignal((string) -> Nil).new do |soundId|
+	
+	end
+	Stopped = RBXScriptSignal((string) -> Nil).new do |soundId|
+	
+	end
+end
+module SoundEffect
+	Enabled : Object
+	Priority : Object
+end
+module ChorusSoundEffect
+	Depth : Object
+	Mix : Object
+	Rate : Object
+end
+module CompressorSoundEffect
+	Attack : Object
+	GainMakeup : Object
+	Ratio : Object
+	Release : Object
+	SideChain : Object
+	Threshold : Object
+end
+module CustomSoundEffect
+end
+module AssetSoundEffect
+end
+module ChannelSelectorSoundEffect
+	Channel : Object
+end
+module DistortionSoundEffect
+	Level : Object
+end
+module EchoSoundEffect
+	Delay : Object
+	DryLevel : Object
+	Feedback : Object
+	WetLevel : Object
+end
+module EqualizerSoundEffect
+	HighGain : Object
+	LowGain : Object
+	MidGain : Object
+end
+module FlangeSoundEffect
+	Depth : Object
+	Mix : Object
+	Rate : Object
+end
+module PitchShiftSoundEffect
+	Octave : Object
+end
+module ReverbSoundEffect
+	DecayTime : Object
+	Density : Object
+	Diffusion : Object
+	DryLevel : Object
+	WetLevel : Object
+end
+module TremoloSoundEffect
+	Depth : Object
+	Duty : Object
+	Frequency : Object
+end
+module SoundGroup
+	Volume : Object
+end
+module SoundService
+	AmbientReverb : Object
+	DistanceFactor : Object
+	DopplerScale : Object
+	RespectFilteringEnabled : Object
+	RolloffScale : Object
+	GetListener = Method(() -> Nil).new do ||
+	
+	end
+	PlayLocalSound = Method((Instance) -> Nil).new do |sound|
+	
+	end
+	SetListener = Method((Enum::ListenerType, Array) -> Nil).new do |listenerType, listener|
+	
+	end
+end
+module Sparkles
+	Color : Object
+	Enabled : Object
+	SparkleColor : Object
+	TimeScale : Object
+end
+module SpawnerService
+end
+module Speaker
+	ChannelCount : Object
+	PlaybackLoudness : Object
+	RollOffMaxDistance : Object
+	RollOffMinDistance : Object
+	RollOffMode : Object
+	SoundGroup : Object
+	Source : Object
+	Volume : Object
+end
+module StackFrame
+end
+module StandalonePluginScripts
+end
+module StarterGear
+end
+module StarterPack
+end
+module StarterPlayer
+	AllowCustomAnimations : Object
+	AutoJumpEnabled : Object
+	CameraMaxZoomDistance : Object
+	CameraMinZoomDistance : Object
+	CameraMode : Object
+	CharacterJumpHeight : Object
+	CharacterJumpPower : Object
+	CharacterMaxSlopeAngle : Object
+	CharacterUseJumpPower : Object
+	CharacterWalkSpeed : Object
+	DevCameraOcclusionMode : Object
+	DevComputerCameraMovementMode : Object
+	DevComputerMovementMode : Object
+	DevTouchCameraMovementMode : Object
+	DevTouchMovementMode : Object
+	EnableMouseLockOption : Object
+	HealthDisplayDistance : Object
+	HumanoidStateMachineMode : Object
+	LoadCharacterAppearance : Object
+	NameDisplayDistance : Object
+	UserEmotesEnabled : Object
+end
+module StarterPlayerScripts
+end
+module StarterCharacterScripts
+end
+module Stats
+	ContactsCount : Object
+	DataReceiveKbps : Object
+	DataSendKbps : Object
+	HeartbeatTimeMs : Object
+	InstanceCount : Object
+	MovingPrimitivesCount : Object
+	PhysicsReceiveKbps : Object
+	PhysicsSendKbps : Object
+	PhysicsStepTimeMs : Object
+	PrimitivesCount : Object
+	GetMemoryUsageMbForTag = Method((Enum::DeveloperMemoryTag) -> Nil).new do |tag|
+	
+	end
+	GetTotalMemoryUsageMb = Method(() -> Nil).new do ||
+	
+	end
+end
+module StatsItem
+	DisplayName : Object
+	GetValue = Method(() -> Nil).new do ||
+	
+	end
+	GetValueString = Method(() -> Nil).new do ||
+	
+	end
+end
+module RunningAverageItemDouble
+end
+module RunningAverageItemInt
+end
+module RunningAverageTimeIntervalItem
+end
+module TotalCountTimeIntervalItem
+end
+module Studio
+	["\"TODO\" Color"] : Object
+	["\"function\" Color"] : Object
+	["\"local\" Color"] : Object
+	["\"nil\" Color"] : Object
+	["\"self\" Color"] : Object
+	["Active Color"] : Object
+	["Active Hover Over Color"] : Object
+	["Always Save Script Changes"] : Object
+	["Animate Hover Over"] : Object
+	["Auto Clean Empty Line"] : Object
+	["Auto Closing Brackets"] : Object
+	["Auto Closing Quotes"] : Object
+	["Auto Delete Closing Brackets and Quotes"] : Object
+	["Auto Indent Rule"] : Object
+	["Auto-Recovery Enabled"] : Object
+	["Auto-Recovery Interval (Minutes)"] : Object
+	["Auto-Recovery Path"] : Object
+	["Background Color"] : Object
+	["Basic Objects Display Mode"] : Object
+	["Bool Color"] : Object
+	["Bracket Color"] : Object
+	["Built-in Function Color"] : Object
+	["Camera Mouse Wheel Speed"] : Object
+	["Camera Shift Speed"] : Object
+	["Camera Speed"] : Object
+	["Camera Zoom to Mouse Position"] : Object
+	["Clear Output On Start"] : Object
+	CommandBarLocalState : Object
+	["Comment Color"] : Object
+	["Current Line Highlight Color"] : Object
+	["Debugger Current Line Color"] : Object
+	["Debugger Error Line Color"] : Object
+	DefaultScriptFileDir : Object
+	DeprecatedObjectsShown : Object
+	["Display Team Create toggle when creating a new experience"] : Object
+	["Drag Multiple Parts As Single Part"] : Object
+	["Enable Autocomplete"] : Object
+	["Enable CoreScript Debugger"] : Object
+	["Enable Http Sandboxing"] : Object
+	["Enable Internal Beta Features"] : Object
+	["Enable Internal Features"] : Object
+	["Enable Temporary Tabs"] : Object
+	["Enable Temporary Tabs In Explorer"] : Object
+	["Error Color"] : Object
+	["File > New creates a place with Team Create off"] : Object
+	["Find Selection Background Color"] : Object
+	Font : Object
+	["Format On Paste"] : Object
+	["Format On Type"] : Object
+	["Function Name Color"] : Object
+	["Highlight Current Line"] : Object
+	["Highlight Occurances"] : Object
+	HintColor : Object
+	["Hover Animate Speed"] : Object
+	["Hover Over Color"] : Object
+	["Indent Using Spaces"] : Object
+	InformationColor : Object
+	["Keyword Color"] : Object
+	["Line Thickness"] : Object
+	LocalAssetsFolder : Object
+	LuaDebuggerEnabled : Object
+	LuaDebuggerEnabledAtStartup : Object
+	["Luau Keyword Color"] : Object
+	["Matching Word Background Color"] : Object
+	["Maximum Output Lines"] : Object
+	["Menu Item Background Color"] : Object
+	["Method Color"] : Object
+	["Number Color"] : Object
+	["Only Play Audio from Window in Focus"] : Object
+	["Operator Color"] : Object
+	["Output Font"] : Object
+	["Output Layout Mode"] : Object
+	PermissionLevelShown : Object
+	PluginDebuggingEnabled : Object
+	PluginsDir : Object
+	["Primary Text Color"] : Object
+	["Property Color"] : Object
+	["Render Throttle Percentage"] : Object
+	["Respect Studio shortcuts when game has focus"] : Object
+	["Ruler Color"] : Object
+	Rulers : Object
+	RuntimeUndoBehavior : Object
+	["Script Editor Color Preset"] : Object
+	["Script Editor Scrollbar Background Color"] : Object
+	["Script Editor Scrollbar Handle Color"] : Object
+	ScriptTimeoutLength : Object
+	["Scroll Past Last Line"] : Object
+	["Search Content For Core Scripts"] : Object
+	["Secondary Text Color"] : Object
+	["Select Color"] : Object
+	["Select/Hover Color"] : Object
+	["Selected Menu Item Background Color"] : Object
+	["Selected Text Color"] : Object
+	["Selection Background Color"] : Object
+	["Selection Color"] : Object
+	["Server Audio Behavior"] : Object
+	["Set Pivot of Imported Parts"] : Object
+	["Show Core GUI in Explorer while Playing"] : Object
+	["Show Diagnostics Bar"] : Object
+	["Show FileSyncService"] : Object
+	["Show Hidden Objects in Explorer"] : Object
+	["Show Hover Over"] : Object
+	["Show Navigation Mesh"] : Object
+	["Show Plugin GUI Service in Explorer"] : Object
+	["Show QT warnings in output"] : Object
+	["Show Whitespace"] : Object
+	["Show plus button on hover in Explorer"] : Object
+	["Skip Closing Brackets and Quotes"] : Object
+	["String Color"] : Object
+	["Tab Width"] : Object
+	["Text Color"] : Object
+	["Text Wrapping"] : Object
+	Theme : Object
+	["UI Theme"] : Object
+	["Warning Color"] : Object
+	["Whitespace Color"] : Object
+	GetAvailableThemes = Method(() -> Nil).new do ||
+	
+	end
+	ThemeChanged = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+end
+module StudioAssetService
+end
+module StudioData
+end
+module StudioDeviceEmulatorService
+end
+module StudioPublishService
+end
+module StudioScriptDebugEventListener
+end
+module StudioSdkService
+end
+module StudioService
+	ActiveScript : Object
+	DraggerSolveConstraints : Object
+	DrawConstraintsOnTop : Object
+	GridSize : Object
+	RotateIncrement : Object
+	ShowConstraintDetails : Object
+	StudioLocaleId : Object
+	UseLocalSpace : Object
+	GetClassIcon = Method((string) -> Nil).new do |className|
+	
+	end
+	GetUserId = Method(() -> Nil).new do ||
+	
+	end
+	GizmoRaycast = Method((Vector3, Vector3, RaycastParams) -> Nil).new do |origin, direction, raycastParams|
+	
+	end
+	PromptImportFile = Method((Array) -> Nil).new do |fileTypeFilter|
+	
+	end
+	PromptImportFiles = Method((Array) -> Nil).new do |fileTypeFilter|
+	
+	end
+end
+module StudioTheme
+	GetColor = Method((Enum::StudioStyleGuideColor, Enum::StudioStyleGuideModifier) -> Nil).new do |styleguideitem, modifier|
+	
+	end
+end
+module SurfaceAppearance
+end
+module TaskScheduler
+	SchedulerDutyCycle : Object
+	SchedulerRate : Object
+	ThreadPoolConfig : Object
+	ThreadPoolSize : Object
+end
+module Team
+	AutoAssignable : Object
+	AutoColorCharacters : Object
+	Score : Object
+	TeamColor : Object
+	GetPlayers = Method(() -> Nil).new do ||
+	
+	end
+	PlayerAdded = RBXScriptSignal((Player) -> Nil).new do |player|
+	
+	end
+	PlayerRemoved = RBXScriptSignal((Player) -> Nil).new do |player|
+	
+	end
+end
+module TeamCreateData
+end
+module TeamCreatePublishService
+end
+module TeamCreateService
+end
+module Teams
+	GetTeams = Method(() -> Nil).new do ||
+	
+	end
+	RebalanceTeams = Method(() -> Nil).new do ||
+	
+	end
+end
+module TeleportAsyncResult
+	PrivateServerId : Object
+	ReservedServerAccessCode : Object
+end
+module TeleportOptions
+	ReservedServerAccessCode : Object
+	ServerInstanceId : Object
+	ShouldReserveServer : Object
+	GetTeleportData = Method(() -> Nil).new do ||
+	
+	end
+	SetTeleportData = Method((Hash) -> Nil).new do |teleportData|
+	
+	end
+end
+module TeleportService
+	CustomizedTeleportUI : Object
+	GetArrivingTeleportGui = Method(() -> Nil).new do ||
+	
+	end
+	GetLocalPlayerTeleportData = Method(() -> Nil).new do ||
+	
+	end
+	GetTeleportSetting = Method((string) -> Nil).new do |setting|
+	
+	end
+	SetTeleportGui = Method((Instance) -> Nil).new do |gui|
+	
+	end
+	SetTeleportSetting = Method((string, Hash) -> Nil).new do |setting, value|
+	
+	end
+	Teleport = Method((Int64, Instance, Hash, Instance) -> Nil).new do |placeId, player, teleportData, customLoadingScreen|
+	
+	end
+	TeleportToPlaceInstance = Method((Int64, string, Instance, string, Hash, Instance) -> Nil).new do |placeId, instanceId, player, spawnName, teleportData, customLoadingScreen|
+	
+	end
+	TeleportToPrivateServer = Method((Int64, string, Array(Instance), string, Hash, Instance) -> Nil).new do |placeId, reservedServerAccessCode, players, spawnName, teleportData, customLoadingScreen|
+	
+	end
+	TeleportToSpawnByName = Method((Int64, string, Instance, Hash, Instance) -> Nil).new do |placeId, spawnName, player, teleportData, customLoadingScreen|
+	
+	end
+	GetPlayerPlaceInstanceAsync = Method((Int64) -> Nil).new do |userId|
+	
+	end
+	ReserveServer = Method((Int64) -> Nil).new do |placeId|
+	
+	end
+	TeleportAsync = Method((Int64, Array(Instance), Instance) -> Nil).new do |placeId, players, teleportOptions|
+	
+	end
+	TeleportPartyAsync = Method((Int64, Array(Instance), Hash, Instance) -> Nil).new do |placeId, players, teleportData, customLoadingScreen|
+	
+	end
+	LocalPlayerArrivedFromTeleport = RBXScriptSignal((Instance, Hash) -> Nil).new do |loadingGui, dataTable|
+	
+	end
+	TeleportInitFailed = RBXScriptSignal((Instance, Enum::TeleportResult, string, Int64, Instance) -> Nil).new do |player, teleportResult, errorMessage, placeId, teleportOptions|
+	
+	end
+end
+module TemporaryCageMeshProvider
+end
+module TemporaryScriptService
+end
+module TerrainDetail
+	Face : Object
+	MaterialPattern : Object
+	StudsPerTile : Object
+end
+module TerrainRegion
+	IsSmooth : Object
+	SizeInCells : Object
+end
+module TestService
+	AutoRuns : Object
+	Description : Object
+	ErrorCount : Object
+	ExecuteWithStudioRun : Object
+	Is30FpsThrottleEnabled : Object
+	IsPhysicsEnvironmentalThrottled : Object
+	IsSleepAllowed : Object
+	NumberOfPlayers : Object
+	SimulateSecondsLag : Object
+	TestCount : Object
+	Timeout : Object
+	WarnCount : Object
+	Check = Method((Bool, string, Instance, Int32) -> Nil).new do |condition, description, source, line|
+	
+	end
+	Checkpoint = Method((string, Instance, Int32) -> Nil).new do |text, source, line|
+	
+	end
+	Done = Method(() -> Nil).new do ||
+	
+	end
+	Error = Method((string, Instance, Int32) -> Nil).new do |description, source, line|
+	
+	end
+	Fail = Method((string, Instance, Int32) -> Nil).new do |description, source, line|
+	
+	end
+	Message = Method((string, Instance, Int32) -> Nil).new do |text, source, line|
+	
+	end
+	Require = Method((Bool, string, Instance, Int32) -> Nil).new do |condition, description, source, line|
+	
+	end
+	ScopeTime = Method(() -> Nil).new do ||
+	
+	end
+	Warn = Method((Bool, string, Instance, Int32) -> Nil).new do |condition, description, source, line|
+	
+	end
+	isFeatureEnabled = Method((string) -> Nil).new do |name|
+	
+	end
+	Run = Method(() -> Nil).new do ||
+	
+	end
+	ServerCollectConditionalResult = RBXScriptSignal((Bool, string, Instance, Int32) -> Nil).new do |condition, text, script, line|
+	
+	end
+	ServerCollectResult = RBXScriptSignal((string, Instance, Int32) -> Nil).new do |text, script, line|
+	
+	end
+end
+module TextBoxService
+end
+module TextChannel
+	DisplaySystemMessage = Method((string, string) -> Nil).new do |systemMessage, metadata|
+	
+	end
+	AddUserAsync = Method((Int64) -> Nil).new do |userId|
+	
+	end
+	SendAsync = Method((string, string) -> Nil).new do |message, metadata|
+	
+	end
+	MessageReceived = RBXScriptSignal((TextChatMessage) -> Nil).new do |incomingMessage|
+	
+	end
+	OnIncomingMessage = Callback(TextChatMessage -> Nil).new do |message|
+	
+	end
+	ShouldDeliverCallback = Callback(TextChatMessage, TextSource -> Nil).new do |message, textSource|
+	
+	end
+end
+module TextChatCommand
+	Enabled : Object
+	PrimaryAlias : Object
+	SecondaryAlias : Object
+	Triggered = RBXScriptSignal((TextSource, string) -> Nil).new do |originTextSource, unfilteredText|
+	
+	end
+end
+module TextChatConfigurations
+end
+module BubbleChatConfiguration
+	AdorneeName : Object
+	BackgroundColor3 : Object
+	BackgroundTransparency : Object
+	BubbleDuration : Object
+	BubblesSpacing : Object
+	Enabled : Object
+	Font : Object
+	FontFace : Object
+	LocalPlayerStudsOffset : Object
+	MaxDistance : Object
+	MinimizeDistance : Object
+	TextColor3 : Object
+	TextSize : Object
+	VerticalStudsOffset : Object
+end
+module ChatInputBarConfiguration
+	AbsolutePosition : Object
+	AbsoluteSize : Object
+	BackgroundColor3 : Object
+	BackgroundTransparency : Object
+	Enabled : Object
+	FontFace : Object
+	IsFocused : Object
+	KeyboardKeyCode : Object
+	PlaceholderColor3 : Object
+	TargetTextChannel : Object
+	TextBox : Object
+	TextColor3 : Object
+	TextSize : Object
+	TextStrokeColor3 : Object
+	TextStrokeTransparency : Object
+end
+module ChatWindowConfiguration
+	AbsolutePosition : Object
+	AbsoluteSize : Object
+	BackgroundColor3 : Object
+	BackgroundTransparency : Object
+	Enabled : Object
+	FontFace : Object
+	HeightScale : Object
+	HorizontalAlignment : Object
+	TextColor3 : Object
+	TextSize : Object
+	TextStrokeColor3 : Object
+	TextStrokeTransparency : Object
+	VerticalAlignment : Object
+	WidthScale : Object
+end
+module TextChatMessage
+	MessageId : Object
+	Metadata : Object
+	PrefixText : Object
+	Status : Object
+	Text : Object
+	TextChannel : Object
+	TextSource : Object
+	Timestamp : Object
+end
+module TextChatMessageProperties
+	PrefixText : Object
+	Text : Object
+end
+module TextChatService
+	ChatVersion : Object
+	CreateDefaultCommands : Object
+	CreateDefaultTextChannels : Object
+	MessageReceived = RBXScriptSignal((TextChatMessage) -> Nil).new do |textChatMessage|
+	
+	end
+	SendingMessage = RBXScriptSignal((TextChatMessage) -> Nil).new do |textChatMessage|
+	
+	end
+	OnIncomingMessage = Callback(TextChatMessage -> Nil).new do |message|
+	
+	end
+end
+module TextFilterResult
+	GetChatForUserAsync = Method((Int64) -> Nil).new do |toUserId|
+	
+	end
+	GetNonChatStringForBroadcastAsync = Method(() -> Nil).new do ||
+	
+	end
+	GetNonChatStringForUserAsync = Method((Int64) -> Nil).new do |toUserId|
+	
+	end
+end
+module TextService
+	GetTextSize = Method((string, Int32, Enum::Font, Vector2) -> Nil).new do |string, fontSize, font, frameSize|
+	
+	end
+	FilterStringAsync = Method((string, Int64, Enum::TextFilterContext) -> Nil).new do |stringToFilter, fromUserId, textContext|
+	
+	end
+	GetFamilyInfoAsync = Method((String) -> Nil).new do |assetId|
+	
+	end
+	GetTextBoundsAsync = Method((GetTextBoundsParams) -> Nil).new do |params|
+	
+	end
+end
+module TextSource
+	CanSend : Object
+	UserId : Object
+end
+module ThirdPartyUserService
+end
+module ThreadState
+end
+module TimerService
+end
+module ToastNotificationService
+end
+module TouchInputService
+end
+module TouchTransmitter
+end
+module TracerService
+end
+module TrackerLodController
+	AudioMode : Object
+	VideoExtrapolationMode : Object
+	VideoLodMode : Object
+	VideoMode : Object
+end
+module TrackerStreamAnimation
+end
+module Trail
+	Attachment0 : Object
+	Attachment1 : Object
+	Brightness : Object
+	Color : Object
+	Enabled : Object
+	FaceCamera : Object
+	Lifetime : Object
+	LightEmission : Object
+	LightInfluence : Object
+	MaxLength : Object
+	MinLength : Object
+	Texture : Object
+	TextureLength : Object
+	TextureMode : Object
+	Transparency : Object
+	WidthScale : Object
+	Clear = Method(() -> Nil).new do ||
+	
+	end
+	OnClearRequested = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+end
+module Translator
+	LocaleId : Object
+	FormatByKey = Method((string, Hash) -> Nil).new do |key, args|
+	
+	end
+	Translate = Method((Instance, string) -> Nil).new do |context, text|
+	
+	end
+end
+module TweenBase
+	PlaybackState : Object
+	Cancel = Method(() -> Nil).new do ||
+	
+	end
+	Pause = Method(() -> Nil).new do ||
+	
+	end
+	Play = Method(() -> Nil).new do ||
+	
+	end
+	Completed = RBXScriptSignal((Enum::PlaybackState) -> Nil).new do |playbackState|
+	
+	end
+end
+module Tween
+	Instance : Object
+	TweenInfo : Object
+end
+module TweenService
+	Create = Method((Instance, TweenInfo, Hash) -> Nil).new do |instance, tweenInfo, propertyTable|
+	
+	end
+	GetValue = Method((Float32, Enum::EasingStyle, Enum::EasingDirection) -> Nil).new do |alpha, easingStyle, easingDirection|
+	
+	end
+end
+module UGCValidationService
+end
+module UIBase
+end
+module UIComponent
+end
+module UIConstraint
+end
+module UIAspectRatioConstraint
+	AspectRatio : Object
+	AspectType : Object
+	DominantAxis : Object
+end
+module UISizeConstraint
+	MaxSize : Object
+	MinSize : Object
+end
+module UITextSizeConstraint
+	MaxTextSize : Object
+	MinTextSize : Object
+end
+module UICorner
+	CornerRadius : Object
+end
+module UIGradient
+	Color : Object
+	Enabled : Object
+	Offset : Object
+	Rotation : Object
+	Transparency : Object
+end
+module UILayout
+end
+module UIGridStyleLayout
+	AbsoluteContentSize : Object
+	FillDirection : Object
+	HorizontalAlignment : Object
+	SortOrder : Object
+	VerticalAlignment : Object
+	ApplyLayout = Method(() -> Nil).new do ||
+	
+	end
+	SetCustomSortFunction = Method((Callback) -> Nil).new do |function|
+	
+	end
+end
+module UIGridLayout
+	AbsoluteCellCount : Object
+	AbsoluteCellSize : Object
+	CellPadding : Object
+	CellSize : Object
+	FillDirectionMaxCells : Object
+	StartCorner : Object
+end
+module UIListLayout
+	Padding : Object
+end
+module UIPageLayout
+	Animated : Object
+	Circular : Object
+	CurrentPage : Object
+	EasingDirection : Object
+	EasingStyle : Object
+	GamepadInputEnabled : Object
+	Padding : Object
+	ScrollWheelInputEnabled : Object
+	TouchInputEnabled : Object
+	TweenTime : Object
+	JumpTo = Method((Instance) -> Nil).new do |page|
+	
+	end
+	JumpToIndex = Method((Int32) -> Nil).new do |index|
+	
+	end
+	Next = Method(() -> Nil).new do ||
+	
+	end
+	Previous = Method(() -> Nil).new do ||
+	
+	end
+	PageEnter = RBXScriptSignal((Instance) -> Nil).new do |page|
+	
+	end
+	PageLeave = RBXScriptSignal((Instance) -> Nil).new do |page|
+	
+	end
+	Stopped = RBXScriptSignal((Instance) -> Nil).new do |currentPage|
+	
+	end
+end
+module UITableLayout
+	FillEmptySpaceColumns : Object
+	FillEmptySpaceRows : Object
+	MajorAxis : Object
+	Padding : Object
+end
+module UIPadding
+	PaddingBottom : Object
+	PaddingLeft : Object
+	PaddingRight : Object
+	PaddingTop : Object
+end
+module UIScale
+	Scale : Object
+end
+module UIStroke
+	ApplyStrokeMode : Object
+	Color : Object
+	Enabled : Object
+	LineJoinMode : Object
+	Thickness : Object
+	Transparency : Object
+end
+module UnvalidatedAssetService
+end
+module UserGameSettings
+	ComputerCameraMovementMode : Object
+	ComputerMovementMode : Object
+	ControlMode : Object
+	GamepadCameraSensitivity : Object
+	MouseSensitivity : Object
+	RCCProfilerRecordFrameRate : Object
+	RCCProfilerRecordTimeFrame : Object
+	RotationType : Object
+	SavedQualityLevel : Object
+	TouchCameraMovementMode : Object
+	TouchMovementMode : Object
+	VRPlayMode : Object
+	VRSmoothRotationEnabled : Object
+	VignetteEnabled : Object
+	GetCameraYInvertValue = Method(() -> Nil).new do ||
+	
+	end
+	GetOnboardingCompleted = Method((string) -> Nil).new do |onboardingId|
+	
+	end
+	InFullScreen = Method(() -> Nil).new do ||
+	
+	end
+	InStudioMode = Method(() -> Nil).new do ||
+	
+	end
+	SetCameraYInvertVisible = Method(() -> Nil).new do ||
+	
+	end
+	SetGamepadCameraSensitivityVisible = Method(() -> Nil).new do ||
+	
+	end
+	SetOnboardingCompleted = Method((string) -> Nil).new do |onboardingId|
+	
+	end
+	FullscreenChanged = RBXScriptSignal((Bool) -> Nil).new do |isFullscreen|
+	
+	end
+	StudioModeChanged = RBXScriptSignal((Bool) -> Nil).new do |isStudioMode|
+	
+	end
+end
+module UserInputService
+	AccelerometerEnabled : Object
+	GamepadEnabled : Object
+	GyroscopeEnabled : Object
+	KeyboardEnabled : Object
+	ModalEnabled : Object
+	MouseBehavior : Object
+	MouseDeltaSensitivity : Object
+	MouseEnabled : Object
+	MouseIcon : Object
+	MouseIconEnabled : Object
+	OnScreenKeyboardPosition : Object
+	OnScreenKeyboardSize : Object
+	OnScreenKeyboardVisible : Object
+	TouchEnabled : Object
+	UserHeadCFrame : Object
+	VREnabled : Object
+	GamepadSupports = Method((Enum::UserInputType, Enum::KeyCode) -> Nil).new do |gamepadNum, gamepadKeyCode|
+	
+	end
+	GetConnectedGamepads = Method(() -> Nil).new do ||
+	
+	end
+	GetDeviceAcceleration = Method(() -> Nil).new do ||
+	
+	end
+	GetDeviceGravity = Method(() -> Nil).new do ||
+	
+	end
+	GetDeviceRotation = Method(() -> Nil).new do ||
+	
+	end
+	GetFocusedTextBox = Method(() -> Nil).new do ||
+	
+	end
+	GetGamepadConnected = Method((Enum::UserInputType) -> Nil).new do |gamepadNum|
+	
+	end
+	GetGamepadState = Method((Enum::UserInputType) -> Nil).new do |gamepadNum|
+	
+	end
+	GetKeysPressed = Method(() -> Nil).new do ||
+	
+	end
+	GetLastInputType = Method(() -> Nil).new do ||
+	
+	end
+	GetMouseButtonsPressed = Method(() -> Nil).new do ||
+	
+	end
+	GetMouseDelta = Method(() -> Nil).new do ||
+	
+	end
+	GetMouseLocation = Method(() -> Nil).new do ||
+	
+	end
+	GetNavigationGamepads = Method(() -> Nil).new do ||
+	
+	end
+	GetStringForKeyCode = Method((Enum::KeyCode) -> Nil).new do |keyCode|
+	
+	end
+	GetSupportedGamepadKeyCodes = Method((Enum::UserInputType) -> Nil).new do |gamepadNum|
+	
+	end
+	GetUserCFrame = Method((Enum::UserCFrame) -> Nil).new do |type|
+	
+	end
+	IsGamepadButtonDown = Method((Enum::UserInputType, Enum::KeyCode) -> Nil).new do |gamepadNum, gamepadKeyCode|
+	
+	end
+	IsKeyDown = Method((Enum::KeyCode) -> Nil).new do |keyCode|
+	
+	end
+	IsMouseButtonPressed = Method((Enum::UserInputType) -> Nil).new do |mouseButton|
+	
+	end
+	IsNavigationGamepad = Method((Enum::UserInputType) -> Nil).new do |gamepadEnum|
+	
+	end
+	RecenterUserHeadCFrame = Method(() -> Nil).new do ||
+	
+	end
+	SetNavigationGamepad = Method((Enum::UserInputType, Bool) -> Nil).new do |gamepadEnum, enabled|
+	
+	end
+	DeviceAccelerationChanged = RBXScriptSignal((InputObject) -> Nil).new do |acceleration|
+	
+	end
+	DeviceGravityChanged = RBXScriptSignal((InputObject) -> Nil).new do |gravity|
+	
+	end
+	DeviceRotationChanged = RBXScriptSignal((InputObject, CFrame) -> Nil).new do |rotation, cframe|
+	
+	end
+	GamepadConnected = RBXScriptSignal((Enum::UserInputType) -> Nil).new do |gamepadNum|
+	
+	end
+	GamepadDisconnected = RBXScriptSignal((Enum::UserInputType) -> Nil).new do |gamepadNum|
+	
+	end
+	InputBegan = RBXScriptSignal((InputObject, Bool) -> Nil).new do |input, gameProcessedEvent|
+	
+	end
+	InputChanged = RBXScriptSignal((InputObject, Bool) -> Nil).new do |input, gameProcessedEvent|
+	
+	end
+	InputEnded = RBXScriptSignal((InputObject, Bool) -> Nil).new do |input, gameProcessedEvent|
+	
+	end
+	JumpRequest = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	LastInputTypeChanged = RBXScriptSignal((Enum::UserInputType) -> Nil).new do |lastInputType|
+	
+	end
+	PointerAction = RBXScriptSignal((Float32, Vector2, Float32, Bool) -> Nil).new do |wheel, pan, pinch, gameProcessedEvent|
+	
+	end
+	TextBoxFocusReleased = RBXScriptSignal((TextBox) -> Nil).new do |textboxReleased|
+	
+	end
+	TextBoxFocused = RBXScriptSignal((TextBox) -> Nil).new do |textboxFocused|
+	
+	end
+	TouchEnded = RBXScriptSignal((InputObject, Bool) -> Nil).new do |touch, gameProcessedEvent|
+	
+	end
+	TouchLongPress = RBXScriptSignal((Array, Enum::UserInputState, Bool) -> Nil).new do |touchPositions, state, gameProcessedEvent|
+	
+	end
+	TouchMoved = RBXScriptSignal((InputObject, Bool) -> Nil).new do |touch, gameProcessedEvent|
+	
+	end
+	TouchPan = RBXScriptSignal((Array, Vector2, Vector2, Enum::UserInputState, Bool) -> Nil).new do |touchPositions, totalTranslation, velocity, state, gameProcessedEvent|
+	
+	end
+	TouchPinch = RBXScriptSignal((Array, Float32, Float32, Enum::UserInputState, Bool) -> Nil).new do |touchPositions, scale, velocity, state, gameProcessedEvent|
+	
+	end
+	TouchRotate = RBXScriptSignal((Array, Float32, Float32, Enum::UserInputState, Bool) -> Nil).new do |touchPositions, rotation, velocity, state, gameProcessedEvent|
+	
+	end
+	TouchStarted = RBXScriptSignal((InputObject, Bool) -> Nil).new do |touch, gameProcessedEvent|
+	
+	end
+	TouchSwipe = RBXScriptSignal((Enum::SwipeDirection, Int32, Bool) -> Nil).new do |swipeDirection, numberOfTouches, gameProcessedEvent|
+	
+	end
+	TouchTap = RBXScriptSignal((Array, Bool) -> Nil).new do |touchPositions, gameProcessedEvent|
+	
+	end
+	TouchTapInWorld = RBXScriptSignal((Vector2, Bool) -> Nil).new do |position, processedByUI|
+	
+	end
+	UserCFrameChanged = RBXScriptSignal((Enum::UserCFrame, CFrame) -> Nil).new do |type, value|
+	
+	end
+	WindowFocusReleased = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+	WindowFocused = RBXScriptSignal(() -> Nil).new do ||
+	
+	end
+end
+module UserService
+	GetUserInfosByUserIdsAsync = Method((Array) -> Nil).new do |userIds|
+	
+	end
+end
+module VRService
+	AutomaticScaling : Object
+	FadeOutViewOnCollision : Object
+	GuiInputUserCFrame : Object
+	VREnabled : Object
+	GetTouchpadMode = Method((Enum::VRTouchpad) -> Nil).new do |pad|
+	
+	end
+	GetUserCFrame = Method((Enum::UserCFrame) -> Nil).new do |type|
+	
+	end
+	GetUserCFrameEnabled = Method((Enum::UserCFrame) -> Nil).new do |type|
+	
+	end
+	RecenterUserHeadCFrame = Method(() -> Nil).new do ||
+	
+	end
+	RequestNavigation = Method((CFrame, Enum::UserCFrame) -> Nil).new do |cframe, inputUserCFrame|
+	
+	end
+	SetTouchpadMode = Method((Enum::VRTouchpad, Enum::VRTouchpadMode) -> Nil).new do |pad, mode|
+	
+	end
+	NavigationRequested = RBXScriptSignal((CFrame, Enum::UserCFrame) -> Nil).new do |cframe, inputUserCFrame|
+	
+	end
+	TouchpadModeChanged = RBXScriptSignal((Enum::VRTouchpad, Enum::VRTouchpadMode) -> Nil).new do |pad, mode|
+	
+	end
+	UserCFrameChanged = RBXScriptSignal((Enum::UserCFrame, CFrame) -> Nil).new do |type, value|
+	
+	end
+	UserCFrameEnabled = RBXScriptSignal((Enum::UserCFrame, Bool) -> Nil).new do |type, enabled|
+	
+	end
+end
+module ValueBase
+end
+module BinaryStringValue
+	Changed = RBXScriptSignal(() -> Nil).new do |value|
+	
+	end
+end
+module BoolValue
+	Value : Object
+	Changed = RBXScriptSignal((Bool) -> Nil).new do |value|
+	
+	end
+end
+module BrickColorValue
+	Value : Object
+	Changed = RBXScriptSignal((BrickColor) -> Nil).new do |value|
+	
+	end
+end
+module CFrameValue
+	Value : Object
+	Changed = RBXScriptSignal((CFrame) -> Nil).new do |value|
+	
+	end
+end
+module Color3Value
+	Value : Object
+	Changed = RBXScriptSignal((Color3) -> Nil).new do |value|
+	
+	end
+end
+module DoubleConstrainedValue
+	ConstrainedValue : Object
+	MaxValue : Object
+	MinValue : Object
+	Value : Object
+	Changed = RBXScriptSignal((Float64) -> Nil).new do |value|
+	
+	end
+end
+module IntConstrainedValue
+	ConstrainedValue : Object
+	MaxValue : Object
+	MinValue : Object
+	Value : Object
+	Changed = RBXScriptSignal((Int64) -> Nil).new do |value|
+	
+	end
+end
+module IntValue
+	Value : Object
+	Changed = RBXScriptSignal((Int64) -> Nil).new do |value|
+	
+	end
+end
+module NumberValue
+	Value : Object
+	Changed = RBXScriptSignal((Float64) -> Nil).new do |value|
+	
+	end
+end
+module ObjectValue
+	Value : Object
+	Changed = RBXScriptSignal((Instance) -> Nil).new do |value|
+	
+	end
+end
+module RayValue
+	Value : Object
+	Changed = RBXScriptSignal((Ray) -> Nil).new do |value|
+	
+	end
+end
+module StringValue
+	Value : Object
+	Changed = RBXScriptSignal((string) -> Nil).new do |value|
+	
+	end
+end
+module Vector3Value
+	Value : Object
+	Changed = RBXScriptSignal((Vector3) -> Nil).new do |value|
+	
+	end
+end
+module Vector3Curve
+	GetValueAtTime = Method((Float32) -> Nil).new do |time|
+	
+	end
+	X = Method(() -> Nil).new do ||
+	
+	end
+	Y = Method(() -> Nil).new do ||
+	
+	end
+	Z = Method(() -> Nil).new do ||
+	
+	end
+end
+module VersionControlService
+end
+module VideoCaptureService
+end
+module VirtualInputManager
+end
+module VirtualUser
+end
+module VisibilityCheckDispatcher
+end
+module VisibilityService
+end
+module Visit
+end
+module VoiceChatInternal
+	VoiceChatState : Object
+	GetAudioProcessingSettings = Method(() -> Nil).new do ||
+	
+	end
+	GetMicDevices = Method(() -> Nil).new do ||
+	
+	end
+	GetParticipants = Method(() -> Nil).new do ||
+	
+	end
+	GetSpeakerDevices = Method(() -> Nil).new do ||
+	
+	end
+	GetVoiceChatApiVersion = Method(() -> Nil).new do ||
+	
+	end
+	GetVoiceChatAvailable = Method(() -> Nil).new do ||
+	
+	end
+	IsPublishPaused = Method(() -> Nil).new do ||
+	
+	end
+	IsSubscribePaused = Method((Int64) -> Nil).new do |userId|
+	
+	end
+	JoinByGroupId = Method((string, Bool) -> Nil).new do |groupId, isMicMuted|
+	
+	end
+	JoinByGroupIdToken = Method((string, Bool) -> Nil).new do |groupId, isMicMuted|
+	
+	end
+	Leave = Method(() -> Nil).new do ||
+	
+	end
+	PublishPause = Method((Bool) -> Nil).new do |paused|
+	
+	end
+	SetMicDevice = Method((string, string) -> Nil).new do |micDeviceName, micDeviceGuid|
+	
+	end
+	SetSpeakerDevice = Method((string, string) -> Nil).new do |speakerDeviceName, speakerDeviceGuid|
+	
+	end
+	SubscribePause = Method((Int64, Bool) -> Nil).new do |userId, paused|
+	
+	end
+	SubscribePauseAll = Method((Bool) -> Nil).new do |paused|
+	
+	end
+	IsVoiceEnabledForUserIdAsync = Method((Int64) -> Nil).new do |userId|
+	
+	end
+	StateChanged = RBXScriptSignal((Enum::VoiceChatState, Enum::VoiceChatState) -> Nil).new do |old, new|
+	
+	end
+end
+module VoiceChatService
+	IsVoiceEnabledForUserIdAsync = Method((Int64) -> Nil).new do |userId|
+	
+	end
+end
+module WeldConstraint
+	Active : Object
+	Enabled : Object
+	Part0 : Object
+	Part1 : Object
+end

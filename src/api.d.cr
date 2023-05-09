@@ -12,6 +12,10 @@ module API
 
     @[JSON::Field(key: "Version")]
     property version : Float64
+
+    def to_s
+      "API::Dump<classes: #{@classes}, enums: #{@enums}, version: #{@version}>"
+    end
   end
 
   class Enum
@@ -22,6 +26,10 @@ module API
 
     @[JSON::Field(key: "Name")]
     property name : String
+
+    def to_s
+      "API::Enum<name: #{@name}, items: #{@items}>"
+    end
   end
 
   class EnumItem
@@ -34,7 +42,11 @@ module API
     property name : String
 
     @[JSON::Field(key: "Value")]
-    property value : Float64
+    property value : Int32
+
+    def to_s
+      "API::EnumItem<name: #{@name}, value: #{@value}, legacy_names: #{@legacy_names}>"
+    end
   end
 
   class ClassTags
@@ -45,6 +57,10 @@ module API
 
     @[JSON::Field(key: "ThreadSafety", emit_null: true)]
     property thread_safety : String?
+
+    def to_s
+      "API::ClassTags<preferred_descriptor_name: #{@preferred_descriptor_name}, thread_safety: #{@thread_safety}>"
+    end
   end
 
   alias Member = Property | Function | Event | Callback
@@ -74,10 +90,21 @@ module API
 
     @[JSON::Field(key: "Description", emit_null: true)]
     property description : String?
+
+    def to_s
+      "API::Class<name: #{@name}, member_category: #{@member_category}, members: #{@members}, tags: #{@tags}, description: #{@description}, thread_safety: #{@thread_safety}, superclass: #{@superclass}, subclasses: #{@subclasses}>"
+    end
   end
 
-  class MemberBase
+  abstract class MemberBase
     include JSON::Serializable
+
+    use_json_discriminator "MemberType", {
+      Callback: Callback,
+      Event: Event,
+      Function: Function,
+      Property: Property
+    }
 
     @[JSON::Field(key: "MemberType")]
     property member_type : String
@@ -93,43 +120,63 @@ module API
 
     @[JSON::Field(key: "Description", emit_null: true)]
     property description : String?
-  end
 
-  class Event < MemberBase
-    include JSON::Serializable
-
-    @[JSON::Field(key: "Parameters")]
-    property parameters : Array(Parameter)
+    def to_s
+      "API::MemberBase<member_type: #{@member_type}, name: #{@name}, security: #{@security}, tags: #{@tags}, description: #{@description}>"
+    end
   end
 
   class Callback < MemberBase
-    include JSON::Serializable
-
     @[JSON::Field(key: "Parameters")]
     property parameters : Array(Parameter)
+
+    def to_s
+      "API::Callback<member_type: Callback, name: #{@name}, security: #{@security}, tags: #{@tags}, description: #{@description}, parameters: #{@parameters}>"
+    end
   end
 
-  class Function < MemberBase
-    include JSON::Serializable
+  class Event < Callback
+    def to_s
+      "API::Event<member_type: Event, name: #{@name}, security: #{@security}, tags: #{@tags}, description: #{@description}, parameters: #{@parameters}>"
+    end
+  end
 
-    @[JSON::Field(key: "Parameters")]
-    property parameters : Array(Parameter)
-
+  class Function < Callback
     @[JSON::Field(key: "ReturnType")]
     property return_type : ValueType
+
+    def initialize(parameters, @return_type)
+      super parameters
+    end
+
+    def to_s
+      "API::Function<member_type: Function, name: #{@name}, security: #{@security}, tags: #{@tags}, description: #{@description}, parameters: #{@parameters}, return_type: #{@return_type}>"
+    end
   end
 
   class Property < MemberBase
-    include JSON::Serializable
-
     @[JSON::Field(key: "Category")]
     property category : String
-
+    @[JSON::Field(key: "Default")]
+    property default : String
     @[JSON::Field(key: "Serialization")]
     property serialization : Serialization
-
+    @[JSON::Field(key: "ThreadSafety")]
+    property thread_safety : String
     @[JSON::Field(key: "ValueType")]
     property value_type : ValueType
+
+    def initialize(
+      @category,
+      @default,
+      @serialization,
+      @thread_safety,
+      @value_type
+    ) end
+
+    def to_s
+      "API::Property<member_type: Function, name: #{@name}, security: #{@security}, tags: #{@tags}, description: #{@description}, category: #{@category}, serialization: #{@serialization}, value_type: #{@value_type}>"
+    end
   end
 
   class Serialization
@@ -137,9 +184,12 @@ module API
 
     @[JSON::Field(key: "CanLoad")]
     property can_load : Bool
-
     @[JSON::Field(key: "CanSave")]
     property can_save : Bool
+
+    def to_s
+      "API::Serialization<can_load: #{@can_load}, can_save: #{@can_save}>"
+    end
   end
 
   class ValueType
@@ -147,9 +197,12 @@ module API
 
     @[JSON::Field(key: "Category")]
     property category : String
+    @[JSON::Field(key: "Name", emit_null: true)]
+    property name : String?
 
-    @[JSON::Field(key: "Name")]
-    property name : String
+    def to_s
+      "API::ValueType<name: #{@name}, category: #{@category}>"
+    end
   end
 
   class Security
@@ -157,15 +210,18 @@ module API
 
     @[JSON::Field(key: "Read")]
     property read : String
-
     @[JSON::Field(key: "Write")]
 		property write : String
 
-    def as_hash : Hash(String, String)
+    def as_hash
       {
         "read" => @read,
         "write" => @write
       }
+    end
+
+    def to_s
+      "API::Security<read: #{@read}, write: #{@write}>"
     end
   end
 
@@ -174,11 +230,13 @@ module API
 
     @[JSON::Field(key: "Name")]
     property name : String
-
     @[JSON::Field(key: "Type")]
     property type : ValueType
-
     @[JSON::Field(key: "Default", emit_null: true)]
     property default : String?
+
+    def to_s
+      "API::Parameter<name: #{@name}, type: #{@type}, default: #{@default}>"
+    end
   end
 end

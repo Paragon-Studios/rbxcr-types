@@ -21,7 +21,7 @@ class EnumGenerator < Generator
 
       enum_type_items.each do |item|
         item_name = item.name.camelcase
-        item_value = item.value.to_i32
+        item_value = item.value
         item_legacy_names = item.legacy_names || [] of String
 
         item_names << item.name

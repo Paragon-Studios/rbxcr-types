@@ -20,13 +20,13 @@ def contains_bad_char?(name : String) : Bool
 	false
 end
 
-def safe_name?(name : String) : Bool
-  return contains_bad_char? name ? "[\"#{name.gsub(/\"/, "\\\"")}\"]" : name
+def safe_name(name : String) : String
+  return contains_bad_char?(name) ? "[\"#{name.gsub(/\"/, "\\\"")}\"]" : name
 end
 
 def safe_prop_type(value_type : String?) : String?
   return nil if value_type.nil?
-  PROP_TYPE_MAP[value_type] || value_type
+  PROP_TYPE_MAP.has_key?(value_type) ? PROP_TYPE_MAP[value_type] : value_type
 end
 
 def safe_renamed_instance(name : String?) : String?
@@ -34,40 +34,39 @@ def safe_renamed_instance(name : String?) : String?
   RENAMEABLE_AUTO_TYPES.has_key?(name) ? RENAMEABLE_AUTO_TYPES[name] : name
 end
 
-def safe_value_type(value_type : API::ValueType) : String
+def safe_value_type(value_type : API::ValueType) : String?
   return "Enum::#{value_type.name}" if value_type.category == "Enum"
-  if value_type.name[-1] == "?"
-    non_optional_type = value_type.name[0..-2]
-    mapped_type = VALUE_TYPE_MAP[non_optional_type]
-    (mapped_type || non_optional_type) + '?'
+  if !value_type.name.nil? && value_type.name.not_nil![-1] == "?"
+    non_optional_type = value_type.name.not_nil![0..-2]
+    mapped_type = VALUE_TYPE_MAP.has_key?(non_optional_type) ? VALUE_TYPE_MAP[non_optional_type] : non_optional_type
+    mapped_type + '?' unless mapped_type.nil?
   else
-    VALUE_TYPE_MAP[value_type.name] || value_type.name
+    VALUE_TYPE_MAP.has_key?(value_type.name) ? VALUE_TYPE_MAP[value_type.name] : value_type.name
   end
 end
 
 def safe_return_type(value_type : String?) : String?
   return nil if value_type.nil?
-  mapped_type = RETURN_TYPE_MAP[value_type]
-  return mapped_type unless mapped_type.nil?
-  value_type
+  RETURN_TYPE_MAP.has_key?(value_type) ? RETURN_TYPE_MAP[value_type] : value_type
 end
 
 def safe_arg_name(name : String?) : String?
   return nil if name.nil?
-  ARG_NAME_MAP[name] || name
+  ARG_NAME_MAP.has_key?(name) ? ARG_NAME_MAP[name] : name
 end
 
-def get_security(class_name : String, member : API::MemberBase) : Hash(String, String)
+def get_security(class_name : String, member : API::Member) : Hash(String, String)
   security_override = {
     "StarterGui" => {
       "ShowDevelopmentGui" => "PluginSecurity"
     }
   } of String => Hash(String, String)
-  security = security_override[class_name][member.name] || member.security || "None"
+  class_security = security_override.has_key?(class_name) ? security_override[class_name] : nil
+  security = ((!class_security.nil? && class_security.has_key?(member.name)) ? class_security[member.name] : nil) || (member.security || "None")
   security.is_a?(String) ? { "read" => security, "write" => security } : security.as_hash
 end
 
-def has_tag?(container : API::MemberBase | API::Class, tag : String) : Bool
+def has_tag?(container : API::Member | API::Class, tag : String) : Bool
   return container.tags.not_nil!.includes?(tag) unless container.tags.nil?
   false
 end
@@ -100,13 +99,13 @@ class ClassGenerator < Generator
     super file_path, @metadata
   end
 
-  private def can_read?(class_name : String, member : API::MemberBase) : Bool
+  private def can_read?(class_name : String, member : API::Member) : Bool
     read_security = get_security(class_name, member)["read"]
     read_security == @security ||
       (PLUGIN_ONLY_CLASSES.includes?(class_name) && read_security == @lower_security)
   end
 
-  private def can_write?(class_name : String, member : API::MemberBase) : Bool
+  private def can_write?(class_name : String, member : API::Member) : Bool
     write_security = get_security(class_name, member)["write"]
     write_security == @security ||
       (PLUGIN_ONLY_CLASSES.includes?(class_name) && write_security == @lower_security)
@@ -116,7 +115,7 @@ class ClassGenerator < Generator
     if PLUGIN_ONLY_CLASSES.includes?(rbx_class.name)
       true
     else
-      superclass = @class_refs[rbx_class.superclass]
+      superclass = rbx_class.superclass != ROOT_CLASS_NAME ? @class_refs[rbx_class.superclass] : nil
       superclass ? is_plugin_only_class?(superclass) : false
     end
   end
@@ -129,8 +128,9 @@ class ClassGenerator < Generator
     true
   end
 
-  private def should_generate_member?(rbx_class : API::Class, member : API::MemberBase) : Bool
-    return false if !MEMBER_BLACKLIST[rbx_class.name].nil? && MEMBER_BLACKLIST[rbx_class.name].includes?(member.name)
+  private def should_generate_member?(rbx_class : API::Class, member : API::Member) : Bool
+    return false if member.name.nil?
+    return false if MEMBER_BLACKLIST.has_key?(rbx_class.name) && MEMBER_BLACKLIST[rbx_class.name].includes?(member.name)
     return false unless can_read?(rbx_class.name, member)
     if has_tag?(member, "Deprecated")
       first_char = member.name[0]
@@ -145,7 +145,7 @@ class ClassGenerator < Generator
   end
 
   # for writing documentation
-  private def write_description(member : API::MemberBase, description : String?) : Nil
+  private def write_description(member : API::Member, description : String?) : Nil
 
   end
 
@@ -203,7 +203,7 @@ class ClassGenerator < Generator
     @defined_class_names << rbx_class.name
     class_name = assert_class_name rbx_class.name
 
-    members = rbx_class.members.select { |member| should_generate_member?(rbx_class, member) }
+    members : Array(API::Member) = rbx_class.members.select { |member| should_generate_member?(rbx_class, member) }
     no_security = @security == "None" || is_plugin_only_class?(rbx_class)
     if no_security
       desc = rbx_class.description
@@ -219,7 +219,7 @@ class ClassGenerator < Generator
       when "Callback"
         generate_callback member.as API::Callback, class_name
       when "Event"
-        generate_event member.as API::Event, class_name
+        generate_event member.as API::Callback, class_name
       when "Function"
         generate_function member.as API::Function, class_name
       when "Property"
@@ -266,7 +266,7 @@ class ClassGenerator < Generator
         unless findings.empty?
           part_pos = findings.index "Part"
           do_splice = !findings.includes?("Part") && !findings.empty? && !arg_name.downcase.includes?("or")
-          findings.delete_at(part_pos.not_nil!) if do_splice
+          findings.delete_at(part_pos.not_nil!) if do_splice && !part_pos.nil?
           param_type =
             safe_renamed_instance(findings.find { |found| found.downcase == arg_name.downcase }) ||
             findings.map { |found| found.downcase == arg_name.downcase }
@@ -287,7 +287,7 @@ class ClassGenerator < Generator
     write "end"
   end
 
-  private def generate_event(event : API::Event, class_name : String)
+  private def generate_event(event : API::Callback, class_name : String)
     args = generate_args event.parameters
     description = (event.description || "").trim != "" ?
       event.description
@@ -311,7 +311,13 @@ class ClassGenerator < Generator
   end
 
   private def generate_property(property : API::Property, class_name : String)
+    value_type = safe_prop_type safe_value_type property.value_type
+    description = (property.description || "").trim != "" ?
+      property.description
+      : @metadata.not_nil!.get_prop_desc(class_name, property.name)
 
+    definitely_defined = property.value_type.category != "Class"
+    write "#{safe_name property.name} : Object"
   end
 
   # Generates each class in `rbx_classes`

@@ -1,3 +1,4 @@
+![build](https://github.com/Paragon-Studios/rbxcr-types/actions/workflows/crystal.yml/badge.svg)
 # rbxcr-types
 
 This repository contains a code generation tool to generate Crystal type definitions for the Roblox API.

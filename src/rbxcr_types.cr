@@ -79,7 +79,5 @@ task_finished class_gen_timer
 compile_timer = Timer.new
 puts "Compiling generated files..."
 raise "#{TAB}Failed to compile generated Enums." unless system "crystal run #{enums_file}" # returns true if successful
-class_files.each do |file|
-  raise "#{TAB}Failed to compile generated classes." unless system "crystal run #{file}"
-end
+raise "#{TAB}Failed to compile generated classes." unless system "crystal run #{class_files.first}"
 task_finished compile_timer

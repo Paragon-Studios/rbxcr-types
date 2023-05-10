@@ -58,13 +58,13 @@ module Rbx
 		end
 		def wait_for_child(child_name : String, time_out : Float64) : _
 		end
-		getter ancestry_changed : ScriptSignal(Instance, Instance -> Nil)
-		getter attribute_changed : ScriptSignal(String -> Nil)
-		getter changed : ScriptSignal(String -> Nil)
-		getter child_added : ScriptSignal(Instance -> Nil)
-		getter child_removed : ScriptSignal(Instance -> Nil)
-		getter descendant_added : ScriptSignal(Instance -> Nil)
-		getter descendant_removing : ScriptSignal(Instance -> Nil)
+		getter ancestry_changed : ScriptSignal(Nil -> Nil)
+		getter attribute_changed : ScriptSignal(Nil -> Nil)
+		getter changed : ScriptSignal(Nil -> Nil)
+		getter child_added : ScriptSignal(Nil -> Nil)
+		getter child_removed : ScriptSignal(Nil -> Nil)
+		getter descendant_added : ScriptSignal(Nil -> Nil)
+		getter descendant_removing : ScriptSignal(Nil -> Nil)
 		getter destroying : ScriptSignal(Nil -> Nil)
 	end
 	
@@ -91,7 +91,7 @@ module Rbx
 	class AdService < Instance
 		def show_video_ad() : _
 		end
-		getter video_ad_closed : ScriptSignal(Bool -> Nil)
+		getter video_ad_closed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class AdvancedDragger < Instance
@@ -147,7 +147,7 @@ module Rbx
 		end
 		def load_animation(animation : Animation) : _
 		end
-		getter animation_played : ScriptSignal(AnimationTrack -> Nil)
+		getter animation_played : ScriptSignal(Nil -> Nil)
 	end
 	
 	class AnimationFromVideoCreatorService < Instance
@@ -191,7 +191,7 @@ module Rbx
 		end
 		getter did_loop : ScriptSignal(Nil -> Nil)
 		getter ended : ScriptSignal(Nil -> Nil)
-		getter keyframe_reached : ScriptSignal(String -> Nil)
+		getter keyframe_reached : ScriptSignal(Nil -> Nil)
 		getter stopped : ScriptSignal(Nil -> Nil)
 	end
 	
@@ -204,7 +204,7 @@ module Rbx
 		end
 		def load_animation(animation : Animation) : _
 		end
-		getter animation_played : ScriptSignal(AnimationTrack -> Nil)
+		getter animation_played : ScriptSignal(Nil -> Nil)
 	end
 	
 	class AppUpdateService < Instance
@@ -223,9 +223,9 @@ module Rbx
 	end
 	
 	class AssetImportSession < Instance
-		getter upload_complete : ScriptSignal(Hash -> Nil)
-		getter upload_complete_deprecated : ScriptSignal(Bool, Hash -> Nil)
-		getter upload_progress : ScriptSignal(Float32 -> Nil)
+		getter upload_complete : ScriptSignal(Nil -> Nil)
+		getter upload_complete_deprecated : ScriptSignal(Nil -> Nil)
+		getter upload_progress : ScriptSignal(Nil -> Nil)
 	end
 	
 	class AssetManagerService < Instance
@@ -348,13 +348,13 @@ module Rbx
 		end
 		def search_catalog(search_parameters : CatalogSearchParams) : _
 		end
-		getter prompt_allow_inventory_read_access_completed : ScriptSignal(Enum::AvatarPromptResult -> Nil)
-		getter prompt_create_outfit_completed : ScriptSignal(Enum::AvatarPromptResult, Hash -> Nil)
-		getter prompt_delete_outfit_completed : ScriptSignal(Enum::AvatarPromptResult -> Nil)
-		getter prompt_rename_outfit_completed : ScriptSignal(Enum::AvatarPromptResult -> Nil)
-		getter prompt_save_avatar_completed : ScriptSignal(Enum::AvatarPromptResult, HumanoidDescription -> Nil)
-		getter prompt_set_favorite_completed : ScriptSignal(Enum::AvatarPromptResult -> Nil)
-		getter prompt_update_outfit_completed : ScriptSignal(Enum::AvatarPromptResult -> Nil)
+		getter prompt_allow_inventory_read_access_completed : ScriptSignal(Nil -> Nil)
+		getter prompt_create_outfit_completed : ScriptSignal(Nil -> Nil)
+		getter prompt_delete_outfit_completed : ScriptSignal(Nil -> Nil)
+		getter prompt_rename_outfit_completed : ScriptSignal(Nil -> Nil)
+		getter prompt_save_avatar_completed : ScriptSignal(Nil -> Nil)
+		getter prompt_set_favorite_completed : ScriptSignal(Nil -> Nil)
+		getter prompt_update_outfit_completed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class AvatarImportService < Instance
@@ -471,7 +471,7 @@ module Rbx
 		end
 		def set_topbar_transparency(transparency : Float32) : _
 		end
-		getter topbar_transparency_changed_signal : ScriptSignal(Float32 -> Nil)
+		getter topbar_transparency_changed_signal : ScriptSignal(Nil -> Nil)
 	end
 	
 	class StarterGui < BasePlayerGui
@@ -538,13 +538,13 @@ module Rbx
 	class BindableEvent < Instance
 		def fire(arguments : Array) : _
 		end
-		getter event : ScriptSignal(Array -> Nil)
+		getter event : ScriptSignal(Nil -> Nil)
 	end
 	
 	class BindableFunction < Instance
 		def invoke(arguments : Array) : _
 		end
-		property on_invoke : Array -> _
+		property on_invoke : Nil -> Nil
 	end
 	
 	class BodyMover < Instance
@@ -705,8 +705,8 @@ module Rbx
 		end
 		def undo() : _
 		end
-		getter on_redo : ScriptSignal(String -> Nil)
-		getter on_undo : ScriptSignal(String -> Nil)
+		getter on_redo : ScriptSignal(Nil -> Nil)
+		getter on_undo : ScriptSignal(Nil -> Nil)
 	end
 	
 	class CharacterAppearance < Instance
@@ -776,16 +776,16 @@ module Rbx
 		end
 		def filter_string_for_player_async(string_to_filter : String, player_to_filter_for : Player) : _
 		end
-		getter chatted : ScriptSignal(Instance, String, Enum::ChatColor -> Nil)
+		getter chatted : ScriptSignal(Nil -> Nil)
 	end
 	
 	class ClickDetector < Instance
 		property cursor_icon : String
 		property max_activation_distance : Float32
-		getter mouse_click : ScriptSignal(Player -> Nil)
-		getter mouse_hover_enter : ScriptSignal(Player -> Nil)
-		getter mouse_hover_leave : ScriptSignal(Player -> Nil)
-		getter right_mouse_click : ScriptSignal(Player -> Nil)
+		getter mouse_click : ScriptSignal(Nil -> Nil)
+		getter mouse_hover_enter : ScriptSignal(Nil -> Nil)
+		getter mouse_hover_leave : ScriptSignal(Nil -> Nil)
+		getter right_mouse_click : ScriptSignal(Nil -> Nil)
 	end
 	
 	class Clouds < Instance
@@ -815,10 +815,10 @@ module Rbx
 		end
 		def remove_tag(instance : Instance, tag : String) : _
 		end
-		getter item_added : ScriptSignal(Instance -> Nil)
-		getter item_removed : ScriptSignal(Instance -> Nil)
-		getter tag_added : ScriptSignal(String -> Nil)
-		getter tag_removed : ScriptSignal(String -> Nil)
+		getter item_added : ScriptSignal(Nil -> Nil)
+		getter item_removed : ScriptSignal(Nil -> Nil)
+		getter tag_added : ScriptSignal(Nil -> Nil)
+		getter tag_removed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class CommandInstance < Instance
@@ -1071,7 +1071,7 @@ module Rbx
 		end
 		def preload_async(content_id_list : Array, callback_function : Callback?) : _
 		end
-		getter asset_fetch_failed : ScriptSignal(String -> Nil)
+		getter asset_fetch_failed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class ContextActionService < Instance
@@ -1105,8 +1105,8 @@ module Rbx
 		end
 		def get_button(action_name : String) : _
 		end
-		getter local_tool_equipped : ScriptSignal(Instance -> Nil)
-		getter local_tool_unequipped : ScriptSignal(Instance -> Nil)
+		getter local_tool_equipped : ScriptSignal(Nil -> Nil)
+		getter local_tool_unequipped : ScriptSignal(Nil -> Nil)
 	end
 	
 	class Controller < Instance
@@ -1116,7 +1116,7 @@ module Rbx
 		end
 		def unbind_button(button : Enum::Button) : _
 		end
-		getter button_changed : ScriptSignal(Enum::Button -> Nil)
+		getter button_changed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class HumanoidController < Controller
@@ -1125,7 +1125,7 @@ module Rbx
 	class SkateboardController < Controller
 		getter steer : Float32
 		getter throttle : Float32
-		getter axis_changed : ScriptSignal(String -> Nil)
+		getter axis_changed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class VehicleController < Controller
@@ -1220,17 +1220,17 @@ module Rbx
 		end
 		def set_value(new_value : Float32) : _
 		end
-		getter receiver_connected : ScriptSignal(Instance -> Nil)
-		getter receiver_disconnected : ScriptSignal(Instance -> Nil)
+		getter receiver_connected : ScriptSignal(Nil -> Nil)
+		getter receiver_disconnected : ScriptSignal(Nil -> Nil)
 	end
 	
 	class CustomEventReceiver < Instance
 		property source : Instance?
 		def get_current_value() : _
 		end
-		getter event_connected : ScriptSignal(Instance -> Nil)
-		getter event_disconnected : ScriptSignal(Instance -> Nil)
-		getter source_value_changed : ScriptSignal(Float32 -> Nil)
+		getter event_connected : ScriptSignal(Nil -> Nil)
+		getter event_disconnected : ScriptSignal(Nil -> Nil)
+		getter source_value_changed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class DataModelMesh < Instance
@@ -1377,8 +1377,8 @@ module Rbx
 		end
 		def step_over() : _
 		end
-		getter debugger_added : ScriptSignal(Instance -> Nil)
-		getter debugger_removed : ScriptSignal(Instance -> Nil)
+		getter debugger_added : ScriptSignal(Nil -> Nil)
+		getter debugger_removed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class DebuggerUIService < Instance
@@ -1407,7 +1407,7 @@ module Rbx
 		property trigger_offset : Vector3
 		def get_current_players() : _
 		end
-		getter dialog_choice_selected : ScriptSignal(Instance, Instance -> Nil)
+		getter dialog_choice_selected : ScriptSignal(Nil -> Nil)
 	end
 	
 	class DialogChoice < Instance
@@ -1484,7 +1484,7 @@ module Rbx
 		property position : Vector3
 		property time_scale : Float32
 		property visible : Bool
-		getter hit : ScriptSignal(BasePart, Float32 -> Nil)
+		getter hit : ScriptSignal(Nil -> Nil)
 	end
 	
 	class FaceAnimatorService < Instance
@@ -1697,7 +1697,7 @@ module Rbx
 		property selection_behavior_right : Enum::SelectionBehavior
 		property selection_behavior_up : Enum::SelectionBehavior
 		property selection_group : Bool
-		getter selection_changed : ScriptSignal(Bool, GuiObject, GuiObject -> Nil)
+		getter selection_changed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class GuiObject < GuiBase2d
@@ -1734,24 +1734,24 @@ module Rbx
 		end
 		def tween_size_and_position(end_size : UDim2, end_position : UDim2, easing_direction : Enum::EasingDirection?, easing_style : Enum::EasingStyle?, time : Float32?, override : Bool?, callback : Callback?) : _
 		end
-		getter drag_begin : ScriptSignal(UDim2 -> Nil)
-		getter drag_stopped : ScriptSignal(Int32, Int32 -> Nil)
-		getter input_began : ScriptSignal(InputObject -> Nil)
-		getter input_changed : ScriptSignal(InputObject -> Nil)
-		getter input_ended : ScriptSignal(InputObject -> Nil)
-		getter mouse_enter : ScriptSignal(Int32, Int32 -> Nil)
-		getter mouse_leave : ScriptSignal(Int32, Int32 -> Nil)
-		getter mouse_moved : ScriptSignal(Int32, Int32 -> Nil)
-		getter mouse_wheel_backward : ScriptSignal(Int32, Int32 -> Nil)
-		getter mouse_wheel_forward : ScriptSignal(Int32, Int32 -> Nil)
+		getter drag_begin : ScriptSignal(Nil -> Nil)
+		getter drag_stopped : ScriptSignal(Nil -> Nil)
+		getter input_began : ScriptSignal(Nil -> Nil)
+		getter input_changed : ScriptSignal(Nil -> Nil)
+		getter input_ended : ScriptSignal(Nil -> Nil)
+		getter mouse_enter : ScriptSignal(Nil -> Nil)
+		getter mouse_leave : ScriptSignal(Nil -> Nil)
+		getter mouse_moved : ScriptSignal(Nil -> Nil)
+		getter mouse_wheel_backward : ScriptSignal(Nil -> Nil)
+		getter mouse_wheel_forward : ScriptSignal(Nil -> Nil)
 		getter selection_gained : ScriptSignal(Nil -> Nil)
 		getter selection_lost : ScriptSignal(Nil -> Nil)
-		getter touch_long_press : ScriptSignal(Array, Enum::UserInputState -> Nil)
-		getter touch_pan : ScriptSignal(Array, Vector2, Vector2, Enum::UserInputState -> Nil)
-		getter touch_pinch : ScriptSignal(Array, Float32, Float32, Enum::UserInputState -> Nil)
-		getter touch_rotate : ScriptSignal(Array, Float32, Float32, Enum::UserInputState -> Nil)
-		getter touch_swipe : ScriptSignal(Enum::SwipeDirection, Int32 -> Nil)
-		getter touch_tap : ScriptSignal(Array -> Nil)
+		getter touch_long_press : ScriptSignal(Nil -> Nil)
+		getter touch_pan : ScriptSignal(Nil -> Nil)
+		getter touch_pinch : ScriptSignal(Nil -> Nil)
+		getter touch_rotate : ScriptSignal(Nil -> Nil)
+		getter touch_swipe : ScriptSignal(Nil -> Nil)
+		getter touch_tap : ScriptSignal(Nil -> Nil)
 	end
 	
 	class CanvasGroup < GuiObject
@@ -1768,13 +1768,13 @@ module Rbx
 		property modal : Bool
 		property selected : Bool
 		property style : Enum::ButtonStyle
-		getter activated : ScriptSignal(InputObject, Int32 -> Nil)
+		getter activated : ScriptSignal(Nil -> Nil)
 		getter mouse_button1click : ScriptSignal(Nil -> Nil)
-		getter mouse_button1down : ScriptSignal(Int32, Int32 -> Nil)
-		getter mouse_button1up : ScriptSignal(Int32, Int32 -> Nil)
+		getter mouse_button1down : ScriptSignal(Nil -> Nil)
+		getter mouse_button1up : ScriptSignal(Nil -> Nil)
 		getter mouse_button2click : ScriptSignal(Nil -> Nil)
-		getter mouse_button2down : ScriptSignal(Int32, Int32 -> Nil)
-		getter mouse_button2up : ScriptSignal(Int32, Int32 -> Nil)
+		getter mouse_button2down : ScriptSignal(Nil -> Nil)
+		getter mouse_button2up : ScriptSignal(Nil -> Nil)
 	end
 	
 	class ImageButton < GuiButton
@@ -1919,7 +1919,7 @@ module Rbx
 		end
 		def release_focus(submitted : Bool?) : _
 		end
-		getter focus_lost : ScriptSignal(Bool, InputObject -> Nil)
+		getter focus_lost : ScriptSignal(Nil -> Nil)
 		getter focused : ScriptSignal(Nil -> Nil)
 		getter return_pressed_from_on_screen_keyboard : ScriptSignal(Nil -> Nil)
 	end
@@ -1937,11 +1937,11 @@ module Rbx
 		end
 		def play() : _
 		end
-		getter did_loop : ScriptSignal(String -> Nil)
-		getter ended : ScriptSignal(String -> Nil)
-		getter loaded : ScriptSignal(String -> Nil)
-		getter paused : ScriptSignal(String -> Nil)
-		getter played : ScriptSignal(String -> Nil)
+		getter did_loop : ScriptSignal(Nil -> Nil)
+		getter ended : ScriptSignal(Nil -> Nil)
+		getter loaded : ScriptSignal(Nil -> Nil)
+		getter paused : ScriptSignal(Nil -> Nil)
+		getter played : ScriptSignal(Nil -> Nil)
 	end
 	
 	class ViewportFrame < GuiObject
@@ -1988,10 +1988,10 @@ module Rbx
 		end
 		def get_relative_mouse_position() : _
 		end
-		getter plugin_drag_dropped : ScriptSignal(Hash -> Nil)
-		getter plugin_drag_entered : ScriptSignal(Hash -> Nil)
-		getter plugin_drag_left : ScriptSignal(Hash -> Nil)
-		getter plugin_drag_moved : ScriptSignal(Hash -> Nil)
+		getter plugin_drag_dropped : ScriptSignal(Nil -> Nil)
+		getter plugin_drag_entered : ScriptSignal(Nil -> Nil)
+		getter plugin_drag_left : ScriptSignal(Nil -> Nil)
+		getter plugin_drag_moved : ScriptSignal(Nil -> Nil)
 		getter window_focus_released : ScriptSignal(Nil -> Nil)
 		getter window_focused : ScriptSignal(Nil -> Nil)
 	end
@@ -2148,21 +2148,21 @@ module Rbx
 	
 	class ArcHandles < HandlesBase
 		property axes : Axes
-		getter mouse_button1down : ScriptSignal(Enum::Axis -> Nil)
-		getter mouse_button1up : ScriptSignal(Enum::Axis -> Nil)
-		getter mouse_drag : ScriptSignal(Enum::Axis, Float32, Float32 -> Nil)
-		getter mouse_enter : ScriptSignal(Enum::Axis -> Nil)
-		getter mouse_leave : ScriptSignal(Enum::Axis -> Nil)
+		getter mouse_button1down : ScriptSignal(Nil -> Nil)
+		getter mouse_button1up : ScriptSignal(Nil -> Nil)
+		getter mouse_drag : ScriptSignal(Nil -> Nil)
+		getter mouse_enter : ScriptSignal(Nil -> Nil)
+		getter mouse_leave : ScriptSignal(Nil -> Nil)
 	end
 	
 	class Handles < HandlesBase
 		property faces : Faces
 		property style : Enum::HandlesStyle
-		getter mouse_button1down : ScriptSignal(Enum::NormalId -> Nil)
-		getter mouse_button1up : ScriptSignal(Enum::NormalId -> Nil)
-		getter mouse_drag : ScriptSignal(Enum::NormalId, Float32 -> Nil)
-		getter mouse_enter : ScriptSignal(Enum::NormalId -> Nil)
-		getter mouse_leave : ScriptSignal(Enum::NormalId -> Nil)
+		getter mouse_button1down : ScriptSignal(Nil -> Nil)
+		getter mouse_button1up : ScriptSignal(Nil -> Nil)
+		getter mouse_drag : ScriptSignal(Nil -> Nil)
+		getter mouse_enter : ScriptSignal(Nil -> Nil)
+		getter mouse_leave : ScriptSignal(Nil -> Nil)
 	end
 	
 	class SurfaceSelection < PartAdornment
@@ -2377,28 +2377,28 @@ module Rbx
 		end
 		def play_emote(emote_name : String) : _
 		end
-		getter animation_played : ScriptSignal(AnimationTrack -> Nil)
-		getter climbing : ScriptSignal(Float32 -> Nil)
-		getter custom_status_added : ScriptSignal(String -> Nil)
-		getter custom_status_removed : ScriptSignal(String -> Nil)
+		getter animation_played : ScriptSignal(Nil -> Nil)
+		getter climbing : ScriptSignal(Nil -> Nil)
+		getter custom_status_added : ScriptSignal(Nil -> Nil)
+		getter custom_status_removed : ScriptSignal(Nil -> Nil)
 		getter died : ScriptSignal(Nil -> Nil)
-		getter falling_down : ScriptSignal(Bool -> Nil)
-		getter free_falling : ScriptSignal(Bool -> Nil)
-		getter getting_up : ScriptSignal(Bool -> Nil)
-		getter health_changed : ScriptSignal(Float32 -> Nil)
-		getter jumping : ScriptSignal(Bool -> Nil)
-		getter move_to_finished : ScriptSignal(Bool -> Nil)
-		getter platform_standing : ScriptSignal(Bool -> Nil)
-		getter ragdoll : ScriptSignal(Bool -> Nil)
-		getter running : ScriptSignal(Float32 -> Nil)
-		getter seated : ScriptSignal(Bool, BasePart -> Nil)
-		getter state_changed : ScriptSignal(Enum::HumanoidStateType, Enum::HumanoidStateType -> Nil)
-		getter state_enabled_changed : ScriptSignal(Enum::HumanoidStateType, Bool -> Nil)
-		getter status_added : ScriptSignal(Enum::Status -> Nil)
-		getter status_removed : ScriptSignal(Enum::Status -> Nil)
-		getter strafing : ScriptSignal(Bool -> Nil)
-		getter swimming : ScriptSignal(Float32 -> Nil)
-		getter touched : ScriptSignal(BasePart, BasePart -> Nil)
+		getter falling_down : ScriptSignal(Nil -> Nil)
+		getter free_falling : ScriptSignal(Nil -> Nil)
+		getter getting_up : ScriptSignal(Nil -> Nil)
+		getter health_changed : ScriptSignal(Nil -> Nil)
+		getter jumping : ScriptSignal(Nil -> Nil)
+		getter move_to_finished : ScriptSignal(Nil -> Nil)
+		getter platform_standing : ScriptSignal(Nil -> Nil)
+		getter ragdoll : ScriptSignal(Nil -> Nil)
+		getter running : ScriptSignal(Nil -> Nil)
+		getter seated : ScriptSignal(Nil -> Nil)
+		getter state_changed : ScriptSignal(Nil -> Nil)
+		getter state_enabled_changed : ScriptSignal(Nil -> Nil)
+		getter status_added : ScriptSignal(Nil -> Nil)
+		getter status_removed : ScriptSignal(Nil -> Nil)
+		getter strafing : ScriptSignal(Nil -> Nil)
+		getter swimming : ScriptSignal(Nil -> Nil)
+		getter touched : ScriptSignal(Nil -> Nil)
 	end
 	
 	class HumanoidDescription < Instance
@@ -2456,8 +2456,8 @@ module Rbx
 		end
 		def set_equipped_emotes(equipped_emotes : Array) : _
 		end
-		getter emotes_changed : ScriptSignal(Hash -> Nil)
-		getter equipped_emotes_changed : ScriptSignal(Array -> Nil)
+		getter emotes_changed : ScriptSignal(Nil -> Nil)
+		getter equipped_emotes_changed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class IKControl < Instance
@@ -2556,7 +2556,7 @@ module Rbx
 		end
 		def load_asset_version(asset_version_id : Int64) : _
 		end
-		getter internal_delete : ScriptSignal(Instance -> Nil)
+		getter internal_delete : ScriptSignal(Nil -> Nil)
 	end
 	
 	class InternalSyncItem < Instance
@@ -2733,7 +2733,7 @@ module Rbx
 		end
 		def set_minutes_after_midnight(minutes : Float64) : _
 		end
-		getter lighting_changed : ScriptSignal(Bool -> Nil)
+		getter lighting_changed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class LiveScriptingService < Instance
@@ -2816,7 +2816,7 @@ module Rbx
 	class LogService < Instance
 		def get_log_history() : _
 		end
-		getter message_out : ScriptSignal(String, Enum::MessageType -> Nil)
+		getter message_out : ScriptSignal(Nil -> Nil)
 	end
 	
 	class LoginService < Instance
@@ -2826,7 +2826,7 @@ module Rbx
 	end
 	
 	class LuaSourceContainer < Instance
-		getter lock_granted_or_not : ScriptSignal(Bool -> Nil)
+		getter lock_granted_or_not : ScriptSignal(Nil -> Nil)
 		getter lost_lock : ScriptSignal(Nil -> Nil)
 		getter request_lock : ScriptSignal(Nil -> Nil)
 	end
@@ -2896,14 +2896,14 @@ module Rbx
 		end
 		def user_owns_game_pass_async(user_id : Int64, game_pass_id : Int64) : _
 		end
-		getter prompt_bundle_purchase_finished : ScriptSignal(Instance, Int64, Bool -> Nil)
-		getter prompt_game_pass_purchase_finished : ScriptSignal(Instance, Int64, Bool -> Nil)
+		getter prompt_bundle_purchase_finished : ScriptSignal(Nil -> Nil)
+		getter prompt_game_pass_purchase_finished : ScriptSignal(Nil -> Nil)
 		getter prompt_premium_purchase_finished : ScriptSignal(Nil -> Nil)
-		getter prompt_product_purchase_finished : ScriptSignal(Int64, Int64, Bool -> Nil)
-		getter prompt_purchase_finished : ScriptSignal(Instance, Int64, Bool -> Nil)
-		getter prompt_subscription_cancellation_finished : ScriptSignal(Instance, Int64, Bool -> Nil)
-		getter prompt_subscription_purchase_finished : ScriptSignal(Instance, Int64, Bool -> Nil)
-		property process_receipt : Hash -> _
+		getter prompt_product_purchase_finished : ScriptSignal(Nil -> Nil)
+		getter prompt_purchase_finished : ScriptSignal(Nil -> Nil)
+		getter prompt_subscription_cancellation_finished : ScriptSignal(Nil -> Nil)
+		getter prompt_subscription_purchase_finished : ScriptSignal(Nil -> Nil)
+		property process_receipt : Nil -> Nil
 	end
 	
 	class MaterialGenerationService < Instance
@@ -3016,8 +3016,8 @@ module Rbx
 		getter button2down : ScriptSignal(Nil -> Nil)
 		getter button2up : ScriptSignal(Nil -> Nil)
 		getter idle : ScriptSignal(Nil -> Nil)
-		getter key_down : ScriptSignal(String -> Nil)
-		getter key_up : ScriptSignal(String -> Nil)
+		getter key_down : ScriptSignal(Nil -> Nil)
+		getter key_up : ScriptSignal(Nil -> Nil)
 		getter move : ScriptSignal(Nil -> Nil)
 		getter wheel_backward : ScriptSignal(Nil -> Nil)
 		getter wheel_forward : ScriptSignal(Nil -> Nil)
@@ -3027,7 +3027,7 @@ module Rbx
 	end
 	
 	class PluginMouse < Mouse
-		getter drag_enter : ScriptSignal(Array(Instance) -> Nil)
+		getter drag_enter : ScriptSignal(Nil -> Nil)
 	end
 	
 	class MouseService < Instance
@@ -3046,8 +3046,8 @@ module Rbx
 	end
 	
 	class NetworkClient < NetworkPeer
-		getter connection_accepted : ScriptSignal(String, Instance -> Nil)
-		getter connection_failed : ScriptSignal(String, Int32, String -> Nil)
+		getter connection_accepted : ScriptSignal(Nil -> Nil)
+		getter connection_failed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class NetworkServer < NetworkPeer
@@ -3087,8 +3087,8 @@ module Rbx
 	end
 	
 	class NotificationService < Instance
-		getter roblox17s_connection_changed : ScriptSignal(String, Enum::ConnectionState, String -> Nil)
-		getter roblox17s_event_received : ScriptSignal(Hash -> Nil)
+		getter roblox17s_connection_changed : ScriptSignal(Nil -> Nil)
+		getter roblox17s_event_received : ScriptSignal(Nil -> Nil)
 	end
 	
 	class PVInstance < Instance
@@ -3215,11 +3215,11 @@ module Rbx
 		end
 		def union_async2_internal(parts : Array(Instance), collisionfidelity : Enum::CollisionFidelity?, render_fidelity : Enum::RenderFidelity?) : _
 		end
-		getter local_simulation_touched : ScriptSignal(BasePart -> Nil)
+		getter local_simulation_touched : ScriptSignal(Nil -> Nil)
 		getter outfit_changed : ScriptSignal(Nil -> Nil)
-		getter stopped_touching : ScriptSignal(BasePart -> Nil)
-		getter touch_ended : ScriptSignal(BasePart -> Nil)
-		getter touched : ScriptSignal(BasePart -> Nil)
+		getter stopped_touching : ScriptSignal(Nil -> Nil)
+		getter touch_ended : ScriptSignal(Nil -> Nil)
+		getter touched : ScriptSignal(Nil -> Nil)
 	end
 	
 	class CornerWedgePart < BasePart
@@ -3235,11 +3235,11 @@ module Rbx
 	
 	class FlagStand < Part
 		property team_color : BrickColor
-		getter flag_captured : ScriptSignal(Instance -> Nil)
+		getter flag_captured : ScriptSignal(Nil -> Nil)
 	end
 	
 	class Platform < Part
-		getter remote_create_motor6d : ScriptSignal(Instance -> Nil)
+		getter remote_create_motor6d : ScriptSignal(Nil -> Nil)
 		getter remote_destroy_motor6d : ScriptSignal(Nil -> Nil)
 	end
 	
@@ -3248,7 +3248,7 @@ module Rbx
 		getter occupant : Humanoid?
 		def sit(humanoid : Humanoid) : _
 		end
-		getter remote_create_seat_weld : ScriptSignal(Instance -> Nil)
+		getter remote_create_seat_weld : ScriptSignal(Nil -> Nil)
 		getter remote_destroy_seat_weld : ScriptSignal(Nil -> Nil)
 	end
 	
@@ -3260,11 +3260,11 @@ module Rbx
 		property throttle : Int32
 		def apply_specific_impulse(impulse_world : Vector3) : _
 		end
-		getter equipped : ScriptSignal(Instance, Instance -> Nil)
-		getter move_state_changed : ScriptSignal(Enum::MoveState, Enum::MoveState -> Nil)
-		getter remote_create_motor6d : ScriptSignal(Instance -> Nil)
+		getter equipped : ScriptSignal(Nil -> Nil)
+		getter move_state_changed : ScriptSignal(Nil -> Nil)
+		getter remote_create_motor6d : ScriptSignal(Nil -> Nil)
 		getter remote_destroy_motor6d : ScriptSignal(Nil -> Nil)
-		getter unequipped : ScriptSignal(Instance -> Nil)
+		getter unequipped : ScriptSignal(Nil -> Nil)
 	end
 	
 	class SpawnLocation < Part
@@ -3391,7 +3391,7 @@ module Rbx
 		property turn_speed : Float32
 		def sit(humanoid : Humanoid) : _
 		end
-		getter remote_create_seat_weld : ScriptSignal(Instance -> Nil)
+		getter remote_create_seat_weld : ScriptSignal(Nil -> Nil)
 		getter remote_destroy_seat_weld : ScriptSignal(Nil -> Nil)
 	end
 	
@@ -3453,7 +3453,7 @@ module Rbx
 		property bin_type : Enum::BinType
 		getter deselected : ScriptSignal(Nil -> Nil)
 		getter replicated_selected : ScriptSignal(Nil -> Nil)
-		getter selected : ScriptSignal(Instance -> Nil)
+		getter selected : ScriptSignal(Nil -> Nil)
 	end
 	
 	class Tool < BackpackItem
@@ -3473,7 +3473,7 @@ module Rbx
 		end
 		getter activated : ScriptSignal(Nil -> Nil)
 		getter deactivated : ScriptSignal(Nil -> Nil)
-		getter equipped : ScriptSignal(Mouse -> Nil)
+		getter equipped : ScriptSignal(Nil -> Nil)
 		getter unequipped : ScriptSignal(Nil -> Nil)
 	end
 	
@@ -3545,7 +3545,7 @@ module Rbx
 		end
 		def unjoin_from_outsiders(objects : Array(Instance)) : _
 		end
-		getter persistent_loaded : ScriptSignal(Player -> Nil)
+		getter persistent_loaded : ScriptSignal(Nil -> Nil)
 	end
 	
 	class WorldModel < WorldRoot
@@ -3647,7 +3647,7 @@ module Rbx
 		def emit(particle_count : Int32?) : _
 		end
 		getter on_clear_requested : ScriptSignal(Nil -> Nil)
-		getter on_emit_requested : ScriptSignal(Int32 -> Nil)
+		getter on_emit_requested : ScriptSignal(Nil -> Nil)
 	end
 	
 	class PatchBundlerFileWatch < Instance
@@ -3669,8 +3669,8 @@ module Rbx
 		end
 		def compute_async(start : Vector3, finish : Vector3) : _
 		end
-		getter blocked : ScriptSignal(Int32 -> Nil)
-		getter unblocked : ScriptSignal(Int32 -> Nil)
+		getter blocked : ScriptSignal(Nil -> Nil)
+		getter unblocked : ScriptSignal(Nil -> Nil)
 	end
 	
 	class PathfindingLink < Instance
@@ -3858,12 +3858,12 @@ module Rbx
 		end
 		def wait_for_data_ready() : _
 		end
-		getter character_added : ScriptSignal(Model -> Nil)
-		getter character_appearance_loaded : ScriptSignal(Model -> Nil)
-		getter character_removing : ScriptSignal(Model -> Nil)
-		getter chatted : ScriptSignal(String, Player -> Nil)
-		getter idled : ScriptSignal(Float64 -> Nil)
-		getter on_teleport : ScriptSignal(Enum::TeleportState, Int64, String -> Nil)
+		getter character_added : ScriptSignal(Nil -> Nil)
+		getter character_appearance_loaded : ScriptSignal(Nil -> Nil)
+		getter character_removing : ScriptSignal(Nil -> Nil)
+		getter chatted : ScriptSignal(Nil -> Nil)
+		getter idled : ScriptSignal(Nil -> Nil)
+		getter on_teleport : ScriptSignal(Nil -> Nil)
 	end
 	
 	class PlayerEmulatorService < Instance
@@ -3927,9 +3927,9 @@ module Rbx
 		end
 		def get_user_thumbnail_async(user_id : Int64, thumbnail_type : Enum::ThumbnailType, thumbnail_size : Enum::ThumbnailSize) : _
 		end
-		getter player_added : ScriptSignal(Player -> Nil)
-		getter player_membership_changed : ScriptSignal(Player -> Nil)
-		getter player_removing : ScriptSignal(Player -> Nil)
+		getter player_added : ScriptSignal(Nil -> Nil)
+		getter player_membership_changed : ScriptSignal(Nil -> Nil)
+		getter player_removing : ScriptSignal(Nil -> Nil)
 	end
 	
 	class Plugin < Instance
@@ -4066,7 +4066,7 @@ module Rbx
 		end
 		def get_point_balance(user_id : Int64) : _
 		end
-		getter points_awarded : ScriptSignal(Int64, Int32, Int32, Int32 -> Nil)
+		getter points_awarded : ScriptSignal(Nil -> Nil)
 	end
 	
 	class PolicyService < Instance
@@ -4150,23 +4150,23 @@ module Rbx
 		end
 		def input_hold_end() : _
 		end
-		getter prompt_button_hold_began : ScriptSignal(Player -> Nil)
-		getter prompt_button_hold_ended : ScriptSignal(Player -> Nil)
+		getter prompt_button_hold_began : ScriptSignal(Nil -> Nil)
+		getter prompt_button_hold_ended : ScriptSignal(Nil -> Nil)
 		getter prompt_hidden : ScriptSignal(Nil -> Nil)
-		getter prompt_shown : ScriptSignal(Enum::ProximityPromptInputType -> Nil)
-		getter trigger_ended : ScriptSignal(Player -> Nil)
-		getter triggered : ScriptSignal(Player -> Nil)
+		getter prompt_shown : ScriptSignal(Nil -> Nil)
+		getter trigger_ended : ScriptSignal(Nil -> Nil)
+		getter triggered : ScriptSignal(Nil -> Nil)
 	end
 	
 	class ProximityPromptService < Instance
 		property enabled : Bool
 		property max_prompts_visible : Int32
-		getter prompt_button_hold_began : ScriptSignal(ProximityPrompt, Player -> Nil)
-		getter prompt_button_hold_ended : ScriptSignal(ProximityPrompt, Player -> Nil)
-		getter prompt_hidden : ScriptSignal(ProximityPrompt -> Nil)
-		getter prompt_shown : ScriptSignal(ProximityPrompt, Enum::ProximityPromptInputType -> Nil)
-		getter prompt_trigger_ended : ScriptSignal(ProximityPrompt, Player -> Nil)
-		getter prompt_triggered : ScriptSignal(ProximityPrompt, Player -> Nil)
+		getter prompt_button_hold_began : ScriptSignal(Nil -> Nil)
+		getter prompt_button_hold_ended : ScriptSignal(Nil -> Nil)
+		getter prompt_hidden : ScriptSignal(Nil -> Nil)
+		getter prompt_shown : ScriptSignal(Nil -> Nil)
+		getter prompt_trigger_ended : ScriptSignal(Nil -> Nil)
+		getter prompt_triggered : ScriptSignal(Nil -> Nil)
 	end
 	
 	class PublishService < Instance
@@ -4247,8 +4247,8 @@ module Rbx
 		end
 		def fire_server(arguments : Array) : _
 		end
-		getter on_client_event : ScriptSignal(Array -> Nil)
-		getter on_server_event : ScriptSignal(Player, Array -> Nil)
+		getter on_client_event : ScriptSignal(Nil -> Nil)
+		getter on_server_event : ScriptSignal(Nil -> Nil)
 	end
 	
 	class RemoteFunction < Instance
@@ -4256,12 +4256,12 @@ module Rbx
 		end
 		def invoke_server(arguments : Array) : _
 		end
-		getter remote_on_invoke_client : ScriptSignal(Int32, Array -> Nil)
-		getter remote_on_invoke_error : ScriptSignal(Int32, String -> Nil)
-		getter remote_on_invoke_server : ScriptSignal(Int32, Player, Array -> Nil)
-		getter remote_on_invoke_success : ScriptSignal(Int32, Array -> Nil)
-		property on_client_invoke : Array -> _
-		property on_server_invoke : Player, Array -> _
+		getter remote_on_invoke_client : ScriptSignal(Nil -> Nil)
+		getter remote_on_invoke_error : ScriptSignal(Nil -> Nil)
+		getter remote_on_invoke_server : ScriptSignal(Nil -> Nil)
+		getter remote_on_invoke_success : ScriptSignal(Nil -> Nil)
+		property on_client_invoke : Nil -> Nil
+		property on_server_invoke : Nil -> Nil
 	end
 	
 	class RenderSettings < Instance
@@ -4290,6 +4290,7 @@ module Rbx
 		property description : String
 		property field_of_view : Float32
 		property orientation : Vector3
+		property perf_test : Bool
 		property position : Vector3
 		property quality_level : Int32
 		property should_skip : Bool
@@ -4348,13 +4349,13 @@ module Rbx
 		end
 		def unbind_from_render_step(name : String) : _
 		end
-		getter heartbeat : ScriptSignal(Float64 -> Nil)
-		getter post_simulation : ScriptSignal(Float64 -> Nil)
-		getter pre_animation : ScriptSignal(Float64 -> Nil)
-		getter pre_render : ScriptSignal(Float64 -> Nil)
-		getter pre_simulation : ScriptSignal(Float64 -> Nil)
-		getter render_stepped : ScriptSignal(Float64 -> Nil)
-		getter stepped : ScriptSignal(Float64, Float64 -> Nil)
+		getter heartbeat : ScriptSignal(Nil -> Nil)
+		getter post_simulation : ScriptSignal(Nil -> Nil)
+		getter pre_animation : ScriptSignal(Nil -> Nil)
+		getter pre_render : ScriptSignal(Nil -> Nil)
+		getter pre_simulation : ScriptSignal(Nil -> Nil)
+		getter render_stepped : ScriptSignal(Nil -> Nil)
+		getter stepped : ScriptSignal(Nil -> Nil)
 	end
 	
 	class RuntimeScriptService < Instance
@@ -4394,7 +4395,7 @@ module Rbx
 	end
 	
 	class ScriptContext < Instance
-		getter error : ScriptSignal(String, String, Instance -> Nil)
+		getter error : ScriptSignal(Nil -> Nil)
 	end
 	
 	class ScriptDebugger < Instance
@@ -4426,12 +4427,12 @@ module Rbx
 		end
 		def set_upvalue(name : String, value : Hash, stack_frame : Int32?) : _
 		end
-		getter breakpoint_added : ScriptSignal(Instance -> Nil)
-		getter breakpoint_removed : ScriptSignal(Instance -> Nil)
-		getter encountered_break : ScriptSignal(Int32, Enum::BreakReason -> Nil)
+		getter breakpoint_added : ScriptSignal(Nil -> Nil)
+		getter breakpoint_removed : ScriptSignal(Nil -> Nil)
+		getter encountered_break : ScriptSignal(Nil -> Nil)
 		getter resuming : ScriptSignal(Nil -> Nil)
-		getter watch_added : ScriptSignal(Instance -> Nil)
-		getter watch_removed : ScriptSignal(Instance -> Nil)
+		getter watch_added : ScriptSignal(Nil -> Nil)
+		getter watch_removed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class ScriptDocument < Instance
@@ -4502,8 +4503,8 @@ module Rbx
 		def service(class_name : String) : _
 		end
 		getter close : ScriptSignal(Nil -> Nil)
-		getter service_added : ScriptSignal(Instance -> Nil)
-		getter service_removing : ScriptSignal(Instance -> Nil)
+		getter service_added : ScriptSignal(Nil -> Nil)
+		getter service_removing : ScriptSignal(Nil -> Nil)
 	end
 	
 	class DataModel < ServiceProvider
@@ -4534,10 +4535,10 @@ module Rbx
 		def save_place(save_filter : Enum::SaveFilter?) : _
 		end
 		getter allowed_gear_type_changed : ScriptSignal(Nil -> Nil)
-		getter graphics_quality_change_request : ScriptSignal(Bool -> Nil)
-		getter item_changed : ScriptSignal(Instance, String -> Nil)
+		getter graphics_quality_change_request : ScriptSignal(Nil -> Nil)
+		getter item_changed : ScriptSignal(Nil -> Nil)
 		getter loaded : ScriptSignal(Nil -> Nil)
-		property on_close :  -> _
+		property on_close : Nil -> Nil
 	end
 	
 	class GenericSettings < ServiceProvider
@@ -4611,7 +4612,7 @@ module Rbx
 		end
 		def can_send_game_invite_async(player : Player, recipient_id : Int64?) : _
 		end
-		getter game_invite_prompt_closed : ScriptSignal(Instance, Array -> Nil)
+		getter game_invite_prompt_closed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class Sound < Instance
@@ -4646,13 +4647,13 @@ module Rbx
 		end
 		def stop() : _
 		end
-		getter did_loop : ScriptSignal(String, Int32 -> Nil)
-		getter ended : ScriptSignal(String -> Nil)
-		getter loaded : ScriptSignal(String -> Nil)
-		getter paused : ScriptSignal(String -> Nil)
-		getter played : ScriptSignal(String -> Nil)
-		getter resumed : ScriptSignal(String -> Nil)
-		getter stopped : ScriptSignal(String -> Nil)
+		getter did_loop : ScriptSignal(Nil -> Nil)
+		getter ended : ScriptSignal(Nil -> Nil)
+		getter loaded : ScriptSignal(Nil -> Nil)
+		getter paused : ScriptSignal(Nil -> Nil)
+		getter played : ScriptSignal(Nil -> Nil)
+		getter resumed : ScriptSignal(Nil -> Nil)
+		getter stopped : ScriptSignal(Nil -> Nil)
 	end
 	
 	class SoundEffect < Instance
@@ -4752,17 +4753,6 @@ module Rbx
 	end
 	
 	class SpawnerService < Instance
-	end
-	
-	class Speaker < Instance
-		getter channel_count : Int32
-		getter playback_loudness : Float64
-		property roll_off_max_distance : Float32
-		property roll_off_min_distance : Float32
-		property roll_off_mode : Enum::RollOffMode
-		property sound_group : SoundGroup?
-		property source : Instance?
-		property volume : Float32
 	end
 	
 	class StackFrame < Instance
@@ -4905,8 +4895,8 @@ module Rbx
 		property team_color : BrickColor
 		def get_players() : _
 		end
-		getter player_added : ScriptSignal(Player -> Nil)
-		getter player_removed : ScriptSignal(Player -> Nil)
+		getter player_added : ScriptSignal(Nil -> Nil)
+		getter player_removed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class TeamCreateData < Instance
@@ -4968,8 +4958,8 @@ module Rbx
 		end
 		def teleport_party_async(place_id : Int64, players : Array(Instance), teleport_data : Hash, custom_loading_screen : Instance?) : _
 		end
-		getter local_player_arrived_from_teleport : ScriptSignal(Instance, Hash -> Nil)
-		getter teleport_init_failed : ScriptSignal(Instance, Enum::TeleportResult, String, Int64, Instance -> Nil)
+		getter local_player_arrived_from_teleport : ScriptSignal(Nil -> Nil)
+		getter teleport_init_failed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class TemporaryCageMeshProvider < Instance
@@ -5024,8 +5014,8 @@ module Rbx
 		end
 		def run() : _
 		end
-		getter server_collect_conditional_result : ScriptSignal(Bool, String, Instance, Int32 -> Nil)
-		getter server_collect_result : ScriptSignal(String, Instance, Int32 -> Nil)
+		getter server_collect_conditional_result : ScriptSignal(Nil -> Nil)
+		getter server_collect_result : ScriptSignal(Nil -> Nil)
 	end
 	
 	class TextBoxService < Instance
@@ -5038,16 +5028,16 @@ module Rbx
 		end
 		def send_async(message : String, metadata : String?) : _
 		end
-		getter message_received : ScriptSignal(TextChatMessage -> Nil)
-		property on_incoming_message : TextChatMessage -> _
-		property should_deliver_callback : TextChatMessage, TextSource -> _
+		getter message_received : ScriptSignal(Nil -> Nil)
+		property on_incoming_message : Nil -> Nil
+		property should_deliver_callback : Nil -> Nil
 	end
 	
 	class TextChatCommand < Instance
 		property enabled : Bool
 		property primary_alias : String
 		property secondary_alias : String
-		getter triggered : ScriptSignal(TextSource, String -> Nil)
+		getter triggered : ScriptSignal(Nil -> Nil)
 	end
 	
 	class TextChatConfigurations < Instance
@@ -5125,9 +5115,9 @@ module Rbx
 		getter chat_version : Enum::ChatVersion
 		getter create_default_commands : Bool
 		getter create_default_text_channels : Bool
-		getter message_received : ScriptSignal(TextChatMessage -> Nil)
-		getter sending_message : ScriptSignal(TextChatMessage -> Nil)
-		property on_incoming_message : TextChatMessage -> _
+		getter message_received : ScriptSignal(Nil -> Nil)
+		getter sending_message : ScriptSignal(Nil -> Nil)
+		property on_incoming_message : Nil -> Nil
 	end
 	
 	class TextFilterResult < Instance
@@ -5224,7 +5214,7 @@ module Rbx
 		end
 		def play() : _
 		end
-		getter completed : ScriptSignal(Enum::PlaybackState -> Nil)
+		getter completed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class Tween < TweenBase
@@ -5326,9 +5316,9 @@ module Rbx
 		end
 		def previous() : _
 		end
-		getter page_enter : ScriptSignal(Instance -> Nil)
-		getter page_leave : ScriptSignal(Instance -> Nil)
-		getter stopped : ScriptSignal(Instance -> Nil)
+		getter page_enter : ScriptSignal(Nil -> Nil)
+		getter page_leave : ScriptSignal(Nil -> Nil)
+		getter stopped : ScriptSignal(Nil -> Nil)
 	end
 	
 	class UITableLayout < UIGridStyleLayout
@@ -5390,8 +5380,8 @@ module Rbx
 		end
 		def set_onboarding_completed(onboarding_id : String) : _
 		end
-		getter fullscreen_changed : ScriptSignal(Bool -> Nil)
-		getter studio_mode_changed : ScriptSignal(Bool -> Nil)
+		getter fullscreen_changed : ScriptSignal(Nil -> Nil)
+		getter studio_mode_changed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class UserInputService < Instance
@@ -5457,30 +5447,30 @@ module Rbx
 		end
 		def set_navigation_gamepad(gamepad_enum : Enum::UserInputType, enabled : Bool) : _
 		end
-		getter device_acceleration_changed : ScriptSignal(InputObject -> Nil)
-		getter device_gravity_changed : ScriptSignal(InputObject -> Nil)
-		getter device_rotation_changed : ScriptSignal(InputObject, CFrame -> Nil)
-		getter gamepad_connected : ScriptSignal(Enum::UserInputType -> Nil)
-		getter gamepad_disconnected : ScriptSignal(Enum::UserInputType -> Nil)
-		getter input_began : ScriptSignal(InputObject, Bool -> Nil)
-		getter input_changed : ScriptSignal(InputObject, Bool -> Nil)
-		getter input_ended : ScriptSignal(InputObject, Bool -> Nil)
+		getter device_acceleration_changed : ScriptSignal(Nil -> Nil)
+		getter device_gravity_changed : ScriptSignal(Nil -> Nil)
+		getter device_rotation_changed : ScriptSignal(Nil -> Nil)
+		getter gamepad_connected : ScriptSignal(Nil -> Nil)
+		getter gamepad_disconnected : ScriptSignal(Nil -> Nil)
+		getter input_began : ScriptSignal(Nil -> Nil)
+		getter input_changed : ScriptSignal(Nil -> Nil)
+		getter input_ended : ScriptSignal(Nil -> Nil)
 		getter jump_request : ScriptSignal(Nil -> Nil)
-		getter last_input_type_changed : ScriptSignal(Enum::UserInputType -> Nil)
-		getter pointer_action : ScriptSignal(Float32, Vector2, Float32, Bool -> Nil)
-		getter text_box_focus_released : ScriptSignal(TextBox -> Nil)
-		getter text_box_focused : ScriptSignal(TextBox -> Nil)
-		getter touch_ended : ScriptSignal(InputObject, Bool -> Nil)
-		getter touch_long_press : ScriptSignal(Array, Enum::UserInputState, Bool -> Nil)
-		getter touch_moved : ScriptSignal(InputObject, Bool -> Nil)
-		getter touch_pan : ScriptSignal(Array, Vector2, Vector2, Enum::UserInputState, Bool -> Nil)
-		getter touch_pinch : ScriptSignal(Array, Float32, Float32, Enum::UserInputState, Bool -> Nil)
-		getter touch_rotate : ScriptSignal(Array, Float32, Float32, Enum::UserInputState, Bool -> Nil)
-		getter touch_started : ScriptSignal(InputObject, Bool -> Nil)
-		getter touch_swipe : ScriptSignal(Enum::SwipeDirection, Int32, Bool -> Nil)
-		getter touch_tap : ScriptSignal(Array, Bool -> Nil)
-		getter touch_tap_in_world : ScriptSignal(Vector2, Bool -> Nil)
-		getter user_cframe_changed : ScriptSignal(Enum::UserCFrame, CFrame -> Nil)
+		getter last_input_type_changed : ScriptSignal(Nil -> Nil)
+		getter pointer_action : ScriptSignal(Nil -> Nil)
+		getter text_box_focus_released : ScriptSignal(Nil -> Nil)
+		getter text_box_focused : ScriptSignal(Nil -> Nil)
+		getter touch_ended : ScriptSignal(Nil -> Nil)
+		getter touch_long_press : ScriptSignal(Nil -> Nil)
+		getter touch_moved : ScriptSignal(Nil -> Nil)
+		getter touch_pan : ScriptSignal(Nil -> Nil)
+		getter touch_pinch : ScriptSignal(Nil -> Nil)
+		getter touch_rotate : ScriptSignal(Nil -> Nil)
+		getter touch_started : ScriptSignal(Nil -> Nil)
+		getter touch_swipe : ScriptSignal(Nil -> Nil)
+		getter touch_tap : ScriptSignal(Nil -> Nil)
+		getter touch_tap_in_world : ScriptSignal(Nil -> Nil)
+		getter user_cframe_changed : ScriptSignal(Nil -> Nil)
 		getter window_focus_released : ScriptSignal(Nil -> Nil)
 		getter window_focused : ScriptSignal(Nil -> Nil)
 	end
@@ -5507,37 +5497,37 @@ module Rbx
 		end
 		def set_touchpad_mode(pad : Enum::VRTouchpad, mode : Enum::VRTouchpadMode) : _
 		end
-		getter navigation_requested : ScriptSignal(CFrame, Enum::UserCFrame -> Nil)
-		getter touchpad_mode_changed : ScriptSignal(Enum::VRTouchpad, Enum::VRTouchpadMode -> Nil)
-		getter user_cframe_changed : ScriptSignal(Enum::UserCFrame, CFrame -> Nil)
-		getter user_cframe_enabled : ScriptSignal(Enum::UserCFrame, Bool -> Nil)
+		getter navigation_requested : ScriptSignal(Nil -> Nil)
+		getter touchpad_mode_changed : ScriptSignal(Nil -> Nil)
+		getter user_cframe_changed : ScriptSignal(Nil -> Nil)
+		getter user_cframe_enabled : ScriptSignal(Nil -> Nil)
 	end
 	
 	class ValueBase < Instance
 	end
 	
 	class BinaryStringValue < ValueBase
-		getter changed : ScriptSignal(NULL -> Nil)
+		getter changed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class BoolValue < ValueBase
 		property value : Bool
-		getter changed : ScriptSignal(Bool -> Nil)
+		getter changed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class BrickColorValue < ValueBase
 		property value : BrickColor
-		getter changed : ScriptSignal(BrickColor -> Nil)
+		getter changed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class CFrameValue < ValueBase
 		property value : CFrame
-		getter changed : ScriptSignal(CFrame -> Nil)
+		getter changed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class Color3Value < ValueBase
 		property value : Color3
-		getter changed : ScriptSignal(Color3 -> Nil)
+		getter changed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class DoubleConstrainedValue < ValueBase
@@ -5545,7 +5535,7 @@ module Rbx
 		property max_value : Float64
 		property min_value : Float64
 		property value : Float64
-		getter changed : ScriptSignal(Float64 -> Nil)
+		getter changed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class IntConstrainedValue < ValueBase
@@ -5553,37 +5543,37 @@ module Rbx
 		property max_value : Int64
 		property min_value : Int64
 		property value : Int64
-		getter changed : ScriptSignal(Int64 -> Nil)
+		getter changed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class IntValue < ValueBase
 		property value : Int64
-		getter changed : ScriptSignal(Int64 -> Nil)
+		getter changed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class NumberValue < ValueBase
 		property value : Float64
-		getter changed : ScriptSignal(Float64 -> Nil)
+		getter changed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class ObjectValue < ValueBase
 		property value : Instance?
-		getter changed : ScriptSignal(Instance -> Nil)
+		getter changed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class RayValue < ValueBase
 		property value : Ray
-		getter changed : ScriptSignal(Ray -> Nil)
+		getter changed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class StringValue < ValueBase
 		property value : String
-		getter changed : ScriptSignal(String -> Nil)
+		getter changed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class Vector3Value < ValueBase
 		property value : Vector3
-		getter changed : ScriptSignal(Vector3 -> Nil)
+		getter changed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class Vector3Curve < Instance
@@ -5654,7 +5644,7 @@ module Rbx
 		end
 		def is_voice_enabled_for_user_id_async(user_id : Int64) : _
 		end
-		getter state_changed : ScriptSignal(Enum::VoiceChatState, Enum::VoiceChatState -> Nil)
+		getter state_changed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class VoiceChatService < Instance

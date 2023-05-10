@@ -9667,6 +9667,20 @@ struct Enum
 			Value = 2
 			EnumType = PartType
 		end
+		
+		module Wedge
+			include EnumItem
+			Name = "Wedge"
+			Value = 3
+			EnumType = PartType
+		end
+		
+		module CornerWedge
+			include EnumItem
+			Name = "CornerWedge"
+			Value = 4
+			EnumType = PartType
+		end
 	end
 	
 	module ParticleEmitterShape
@@ -15482,6 +15496,29 @@ struct Enum
 			Name = "Max"
 			Value = 4
 			EnumType = WaterForce
+		end
+	end
+	
+	module WeldConstraintPreserve
+		module All
+			include EnumItem
+			Name = "All"
+			Value = 0
+			EnumType = WeldConstraintPreserve
+		end
+		
+		module None
+			include EnumItem
+			Name = "None"
+			Value = 1
+			EnumType = WeldConstraintPreserve
+		end
+		
+		module Touching
+			include EnumItem
+			Name = "Touching"
+			Value = 2
+			EnumType = WeldConstraintPreserve
 		end
 	end
 	

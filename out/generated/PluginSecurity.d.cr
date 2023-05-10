@@ -53,8 +53,8 @@ module Rbx
 		end
 		def undo() : _
 		end
-		getter on_redo : ScriptSignal(String -> Nil)
-		getter on_undo : ScriptSignal(String -> Nil)
+		getter on_redo : ScriptSignal(Nil -> Nil)
+		getter on_undo : ScriptSignal(Nil -> Nil)
 	end
 	
 	class DataModelSession < Instance
@@ -94,8 +94,8 @@ module Rbx
 		end
 		def step_over() : _
 		end
-		getter debugger_added : ScriptSignal(Instance -> Nil)
-		getter debugger_removed : ScriptSignal(Instance -> Nil)
+		getter debugger_added : ScriptSignal(Nil -> Nil)
+		getter debugger_removed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class DebuggerWatch < Instance
@@ -173,10 +173,10 @@ module Rbx
 		end
 		def get_relative_mouse_position() : _
 		end
-		getter plugin_drag_dropped : ScriptSignal(Hash -> Nil)
-		getter plugin_drag_entered : ScriptSignal(Hash -> Nil)
-		getter plugin_drag_left : ScriptSignal(Hash -> Nil)
-		getter plugin_drag_moved : ScriptSignal(Hash -> Nil)
+		getter plugin_drag_dropped : ScriptSignal(Nil -> Nil)
+		getter plugin_drag_entered : ScriptSignal(Nil -> Nil)
+		getter plugin_drag_left : ScriptSignal(Nil -> Nil)
+		getter plugin_drag_moved : ScriptSignal(Nil -> Nil)
 		getter window_focus_released : ScriptSignal(Nil -> Nil)
 		getter window_focused : ScriptSignal(Nil -> Nil)
 	end
@@ -228,7 +228,7 @@ module Rbx
 	end
 	
 	class PluginMouse < Mouse
-		getter drag_enter : ScriptSignal(Array(Instance) -> Nil)
+		getter drag_enter : ScriptSignal(Nil -> Nil)
 	end
 	
 	class MultipleDocumentInterfaceInstance < Instance
@@ -497,6 +497,7 @@ module Rbx
 		property description : String
 		property field_of_view : Float32
 		property orientation : Vector3
+		property perf_test : Bool
 		property position : Vector3
 		property quality_level : Int32
 		property should_skip : Bool
@@ -555,12 +556,12 @@ module Rbx
 		end
 		def set_upvalue(name : String, value : Hash, stack_frame : Int32?) : _
 		end
-		getter breakpoint_added : ScriptSignal(Instance -> Nil)
-		getter breakpoint_removed : ScriptSignal(Instance -> Nil)
-		getter encountered_break : ScriptSignal(Int32, Enum::BreakReason -> Nil)
+		getter breakpoint_added : ScriptSignal(Nil -> Nil)
+		getter breakpoint_removed : ScriptSignal(Nil -> Nil)
+		getter encountered_break : ScriptSignal(Nil -> Nil)
 		getter resuming : ScriptSignal(Nil -> Nil)
-		getter watch_added : ScriptSignal(Instance -> Nil)
-		getter watch_removed : ScriptSignal(Instance -> Nil)
+		getter watch_added : ScriptSignal(Nil -> Nil)
+		getter watch_removed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class ScriptDocument < Instance
@@ -594,8 +595,8 @@ module Rbx
 		end
 		def request_set_selection_async(cursor_line : Int32, cursor_character : Int32, anchor_line : Int32??, anchor_character : Int32??) : _
 		end
-		getter selection_changed : ScriptSignal(Int64, Int64, Int64, Int64 -> Nil)
-		getter viewport_changed : ScriptSignal(Int64, Int64 -> Nil)
+		getter selection_changed : ScriptSignal(Nil -> Nil)
+		getter viewport_changed : ScriptSignal(Nil -> Nil)
 	end
 	
 	class ScriptEditorService < Instance
@@ -605,6 +606,8 @@ module Rbx
 		end
 		def find_script_document(script : LuaSourceContainer) : _
 		end
+		def get_editor_source(script : LuaSourceContainer) : _
+		end
 		def get_script_documents() : _
 		end
 		def register_autocomplete_callback(name : String, priority : Int32, callback_function : Callback) : _
@@ -613,9 +616,9 @@ module Rbx
 		end
 		def open_script_document_async(script : LuaSourceContainer) : _
 		end
-		getter text_document_did_change : ScriptSignal(ScriptDocument, Hash -> Nil)
-		getter text_document_did_close : ScriptSignal(ScriptDocument -> Nil)
-		getter text_document_did_open : ScriptSignal(ScriptDocument -> Nil)
+		getter text_document_did_change : ScriptSignal(Nil -> Nil)
+		getter text_document_did_close : ScriptSignal(Nil -> Nil)
+		getter text_document_did_open : ScriptSignal(Nil -> Nil)
 	end
 	
 	class Selection < Instance
@@ -760,8 +763,8 @@ module Rbx
 		end
 		def run() : _
 		end
-		getter server_collect_conditional_result : ScriptSignal(Bool, String, Instance, Int32 -> Nil)
-		getter server_collect_result : ScriptSignal(String, Instance, Int32 -> Nil)
+		getter server_collect_conditional_result : ScriptSignal(Nil -> Nil)
+		getter server_collect_result : ScriptSignal(Nil -> Nil)
 	end
 	
 	class VersionControlService < Instance

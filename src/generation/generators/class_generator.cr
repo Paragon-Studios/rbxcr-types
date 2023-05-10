@@ -273,7 +273,7 @@ class ClassGenerator < Generator
       callback.description
       : @metadata.not_nil!.get_callback_desc(class_name, callback.name)
 
-    write "property #{snake_case callback.name} : #{get_param_types(callback.parameters).join ", "} -> _"
+    write "property #{snake_case callback.name} : Nil -> Nil"
   end
 
   private def generate_event(event : API::Callback, class_name : String)
@@ -281,8 +281,7 @@ class ClassGenerator < Generator
       event.description
       : @metadata.not_nil!.get_event_desc(class_name, event.name)
 
-    type_list = get_param_types(event.parameters).join ", "
-    write "getter #{snake_case event.name} : ScriptSignal(#{type_list == "" ? "Nil" : type_list} -> Nil)"
+    write "getter #{snake_case event.name} : ScriptSignal(Nil -> Nil)"
   end
 
   private def generate_function(function : API::Function, class_name : String)

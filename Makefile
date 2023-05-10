@@ -1,5 +1,5 @@
 build:
-	crystal run src/rbxcr_types.cr -o
+	crystal run src/rbxcr_types.cr
 
 test:
 	crystal spec -v
